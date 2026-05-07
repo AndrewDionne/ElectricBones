@@ -8,6 +8,10 @@
   const $$ = (selector) => Array.from(document.querySelectorAll(selector));
 
   const els = {
+    homeScreen: $("#homeScreen"),
+    studyScreen: $("#studyScreen"),
+    launchStudyButton: $("#launchStudyButton"),
+    homeButton: $("#homeButton"),
     unitFilter: $("#unitFilter"),
     typeFilter: $("#typeFilter"),
     searchBox: $("#searchBox"),
@@ -963,6 +967,21 @@
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state.progress));
   }
 
+
+  function showHomeScreen() {
+    els.homeScreen?.classList.remove("hidden");
+    els.studyScreen?.classList.add("hidden");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function showStudyScreen() {
+    els.homeScreen?.classList.add("hidden");
+    els.studyScreen?.classList.remove("hidden");
+    requestAnimationFrame(() => {
+      els.studyScreen?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+
   function accuracy(progress = state.progress) {
     if (!progress.attempted) return 0;
     return Math.round((progress.correct / progress.attempted) * 100);
@@ -1585,6 +1604,13 @@
 
     els.modeButtons.forEach((button) => {
       button.classList.toggle("active", button.dataset.mode === state.mode);
+    });
+    updateHomeModeButtons();
+  }
+
+  function updateHomeModeButtons() {
+    els.heroModeButtons.forEach((button) => {
+      button.classList.toggle("active-launch", button.dataset.setMode === state.mode);
     });
   }
 
@@ -3002,8 +3028,15 @@
     els.heroModeButtons.forEach((button) => {
       button.addEventListener("click", () => {
         setMode(button.dataset.setMode);
-        document.querySelector(".workspace")?.scrollIntoView({ behavior: "smooth", block: "start" });
       });
+    });
+
+    els.launchStudyButton?.addEventListener("click", () => {
+      showStudyScreen();
+    });
+
+    els.homeButton?.addEventListener("click", () => {
+      showHomeScreen();
     });
 
     els.flashcard.addEventListener("click", flipCard);

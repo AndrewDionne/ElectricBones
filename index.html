@@ -13,7 +13,7 @@
 <body>
   <canvas id="fireworksCanvas" aria-hidden="true"></canvas>
 
-  <header class="hero">
+  <header class="site-header">
     <nav class="topbar" aria-label="Main navigation">
       <a class="brand" href="#top" aria-label="Year 7 Science Flashcards home">
         <span class="brand-mark" aria-hidden="true">⚗️</span>
@@ -31,89 +31,83 @@
         <button class="ghost-button" id="resetProgress" type="button">Reset progress</button>
       </div>
     </nav>
-
-    <section class="hero-grid" id="top">
-      <div class="hero-copy">
-        <p class="eyebrow">End-of-year revision</p>
-        <h1>Build science superpowers one card, diagram, and boss round at a time.</h1>
-        <p class="lead">Practise muscles and bones, acids and alkalis, and current electricity with flip cards, visual labs, quick quizzes, streaks, badges, and fireworks.</p>
-        <div class="hero-buttons" role="group" aria-label="Main study modes">
-          <button class="primary-button" data-set-mode="quiz" type="button">Start quiz 🚀</button>
-          <button class="secondary-button" data-set-mode="study" type="button">Flip cards 🃏</button>
-          <button class="secondary-button" data-set-mode="equations" type="button">Equation arena ⚡</button>
-          <button class="secondary-button" data-set-mode="visual" type="button">Visual lab 🔎</button>
-          <button class="secondary-button" data-set-mode="lab" type="button">Label lab 🧩</button>
-          <button class="secondary-button" data-set-mode="circuit" type="button">Circuit builder 🔌</button>
-          <button class="secondary-button" data-set-mode="exam" type="button">Exam coach 📝</button>
-        </div>
-      </div>
-      <aside class="stats-panel" aria-label="Progress summary">
-        <div class="mascot" aria-hidden="true">🧪</div>
-        <div>
-          <p class="panel-kicker">Today’s mission</p>
-          <h2 id="missionTitle">Answer 10 questions</h2>
-        </div>
-        <div class="stats-grid">
-          <div class="stat-card"><span id="xpValue">0</span><small>XP</small></div>
-          <div class="stat-card"><span id="scoreValue">0%</span><small>Accuracy</small></div>
-          <div class="stat-card"><span id="streakValue">0</span><small>Streak</small></div>
-          <div class="stat-card"><span id="masteredValue">0</span><small>Mastered</small></div>
-        </div>
-        <div class="level-meter" aria-label="Level progress">
-          <div class="level-meter-fill" id="levelMeter"></div>
-        </div>
-        <p class="level-note" id="levelNote">Earn XP by getting answers right.</p>
-      </aside>
-    </section>
   </header>
 
-  <main class="app-shell">
-    <aside class="control-panel" aria-label="Study controls">
-      <section class="control-card">
-        <h2>Choose your quest</h2>
-        <label for="unitFilter">Topic</label>
-        <select id="unitFilter"></select>
-
-        <label for="typeFilter">Card type</label>
-        <select id="typeFilter">
-          <option value="all">All cards</option>
-          <option value="Vocabulary">Vocabulary</option>
-          <option value="Equation/relationship">Equations & relationships</option>
-          <option value="Self-test">Self-test questions</option>
-          <option value="Multiple choice">Multiple choice questions</option>
-          <option value="Visual challenge">Visual challenge cards</option>
-          <option value="Practical method">Practical method cards</option>
-          <option value="Spot the mistake">Spot the mistake cards</option>
-          <option value="Exam-style question">Exam-style questions</option>
-        </select>
-
-        <label for="searchBox">Search cards</label>
-        <input id="searchBox" type="search" placeholder="Try: pH, current, skeleton..." autocomplete="off" />
+  <main>
+    <section class="home-shell" id="homeScreen">
+      <section class="home-top-card" id="top" aria-label="Electric Bones header">
+        <div class="home-top-copy">
+          <p class="eyebrow">Bone graphic</p>
+          <h1>Electric Bones</h1>
+          <p class="home-subtitle">A compact launch page for end-of-year Year 7 science revision.</p>
+        </div>
+        <img class="home-top-graphic" src="assets/branding/electric-bones-header.png" alt="Horizontal bone surrounded by blue electricity." />
       </section>
 
-      <section class="control-card mode-card">
-        <h2>Modes</h2>
-        <button class="mode-button active" data-mode="study" type="button">🃏 Flip cards</button>
-        <button class="mode-button" data-mode="quiz" type="button">🎯 Multiple choice</button>
-        <button class="mode-button" data-mode="equations" type="button">⚡ Equation arena</button>
-        <button class="mode-button" data-mode="visual" type="button">🔎 Visual lab</button>
-        <button class="mode-button" data-mode="lab" type="button">🧩 Label lab</button>
-        <button class="mode-button" data-mode="circuit" type="button">🔌 Circuit builder</button>
-        <button class="mode-button" data-mode="exam" type="button">📝 Exam coach</button>
-        <button class="mode-button" data-mode="weak" type="button">🔁 Weak review</button>
-        <button class="mode-button" data-mode="boss" type="button">🐉 Boss round</button>
-        <p class="mode-note">Visual lab uses diagram questions. Label lab and Circuit builder are interactive. Exam coach uses mark schemes. Weak review revisits missed cards.</p>
+      <section class="home-main-grid">
+        <section class="revision-card">
+          <p class="panel-kicker">End of year revision card</p>
+          <h2>Choose a mode, then jump into a full-screen learning page.</h2>
+          <p class="lead compact-lead">Practise muscles and bones, acids and alkalis, and current electricity using flip cards, visual labs, label labs, circuit builders, and exam questions.</p>
+          <div class="topic-chip-row" aria-label="Revision topics">
+            <span class="topic-chip">7C Muscles and bones</span>
+            <span class="topic-chip">7F Acids and alkalis</span>
+            <span class="topic-chip">7J Current electricity</span>
+          </div>
+          <div class="revision-card-grid">
+            <div class="revision-mini-card">
+              <h3>Progress</h3>
+              <p>Your saved XP, mastered cards, and streaks carry into every study mode.</p>
+            </div>
+            <div class="revision-mini-card achievements-card">
+              <h3>Badges</h3>
+              <div class="badges" id="badges" aria-live="polite"></div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="stats-panel mission-panel" aria-label="Progress summary">
+          <div>
+            <p class="panel-kicker">Today’s mission</p>
+            <h2 id="missionTitle">Answer 10 questions</h2>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card"><span id="xpValue">0</span><small>XP</small></div>
+            <div class="stat-card"><span id="scoreValue">0%</span><small>Accuracy</small></div>
+            <div class="stat-card"><span id="streakValue">0</span><small>Streak</small></div>
+            <div class="stat-card"><span id="masteredValue">0</span><small>Mastered</small></div>
+          </div>
+          <div class="level-meter" aria-label="Level progress">
+            <div class="level-meter-fill" id="levelMeter"></div>
+          </div>
+          <p class="level-note" id="levelNote">Earn XP by getting answers right.</p>
+        </aside>
       </section>
 
-      <section class="control-card achievements-card">
-        <h2>Badges</h2>
-        <div class="badges" id="badges" aria-live="polite"></div>
-      </section>
-    </aside>
-
-    <section class="workspace" aria-live="polite">
-      <div class="workspace-header">
+      <section class="home-launch-card" aria-label="Learning mode launcher">
         <div>
+          <p class="panel-kicker">Learning modes</p>
+          <div class="hero-buttons mode-launch-buttons" role="group" aria-label="Main study modes">
+            <button class="secondary-button" data-set-mode="study" type="button">Flip cards</button>
+            <button class="secondary-button" data-set-mode="equations" type="button">Equation arena</button>
+            <button class="secondary-button" data-set-mode="visual" type="button">Visual lab</button>
+            <button class="secondary-button" data-set-mode="lab" type="button">Label lab</button>
+            <button class="secondary-button" data-set-mode="circuit" type="button">Circuit builder</button>
+            <button class="secondary-button" data-set-mode="exam" type="button">Exam coach</button>
+            <button class="secondary-button boss-pill" data-set-mode="boss" type="button">Boss round</button>
+          </div>
+        </div>
+        <div class="launch-action-row">
+          <button class="primary-button lets-go-button" id="launchStudyButton" type="button">Let’s GO</button>
+          <p class="launch-note">Learning opens on its own full-screen page so Visual lab, Label lab, and Circuit builder have more room.</p>
+        </div>
+      </section>
+    </section>
+
+    <section class="study-screen hidden" id="studyScreen" aria-label="Learning page">
+      <section class="study-hero-bar">
+        <button class="ghost-button home-button" id="homeButton" type="button">← Home</button>
+        <div class="study-heading">
           <p class="panel-kicker" id="modeKicker">Flip cards</p>
           <h2 id="workspaceTitle">Practise the card, then check the answer.</h2>
         </div>
@@ -121,50 +115,94 @@
           <button class="ghost-button" id="shuffleButton" type="button">Shuffle 🔀</button>
           <button class="ghost-button" id="speakButton" type="button">Read aloud</button>
         </div>
-      </div>
-
-      <div class="progress-strip" aria-label="Question progress">
-        <div class="progress-fill" id="progressFill"></div>
-      </div>
-
-      <div class="card-meta-bar" id="cardMetaBar" aria-label="Current card details">
-        <span class="unit-badge" id="cardUnitBadge">Topic</span>
-        <span class="type-badge" id="cardTypeBadge">Card type</span>
-      </div>
-
-      <article class="flashcard" id="flashcard" tabindex="0" aria-label="Flashcard. Press enter or space to flip.">
-        <div class="card-face card-front">
-          <div class="card-visual hidden" id="cardVisual" aria-label="Question diagram"></div>
-          <h3 id="cardFront" data-autofit>Loading…</h3>
-          <p id="frontHint">Tap the card to flip it.</p>
-        </div>
-        <div class="card-face card-back">
-          <h3 id="cardBack" data-autofit>Loading…</h3>
-          <p id="cardCue"></p>
-        </div>
-      </article>
-
-      <section class="quiz-panel hidden" id="quizPanel" aria-label="Quiz answers">
-        <div class="answer-grid" id="answerGrid"></div>
-        <p class="feedback" id="feedback" aria-live="polite"></p>
       </section>
 
-      <section class="lab-panel hidden" id="labPanel" aria-label="Interactive label lab"></section>
+      <div class="app-shell">
+        <aside class="control-panel" aria-label="Study controls">
+          <section class="control-card">
+            <h2>Choose your quest</h2>
+            <label for="unitFilter">Topic</label>
+            <select id="unitFilter"></select>
 
-      <section class="circuit-panel hidden" id="circuitPanel" aria-label="Interactive circuit builder"></section>
+            <label for="typeFilter">Card type</label>
+            <select id="typeFilter">
+              <option value="all">All cards</option>
+              <option value="Vocabulary">Vocabulary</option>
+              <option value="Equation/relationship">Equations &amp; relationships</option>
+              <option value="Self-test">Self-test questions</option>
+              <option value="Multiple choice">Multiple choice questions</option>
+              <option value="Visual challenge">Visual challenge cards</option>
+              <option value="Practical method">Practical method cards</option>
+              <option value="Spot the mistake">Spot the mistake cards</option>
+              <option value="Exam-style question">Exam-style questions</option>
+            </select>
 
-      <section class="exam-panel hidden" id="examPanel" aria-label="Exam coach practice"></section>
+            <label for="searchBox">Search cards</label>
+            <input id="searchBox" type="search" placeholder="Try: pH, current, skeleton..." autocomplete="off" />
+          </section>
 
-      <div class="button-row">
-        <button class="danger-soft" id="needPracticeButton" type="button">Need practice</button>
-        <button class="secondary-button" id="nextButton" type="button">Next card</button>
-        <button class="primary-button" id="knowButton" type="button">I knew it ✨</button>
+          <section class="control-card mode-card">
+            <h2>Modes</h2>
+            <div class="mode-grid">
+              <button class="mode-button active" data-mode="study" type="button">🃏 Flip cards</button>
+              <button class="mode-button" data-mode="quiz" type="button">🎯 Multiple choice</button>
+              <button class="mode-button" data-mode="equations" type="button">⚡ Equation arena</button>
+              <button class="mode-button" data-mode="visual" type="button">🔎 Visual lab</button>
+              <button class="mode-button" data-mode="lab" type="button">🧩 Label lab</button>
+              <button class="mode-button" data-mode="circuit" type="button">🔌 Circuit builder</button>
+              <button class="mode-button" data-mode="exam" type="button">📝 Exam coach</button>
+              <button class="mode-button" data-mode="weak" type="button">🔁 Weak review</button>
+              <button class="mode-button" data-mode="boss" type="button">🐉 Boss round</button>
+            </div>
+            <p class="mode-note">Visual lab uses diagram questions. Label lab and Circuit builder are interactive. Exam coach uses mark schemes. Weak review revisits missed cards.</p>
+          </section>
+        </aside>
+
+        <section class="workspace" aria-live="polite">
+          <div class="progress-strip" aria-label="Question progress">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+
+          <div class="card-meta-bar" id="cardMetaBar" aria-label="Current card details">
+            <span class="unit-badge" id="cardUnitBadge">Topic</span>
+            <span class="type-badge" id="cardTypeBadge">Card type</span>
+          </div>
+
+          <article class="flashcard" id="flashcard" tabindex="0" aria-label="Flashcard. Press enter or space to flip.">
+            <div class="card-face card-front">
+              <div class="card-visual hidden" id="cardVisual" aria-label="Question diagram"></div>
+              <h3 id="cardFront" data-autofit>Loading…</h3>
+              <p id="frontHint">Tap the card to flip it.</p>
+            </div>
+            <div class="card-face card-back">
+              <h3 id="cardBack" data-autofit>Loading…</h3>
+              <p id="cardCue"></p>
+            </div>
+          </article>
+
+          <section class="quiz-panel hidden" id="quizPanel" aria-label="Quiz answers">
+            <div class="answer-grid" id="answerGrid"></div>
+            <p class="feedback" id="feedback" aria-live="polite"></p>
+          </section>
+
+          <section class="lab-panel hidden" id="labPanel" aria-label="Interactive label lab"></section>
+
+          <section class="circuit-panel hidden" id="circuitPanel" aria-label="Interactive circuit builder"></section>
+
+          <section class="exam-panel hidden" id="examPanel" aria-label="Exam coach practice"></section>
+
+          <div class="button-row" id="buttonRow">
+            <button class="danger-soft" id="needPracticeButton" type="button">Further review</button>
+            <button class="secondary-button" id="nextButton" type="button">Next card</button>
+            <button class="primary-button" id="knowButton" type="button">Mastered</button>
+          </div>
+
+          <section class="review-box" id="reviewBox">
+            <h3>Quick study tip</h3>
+            <p id="studyTip">Say the answer out loud before flipping the card. This makes your brain work harder.</p>
+          </section>
+        </section>
       </div>
-
-      <section class="review-box">
-        <h3>Quick study tip</h3>
-        <p id="studyTip">Say the answer out loud before flipping the card. This makes your brain work harder.</p>
-      </section>
     </section>
   </main>
 
