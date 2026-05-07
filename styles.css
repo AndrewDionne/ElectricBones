@@ -891,11 +891,18 @@ body.calm .pop {
   box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.08), 0 14px 30px rgba(15, 23, 42, 0.12);
 }
 
-.study-diagram {
+.study-diagram,
+.study-diagram-image {
   display: block;
   width: 100%;
   height: auto;
   max-height: 260px;
+}
+
+.study-diagram-image {
+  object-fit: contain;
+  border-radius: 22px;
+  background: #fff;
 }
 
 .diagram-bg {
@@ -1156,11 +1163,18 @@ body.calm .lab-card {
 }
 
 .lab-diagram,
-.interactive-diagram {
+.interactive-diagram,
+.interactive-diagram-image {
   width: 100%;
   height: 100%;
   min-height: 390px;
   display: block;
+}
+
+.interactive-diagram-image {
+  object-fit: contain;
+  border-radius: 28px;
+  background: #fff;
 }
 
 .lab-bg {
@@ -1239,10 +1253,10 @@ body.calm .lab-card {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  min-width: 112px;
-  min-height: 42px;
+  min-width: 104px;
+  min-height: 40px;
   border-radius: 999px;
-  padding: 7px 10px;
+  padding: 6px 10px;
   border: 2px dashed rgba(124, 58, 237, 0.48);
   color: #312e81;
   background: rgba(255, 255, 255, 0.88);
@@ -1706,7 +1720,8 @@ body.calm .branch-wire {
   margin: 14px 0;
 }
 
-.exam-visual .study-diagram {
+.exam-visual .study-diagram,
+.exam-visual .study-diagram-image {
   max-height: 320px;
 }
 
@@ -1874,4 +1889,143 @@ body.calm .keyword-meter span {
   .exam-actions > button {
     width: 100%;
   }
+}
+
+
+/* v8 visual graphics patch: clearer challenge diagrams and non-leaking callouts */
+.scale-guide {
+  stroke: rgba(15, 23, 42, 0.34);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.flask {
+  fill: rgba(255, 255, 255, 0.72);
+  stroke: #334155;
+  stroke-width: 4;
+  stroke-linejoin: round;
+}
+
+.no-goggles {
+  fill: none;
+  stroke: #0f172a;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.secondary-bone {
+  stroke-width: 6;
+  opacity: 0.9;
+}
+
+.capillary-cell {
+  fill: #ef4444;
+  stroke: #991b1b;
+  stroke-width: 2;
+}
+
+.litmus-change-red {
+  fill: none;
+  stroke: #dc2626;
+  stroke-width: 9;
+  stroke-linecap: round;
+}
+
+.litmus-change-blue {
+  fill: none;
+  stroke: #2563eb;
+  stroke-width: 9;
+  stroke-linecap: round;
+}
+
+.drop-arrow {
+  fill: none;
+  stroke: #7c3aed;
+  stroke-width: 5;
+  stroke-linecap: round;
+  color: #7c3aed;
+}
+
+.finger-gap {
+  fill: none;
+  stroke: #64748b;
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+
+.faint-guide {
+  opacity: 0.28;
+}
+
+.bench-line,
+.guide-arc {
+  fill: none;
+  stroke: #94a3b8;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 6 8;
+}
+
+.artery-wall {
+  fill: #fecaca;
+  stroke: #dc2626;
+  stroke-width: 18;
+}
+
+.vein-wall {
+  fill: #bfdbfe;
+  stroke: #2563eb;
+  stroke-width: 14;
+}
+
+.ruler-tick {
+  stroke: #475569;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+
+.support-line {
+  fill: none;
+  stroke: #475569;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.flame {
+  fill: rgba(251, 146, 60, 0.35);
+  stroke: #ea580c;
+  stroke-width: 4;
+  stroke-linejoin: round;
+}
+
+.chest-outline {
+  fill: none;
+  stroke: #94a3b8;
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+.secondary-alveolus {
+  opacity: 0.92;
+}
+
+.lab-guide {
+  fill: none;
+  stroke: rgba(100, 116, 139, 0.7);
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+.step-panel {
+  fill: rgba(255, 255, 255, 0.88);
+  stroke: rgba(124, 58, 237, 0.28);
+  stroke-width: 3;
+}
+
+.lab-tendon-line {
+  fill: none;
+  stroke: #0ea5e9;
+  stroke-width: 8;
+  stroke-linecap: round;
 }

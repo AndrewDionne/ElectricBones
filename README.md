@@ -1,6 +1,6 @@
 # Electric Bones — Year 7 Science Flashcards
 
-A static, dependency-free flashcard web app for Year 7 science revision. This v6 version adds an **Exam Coach** layer and **Weak Review** mode to push coverage toward the 90–95% exam-prep range. Exam Coach uses mark-scheme answers, written-response prompts, keyword guidance, practical-method questions, and diagram reasoning. Weak Review automatically revisits missed flashcards. The app still works without a backend or build step.
+A static, dependency-free flashcard web app for Year 7 science revision. This v7 version keeps the **Exam Coach** and **Weak Review** modes and adds a content-completion patch based on a direct audit against the Year 7 student revision pack. Exam Coach uses mark-scheme answers, written-response prompts, keyword guidance, practical-method questions, and diagram reasoning. Weak Review automatically revisits missed flashcards. The app still works without a backend or build step.
 
 This repo is ready to drop into GitHub and publish with **GitHub Pages**. It includes study-pack flashcards for:
 
@@ -28,20 +28,30 @@ This repo is ready to drop into GitHub and publish with **GitHub Pages**. It inc
 
 ## Card bank
 
-Current v6 study bank:
+Current v7 study bank after the content-completion patch:
 
 | Card type | Count |
 |---|---:|
-| Vocabulary | 103 |
-| Multiple choice | 72 |
-| Visual challenge | 42 |
-| Equation / relationship | 18 |
-| Self-test | 12 |
-| Spot the mistake | 7 |
-| Practical method | 6 |
-| **Total** | **260** |
+| Vocabulary | 130 |
+| Multiple choice | 123 |
+| Visual challenge | 47 |
+| Equation/relationship | 24 |
+| Self-test | 25 |
+| Spot the mistake | 11 |
+| Practical method | 8 |
+| **Total** | **368** |
 
-The v3 update added **55 diagram/worksheet-style cards**. The v4 update adds **7 interactive label-lab games**. The v5 update adds **8 interactive circuit-builder games**. The v6 update adds **36 Exam Coach questions** built directly into the app logic, giving the app 311 total revision items when cards, lab games, circuit games, and exam-coach prompts are counted together.
+Unit split:
+
+| Unit | CSV card count |
+|---|---:|
+| 7C Muscles and bones | 130 |
+| 7F Acids and alkalis | 118 |
+| 7J Current electricity | 120 |
+
+The v7 content-completion patch adds **108 new CSV cards** plus **12 new Exam Coach questions**. It targets the audit gaps in the revision pack: 7C drugs / working scientifically / double circulation; 7F household examples / hazard symbols / natural indicators / extra salt equations; and 7J scientific models / truth tables / voltage division / electrical safety.
+
+The app now contains **431 total revision items** when flashcards, label labs, circuit-builder games, and Exam Coach prompts are counted together: 368 CSV cards + 7 label labs + 8 circuit-builder tasks + 48 Exam Coach prompts.
 
 ## Features
 
@@ -134,6 +144,16 @@ Exam Coach includes:
 - a new **Exam ready** badge
 
 Weak Review tracks missed items in browser storage and gives the learner a focused place to clean up mistakes. Correct answers remove items from the weak list and count toward the **Comeback kid** badge.
+
+
+## V7 content-completion patch
+
+The v7 patch is a content and accuracy pass against the Year 7 student revision pack. It includes:
+
+- wording cleanups around pH, acid/alkali language, concentration, charge, and muscle relaxation
+- 7C additions for double circulation, gas-exchange organ functions, vessel adaptations, force in newtons, scientific/non-scientific/ethical questions, and drug examples/effects/testing
+- 7F additions for household acid/alkali examples, hazard-symbol meanings, phenolphthalein, methyl orange, red cabbage/natural indicator methods, pH measurement, extra neutralisation equations, and everyday neutralisation examples
+- 7J additions for physical vs abstract models, model strengths/limitations, AND/OR truth-table reasoning, voltage division, electrical safety, cells vs mains, fuses/circuit breakers, wire colours, and wire-resistance factors
 
 ## Run locally
 

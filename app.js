@@ -66,11 +66,11 @@
       diagram: "skeleton",
       labels: ["skull", "rib cage", "spine", "pelvis", "femur"],
       targets: [
-        { id: "skull", label: "skull", x: 50, y: 16 },
-        { id: "rib", label: "rib cage", x: 50, y: 38 },
-        { id: "spine", label: "spine", x: 59, y: 46 },
-        { id: "pelvis", label: "pelvis", x: 50, y: 61 },
-        { id: "femur", label: "femur", x: 42, y: 78 },
+        { id: "skull", label: "skull", x: 50, y: 15 },
+        { id: "rib", label: "rib cage", x: 50, y: 31 },
+        { id: "spine", label: "spine", x: 50, y: 44 },
+        { id: "pelvis", label: "pelvis", x: 50, y: 56 },
+        { id: "femur", label: "femur", x: 48, y: 73 },
       ],
     },
     {
@@ -81,11 +81,11 @@
       diagram: "arm",
       labels: ["biceps", "triceps", "humerus", "radius and ulna", "elbow joint"],
       targets: [
-        { id: "biceps", label: "biceps", x: 42, y: 32 },
-        { id: "triceps", label: "triceps", x: 58, y: 40 },
-        { id: "humerus", label: "humerus", x: 35, y: 55 },
-        { id: "forearm", label: "radius and ulna", x: 66, y: 68 },
-        { id: "elbow", label: "elbow joint", x: 52, y: 58 },
+        { id: "biceps", label: "biceps", x: 46, y: 31 },
+        { id: "triceps", label: "triceps", x: 28, y: 49 },
+        { id: "humerus", label: "humerus", x: 36, y: 42 },
+        { id: "forearm", label: "radius and ulna", x: 67, y: 61 },
+        { id: "elbow", label: "elbow joint", x: 46, y: 63 },
       ],
     },
     {
@@ -132,6 +132,7 @@
         { id: "parallel-title", label: "parallel circuit", x: 72, y: 14 },
         { id: "branches", label: "branches", x: 72, y: 58 },
       ],
+      success: "Circuit A has one path; circuit B has branches.",
     },
     {
       id: "lab-indicators",
@@ -162,6 +163,7 @@
         { id: "step4", label: "stop at neutral", x: 68, y: 52 },
         { id: "step5", label: "evaporate solution", x: 86, y: 52 },
       ],
+      success: "Make a neutral solution first, then evaporate carefully to obtain crystals.",
     },
   ];
 
@@ -198,12 +200,12 @@
       id: "circuit-build-measure-current",
       unit: "7J Current electricity",
       title: "Measure current correctly",
-      brief: "Put the ammeter in series so all the current flows through it.",
+      brief: "Build the circuit so current can be measured correctly.",
       layout: "meter-loop",
       labels: ["cell", "lamp", "ammeter", "voltmeter", "closed switch"],
       slots: [
         { id: "source", label: "source", answer: "cell", x: 16, y: 61 },
-        { id: "meter", label: "series meter", answer: "ammeter", x: 43, y: 25 },
+        { id: "meter", label: "meter", answer: "ammeter", x: 43, y: 25 },
         { id: "switch", label: "switch", answer: "closed switch", x: 68, y: 25 },
         { id: "load", label: "load", answer: "lamp", x: 78, y: 62 },
       ],
@@ -213,13 +215,13 @@
       id: "circuit-build-measure-voltage",
       unit: "7J Current electricity",
       title: "Measure voltage across a lamp",
-      brief: "Put the voltmeter on a parallel branch across the lamp.",
+      brief: "Build the circuit so the voltage across the lamp can be measured.",
       layout: "parallel-meter",
       labels: ["cell", "lamp", "voltmeter", "ammeter", "closed switch"],
       slots: [
         { id: "source", label: "source", answer: "cell", x: 16, y: 58 },
         { id: "load", label: "load", answer: "lamp", x: 64, y: 43 },
-        { id: "meter", label: "parallel meter", answer: "voltmeter", x: 64, y: 74 },
+        { id: "meter", label: "meter", answer: "voltmeter", x: 64, y: 74 },
         { id: "switch", label: "switch", answer: "closed switch", x: 84, y: 58 },
       ],
       success: "Voltmeters go in parallel because they compare the energy difference across a component.",
@@ -228,7 +230,7 @@
       id: "circuit-build-series-two-lamps",
       unit: "7J Current electricity",
       title: "Build a series circuit with two lamps",
-      brief: "Place two lamps on the same single loop.",
+      brief: "Place two lamps so they are part of the same circuit path.",
       layout: "series-two-lamps",
       labels: ["cell", "lamp", "lamp", "closed switch", "voltmeter"],
       slots: [
@@ -243,7 +245,7 @@
       id: "circuit-build-parallel-two-lamps",
       unit: "7J Current electricity",
       title: "Build a parallel circuit with two lamps",
-      brief: "Place one lamp on each branch so the current has more than one path.",
+      brief: "Place two lamps so they are on separate branches.",
       layout: "parallel-two-lamps",
       labels: ["cell", "lamp", "lamp", "closed switch", "ammeter"],
       slots: [
@@ -430,6 +432,147 @@
       cue: "This tests whether the key misconception has been fixed.",
     },
 
+
+    {
+      id: "exam-7c-double-circulation",
+      unit: "7C Muscles and bones",
+      kind: "written",
+      title: "Double circulation",
+      prompt: "Explain what is meant by the human double circulatory system. Aim for 4 marks.",
+      visual: "blood-vessels",
+      marks: 4,
+      keywords: ["heart", "lungs", "body", "two", "loops", "oxygen", "carbon dioxide"],
+      answer: "Humans have double circulation because blood travels in two loops. One loop goes from the heart to the lungs and back to the heart to pick up oxygen and remove carbon dioxide. The other loop goes from the heart to the body and back to the heart to deliver oxygen and nutrients to cells.",
+      cue: "Use both loops: heart-lungs-heart and heart-body-heart.",
+    },
+    {
+      id: "exam-7c-scientific-ethical-questions",
+      unit: "7C Muscles and bones",
+      kind: "written",
+      title: "Scientific or ethical?",
+      prompt: "Explain the difference between a scientific question and an ethical question, giving one example of each.",
+      marks: 4,
+      keywords: ["scientific", "evidence", "measure", "experiment", "ethical", "fair", "right", "wrong"],
+      answer: "A scientific question can be answered using evidence from observations or experiments, for example: does caffeine affect reaction time? An ethical question is about what people think is fair, right or wrong, for example: is it right to test a medicine on animals?",
+      cue: "Scientific = evidence/testable. Ethical = fairness/right/wrong.",
+    },
+    {
+      id: "exam-7c-drug-classification",
+      unit: "7C Muscles and bones",
+      kind: "choice",
+      title: "Drug classification",
+      prompt: "Which statement correctly classifies these drug examples?",
+      marks: 1,
+      choices: ["Caffeine is a stimulant; alcohol and heroin are depressants; paracetamol and penicillin are medicines.", "Alcohol is a stimulant; caffeine is a depressant; penicillin is illegal.", "All drugs are illegal and harmful.", "Paracetamol and penicillin are both depressants."],
+      answer: "Caffeine is a stimulant; alcohol and heroin are depressants; paracetamol and penicillin are medicines.",
+      keywords: ["caffeine", "stimulant", "alcohol", "heroin", "depressant", "medicine"],
+      cue: "Drug means chemical that affects the body; some drugs are useful medicines.",
+    },
+    {
+      id: "exam-7c-drug-testing-effects",
+      unit: "7C Muscles and bones",
+      kind: "written",
+      title: "Drug effects and testing",
+      prompt: "Give one short-term drug effect, one long-term risk of abusing drugs, and one reason medicines are tested.",
+      marks: 4,
+      keywords: ["reaction", "nervous", "addiction", "organ", "liver", "safe", "dose", "side-effects"],
+      answer: "A short-term effect could be a change in reaction time, mood, alertness or coordination. A long-term risk of abusing drugs is addiction or organ damage, such as liver damage. Medicines are tested to check that they work, find a safe dose, and identify side-effects.",
+      cue: "Name effects clearly and link testing to safety.",
+    },
+
+    {
+      id: "exam-7f-natural-indicator-method",
+      unit: "7F Acids and alkalis",
+      kind: "written",
+      title: "Natural indicator method",
+      prompt: "Describe how to make and use a natural indicator such as red cabbage juice.",
+      marks: 5,
+      keywords: ["red cabbage", "crush", "water", "filter", "known", "acid", "alkali", "colour"],
+      answer: "Crush or chop red cabbage and mix it with a small amount of water. Filter or pour off the coloured liquid. Test it with known acidic, neutral and alkaline solutions and record the colours. Then add it to an unknown liquid and compare the colour with the known results.",
+      cue: "Known test liquids make the unknown result meaningful.",
+    },
+    {
+      id: "exam-7f-extra-indicators",
+      unit: "7F Acids and alkalis",
+      kind: "choice",
+      title: "Phenolphthalein and methyl orange",
+      prompt: "Which indicator colour statement is correct?",
+      marks: 1,
+      choices: ["Phenolphthalein is colourless in more acidic solutions and pink in more alkaline solutions.", "Phenolphthalein is always blue in acids and alkalis.", "Methyl orange is pink in alkalis and colourless in acids.", "Methyl orange is only used to test electric current."],
+      answer: "Phenolphthalein is colourless in more acidic solutions and pink in more alkaline solutions.",
+      keywords: ["phenolphthalein", "colourless", "acidic", "pink", "alkaline"],
+      cue: "Also remember methyl orange: red in more acidic, yellow in more alkaline.",
+    },
+    {
+      id: "exam-7f-everyday-neutralisation",
+      unit: "7F Acids and alkalis",
+      kind: "written",
+      title: "Everyday neutralisation",
+      prompt: "Give two everyday uses of neutralisation and explain what is being neutralised.",
+      marks: 4,
+      keywords: ["antacid", "stomach", "acid", "soil", "toothpaste", "power stations", "base", "neutralise"],
+      answer: "Antacids contain a base that neutralises extra stomach acid. Farmers can add a base to soil that is too acidic for crops. Toothpaste can neutralise acids in the mouth, and alkalis can neutralise acidic gases from power stations.",
+      cue: "Use the word neutralise and name the acid/base example.",
+    },
+    {
+      id: "exam-7f-salt-equation-practice",
+      unit: "7F Acids and alkalis",
+      kind: "choice",
+      title: "Salt word equation",
+      prompt: "Complete the word equation: sulfuric acid + magnesium oxide → ?",
+      marks: 1,
+      choices: ["magnesium sulfate + water", "magnesium chloride + water", "sodium sulfate + hydrogen", "magnesium nitrate + oxygen"],
+      answer: "magnesium sulfate + water",
+      keywords: ["sulfuric", "magnesium", "sulfate", "water"],
+      cue: "Sulfuric acid makes sulfate salts; metal oxide bases make salt + water.",
+    },
+
+    {
+      id: "exam-7j-physical-abstract-models",
+      unit: "7J Current electricity",
+      kind: "written",
+      title: "Physical and abstract models",
+      prompt: "Explain the difference between a physical model and an abstract model, using electricity examples.",
+      marks: 4,
+      keywords: ["physical", "touch", "abstract", "diagram", "idea", "circuit", "model"],
+      answer: "A physical model is one you can touch or build, such as a pump-and-pipes model of a circuit. An abstract model is an idea, diagram or representation, such as a circuit diagram or the idea that voltage is a push. Both can help explain circuits, but they are simplified.",
+      cue: "Physical = touchable. Abstract = idea/diagram/representation.",
+    },
+    {
+      id: "exam-7j-model-limits",
+      unit: "7J Current electricity",
+      kind: "written",
+      title: "Model strengths and limits",
+      prompt: "The central-heating model uses a pump, pipes and radiators to model a circuit. Give one strength and one limitation of this model.",
+      marks: 4,
+      keywords: ["pump", "cell", "pipes", "wires", "radiators", "bulbs", "not", "same", "charges"],
+      answer: "A strength is that the pump can represent the cell or power supply, the pipes can represent wires, and the radiators can represent bulbs transferring energy. A limitation is that water is not the same as electric charge, so the heating system does not behave exactly like a real electric circuit.",
+      cue: "Good model answers say what the model helps with and where it breaks down.",
+    },
+    {
+      id: "exam-7j-truth-table-switches",
+      unit: "7J Current electricity",
+      kind: "choice",
+      title: "AND/OR truth table",
+      prompt: "Switch A is open and switch B is closed. Which statement is correct?",
+      visual: "circuit-or-switches",
+      marks: 1,
+      choices: ["An AND circuit is off, but an OR circuit can be on.", "Both AND and OR circuits must be off.", "An AND circuit is on, but an OR circuit must be off.", "Truth tables only apply to acids."],
+      answer: "An AND circuit is off, but an OR circuit can be on.",
+      keywords: ["AND", "OR", "open", "closed", "series", "parallel"],
+      cue: "AND needs both switches. OR needs either switch.",
+    },
+    {
+      id: "exam-7j-safety-rules",
+      unit: "7J Current electricity",
+      kind: "written",
+      title: "Electrical safety",
+      prompt: "Give three dangers of electricity and two safety rules for using circuits or mains appliances.",
+      marks: 5,
+      keywords: ["fires", "burns", "shocks", "heart", "wet", "sockets", "overload", "switch off"],
+      answer: "Electricity can cause fires, burns, and shocks that can stop the heart. Safety rules include not using electrical equipment with wet hands, not poking objects into sockets, not overloading sockets, and switching off the power supply before changing components in a school circuit.",
+      cue: "Separate dangers from precautions.",
+    },
     {
       id: "exam-7f-ph-scale",
       unit: "7F Acids and alkalis",
@@ -463,7 +606,7 @@
       prompt: "Explain why universal indicator gives more information than litmus.",
       visual: "indicator-palette",
       marks: 3,
-      keywords: ["range", "colours", "pH", "strength", "acid", "alkali"],
+      keywords: ["range", "colours", "pH", "acidic", "alkaline", "acid", "alkali"],
       answer: "Universal indicator has a range of colours, so it can estimate pH and show how acidic or alkaline a substance is. Litmus mainly shows whether something is acidic or alkaline.",
       cue: "The key phrase is range of colours / pH estimate.",
     },
@@ -949,6 +1092,14 @@
     const symbolKey = key.replace(/^symbol-/, "");
     if (key.startsWith("symbol-")) return renderCircuitSymbol(symbolKey);
 
+    const imageVisuals = {
+      "skeleton-basic": { src: "assets/visuals/skeleton-basic.png", alt: "Skeleton diagram with A, B, and C callouts." },
+      "elbow-joint": { src: "assets/visuals/elbow-joint.png", alt: "Elbow joint anatomy diagram with A, B, and C callouts." },
+      "arm-antagonistic": { src: "assets/visuals/arm-antagonistic.png", alt: "Arm anatomy diagram with antagonistic muscles and A, B, and C callouts." },
+      "acid-safety-mistake": { src: "assets/visuals/acid-safety-mistake.png", alt: "Lab safety scene showing a student pouring acid without eye protection." },
+    };
+    if (imageVisuals[key]) return renderRasterVisual(imageVisuals[key].src, imageVisuals[key].alt);
+
     const diagrams = {
       "circuit-series": circuitSeriesSvg,
       "circuit-parallel": circuitParallelSvg,
@@ -964,13 +1115,9 @@
       "litmus-test": litmusTestSvg,
       "indicator-palette": indicatorPaletteSvg,
       "neutralisation-setup": neutralisationSetupSvg,
-      "acid-safety-mistake": acidSafetyMistakeSvg,
       "indicator-mistake": indicatorMistakeSvg,
       "evaporation-dish": evaporationDishSvg,
       "dilution-method": dilutionMethodSvg,
-      "elbow-joint": elbowJointSvg,
-      "arm-antagonistic": armAntagonisticSvg,
-      "skeleton-basic": skeletonBasicSvg,
       "lungs-diaphragm": lungsDiaphragmSvg,
       "alveolus-gas-exchange": alveolusGasExchangeSvg,
       "blood-vessels": bloodVesselsSvg,
@@ -978,6 +1125,10 @@
     };
     const renderer = diagrams[key];
     return renderer ? renderer() : "";
+  }
+
+  function renderRasterVisual(src, alt, className = "study-diagram-image") {
+    return `<img class="${className}" src="${escapeHtml(src)}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async">`;
   }
 
   function diagramFrame(title, inner, viewBox = "0 0 520 260") {
@@ -1002,17 +1153,6 @@
   }
 
   function renderCircuitSymbol(kind) {
-    const labels = {
-      cell: "Cell",
-      battery: "Battery",
-      lamp: "Lamp / bulb",
-      switchOpen: "Open switch",
-      switchClosed: "Closed switch",
-      resistor: "Resistor",
-      ammeter: "Ammeter",
-      voltmeter: "Voltmeter",
-      motor: "Motor",
-    };
     const drawing = {
       cell: `<line x1="110" y1="140" x2="215" y2="140"/><line x1="215" y1="96" x2="215" y2="184"/><line x1="250" y1="116" x2="250" y2="164"/><line x1="250" y1="140" x2="390" y2="140"/>`,
       battery: `<line x1="92" y1="140" x2="170" y2="140"/><line x1="170" y1="96" x2="170" y2="184"/><line x1="202" y1="116" x2="202" y2="164"/><line x1="238" y1="96" x2="238" y2="184"/><line x1="270" y1="116" x2="270" y2="164"/><line x1="270" y1="140" x2="420" y2="140"/>`,
@@ -1024,7 +1164,7 @@
       voltmeter: `<line x1="88" y1="140" x2="190" y2="140"/><circle cx="260" cy="140" r="52"/><text x="260" y="154" class="meter-letter">V</text><line x1="312" y1="140" x2="430" y2="140"/>`,
       motor: `<line x1="88" y1="140" x2="190" y2="140"/><circle cx="260" cy="140" r="52"/><text x="260" y="154" class="meter-letter">M</text><line x1="312" y1="140" x2="430" y2="140"/>`,
     }[kind] || "";
-    return diagramFrame(labels[kind] || "Circuit symbol", `<g class="circuit-line">${drawing}</g>`);
+    return diagramFrame("Circuit symbol", `<g class="circuit-line">${drawing}</g>`);
   }
 
   function circuitSeriesSvg() {
@@ -1079,19 +1219,19 @@
   }
 
   function circuitVoltmeterMistakeSvg() {
-    return diagramFrame("Spot the mistake", `
-      <g class="circuit-line mistake-line">
+    return diagramFrame("Circuit diagram", `
+      <g class="circuit-line">
         <path d="M95 95 H425 V205 H95 Z" fill="none"/>
         <line x1="105" y1="127" x2="105" y2="168"/><line x1="130" y1="110" x2="130" y2="185"/>
         <circle cx="255" cy="95" r="32"/><text x="255" y="107" class="meter-letter">V</text>
         <circle cx="350" cy="205" r="28"/><line x1="332" y1="187" x2="368" y2="223"/><line x1="368" y1="187" x2="332" y2="223"/>
       </g>
-      ${labelBubble(255, 48, "!")}
+      ${labelBubble(255, 48, "A")}${labelBubble(350, 246, "B")}${labelBubble(118, 92, "C")}
     `);
   }
 
   function circuitAndSwitchesSvg() {
-    return diagramFrame("AND switch arrangement", `
+    return diagramFrame("Switch circuit", `
       <g class="circuit-line">
         <path d="M90 145 H140 M330 145 H425 V205 H90 Z" fill="none"/>
         <line x1="100" y1="172" x2="100" y2="204"/><line x1="124" y1="158" x2="124" y2="218"/>
@@ -1104,7 +1244,7 @@
   }
 
   function circuitOrSwitchesSvg() {
-    return diagramFrame("OR switch arrangement", `
+    return diagramFrame("Switch circuit", `
       <g class="circuit-line">
         <path d="M90 145 H150 M320 145 H425 V205 H90 Z" fill="none"/>
         <line x1="100" y1="172" x2="100" y2="204"/><line x1="124" y1="158" x2="124" y2="218"/>
@@ -1131,7 +1271,7 @@
   }
 
   function circuitCurrentArrowsSvg() {
-    return diagramFrame("Current direction", `
+    return diagramFrame("Circuit diagram", `
       <g class="circuit-line current-arrows">
         <path d="M95 95 H425 V205 H95 Z" fill="none"/>
         <path d="M188 95 H280" marker-end="url(#arrow)"/><path d="M425 130 V190" marker-end="url(#arrow)"/><path d="M330 205 H230" marker-end="url(#arrow)"/>
@@ -1143,104 +1283,122 @@
   }
 
   function circuitShortMistakeSvg() {
-    return diagramFrame("Spot the mistake", `
-      <g class="circuit-line mistake-line">
+    return diagramFrame("Circuit diagram", `
+      <g class="circuit-line">
         <path d="M95 95 H425 V205 H95 Z" fill="none"/>
         <line x1="105" y1="127" x2="105" y2="168"/><line x1="130" y1="110" x2="130" y2="185"/>
         <path d="M170 95 V205" fill="none"/>
         <circle cx="320" cy="205" r="28"/><line x1="302" y1="187" x2="338" y2="223"/><line x1="338" y1="187" x2="302" y2="223"/>
       </g>
-      ${labelBubble(170, 150, "!")}
+      ${labelBubble(170, 150, "A")}${labelBubble(320, 246, "B")}${labelBubble(118, 92, "C")}
     `);
   }
 
   function phScaleSvg() {
     const cells = Array.from({ length: 14 }, (_, i) => {
-      const x = 48 + i * 30;
-      return `<rect x="${x}" y="115" width="30" height="54" class="ph ph-${i + 1}"/><text x="${x + 15}" y="190" class="small-label">${i + 1}</text>`;
+      const x = 52 + i * 29;
+      return `<rect x="${x}" y="112" width="29" height="62" rx="5" class="ph ph-${i + 1}"/><text x="${x + 14.5}" y="193" class="small-label">${i + 1}</text>`;
     }).join("");
     return diagramFrame("pH scale", `
+      <rect x="44" y="100" width="432" height="86" rx="18" class="palette-bg"/>
       ${cells}
-      <text x="84" y="92" class="diagram-text">acidic</text><text x="245" y="92" class="diagram-text">neutral</text><text x="358" y="92" class="diagram-text">alkaline</text>
-      ${labelBubble(78, 113, "A")}${labelBubble(258, 113, "B")}${labelBubble(438, 113, "C")}
+      <line x1="58" y1="104" x2="470" y2="104" class="scale-guide"/>
+      <line x1="58" y1="177" x2="470" y2="177" class="scale-guide faint-guide"/>
+      ${labelBubble(82, 84, "A")}${labelBubble(260, 84, "B")}${labelBubble(438, 84, "C")}
     `);
   }
 
   function litmusTestSvg() {
     return diagramFrame("Litmus tests", `
-      <rect x="85" y="90" width="110" height="130" rx="18" class="beaker"/><text x="140" y="152" class="diagram-text">acid</text>
-      <rect x="325" y="90" width="110" height="130" rx="18" class="beaker"/><text x="380" y="152" class="diagram-text">alkali</text>
-      <rect x="116" y="58" width="24" height="92" rx="7" class="litmus-blue" transform="rotate(-12 128 104)"/>
-      <rect x="352" y="58" width="24" height="92" rx="7" class="litmus-red" transform="rotate(12 364 104)"/>
-      ${labelBubble(122, 55, "A")}${labelBubble(366, 55, "B")}
+      <rect x="72" y="84" width="142" height="138" rx="18" class="beaker"/><rect x="84" y="154" width="118" height="52" rx="12" class="acid-fill"/>
+      <rect x="306" y="84" width="142" height="138" rx="18" class="beaker"/><rect x="318" y="154" width="118" height="52" rx="12" class="alkali-fill"/>
+      <rect x="106" y="74" width="18" height="86" rx="6" class="litmus-blue" transform="rotate(-14 115 118)"/>
+      <path d="M109 142 l16 10" class="litmus-change-red"/>
+      <rect x="386" y="74" width="18" height="86" rx="6" class="litmus-red" transform="rotate(14 395 118)"/>
+      <path d="M402 142 l-16 10" class="litmus-change-blue"/>
+      ${labelBubble(143, 60, "A")}${labelBubble(377, 60, "B")}
     `);
   }
 
   function indicatorPaletteSvg() {
     return diagramFrame("Universal indicator", `
-      <rect x="95" y="98" width="330" height="88" rx="22" class="palette-bg"/>
-      <circle cx="145" cy="142" r="28" class="indicator-red"/><circle cx="205" cy="142" r="28" class="indicator-orange"/><circle cx="265" cy="142" r="28" class="indicator-green"/><circle cx="325" cy="142" r="28" class="indicator-blue"/><circle cx="385" cy="142" r="28" class="indicator-purple"/>
-      ${labelBubble(145, 90, "A")}${labelBubble(265, 90, "B")}${labelBubble(385, 90, "C")}
+      <rect x="84" y="90" width="352" height="104" rx="24" class="palette-bg"/>
+      <rect x="112" y="116" width="48" height="52" rx="18" class="indicator-red"/>
+      <rect x="174" y="116" width="48" height="52" rx="18" class="indicator-orange"/>
+      <rect x="236" y="116" width="48" height="52" rx="18" class="indicator-green"/>
+      <rect x="298" y="116" width="48" height="52" rx="18" class="indicator-blue"/>
+      <rect x="360" y="116" width="48" height="52" rx="18" class="indicator-purple"/>
+      <line x1="112" y1="176" x2="408" y2="176" class="scale-guide faint-guide"/>
+      ${labelBubble(136, 86, "A")}${labelBubble(260, 86, "B")}${labelBubble(384, 86, "C")}
     `);
   }
 
   function neutralisationSetupSvg() {
     return diagramFrame("Neutralisation practical", `
-      <rect x="78" y="72" width="90" height="135" rx="16" class="beaker acid-fill"/><text x="123" y="226" class="small-label">acid</text>
-      <rect x="214" y="68" width="92" height="140" rx="16" class="beaker alkali-fill"/><text x="260" y="226" class="small-label">alkali + indicator</text>
-      <path d="M355 72 h42 l-12 145 h-18 z" class="burette"/><line x1="376" y1="217" x2="376" y2="237" class="drip"/>
-      <circle cx="376" cy="244" r="5" class="drip-dot"/>
-      ${labelBubble(123, 54, "A")}${labelBubble(260, 52, "B")}${labelBubble(376, 52, "C")}
+      <rect x="58" y="212" width="404" height="14" rx="7" class="bench-line"/>
+      <path d="M124 80 h34 v116 h-34" class="burette"/><line x1="141" y1="196" x2="141" y2="214" class="drip"/><circle cx="141" cy="222" r="4.5" class="drip-dot"/>
+      <path d="M225 88 h54 l26 90 q-26 24 -80 0 z" class="flask"/>
+      <ellipse cx="252" cy="178" rx="38" ry="14" class="neutral-fill"/>
+      <rect x="92" y="116" width="52" height="72" rx="10" class="dropper"/>
+      <circle cx="118" cy="198" r="5" class="indicator-purple"/>
+      <rect x="354" y="116" width="88" height="72" rx="14" class="beaker"/><rect x="364" y="152" width="68" height="26" rx="9" class="alkali-fill"/>
+      <path d="M142 228 Q196 150 252 108" class="guide-arc"/>
+      ${labelBubble(118, 92, "A")}${labelBubble(252, 66, "B")}${labelBubble(141, 58, "C")}${labelBubble(398, 92, "D")}
     `);
   }
 
   function acidSafetyMistakeSvg() {
-    return diagramFrame("Spot the safety mistake", `
-      <circle cx="165" cy="94" r="34" class="face"/><path d="M136 78 q28 -40 58 0" class="hair"/>
-      <path d="M130 210 q35 -72 70 0" class="labcoat"/>
-      <path d="M250 118 l95 -35 l14 33 l-94 35 z" class="acid-bottle"/><text x="304" y="113" class="small-label">acid</text>
-      <rect x="340" y="148" width="84" height="76" rx="14" class="beaker acid-fill"/>
-      <path d="M210 145 C250 138, 282 132, 334 120" class="splash"/>
-      ${labelBubble(165, 52, "!")}
+    return diagramFrame("Lab safety scene", `
+      <circle cx="160" cy="92" r="34" class="face"/><path d="M130 76 q30 -42 62 0" class="hair"/>
+      <path d="M128 210 q34 -74 72 0" class="labcoat"/><path d="M132 106 q28 18 58 0" class="no-goggles"/>
+      <path d="M248 116 l96 -36 l14 34 l-94 36 z" class="acid-bottle"/><text x="304" y="113" class="small-label">acid</text>
+      <rect x="340" y="148" width="84" height="76" rx="14" class="beaker"/><rect x="350" y="184" width="64" height="26" rx="8" class="acid-fill"/>
+      <path d="M210 145 C250 138, 282 132, 334 120" class="splash"/><circle cx="226" cy="141" r="4" class="drip-dot"/><circle cx="252" cy="135" r="4" class="drip-dot"/>
+      ${labelBubble(160, 48, "A")}${labelBubble(304, 72, "B")}${labelBubble(383, 126, "C")}
     `);
   }
 
   function indicatorMistakeSvg() {
-    return diagramFrame("Spot the method mistake", `
-      <rect x="105" y="86" width="118" height="126" rx="18" class="beaker acid-fill"/><text x="164" y="235" class="small-label">acid</text>
-      <rect x="292" y="80" width="34" height="112" rx="10" class="dropper"/><circle cx="309" cy="206" r="8" class="indicator-purple"/>
-      <text x="300" y="230" class="small-label">too much indicator</text>
+    return diagramFrame("Practical method", `
+      <rect x="105" y="86" width="118" height="126" rx="18" class="beaker"/><rect x="116" y="148" width="96" height="46" rx="10" class="acid-fill"/>
+      <rect x="292" y="78" width="34" height="112" rx="10" class="dropper"/>
+      <circle cx="309" cy="202" r="8" class="indicator-purple"/><circle cx="316" cy="220" r="8" class="indicator-purple"/><circle cx="300" cy="238" r="8" class="indicator-purple"/>
       <path d="M330 120 C370 138, 386 160, 400 188" class="splash"/>
-      ${labelBubble(309, 54, "!")}
+      ${labelBubble(164, 62, "A")}${labelBubble(309, 54, "B")}${labelBubble(396, 168, "C")}
     `);
   }
 
   function evaporationDishSvg() {
     return diagramFrame("Making salt crystals", `
-      <ellipse cx="250" cy="140" rx="125" ry="42" class="dish"/><path d="M125 140 q125 90 250 0" class="dish"/>
-      <path d="M160 145 q90 42 180 0" class="solution"/>
-      <path d="M210 92 q-18 -30 0 -52 M260 94 q-18 -30 0 -52 M310 92 q-18 -30 0 -52" class="steam"/>
-      ${labelBubble(250, 180, "A")}
+      <line x1="156" y1="198" x2="344" y2="198" class="bench-line"/>
+      <line x1="192" y1="198" x2="168" y2="226" class="support-line"/><line x1="308" y1="198" x2="332" y2="226" class="support-line"/><line x1="168" y1="226" x2="332" y2="226" class="support-line"/>
+      <ellipse cx="250" cy="142" rx="114" ry="28" class="dish"/><path d="M136 142 q114 44 228 0" class="dish"/>
+      <path d="M172 146 q78 26 156 0" class="solution"/>
+      <path d="M224 226 q12 -22 0 -44 q22 12 26 40 q18 -18 2 -40" class="flame"/>
+      <path d="M216 108 q-12 -22 0 -38 M250 100 q-12 -22 0 -38 M284 108 q-12 -22 0 -38" class="steam"/>
+      ${labelBubble(250, 176, "A")}
     `);
   }
 
   function dilutionMethodSvg() {
-    return diagramFrame("Diluting acid", `
-      <rect x="110" y="92" width="118" height="128" rx="18" class="beaker water-fill"/><text x="169" y="238" class="small-label">water</text>
-      <rect x="302" y="52" width="78" height="142" rx="14" class="beaker acid-fill" transform="rotate(18 341 123)"/><text x="350" y="230" class="small-label">acid added slowly</text>
-      <path d="M285 120 C255 130, 232 146, 205 168" class="drip"/>
-      ${labelBubble(169, 74, "A")}${labelBubble(343, 46, "B")}
+    return diagramFrame("Dilution method", `
+      <rect x="98" y="92" width="138" height="128" rx="18" class="beaker"/><rect x="110" y="152" width="114" height="52" rx="10" class="water-fill"/>
+      <rect x="330" y="58" width="74" height="132" rx="14" class="beaker" transform="rotate(20 367 124)"/><rect x="341" y="112" width="50" height="42" rx="8" class="acid-fill" transform="rotate(20 367 124)"/>
+      <path d="M308 124 C274 138, 244 150, 211 170" class="drip"/><circle cx="275" cy="140" r="5" class="drip-dot"/><circle cx="246" cy="156" r="5" class="drip-dot"/><circle cx="221" cy="170" r="5" class="drip-dot"/>
+      <path d="M112 206 H224" class="bench-line"/>
+      ${labelBubble(168, 74, "A")}${labelBubble(365, 48, "B")}
     `);
   }
 
   function elbowJointSvg() {
     return diagramFrame("Elbow joint", `
-      <path d="M110 130 C185 105, 250 122, 315 86" class="bone"/>
-      <path d="M145 176 C220 144, 278 162, 398 134" class="bone"/>
-      <ellipse cx="248" cy="138" rx="45" ry="34" class="cartilage"/>
-      <path d="M206 90 C228 118, 235 160, 218 195" class="ligament"/>
-      <path d="M300 90 C278 120, 272 158, 292 195" class="tendon"/>
-      ${labelBubble(248, 100, "A")}${labelBubble(196, 74, "B")}${labelBubble(314, 72, "C")}
+      <path d="M92 132 C164 104, 236 112, 302 86" class="bone"/>
+      <path d="M150 180 C226 146, 286 158, 424 128" class="bone"/>
+      <path d="M164 205 C235 177, 302 184, 426 154" class="bone secondary-bone"/>
+      <ellipse cx="258" cy="137" rx="45" ry="34" class="cartilage"/>
+      <path d="M202 88 C230 116, 236 166, 218 202" class="ligament"/>
+      <path d="M314 84 C286 118, 278 160, 298 200" class="tendon"/>
+      ${labelBubble(258, 98, "A")}${labelBubble(196, 72, "B")}${labelBubble(318, 70, "C")}
     `);
   }
 
@@ -1255,51 +1413,75 @@
   }
 
   function skeletonBasicSvg() {
-    return diagramFrame("Skeleton labels", `
-      <circle cx="260" cy="70" r="34" class="bone-fill"/><path d="M230 120 H290 L305 190 H215 Z" class="bone-fill"/>
-      <path d="M215 132 C170 118, 142 146, 120 185 M305 132 C350 118, 378 146, 400 185" class="bone"/>
-      <path d="M238 190 L215 235 M282 190 L305 235" class="bone"/>
-      <path d="M235 118 q25 28 50 0 M232 140 q28 25 56 0 M230 162 q30 22 60 0" class="rib-lines"/>
-      ${labelBubble(260, 30, "A")}${labelBubble(315, 154, "B")}${labelBubble(260, 118, "C")}
+    return diagramFrame("Skeleton diagram", `
+      <circle cx="260" cy="64" r="30" class="bone-fill"/><path d="M248 78 q12 10 24 0" class="rib-lines"/>
+      <path d="M260 98 V190" class="bone"/><path d="M222 118 C242 96 278 96 298 118 M220 142 C244 164 276 164 300 142 M224 164 C246 184 274 184 296 164" class="rib-lines"/>
+      <path d="M218 190 C242 170 278 170 302 190 C292 212 228 212 218 190Z" class="bone-fill"/>
+      <path d="M226 124 C176 126 145 154 122 190 M294 124 C344 126 375 154 398 190" class="bone"/>
+      <path d="M242 210 L212 244 M278 210 L308 244" class="bone"/>
+      ${labelBubble(260, 28, "A")}${labelBubble(314, 148, "B")}${labelBubble(260, 116, "C")}
     `);
   }
 
   function lungsDiaphragmSvg() {
     return diagramFrame("Breathing system", `
-      <path d="M260 64 V132" class="airway"/><path d="M260 92 C220 105, 205 140, 202 188" class="airway"/><path d="M260 92 C300 105, 315 140, 318 188" class="airway"/>
-      <path d="M207 116 C140 128, 138 220, 230 214 C244 180, 240 142, 207 116" class="lung-left"/>
-      <path d="M313 116 C380 128, 382 220, 290 214 C276 180, 280 142, 313 116" class="lung-right"/>
-      <path d="M165 218 Q260 250 355 218" class="diaphragm"/>
-      ${labelBubble(260, 58, "A")}${labelBubble(196, 126, "B")}${labelBubble(260, 238, "C")}
+      <path d="M260 56 V132" class="airway"/><path d="M260 90 C232 102, 220 116, 208 136" class="airway"/><path d="M260 90 C288 102, 300 116, 312 136" class="airway"/>
+      <path d="M202 112 C154 126, 146 222, 232 214 C244 180, 240 142, 202 112" class="lung-left"/>
+      <path d="M318 112 C366 126, 374 222, 288 214 C276 180, 280 142, 318 112" class="lung-right"/>
+      <path d="M170 90 C154 114, 148 142, 148 176 C148 196, 156 214, 170 228" class="chest-outline"/>
+      <path d="M350 90 C366 114, 372 142, 372 176 C372 196, 364 214, 350 228" class="chest-outline"/>
+      <path d="M182 104 C160 128, 160 200, 182 220 M338 104 C360 128, 360 200, 338 220" class="rib-lines"/>
+      <path d="M165 220 Q260 248 355 220" class="diaphragm"/>
+      <path d="M260 28 v24" class="drop-arrow" marker-end="url(#arrow)"/>
+      ${labelBubble(260, 54, "A")}${labelBubble(196, 126, "B")}${labelBubble(260, 238, "C")}
     `);
   }
 
   function alveolusGasExchangeSvg() {
     return diagramFrame("Gas exchange", `
-      <circle cx="248" cy="142" r="60" class="alveolus"/>
-      <path d="M325 82 C405 94, 420 190, 330 206 C292 212, 292 168, 326 162 C355 155, 356 118, 326 112 C292 106, 292 76, 325 82" class="capillary"/>
-      <path d="M224 116 C260 112, 288 106, 326 104" class="oxygen-arrow" marker-end="url(#arrow)"/>
-      <path d="M330 182 C296 180, 270 176, 232 166" class="co2-arrow" marker-end="url(#arrow)"/>
-      <text x="203" y="105" class="small-label">O₂</text><text x="250" y="196" class="small-label">CO₂</text>
-      ${labelBubble(248, 76, "A")}${labelBubble(384, 86, "B")}
+      <circle cx="228" cy="142" r="54" class="alveolus"/>
+      <circle cx="262" cy="118" r="28" class="alveolus secondary-alveolus"/>
+      <circle cx="270" cy="164" r="24" class="alveolus secondary-alveolus"/>
+      <path d="M334 80 C404 98, 412 184, 338 208 C314 216, 304 194, 316 176 C330 154, 330 132, 316 110 C304 92, 312 74, 334 80" class="capillary"/>
+      <circle cx="350" cy="108" r="8" class="capillary-cell"/><circle cx="362" cy="142" r="8" class="capillary-cell"/><circle cx="348" cy="176" r="8" class="capillary-cell"/>
+      <path d="M224 116 C256 110, 286 106, 324 106" class="oxygen-arrow" marker-end="url(#arrow)"/>
+      <path d="M330 180 C296 178, 270 172, 234 164" class="co2-arrow" marker-end="url(#arrow)"/>
+      <text x="198" y="106" class="small-label">O₂</text><text x="252" y="194" class="small-label">CO₂</text>
+      ${labelBubble(226, 74, "A")}${labelBubble(382, 86, "B")}
     `);
   }
 
   function bloodVesselsSvg() {
     return diagramFrame("Blood vessels", `
-      <rect x="68" y="102" width="116" height="74" rx="37" class="artery"/><rect x="82" y="122" width="88" height="34" rx="17" class="vessel-hole"/>
-      <rect x="204" y="112" width="116" height="54" rx="27" class="vein"/><rect x="218" y="125" width="88" height="28" rx="14" class="vessel-hole"/><path d="M250 114 l26 26 l-26 26" class="valve"/>
-      <path d="M350 90 C380 110, 380 150, 350 170 M376 90 C406 110, 406 150, 376 170 M402 90 C432 110, 432 150, 402 170" class="capillary-lines"/>
-      ${labelBubble(126, 82, "A")}${labelBubble(262, 90, "B")}${labelBubble(392, 80, "C")}
+      <g transform="translate(56,70)">
+        <circle cx="64" cy="72" r="54" class="artery-wall"/><circle cx="64" cy="72" r="28" class="vessel-hole"/>
+      </g>
+      <g transform="translate(208,80)">
+        <ellipse cx="66" cy="62" rx="58" ry="46" class="vein-wall"/><ellipse cx="66" cy="62" rx="36" ry="24" class="vessel-hole"/>
+        <path d="M50 46 q16 18 0 32 M82 46 q-16 18 0 32" class="valve"/>
+      </g>
+      <g transform="translate(370,86)">
+        <path d="M0 48 C26 28, 46 28, 76 48 M0 82 C26 62, 46 62, 76 82 M0 116 C26 96, 46 96, 76 116" class="capillary-lines"/>
+        <line x1="0" y1="48" x2="0" y2="116" class="capillary-lines"/><line x1="76" y1="48" x2="76" y2="116" class="capillary-lines"/>
+        <circle cx="18" cy="66" r="8" class="capillary-cell"/><circle cx="42" cy="100" r="8" class="capillary-cell"/><circle cx="60" cy="66" r="8" class="capillary-cell"/>
+      </g>
+      ${labelBubble(120, 56, "A")}${labelBubble(274, 56, "B")}${labelBubble(412, 56, "C")}
     `);
   }
 
   function reactionTimeRulerSvg() {
-    const ticks = Array.from({ length: 11 }, (_, i) => `<line x1="${190 + i * 16}" y1="80" x2="${190 + i * 16}" y2="${i % 5 === 0 ? 122 : 104}"/>`).join("");
+    const ticks = Array.from({ length: 16 }, (_, i) => {
+      const x = 168 + i * 14;
+      const long = i % 5 === 0;
+      return `<line x1="${x}" y1="82" x2="${x}" y2="${long ? 136 : 116}" class="ruler-tick"/>`;
+    }).join("");
+    const numbers = [0, 5, 10, 15].map((n, i) => `<text x="${168 + i * 70}" y="154" class="small-label">${n}</text>`).join("");
     return diagramFrame("Reaction time test", `
-      <rect x="174" y="62" width="190" height="72" rx="12" class="ruler"/>${ticks}<text x="210" y="150" class="small-label">ruler drop distance</text>
-      <path d="M260 180 c-40 4 -70 20 -85 44 M260 180 c40 4 70 20 85 44" class="hand"/>
-      ${labelBubble(274, 54, "A")}${labelBubble(260, 178, "B")}
+      <path d="M272 48 v42" class="drop-arrow" marker-end="url(#arrow)"/>
+      <rect x="156" y="74" width="226" height="76" rx="10" class="ruler"/>${ticks}${numbers}
+      <path d="M246 188 c-40 8 -74 28 -90 52" class="hand"/><path d="M274 188 c42 8 74 28 92 52" class="hand"/>
+      <path d="M248 182 h28" class="finger-gap"/>
+      ${labelBubble(274, 44, "A")}${labelBubble(262, 174, "B")}
     `);
   }
 
@@ -2108,9 +2290,10 @@
     if (correct) {
       state.progress.labWins = (state.progress.labWins || 0) + 1;
       saveProgress();
+      const teachingNote = game.success ? ` ${game.success}` : "";
       feedback.textContent = state.progress.calm
-        ? "Perfect labelling. Calm, careful, correct. 🌊"
-        : "Perfect labelling! Diagram boss defeated. 🧩🎆";
+        ? `Perfect labelling. Calm, careful, correct.${teachingNote} 🌊`
+        : `Perfect labelling! Diagram boss defeated.${teachingNote} 🧩🎆`;
       celebrate();
     } else {
       feedback.textContent = `Close. ${wrongTargets.length} label${wrongTargets.length === 1 ? "" : "s"} need another look.`;
@@ -2132,16 +2315,24 @@
   }
 
   function renderLabDiagram(kind) {
+    const imageDiagrams = {
+      skeleton: { src: "assets/visuals/lab-skeleton-basic.png", alt: "Full skeleton diagram for label practice." },
+      arm: { src: "assets/visuals/lab-arm-muscles.png", alt: "Arm anatomy diagram for label practice." },
+    };
+    if (imageDiagrams[kind]) return renderLabRaster(imageDiagrams[kind].src, imageDiagrams[kind].alt);
+
     const diagrams = {
-      skeleton: labSkeletonSvg,
-      arm: labArmSvg,
       lungs: labLungsSvg,
       symbols: labSymbolsSvg,
       "series-parallel": labSeriesParallelSvg,
       indicators: labIndicatorsSvg,
       "neutralisation-order": labNeutralisationOrderSvg,
     };
-    return (diagrams[kind] || labSkeletonSvg)();
+    return (diagrams[kind] || labLungsSvg)();
+  }
+
+  function renderLabRaster(src, alt) {
+    return `<img class="interactive-diagram-image" src="${escapeHtml(src)}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async">`;
   }
 
   function labSvg(title, inner, viewBox = "0 0 640 360") {
@@ -2155,32 +2346,33 @@
 
   function labSkeletonSvg() {
     return labSvg("Skeleton diagram", `
-      <circle cx="320" cy="64" r="28" class="lab-bone"/><line x1="320" y1="92" x2="320" y2="212" class="lab-bone-line"/>
-      <path d="M258 130 C288 104 352 104 382 130 M260 160 C292 184 348 184 380 160" class="lab-bone-line"/>
-      <path d="M278 218 C300 198 340 198 362 218 C350 240 290 240 278 218Z" class="lab-bone"/>
-      <line x1="280" y1="138" x2="214" y2="210" class="lab-bone-line"/><line x1="360" y1="138" x2="426" y2="210" class="lab-bone-line"/>
-      <line x1="300" y1="238" x2="270" y2="316" class="lab-bone-line"/><line x1="340" y1="238" x2="372" y2="316" class="lab-bone-line"/>
+      <circle cx="320" cy="58" r="28" class="lab-bone"/><path d="M308 70 q12 10 24 0" class="lab-ribs"/>
+      <path d="M320 90 V214" class="lab-bone-line"/>
+      <path d="M262 124 C292 94 348 94 378 124 M258 152 C290 178 350 178 382 152 M262 178 C292 204 348 204 378 178" class="lab-ribs"/>
+      <path d="M276 220 C300 198 340 198 364 220 C350 244 290 244 276 220Z" class="lab-bone"/>
+      <path d="M276 132 C226 124 196 154 170 206 M364 132 C414 124 444 154 470 206" class="lab-bone-line"/>
+      <path d="M302 242 L270 318 M338 242 L372 318" class="lab-bone-line"/>
     `);
   }
 
   function labArmSvg() {
     return labSvg("Elbow joint and muscles", `
-      <line x1="160" y1="190" x2="320" y2="190" class="lab-bone-line"/><line x1="322" y1="192" x2="492" y2="260" class="lab-bone-line"/>
-      <circle cx="320" cy="190" r="22" class="lab-joint"/>
-      <path d="M162 150 C225 95 300 120 332 170" class="lab-muscle-a"/>
-      <path d="M160 222 C230 254 292 242 326 208" class="lab-muscle-b"/>
-      <text x="222" y="330" class="lab-caption">Muscles work in pairs: one contracts while the other relaxes.</text>
+      <path d="M150 192 C220 176, 280 178, 326 190" class="lab-bone-line"/><path d="M326 190 C388 208, 446 238, 504 266" class="lab-bone-line"/>
+      <circle cx="326" cy="190" r="24" class="lab-joint"/>
+      <path d="M160 150 C230 92 302 114 342 172" class="lab-muscle-a"/>
+      <path d="M160 226 C236 260 304 244 344 208" class="lab-muscle-b"/>
+      <path d="M338 174 C356 160 370 156 388 160" class="lab-tendon-line"/><path d="M338 208 C360 222 380 230 402 234" class="lab-tendon-line"/>
     `);
   }
 
   function labLungsSvg() {
     return labSvg("Breathing system", `
-      <path d="M320 64 L320 148 M320 120 C278 136 250 184 252 238 M320 120 C362 136 390 184 388 238" class="lab-airway"/>
-      <path d="M294 142 C224 152 204 274 292 286 C318 242 318 188 294 142Z" class="lab-lung"/>
-      <path d="M346 142 C416 152 436 274 348 286 C322 242 322 188 346 142Z" class="lab-lung"/>
-      <path d="M204 288 Q320 332 436 288" class="lab-diaphragm"/>
-      <path d="M238 114 C166 176 176 282 242 320 M402 114 C474 176 464 282 398 320" class="lab-ribs"/>
-      <path d="M320 28 v36" class="lab-arrow" marker-end="url(#labArrow)"/>
+      <path d="M320 56 L320 146 M320 110 C286 126 268 144 252 170 M320 110 C354 126 372 144 388 170" class="lab-airway"/>
+      <path d="M292 136 C220 146 206 274 294 286 C320 238 320 184 292 136Z" class="lab-lung"/>
+      <path d="M348 136 C420 146 434 274 346 286 C320 238 320 184 348 136Z" class="lab-lung"/>
+      <path d="M226 104 C184 142 176 248 226 308 M414 104 C456 142 464 248 414 308" class="lab-ribs"/>
+      <path d="M206 286 Q320 330 434 286" class="lab-diaphragm"/>
+      <path d="M320 26 v30" class="lab-arrow" marker-end="url(#labArrow)"/>
       <defs><marker id="labArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="currentColor"/></marker></defs>
     `);
   }
@@ -2201,25 +2393,25 @@
       <text x="176" y="56" text-anchor="middle" class="lab-title">A</text><text x="464" y="56" text-anchor="middle" class="lab-title">B</text>
       <rect x="92" y="96" width="168" height="150" rx="20" class="wire-box"/><circle cx="150" cy="172" r="18" class="wire-fill"/><circle cx="205" cy="172" r="18" class="wire-fill"/>
       <rect x="380" y="96" width="168" height="150" rx="20" class="wire-box"/><line x1="380" y1="150" x2="548" y2="150" class="wire"/><line x1="380" y1="205" x2="548" y2="205" class="wire"/><circle cx="466" cy="150" r="17" class="wire-fill"/><circle cx="466" cy="205" r="17" class="wire-fill"/>
-      <text x="320" y="314" text-anchor="middle" class="lab-caption">Circuit A has one path. Circuit B has branches.</text>
     `);
   }
 
   function labIndicatorsSvg() {
     return labSvg("Indicators and pH", `
       <defs><linearGradient id="phGradient" x1="0" x2="1"><stop offset="0" stop-color="#ef4444"/><stop offset="0.5" stop-color="#22c55e"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs>
-      <rect x="108" y="116" width="70" height="104" rx="12" class="beaker"/><rect x="118" y="168" width="50" height="42" rx="8" class="acid-fill"/>
-      <rect x="285" y="116" width="70" height="104" rx="12" class="beaker"/><rect x="295" y="168" width="50" height="42" rx="8" class="neutral-fill"/>
-      <rect x="462" y="116" width="70" height="104" rx="12" class="beaker"/><rect x="472" y="168" width="50" height="42" rx="8" class="alkali-fill"/>
-      <rect x="128" y="250" width="384" height="28" rx="14" class="ph-track"/><text x="130" y="306" class="lab-caption">pH 1</text><text x="315" y="306" class="lab-caption">pH 7</text><text x="484" y="306" class="lab-caption">pH 14</text>
+      <rect x="100" y="112" width="78" height="108" rx="14" class="beaker"/><rect x="112" y="168" width="54" height="40" rx="8" class="acid-fill"/>
+      <rect x="281" y="112" width="78" height="108" rx="14" class="beaker"/><rect x="293" y="168" width="54" height="40" rx="8" class="neutral-fill"/>
+      <rect x="462" y="112" width="78" height="108" rx="14" class="beaker"/><rect x="474" y="168" width="54" height="40" rx="8" class="alkali-fill"/>
+      <rect x="126" y="248" width="388" height="30" rx="15" class="ph-track"/>
+      <line x1="126" y1="282" x2="514" y2="282" class="lab-guide"/>
+      <text x="126" y="308" class="lab-caption">1</text><text x="309" y="308" text-anchor="middle" class="lab-caption">7</text><text x="514" y="308" text-anchor="end" class="lab-caption">14</text>
     `);
   }
 
   function labNeutralisationOrderSvg() {
-    const step = (x, n) => `<g transform="translate(${x},164)"><circle r="34" class="step-node"/><text y="9" text-anchor="middle" class="meter-letter">${n}</text></g>`;
+    const step = (x, n) => `<g transform="translate(${x},164)"><rect x="-30" y="-34" width="60" height="68" rx="18" class="step-panel"/><circle r="20" class="step-node"/><text y="9" text-anchor="middle" class="meter-letter">${n}</text></g>`;
     return labSvg("Neutralisation method order", `
-      <line x1="94" y1="164" x2="546" y2="164" class="lab-bone-line"/>${step(94,1)}${step(207,2)}${step(320,3)}${step(433,4)}${step(546,5)}
-      <text x="320" y="276" text-anchor="middle" class="lab-caption">Make a neutral solution first, then evaporate carefully to obtain crystals.</text>
+      <line x1="94" y1="164" x2="546" y2="164" class="lab-guide"/>${step(94,1)}${step(207,2)}${step(320,3)}${step(433,4)}${step(546,5)}
     `);
   }
 
@@ -2460,67 +2652,58 @@
     return `
       <svg class="circuit-builder-svg" viewBox="${viewBox}" role="img" aria-label="${escapeHtml(title)}">
         <rect x="14" y="14" width="692" height="352" rx="34" class="builder-bg"/>
-        <text x="36" y="48" class="builder-title">${escapeHtml(title)}</text>
+        <text x="36" y="48" class="builder-title">Circuit board</text>
         ${inner}
       </svg>
     `;
   }
 
   function circuitBuilderSimpleLoop() {
-    return circuitBuilderSvg("Simple circuit loop", `
+    return circuitBuilderSvg("Simple circuit board", `
       <path d="M132 214 H220 M330 214 H390 M500 214 H590 V104 H360 M260 104 H132 Z" class="builder-wire"/>
-      <text x="360" y="336" text-anchor="middle" class="builder-caption">A complete circuit needs a source, a closed path, and a component such as a lamp.</text>
     `);
   }
 
   function circuitBuilderMeterLoop() {
-    return circuitBuilderSvg("Current measurement circuit", `
+    return circuitBuilderSvg("Meter circuit board", `
       <path d="M116 220 H204 M310 220 H444 M560 220 H612 V104 H430 M350 104 H246 M150 104 H116 Z" class="builder-wire"/>
-      <text x="360" y="336" text-anchor="middle" class="builder-caption">Current is measured in series.</text>
     `);
   }
 
   function circuitBuilderParallelMeter() {
-    return circuitBuilderSvg("Voltage measurement circuit", `
+    return circuitBuilderSvg("Meter circuit board", `
       <path d="M116 220 H310 M470 220 H612 V104 H116 Z" class="builder-wire"/>
       <path d="M376 170 V286 H500 V170" class="builder-wire branch-wire"/>
-      <text x="360" y="336" text-anchor="middle" class="builder-caption">Voltage is measured across a component on a parallel branch.</text>
     `);
   }
 
   function circuitBuilderSeriesTwoLamps() {
-    return circuitBuilderSvg("Two lamps in series", `
+    return circuitBuilderSvg("Two-lamp circuit board", `
       <path d="M116 220 H204 M300 220 H390 M496 220 H612 V104 H116 Z" class="builder-wire"/>
-      <text x="360" y="336" text-anchor="middle" class="builder-caption">Series means one loop and one current path.</text>
     `);
   }
 
   function circuitBuilderParallelTwoLamps() {
-    return circuitBuilderSvg("Two lamps in parallel", `
+    return circuitBuilderSvg("Two-lamp circuit board", `
       <path d="M116 220 H252 M522 220 H612 V104 H116 Z" class="builder-wire"/>
       <path d="M280 158 H504 M280 278 H504" class="builder-wire branch-wire"/>
       <path d="M280 158 V278 M504 158 V278" class="builder-wire branch-wire"/>
-      <text x="360" y="336" text-anchor="middle" class="builder-caption">Parallel means branches and more than one path.</text>
     `);
   }
 
   function circuitBuilderAndSwitches() {
-    return circuitBuilderSvg("AND switch circuit", `
+    return circuitBuilderSvg("Switch circuit board", `
       <path d="M116 220 H204 M292 220 H368 M456 220 H612 V104 H116 Z" class="builder-wire"/>
-      <text x="360" y="336" text-anchor="middle" class="builder-caption">AND: both series switches must be closed.</text>
     `);
   }
 
   function circuitBuilderOrSwitches() {
-    return circuitBuilderSvg("OR switch circuit", `
+    return circuitBuilderSvg("Switch circuit board", `
       <path d="M116 220 H252 M522 220 H612 V104 H116 Z" class="builder-wire"/>
       <path d="M280 158 H504 M280 278 H504" class="builder-wire branch-wire"/>
       <path d="M280 158 V278 M504 158 V278" class="builder-wire branch-wire"/>
-      <text x="360" y="336" text-anchor="middle" class="builder-caption">OR: either parallel branch can complete the circuit.</text>
     `);
   }
-
-
 
   function filteredExamQuestions() {
     const search = state.search.trim().toLowerCase();

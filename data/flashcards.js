@@ -261,8 +261,8 @@ window.YEAR7_FLASHCARDS = [
     "unit": "7C Muscles and bones",
     "type": "Vocabulary",
     "front": "Relax",
-    "back": "Stop pulling strongly; become longer and thinner.",
-    "cue": "Pairs with contract."
+    "back": "Stop pulling strongly; can be stretched longer by the opposite muscle or load.",
+    "cue": "Muscles pull; they do not actively push themselves longer."
   },
   {
     "id": "card-034-7c-muscles-and-bones-antagonistic-pair",
@@ -478,7 +478,7 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Acid",
     "back": "Solution with pH less than 7; turns blue litmus red.",
-    "cue": "Lower pH means stronger/more acidic."
+    "cue": "Lower pH means more acidic."
   },
   {
     "id": "card-061-7f-acids-and-alkalis-alkali",
@@ -725,8 +725,8 @@ window.YEAR7_FLASHCARDS = [
     "unit": "7J Current electricity",
     "type": "Vocabulary",
     "front": "Charge",
-    "back": "Tiny particle/property that can move around a circuit.",
-    "cue": "The flow of charges is current."
+    "back": "Tiny charged particles, such as electrons, can move around a circuit.",
+    "cue": "The flow of charged particles is current."
   },
   {
     "id": "card-092-7j-current-electricity-current",
@@ -1633,7 +1633,7 @@ window.YEAR7_FLASHCARDS = [
     "cue": "Concentrated is not the same as strong acid at this level.",
     "choices": [
       "Contains a large amount of dissolved substance in a small amount of solvent.",
-      "Made less strong by adding water.",
+      "Made less concentrated by adding water.",
       "Neither acid nor alkali.",
       "A dye that always stays the same colour."
     ]
@@ -2388,12 +2388,12 @@ window.YEAR7_FLASHCARDS = [
     "visual": "ph-scale"
   },
   {
-    "id": "card-227-7f-acids-and-alkalis-on-the-ph-scale-which-label-shows-the-s",
+    "id": "card-227-7f-acids-and-alkalis-on-the-ph-scale-which-label-shows-the-m",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "On the pH scale, which label shows the strongest alkali?",
+    "front": "On the pH scale, which label shows the most alkaline solution?",
     "back": "C",
-    "cue": "The highest pH values are the strongest alkalis.",
+    "cue": "The highest pH values are the most alkaline.",
     "choices": [
       "C",
       "A",
@@ -2587,10 +2587,10 @@ window.YEAR7_FLASHCARDS = [
     "unit": "7F Acids and alkalis",
     "type": "Spot the mistake",
     "front": "A student says: “pH 1 is a strong alkali.” What is wrong?",
-    "back": "pH 1 is a strong acid.",
-    "cue": "Low pH means acidic, high pH means alkaline.",
+    "back": "pH 1 is very acidic.",
+    "cue": "Low pH means acidic; high pH means alkaline.",
     "choices": [
-      "pH 1 is a strong acid.",
+      "pH 1 is very acidic.",
       "pH 1 is neutral.",
       "pH 1 is the strongest alkali.",
       "pH only applies to electricity."
@@ -2896,5 +2896,1220 @@ window.YEAR7_FLASHCARDS = [
       "Cartilage carries oxygen."
     ],
     "visual": "elbow-joint"
+  },
+  {
+    "id": "card-261-7c-muscles-and-bones-trachea",
+    "unit": "7C Muscles and bones",
+    "type": "Vocabulary",
+    "front": "Trachea",
+    "back": "The tube that carries air from the mouth and nose down towards the lungs.",
+    "cue": "Also called the windpipe."
+  },
+  {
+    "id": "card-262-7c-muscles-and-bones-bronchi",
+    "unit": "7C Muscles and bones",
+    "type": "Vocabulary",
+    "front": "Bronchi",
+    "back": "The two main tubes that carry air from the trachea into the lungs.",
+    "cue": "Each bronchus goes into one lung."
+  },
+  {
+    "id": "card-263-7c-muscles-and-bones-lungs",
+    "unit": "7C Muscles and bones",
+    "type": "Vocabulary",
+    "front": "Lungs",
+    "back": "Organs where gas exchange happens: oxygen enters the blood and carbon dioxide leaves the blood.",
+    "cue": "The lungs are protected by the rib cage."
+  },
+  {
+    "id": "card-264-7c-muscles-and-bones-which-organ-is-the-main-site-of-gas-exc",
+    "unit": "7C Muscles and bones",
+    "type": "Multiple choice",
+    "front": "Which organ is the main site of gas exchange?",
+    "back": "lungs",
+    "cue": "Gas exchange means oxygen enters blood and carbon dioxide leaves blood.",
+    "choices": [
+      "lungs",
+      "stomach",
+      "skull",
+      "femur"
+    ],
+    "visual": "lungs-diaphragm"
+  },
+  {
+    "id": "card-265-7c-muscles-and-bones-what-happens-to-oxygen-during-gas-excha",
+    "unit": "7C Muscles and bones",
+    "type": "Multiple choice",
+    "front": "What happens to oxygen during gas exchange in the lungs?",
+    "back": "Oxygen moves from the air spaces into the blood.",
+    "cue": "Oxygen is then carried to body cells for respiration.",
+    "choices": [
+      "Oxygen moves from the air spaces into the blood.",
+      "Oxygen is made by the ribs.",
+      "Oxygen turns into plasma.",
+      "Oxygen leaves the blood and enters the lungs."
+    ],
+    "visual": "alveolus-gas-exchange"
+  },
+  {
+    "id": "card-266-7c-muscles-and-bones-what-happens-to-carbon-dioxide-during-g",
+    "unit": "7C Muscles and bones",
+    "type": "Multiple choice",
+    "front": "What happens to carbon dioxide during gas exchange in the lungs?",
+    "back": "Carbon dioxide moves from the blood into the air spaces in the lungs.",
+    "cue": "Carbon dioxide is a waste product of respiration and is exhaled.",
+    "choices": [
+      "Carbon dioxide moves from the blood into the air spaces in the lungs.",
+      "Carbon dioxide moves from air into the blood.",
+      "Carbon dioxide becomes oxygen in the lungs.",
+      "Carbon dioxide is made by bones."
+    ],
+    "visual": "alveolus-gas-exchange"
+  },
+  {
+    "id": "card-267-7c-muscles-and-bones-double-circulatory-system",
+    "unit": "7C Muscles and bones",
+    "type": "Vocabulary",
+    "front": "Double circulatory system",
+    "back": "A circulation system with two loops: heart to lungs to heart, and heart to body to heart.",
+    "cue": "Blood passes through the heart twice for each full circuit of the body."
+  },
+  {
+    "id": "card-268-7c-muscles-and-bones-what-are-the-two-loops-in-the-human-dou",
+    "unit": "7C Muscles and bones",
+    "type": "Self-test",
+    "front": "What are the two loops in the human double circulatory system?",
+    "back": "Heart → lungs → heart, and heart → body → heart.",
+    "cue": "The lung loop picks up oxygen; the body loop delivers oxygen to cells."
+  },
+  {
+    "id": "card-269-7c-muscles-and-bones-why-does-blood-go-to-the-lungs-in-one-l",
+    "unit": "7C Muscles and bones",
+    "type": "Multiple choice",
+    "front": "Why does blood go to the lungs in one loop of double circulation?",
+    "back": "To pick up oxygen and get rid of carbon dioxide.",
+    "cue": "Then oxygen-rich blood returns to the heart before being pumped to the body.",
+    "choices": [
+      "To pick up oxygen and get rid of carbon dioxide.",
+      "To make bones harder.",
+      "To digest food.",
+      "To change red blood cells into white blood cells."
+    ]
+  },
+  {
+    "id": "card-270-7c-muscles-and-bones-what-happens-to-the-chambers-of-the-hea",
+    "unit": "7C Muscles and bones",
+    "type": "Multiple choice",
+    "front": "What happens to the chambers of the heart when heart muscle contracts?",
+    "back": "The chambers get smaller and force blood out.",
+    "cue": "This pumping can be felt as a pulse in arteries.",
+    "choices": [
+      "The chambers get smaller and force blood out.",
+      "The chambers fill with air.",
+      "The chambers turn into capillaries.",
+      "The chambers stop blood moving."
+    ]
+  },
+  {
+    "id": "card-271-7c-muscles-and-bones-artery-adaptation",
+    "unit": "7C Muscles and bones",
+    "type": "Vocabulary",
+    "front": "Artery adaptation",
+    "back": "Arteries have thick, strong walls to carry blood away from the heart under pressure.",
+    "cue": "A pulse can be felt in arteries."
+  },
+  {
+    "id": "card-272-7c-muscles-and-bones-vein-adaptation",
+    "unit": "7C Muscles and bones",
+    "type": "Vocabulary",
+    "front": "Vein adaptation",
+    "back": "Veins carry blood back to the heart and have thinner walls than arteries.",
+    "cue": "At this level, remember: arteries away, veins back."
+  },
+  {
+    "id": "card-273-7c-muscles-and-bones-capillary-adaptation",
+    "unit": "7C Muscles and bones",
+    "type": "Vocabulary",
+    "front": "Capillary adaptation",
+    "back": "Capillaries are tiny blood vessels with very thin walls, often one cell thick, for exchange with tissues.",
+    "cue": "Thin walls let oxygen and nutrients leave the blood easily."
+  },
+  {
+    "id": "card-274-7c-muscles-and-bones-which-blood-vessel-has-walls-one-cell-t",
+    "unit": "7C Muscles and bones",
+    "type": "Multiple choice",
+    "front": "Which blood vessel has walls one cell thick for exchange?",
+    "back": "capillary",
+    "cue": "Capillaries link arteries and veins and allow substances to move in and out of blood.",
+    "choices": [
+      "capillary",
+      "artery",
+      "vein",
+      "tendon"
+    ],
+    "visual": "blood-vessels"
+  },
+  {
+    "id": "card-275-7c-muscles-and-bones-which-blood-vessels-carry-blood-away-fr",
+    "unit": "7C Muscles and bones",
+    "type": "Multiple choice",
+    "front": "Which blood vessels carry blood away from the heart?",
+    "back": "arteries",
+    "cue": "Artery starts with A: away from the heart.",
+    "choices": [
+      "arteries",
+      "veins",
+      "capillaries",
+      "ligaments"
+    ],
+    "visual": "blood-vessels"
+  },
+  {
+    "id": "card-276-7c-muscles-and-bones-which-blood-vessels-carry-blood-back-to",
+    "unit": "7C Muscles and bones",
+    "type": "Multiple choice",
+    "front": "Which blood vessels carry blood back to the heart?",
+    "back": "veins",
+    "cue": "Veins return blood to the heart.",
+    "choices": [
+      "veins",
+      "arteries",
+      "capillaries",
+      "tendons"
+    ],
+    "visual": "blood-vessels"
+  },
+  {
+    "id": "card-277-7c-muscles-and-bones-newton",
+    "unit": "7C Muscles and bones",
+    "type": "Vocabulary",
+    "front": "Newton",
+    "back": "The unit used to measure force; symbol N.",
+    "cue": "Example: a force of 10 N."
+  },
+  {
+    "id": "card-278-7c-muscles-and-bones-what-unit-is-force-measured-in",
+    "unit": "7C Muscles and bones",
+    "type": "Multiple choice",
+    "front": "What unit is force measured in?",
+    "back": "newtons",
+    "cue": "The symbol for newtons is N.",
+    "choices": [
+      "newtons",
+      "amps",
+      "volts",
+      "pH"
+    ]
+  },
+  {
+    "id": "card-279-7c-muscles-and-bones-quadriceps",
+    "unit": "7C Muscles and bones",
+    "type": "Vocabulary",
+    "front": "Quadriceps",
+    "back": "A group of muscles at the front of the thigh that can help straighten the leg.",
+    "cue": "Like biceps/triceps, leg muscles work in antagonistic pairs."
+  },
+  {
+    "id": "card-280-7c-muscles-and-bones-why-do-muscles-need-to-work-in-pairs",
+    "unit": "7C Muscles and bones",
+    "type": "Multiple choice",
+    "front": "Why do muscles need to work in pairs?",
+    "back": "Muscles can pull but cannot push.",
+    "cue": "One muscle contracts while the other relaxes.",
+    "choices": [
+      "Muscles can pull but cannot push.",
+      "Muscles can only push.",
+      "Bones contract by themselves.",
+      "Tendons make oxygen."
+    ]
+  },
+  {
+    "id": "card-281-7c-muscles-and-bones-scientific-question",
+    "unit": "7C Muscles and bones",
+    "type": "Vocabulary",
+    "front": "Scientific question",
+    "back": "A question that can be answered using evidence from observations or experiments.",
+    "cue": "Example: Does caffeine affect reaction time?"
+  },
+  {
+    "id": "card-282-7c-muscles-and-bones-non-scientific-question",
+    "unit": "7C Muscles and bones",
+    "type": "Vocabulary",
+    "front": "Non-scientific question",
+    "back": "A question that cannot be answered by a science experiment or measurement.",
+    "cue": "Example: Which sport is the most fun?"
+  },
+  {
+    "id": "card-283-7c-muscles-and-bones-ethical-question",
+    "unit": "7C Muscles and bones",
+    "type": "Vocabulary",
+    "front": "Ethical question",
+    "back": "A question about what people think is fair, right, or wrong.",
+    "cue": "Example: Is it right to test a medicine on animals?"
+  },
+  {
+    "id": "card-284-7c-muscles-and-bones-which-is-a-scientific-question",
+    "unit": "7C Muscles and bones",
+    "type": "Multiple choice",
+    "front": "Which is a scientific question?",
+    "back": "Does exercise change pulse rate?",
+    "cue": "It can be tested by measuring pulse before and after exercise.",
+    "choices": [
+      "Does exercise change pulse rate?",
+      "Is running the best sport?",
+      "Should everyone have to exercise?",
+      "Is it fair to ban fizzy drinks?"
+    ]
+  },
+  {
+    "id": "card-285-7c-muscles-and-bones-which-is-an-ethical-question",
+    "unit": "7C Muscles and bones",
+    "type": "Multiple choice",
+    "front": "Which is an ethical question?",
+    "back": "Is it fair to test a new drug on animals?",
+    "cue": "Ethical questions are about right/wrong and fairness.",
+    "choices": [
+      "Is it fair to test a new drug on animals?",
+      "What is pulse rate measured in?",
+      "Does caffeine affect reaction time?",
+      "How many bones are in the arm?"
+    ]
+  },
+  {
+    "id": "card-286-7c-muscles-and-bones-medicine",
+    "unit": "7C Muscles and bones",
+    "type": "Vocabulary",
+    "front": "Medicine",
+    "back": "A drug used to help prevent or treat disease or pain.",
+    "cue": "Examples include paracetamol and antibiotics such as penicillin."
+  },
+  {
+    "id": "card-287-7c-muscles-and-bones-recreational-drug",
+    "unit": "7C Muscles and bones",
+    "type": "Vocabulary",
+    "front": "Recreational drug",
+    "back": "A drug taken because people like its effects on the body, not mainly to treat illness.",
+    "cue": "Some recreational drugs are legal and some are illegal."
+  },
+  {
+    "id": "card-288-7c-muscles-and-bones-which-list-contains-stimulants-from-the",
+    "unit": "7C Muscles and bones",
+    "type": "Multiple choice",
+    "front": "Which list contains stimulants from the revision pack examples?",
+    "back": "caffeine, cocaine and ecstasy",
+    "cue": "Stimulants speed up the nervous system.",
+    "choices": [
+      "caffeine, cocaine and ecstasy",
+      "alcohol, heroin and solvents",
+      "paracetamol and penicillin",
+      "water and plasma"
+    ]
+  },
+  {
+    "id": "card-289-7c-muscles-and-bones-which-list-contains-depressants-from-th",
+    "unit": "7C Muscles and bones",
+    "type": "Multiple choice",
+    "front": "Which list contains depressants from the revision pack examples?",
+    "back": "alcohol, heroin and solvents",
+    "cue": "Depressants slow down the nervous system.",
+    "choices": [
+      "alcohol, heroin and solvents",
+      "caffeine, cocaine and ecstasy",
+      "paracetamol and penicillin",
+      "oxygen and glucose"
+    ]
+  },
+  {
+    "id": "card-290-7c-muscles-and-bones-which-two-examples-are-medicines-rather",
+    "unit": "7C Muscles and bones",
+    "type": "Multiple choice",
+    "front": "Which two examples are medicines rather than stimulants or depressants?",
+    "back": "paracetamol and penicillin",
+    "cue": "Paracetamol treats pain; penicillin is an antibiotic.",
+    "choices": [
+      "paracetamol and penicillin",
+      "caffeine and cocaine",
+      "alcohol and heroin",
+      "ecstasy and nicotine"
+    ]
+  },
+  {
+    "id": "card-291-7c-muscles-and-bones-addictive",
+    "unit": "7C Muscles and bones",
+    "type": "Vocabulary",
+    "front": "Addictive",
+    "back": "Able to make someone feel they need to keep taking a drug.",
+    "cue": "Addiction is one reason drug abuse can be dangerous."
+  },
+  {
+    "id": "card-292-7c-muscles-and-bones-give-one-short-term-and-one-long-term-e",
+    "unit": "7C Muscles and bones",
+    "type": "Self-test",
+    "front": "Give one short-term and one long-term effect that drugs can have.",
+    "back": "Short-term effects can include changed reaction time, mood, alertness or coordination; long-term abuse can damage organs or cause addiction.",
+    "cue": "A good answer names the drug where possible, for example alcohol can slow reactions and damage the liver if abused."
+  },
+  {
+    "id": "card-293-7c-muscles-and-bones-why-can-depressants-increase-accident-r",
+    "unit": "7C Muscles and bones",
+    "type": "Multiple choice",
+    "front": "Why can depressants increase accident risk?",
+    "back": "They slow nervous-system impulses and can increase reaction time.",
+    "cue": "Slower reactions make it harder to respond quickly.",
+    "choices": [
+      "They slow nervous-system impulses and can increase reaction time.",
+      "They make bones conduct electricity.",
+      "They neutralise stomach acid.",
+      "They make capillary walls thicker."
+    ]
+  },
+  {
+    "id": "card-294-7c-muscles-and-bones-why-must-new-medicines-be-tested-before",
+    "unit": "7C Muscles and bones",
+    "type": "Self-test",
+    "front": "Why must new medicines be tested before doctors use them widely?",
+    "back": "To check that they work, find a safe dose, and identify harmful side-effects.",
+    "cue": "Testing reduces risk before many people use the medicine."
+  },
+  {
+    "id": "card-295-7c-muscles-and-bones-a-student-says-all-drugs-are-illegal-an",
+    "unit": "7C Muscles and bones",
+    "type": "Spot the mistake",
+    "front": "A student says: “All drugs are illegal and harmful.” What is wrong?",
+    "back": "Some drugs are medicines that can help treat illness, but drugs can also have risks and side-effects.",
+    "cue": "Drug means chemical that affects the body; it does not always mean illegal drug."
+  },
+  {
+    "id": "card-296-7f-acids-and-alkalis-citric-acid",
+    "unit": "7F Acids and alkalis",
+    "type": "Vocabulary",
+    "front": "Citric acid",
+    "back": "An acid found in citrus fruits such as lemons and oranges.",
+    "cue": "Lemon juice is acidic."
+  },
+  {
+    "id": "card-297-7f-acids-and-alkalis-ethanoic-acid",
+    "unit": "7F Acids and alkalis",
+    "type": "Vocabulary",
+    "front": "Ethanoic acid",
+    "back": "The acid found in vinegar.",
+    "cue": "Vinegar is an everyday acidic liquid."
+  },
+  {
+    "id": "card-298-7f-acids-and-alkalis-red-cabbage-indicator",
+    "unit": "7F Acids and alkalis",
+    "type": "Vocabulary",
+    "front": "Red cabbage indicator",
+    "back": "A natural indicator made from red cabbage juice that changes colour in acids and alkalis.",
+    "cue": "It is useful for simple school tests of pH type."
+  },
+  {
+    "id": "card-299-7f-acids-and-alkalis-phenolphthalein",
+    "unit": "7F Acids and alkalis",
+    "type": "Vocabulary",
+    "front": "Phenolphthalein",
+    "back": "An indicator that is colourless in more acidic solutions and pink in more alkaline solutions.",
+    "cue": "Useful in neutralisation/titration demonstrations."
+  },
+  {
+    "id": "card-300-7f-acids-and-alkalis-methyl-orange",
+    "unit": "7F Acids and alkalis",
+    "type": "Vocabulary",
+    "front": "Methyl orange",
+    "back": "An indicator that is red in more acidic solutions and yellow in more alkaline solutions.",
+    "cue": "It gives different colours in acidic and alkaline solutions."
+  },
+  {
+    "id": "card-301-7f-acids-and-alkalis-which-everyday-liquid-is-acidic-because",
+    "unit": "7F Acids and alkalis",
+    "type": "Multiple choice",
+    "front": "Which everyday liquid is acidic because it contains ethanoic acid?",
+    "back": "vinegar",
+    "cue": "Ethanoic acid is the acid in vinegar.",
+    "choices": [
+      "vinegar",
+      "oven cleaner",
+      "washing powder",
+      "pure water"
+    ]
+  },
+  {
+    "id": "card-302-7f-acids-and-alkalis-which-everyday-liquid-is-acidic-because",
+    "unit": "7F Acids and alkalis",
+    "type": "Multiple choice",
+    "front": "Which everyday liquid is acidic because it contains citric acid?",
+    "back": "lemon juice",
+    "cue": "Citrus fruits contain citric acid.",
+    "choices": [
+      "lemon juice",
+      "toothpaste",
+      "washing powder",
+      "indigestion powder"
+    ]
+  },
+  {
+    "id": "card-303-7f-acids-and-alkalis-which-of-these-is-neutral-on-the-ph-sca",
+    "unit": "7F Acids and alkalis",
+    "type": "Multiple choice",
+    "front": "Which of these is neutral on the pH scale?",
+    "back": "pure water",
+    "cue": "Neutral solutions have pH 7.",
+    "choices": [
+      "pure water",
+      "stomach acid",
+      "oven cleaner",
+      "vinegar"
+    ],
+    "visual": "ph-scale"
+  },
+  {
+    "id": "card-304-7f-acids-and-alkalis-which-example-is-usually-alkaline",
+    "unit": "7F Acids and alkalis",
+    "type": "Multiple choice",
+    "front": "Which example is usually alkaline?",
+    "back": "toothpaste",
+    "cue": "Toothpaste is mildly alkaline and helps neutralise acids in the mouth.",
+    "choices": [
+      "toothpaste",
+      "vinegar",
+      "lemon juice",
+      "fizzy drink"
+    ]
+  },
+  {
+    "id": "card-305-7f-acids-and-alkalis-which-example-is-a-strongly-alkaline-ho",
+    "unit": "7F Acids and alkalis",
+    "type": "Multiple choice",
+    "front": "Which example is a strongly alkaline household cleaner?",
+    "back": "oven cleaner",
+    "cue": "Oven cleaner is shown near the high-pH end in the revision pack.",
+    "choices": [
+      "oven cleaner",
+      "milk",
+      "fizzy drink",
+      "lemon juice"
+    ],
+    "visual": "ph-scale"
+  },
+  {
+    "id": "card-306-7f-acids-and-alkalis-which-drink-is-acidic-on-the-revision-p",
+    "unit": "7F Acids and alkalis",
+    "type": "Multiple choice",
+    "front": "Which drink is acidic on the revision pH scale examples?",
+    "back": "fizzy drink",
+    "cue": "Fizzy drinks are acidic.",
+    "choices": [
+      "fizzy drink",
+      "pure water",
+      "washing powder",
+      "oven cleaner"
+    ],
+    "visual": "ph-scale"
+  },
+  {
+    "id": "card-307-7f-acids-and-alkalis-which-substance-is-used-to-neutralise-e",
+    "unit": "7F Acids and alkalis",
+    "type": "Multiple choice",
+    "front": "Which substance is used to neutralise extra stomach acid in indigestion?",
+    "back": "indigestion powder or antacid",
+    "cue": "It contains a base/alkali that neutralises stomach acid.",
+    "choices": [
+      "indigestion powder or antacid",
+      "vinegar",
+      "lemon juice",
+      "universal indicator"
+    ]
+  },
+  {
+    "id": "card-308-7f-acids-and-alkalis-a-hazard-symbol-shows-liquid-damaging-a",
+    "unit": "7F Acids and alkalis",
+    "type": "Visual challenge",
+    "front": "A hazard symbol shows liquid damaging a hand and metal. What does it mean?",
+    "back": "corrosive",
+    "cue": "Corrosive chemicals can damage skin, eyes and materials.",
+    "choices": [
+      "corrosive",
+      "flammable",
+      "explosive",
+      "neutral"
+    ]
+  },
+  {
+    "id": "card-309-7f-acids-and-alkalis-a-skull-and-crossbones-hazard-symbol-wa",
+    "unit": "7F Acids and alkalis",
+    "type": "Visual challenge",
+    "front": "A skull-and-crossbones hazard symbol warns that a chemical is what?",
+    "back": "toxic",
+    "cue": "Toxic chemicals can poison or seriously harm living things.",
+    "choices": [
+      "toxic",
+      "neutral",
+      "dilute",
+      "soluble"
+    ]
+  },
+  {
+    "id": "card-310-7f-acids-and-alkalis-an-exploding-bomb-hazard-symbol-warns-t",
+    "unit": "7F Acids and alkalis",
+    "type": "Visual challenge",
+    "front": "An exploding-bomb hazard symbol warns that a chemical is what?",
+    "back": "explosive",
+    "cue": "Explosive substances can burst violently.",
+    "choices": [
+      "explosive",
+      "alkaline",
+      "universal",
+      "insoluble"
+    ]
+  },
+  {
+    "id": "card-311-7f-acids-and-alkalis-an-exclamation-mark-hazard-symbol-is-of",
+    "unit": "7F Acids and alkalis",
+    "type": "Visual challenge",
+    "front": "An exclamation-mark hazard symbol is often used for what kind of chemical?",
+    "back": "irritant or harmful",
+    "cue": "It warns about chemicals that can irritate skin/eyes or cause harm.",
+    "choices": [
+      "irritant or harmful",
+      "neutral water",
+      "salt crystal",
+      "voltmeter"
+    ]
+  },
+  {
+    "id": "card-312-7f-acids-and-alkalis-a-dead-tree-and-fish-hazard-symbol-warn",
+    "unit": "7F Acids and alkalis",
+    "type": "Visual challenge",
+    "front": "A dead tree and fish hazard symbol warns about danger to what?",
+    "back": "the environment",
+    "cue": "It means the chemical can harm organisms or ecosystems.",
+    "choices": [
+      "the environment",
+      "the pH scale",
+      "a circuit branch",
+      "bone marrow"
+    ]
+  },
+  {
+    "id": "card-313-7f-acids-and-alkalis-what-colour-is-phenolphthalein-in-a-mor",
+    "unit": "7F Acids and alkalis",
+    "type": "Multiple choice",
+    "front": "What colour is phenolphthalein in a more acidic solution?",
+    "back": "colourless",
+    "cue": "Phenolphthalein is colourless in more acidic solutions.",
+    "choices": [
+      "colourless",
+      "pink",
+      "blue",
+      "yellow"
+    ]
+  },
+  {
+    "id": "card-314-7f-acids-and-alkalis-what-colour-is-phenolphthalein-in-a-mor",
+    "unit": "7F Acids and alkalis",
+    "type": "Multiple choice",
+    "front": "What colour is phenolphthalein in a more alkaline solution?",
+    "back": "pink",
+    "cue": "Phenolphthalein turns pink in more alkaline solutions.",
+    "choices": [
+      "pink",
+      "colourless",
+      "red",
+      "green"
+    ]
+  },
+  {
+    "id": "card-315-7f-acids-and-alkalis-what-colour-is-methyl-orange-in-a-more-",
+    "unit": "7F Acids and alkalis",
+    "type": "Multiple choice",
+    "front": "What colour is methyl orange in a more acidic solution?",
+    "back": "red",
+    "cue": "Methyl orange is red in more acidic solutions.",
+    "choices": [
+      "red",
+      "yellow",
+      "blue",
+      "pink"
+    ]
+  },
+  {
+    "id": "card-316-7f-acids-and-alkalis-what-colour-is-methyl-orange-in-a-more-",
+    "unit": "7F Acids and alkalis",
+    "type": "Multiple choice",
+    "front": "What colour is methyl orange in a more alkaline solution?",
+    "back": "yellow",
+    "cue": "Methyl orange is yellow in more alkaline solutions.",
+    "choices": [
+      "yellow",
+      "red",
+      "colourless",
+      "purple"
+    ]
+  },
+  {
+    "id": "card-317-7f-acids-and-alkalis-how-can-you-make-a-natural-indicator-fr",
+    "unit": "7F Acids and alkalis",
+    "type": "Practical method",
+    "front": "How can you make a natural indicator from red cabbage?",
+    "back": "Crush or chop red cabbage, mix it with a small amount of water, filter or decant the coloured liquid, then test it with known acids and alkalis.",
+    "cue": "Use known solutions first so you can compare the colour changes."
+  },
+  {
+    "id": "card-318-7f-acids-and-alkalis-how-should-you-use-an-indicator-to-test",
+    "unit": "7F Acids and alkalis",
+    "type": "Practical method",
+    "front": "How should you use an indicator to test an unknown liquid?",
+    "back": "Add a few drops of indicator to a small sample, observe the colour, and compare with known results or a pH colour chart.",
+    "cue": "Use small samples and wear eye protection."
+  },
+  {
+    "id": "card-319-7f-acids-and-alkalis-which-tool-gives-a-numerical-ph-reading",
+    "unit": "7F Acids and alkalis",
+    "type": "Multiple choice",
+    "front": "Which tool gives a numerical pH reading directly?",
+    "back": "pH meter",
+    "cue": "Universal indicator estimates pH from colour; a pH meter gives a reading.",
+    "choices": [
+      "pH meter",
+      "litmus paper",
+      "evaporating dish",
+      "ammeter"
+    ]
+  },
+  {
+    "id": "card-320-7f-acids-and-alkalis-what-does-universal-indicator-paper-nee",
+    "unit": "7F Acids and alkalis",
+    "type": "Multiple choice",
+    "front": "What does universal indicator paper need to be compared with?",
+    "back": "a pH colour chart",
+    "cue": "The colour chart converts the indicator colour into an estimated pH.",
+    "choices": [
+      "a pH colour chart",
+      "a circuit symbol",
+      "a pulse rate",
+      "a tendon"
+    ]
+  },
+  {
+    "id": "card-321-7f-acids-and-alkalis-hydrochloric-acid-sodium-hydroxide",
+    "unit": "7F Acids and alkalis",
+    "type": "Equation/relationship",
+    "front": "hydrochloric acid + sodium hydroxide → ?",
+    "back": "sodium chloride + water",
+    "cue": "Hydrochloric acid makes chloride salts."
+  },
+  {
+    "id": "card-322-7f-acids-and-alkalis-sulfuric-acid-magnesium-oxide",
+    "unit": "7F Acids and alkalis",
+    "type": "Equation/relationship",
+    "front": "sulfuric acid + magnesium oxide → ?",
+    "back": "magnesium sulfate + water",
+    "cue": "Sulfuric acid makes sulfate salts; magnesium oxide is a base."
+  },
+  {
+    "id": "card-323-7f-acids-and-alkalis-nitric-acid-zinc-oxide",
+    "unit": "7F Acids and alkalis",
+    "type": "Equation/relationship",
+    "front": "nitric acid + zinc oxide → ?",
+    "back": "zinc nitrate + water",
+    "cue": "Nitric acid makes nitrate salts; zinc oxide is a base."
+  },
+  {
+    "id": "card-324-7f-acids-and-alkalis-hydrochloric-acid-potassium-hydroxide",
+    "unit": "7F Acids and alkalis",
+    "type": "Equation/relationship",
+    "front": "hydrochloric acid + potassium hydroxide → ?",
+    "back": "potassium chloride + water",
+    "cue": "The metal name comes from the alkali/base; chloride comes from hydrochloric acid."
+  },
+  {
+    "id": "card-325-7f-acids-and-alkalis-sulfuric-acid-calcium-oxide",
+    "unit": "7F Acids and alkalis",
+    "type": "Equation/relationship",
+    "front": "sulfuric acid + calcium oxide → ?",
+    "back": "calcium sulfate + water",
+    "cue": "Acid + base makes salt + water."
+  },
+  {
+    "id": "card-326-7f-acids-and-alkalis-nitric-acid-sodium-hydroxide",
+    "unit": "7F Acids and alkalis",
+    "type": "Equation/relationship",
+    "front": "nitric acid + sodium hydroxide → ?",
+    "back": "sodium nitrate + water",
+    "cue": "Sodium comes from sodium hydroxide; nitrate comes from nitric acid."
+  },
+  {
+    "id": "card-327-7f-acids-and-alkalis-which-salt-is-made-from-sulfuric-acid-a",
+    "unit": "7F Acids and alkalis",
+    "type": "Multiple choice",
+    "front": "Which salt is made from sulfuric acid and copper oxide?",
+    "back": "copper sulfate",
+    "cue": "Copper comes from copper oxide; sulfate comes from sulfuric acid.",
+    "choices": [
+      "copper sulfate",
+      "copper chloride",
+      "sodium sulfate",
+      "magnesium nitrate"
+    ]
+  },
+  {
+    "id": "card-328-7f-acids-and-alkalis-which-salt-is-made-from-hydrochloric-ac",
+    "unit": "7F Acids and alkalis",
+    "type": "Multiple choice",
+    "front": "Which salt is made from hydrochloric acid and zinc oxide?",
+    "back": "zinc chloride",
+    "cue": "Zinc comes from zinc oxide; chloride comes from hydrochloric acid.",
+    "choices": [
+      "zinc chloride",
+      "zinc nitrate",
+      "sodium chloride",
+      "magnesium sulfate"
+    ]
+  },
+  {
+    "id": "card-329-7f-acids-and-alkalis-how-do-antacids-help-with-indigestion",
+    "unit": "7F Acids and alkalis",
+    "type": "Self-test",
+    "front": "How do antacids help with indigestion?",
+    "back": "They contain a base or alkali that neutralises extra stomach acid.",
+    "cue": "Neutralisation makes salt and water."
+  },
+  {
+    "id": "card-330-7f-acids-and-alkalis-why-can-toothpaste-help-protect-teeth-f",
+    "unit": "7F Acids and alkalis",
+    "type": "Self-test",
+    "front": "Why can toothpaste help protect teeth from acids?",
+    "back": "Toothpaste is mildly alkaline and helps neutralise acids in the mouth.",
+    "cue": "Acids in the mouth can attack teeth."
+  },
+  {
+    "id": "card-331-7f-acids-and-alkalis-why-might-farmers-add-a-base-to-soil",
+    "unit": "7F Acids and alkalis",
+    "type": "Self-test",
+    "front": "Why might farmers add a base to soil?",
+    "back": "To neutralise soil that is too acidic for crops.",
+    "cue": "This is an everyday neutralisation example."
+  },
+  {
+    "id": "card-332-7f-acids-and-alkalis-why-are-alkalis-used-with-acidic-gases-",
+    "unit": "7F Acids and alkalis",
+    "type": "Self-test",
+    "front": "Why are alkalis used with acidic gases from power stations?",
+    "back": "The alkali neutralises the acidic gases before they are released.",
+    "cue": "This reduces harm from acidic pollution."
+  },
+  {
+    "id": "card-333-7f-acids-and-alkalis-how-can-sulfuric-acid-help-remove-rust",
+    "unit": "7F Acids and alkalis",
+    "type": "Self-test",
+    "front": "How can sulfuric acid help remove rust?",
+    "back": "It reacts with iron oxide in rust to make iron sulfate, helping remove rust from the surface.",
+    "cue": "This is an acid + metal oxide reaction example."
+  },
+  {
+    "id": "card-334-7f-acids-and-alkalis-a-student-says-diluting-an-acid-makes-i",
+    "unit": "7F Acids and alkalis",
+    "type": "Spot the mistake",
+    "front": "A student says: “Diluting an acid makes it an alkali.” What is wrong?",
+    "back": "Diluting an acid makes it less concentrated and usually less acidic, but it does not turn it into an alkali.",
+    "cue": "The pH moves closer to 7 but stays below 7 unless a neutralisation reaction happens."
+  },
+  {
+    "id": "card-335-7f-acids-and-alkalis-a-student-says-a-concentrated-acid-is-a",
+    "unit": "7F Acids and alkalis",
+    "type": "Spot the mistake",
+    "front": "A student says: “A concentrated acid is always the same idea as a strong acid.” What is wrong?",
+    "back": "Concentrated means a lot of acid particles in a certain volume; strong acid is a different chemistry idea. In Year 7, use more acidic/less acidic when reading pH.",
+    "cue": "This app now avoids using strong when it only means low pH."
+  },
+  {
+    "id": "card-336-7j-current-electricity-physical-model",
+    "unit": "7J Current electricity",
+    "type": "Vocabulary",
+    "front": "Physical model",
+    "back": "A model that you can touch or build to represent something.",
+    "cue": "Example: a water/central-heating model of a circuit."
+  },
+  {
+    "id": "card-337-7j-current-electricity-abstract-model",
+    "unit": "7J Current electricity",
+    "type": "Vocabulary",
+    "front": "Abstract model",
+    "back": "A model that exists as an idea, drawing, equation or diagram rather than a touchable object.",
+    "cue": "Circuit diagrams and mental models can be abstract models."
+  },
+  {
+    "id": "card-338-7j-current-electricity-scientific-model",
+    "unit": "7J Current electricity",
+    "type": "Vocabulary",
+    "front": "Scientific model",
+    "back": "A simplified representation used to explain or predict how something works.",
+    "cue": "Models are useful but they are not exactly the same as the real thing."
+  },
+  {
+    "id": "card-339-7j-current-electricity-why-are-models-useful-when-learning-a",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Why are models useful when learning about electric circuits?",
+    "back": "Charges are too small to see, so models help us picture what is happening.",
+    "cue": "Models simplify invisible processes.",
+    "choices": [
+      "Charges are too small to see, so models help us picture what is happening.",
+      "Models prove circuits have no limits.",
+      "Models replace all experiments.",
+      "Models make current become pH 7."
+    ]
+  },
+  {
+    "id": "card-340-7j-current-electricity-in-the-central-heating-model-of-a-cir",
+    "unit": "7J Current electricity",
+    "type": "Self-test",
+    "front": "In the central-heating model of a circuit, what represents the cell or power supply?",
+    "back": "The boiler and pump.",
+    "cue": "They provide the push/energy, like the cell in a circuit."
+  },
+  {
+    "id": "card-341-7j-current-electricity-in-the-central-heating-model-of-a-cir",
+    "unit": "7J Current electricity",
+    "type": "Self-test",
+    "front": "In the central-heating model of a circuit, what represent the wires?",
+    "back": "The pipes.",
+    "cue": "Pipes carry water around the heating system; wires provide the path for charges."
+  },
+  {
+    "id": "card-342-7j-current-electricity-in-the-central-heating-model-of-a-cir",
+    "unit": "7J Current electricity",
+    "type": "Self-test",
+    "front": "In the central-heating model of a circuit, what represent the bulbs?",
+    "back": "The radiators.",
+    "cue": "Radiators transfer energy in the model, like bulbs transfer electrical energy to light and heat."
+  },
+  {
+    "id": "card-343-7j-current-electricity-why-is-the-central-heating-model-not-",
+    "unit": "7J Current electricity",
+    "type": "Spot the mistake",
+    "front": "Why is the central-heating model not exactly the same as an electric circuit?",
+    "back": "Water is not the same as electric charge, and the parts of the heating system do not behave exactly like circuit components.",
+    "cue": "A model is useful when it helps explain some features, but it always has limits."
+  },
+  {
+    "id": "card-344-7j-current-electricity-which-is-a-physical-model",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Which is a physical model?",
+    "back": "A touchable model circuit made with pipes and a pump.",
+    "cue": "Physical models can be handled or built.",
+    "choices": [
+      "A touchable model circuit made with pipes and a pump.",
+      "A circuit diagram in your mind.",
+      "The idea that voltage is a push.",
+      "A truth table written as logic only."
+    ]
+  },
+  {
+    "id": "card-345-7j-current-electricity-which-is-an-abstract-model",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Which is an abstract model?",
+    "back": "A circuit diagram used to represent a real circuit.",
+    "cue": "A diagram is a representation, not the actual circuit.",
+    "choices": [
+      "A circuit diagram used to represent a real circuit.",
+      "A plastic skeleton model.",
+      "A working lamp circuit.",
+      "A cardboard model of a house."
+    ]
+  },
+  {
+    "id": "card-346-7j-current-electricity-and-truth-table-switch-a-open-and-swi",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "AND truth table: switch A open and switch B closed. Will the lamp light?",
+    "back": "No, because both switches must be closed.",
+    "cue": "In an AND circuit, A and B both need to be closed.",
+    "choices": [
+      "No, because both switches must be closed.",
+      "Yes, because one switch is closed.",
+      "Yes, because B is closed.",
+      "The lamp becomes a voltmeter."
+    ],
+    "visual": "circuit-and-switches"
+  },
+  {
+    "id": "card-347-7j-current-electricity-and-truth-table-switch-a-closed-and-s",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "AND truth table: switch A closed and switch B closed. Will the lamp light?",
+    "back": "Yes, because both switches are closed.",
+    "cue": "Two closed series switches complete the circuit.",
+    "choices": [
+      "Yes, because both switches are closed.",
+      "No, because one switch must be open.",
+      "No, because current is used up.",
+      "Only if the pH is 7."
+    ],
+    "visual": "circuit-and-switches"
+  },
+  {
+    "id": "card-348-7j-current-electricity-or-truth-table-switch-a-open-and-swit",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "OR truth table: switch A open and switch B closed. Will the lamp light?",
+    "back": "Yes, because either branch can complete the circuit.",
+    "cue": "In an OR circuit, either switch can complete a path.",
+    "choices": [
+      "Yes, because either branch can complete the circuit.",
+      "No, because both switches must be closed.",
+      "No, because B is open.",
+      "Only if an ammeter is parallel."
+    ],
+    "visual": "circuit-or-switches"
+  },
+  {
+    "id": "card-349-7j-current-electricity-or-truth-table-switch-a-open-and-swit",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "OR truth table: switch A open and switch B open. Will the lamp light?",
+    "back": "No, because no branch is complete.",
+    "cue": "At least one branch switch must be closed in an OR circuit.",
+    "choices": [
+      "No, because no branch is complete.",
+      "Yes, because there are two branches.",
+      "Yes, because current splits.",
+      "The lamp is always on."
+    ],
+    "visual": "circuit-or-switches"
+  },
+  {
+    "id": "card-350-7j-current-electricity-voltage-division-in-series",
+    "unit": "7J Current electricity",
+    "type": "Vocabulary",
+    "front": "Voltage division in series",
+    "back": "In a series circuit, the supply voltage is shared between components.",
+    "cue": "More components in series share the energy transfer."
+  },
+  {
+    "id": "card-351-7j-current-electricity-voltage-in-parallel",
+    "unit": "7J Current electricity",
+    "type": "Vocabulary",
+    "front": "Voltage in parallel",
+    "back": "Components connected across the same cell in parallel get the same voltage as each other.",
+    "cue": "Each branch has its own path across the supply."
+  },
+  {
+    "id": "card-352-7j-current-electricity-in-a-series-circuit-with-two-identica",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "In a series circuit with two identical lamps, how is the supply voltage shared?",
+    "back": "It is shared between the lamps.",
+    "cue": "At Year 7 level, remember that series components share voltage.",
+    "choices": [
+      "It is shared between the lamps.",
+      "Each lamp gets twice the supply voltage.",
+      "Voltage is used up before the first lamp.",
+      "Voltage only exists in wires."
+    ],
+    "visual": "circuit-series"
+  },
+  {
+    "id": "card-353-7j-current-electricity-in-a-parallel-circuit-what-voltage-do",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "In a parallel circuit, what voltage do identical branches connected across the same cell get?",
+    "back": "The same voltage across each branch.",
+    "cue": "Parallel branches are connected across the same two points of the supply.",
+    "choices": [
+      "The same voltage across each branch.",
+      "Zero voltage in every branch.",
+      "Half the voltage only in the top branch.",
+      "Voltage becomes current."
+    ],
+    "visual": "circuit-parallel"
+  },
+  {
+    "id": "card-354-7j-current-electricity-electrical-shock",
+    "unit": "7J Current electricity",
+    "type": "Vocabulary",
+    "front": "Electrical shock",
+    "back": "Injury caused when electric current passes through the body.",
+    "cue": "Severe shocks can stop the heart working."
+  },
+  {
+    "id": "card-355-7j-current-electricity-electrical-burn",
+    "unit": "7J Current electricity",
+    "type": "Vocabulary",
+    "front": "Electrical burn",
+    "back": "A burn caused by electricity heating body tissue or materials.",
+    "cue": "Electricity can cause burns and fires if used unsafely."
+  },
+  {
+    "id": "card-356-7j-current-electricity-which-dangers-can-electricity-cause-i",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Which dangers can electricity cause if not used properly?",
+    "back": "fires, burns and shocks",
+    "cue": "A serious shock can stop the heart working.",
+    "choices": [
+      "fires, burns and shocks",
+      "only sour taste",
+      "only stronger bones",
+      "only neutralisation"
+    ]
+  },
+  {
+    "id": "card-357-7j-current-electricity-why-should-you-not-use-electrical-equ",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Why should you not use electrical equipment with wet hands?",
+    "back": "Water can help current pass through you, increasing shock risk.",
+    "cue": "Keep water away from mains electricity.",
+    "choices": [
+      "Water can help current pass through you, increasing shock risk.",
+      "Water makes wires insulating.",
+      "Wet hands reduce voltage to zero.",
+      "Wet hands make a circuit parallel."
+    ]
+  },
+  {
+    "id": "card-358-7j-current-electricity-why-should-sockets-not-be-overloaded",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Why should sockets not be overloaded?",
+    "back": "Too much current can overheat wires and cause a fire.",
+    "cue": "This is why fuses and circuit breakers are used.",
+    "choices": [
+      "Too much current can overheat wires and cause a fire.",
+      "It makes the pH too high.",
+      "It makes the circuit diagram abstract.",
+      "It makes bulbs become acids."
+    ]
+  },
+  {
+    "id": "card-359-7j-current-electricity-what-should-you-do-before-changing-co",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "What should you do before changing components in a school circuit?",
+    "back": "Switch off the power supply.",
+    "cue": "This reduces the risk of short circuits or shocks.",
+    "choices": [
+      "Switch off the power supply.",
+      "Add water to the wires.",
+      "Use the highest voltage setting first.",
+      "Hold both terminals with wet hands."
+    ]
+  },
+  {
+    "id": "card-360-7j-current-electricity-why-are-cells-safer-than-mains-electr",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Why are cells safer than mains electricity for school circuits and toys?",
+    "back": "Cells usually provide a much lower voltage.",
+    "cue": "Lower voltage reduces the risk of dangerous shocks.",
+    "choices": [
+      "Cells usually provide a much lower voltage.",
+      "Cells are always pH 7.",
+      "Cells contain no energy.",
+      "Cells make circuits incomplete."
+    ]
+  },
+  {
+    "id": "card-361-7j-current-electricity-what-does-a-fuse-do-if-the-current-ge",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "What does a fuse do if the current gets too high?",
+    "back": "It melts and breaks the circuit.",
+    "cue": "A fuse protects against too much current.",
+    "choices": [
+      "It melts and breaks the circuit.",
+      "It makes current larger.",
+      "It turns blue litmus red.",
+      "It measures voltage."
+    ]
+  },
+  {
+    "id": "card-362-7j-current-electricity-what-does-a-circuit-breaker-do-if-cur",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "What does a circuit breaker do if current gets too high?",
+    "back": "It cuts off the current.",
+    "cue": "Circuit breakers can be reset after they trip.",
+    "choices": [
+      "It cuts off the current.",
+      "It makes a salt.",
+      "It pumps blood.",
+      "It measures pH."
+    ]
+  },
+  {
+    "id": "card-363-7j-current-electricity-which-wire-colours-are-used-for-live-",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Which wire colours are used for live, neutral and earth in UK-style plugs?",
+    "back": "live brown, neutral blue, earth green/yellow",
+    "cue": "The earth wire works with the fuse for safety.",
+    "choices": [
+      "live brown, neutral blue, earth green/yellow",
+      "live blue, neutral brown, earth red",
+      "live green/yellow, neutral brown, earth blue",
+      "all wires are black"
+    ]
+  },
+  {
+    "id": "card-364-7j-current-electricity-which-wire-has-higher-resistance-if-t",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Which wire has higher resistance if the material and length are the same?",
+    "back": "a thin wire",
+    "cue": "Thin wires have higher resistance than thick wires.",
+    "choices": [
+      "a thin wire",
+      "a thick wire",
+      "both always have zero resistance",
+      "the wire with a pH meter"
+    ]
+  },
+  {
+    "id": "card-365-7j-current-electricity-what-happens-to-resistance-when-wire-",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "What happens to resistance when wire length increases, if material and thickness stay the same?",
+    "back": "resistance increases",
+    "cue": "Longer wires make it harder for charge to flow.",
+    "choices": [
+      "resistance increases",
+      "resistance decreases to zero",
+      "current becomes voltage",
+      "pH becomes neutral"
+    ]
+  },
+  {
+    "id": "card-366-7j-current-electricity-what-can-affect-the-resistance-of-a-w",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "What can affect the resistance of a wire?",
+    "back": "thickness, length and material",
+    "cue": "Thin/long wires usually have more resistance than thick/short wires of the same material.",
+    "choices": [
+      "thickness, length and material",
+      "only colour",
+      "only smell",
+      "only whether it is a medicine"
+    ]
+  },
+  {
+    "id": "card-367-7j-current-electricity-why-are-house-lights-usually-wired-in",
+    "unit": "7J Current electricity",
+    "type": "Self-test",
+    "front": "Why are house lights usually wired in parallel rather than series?",
+    "back": "Parallel wiring lets each light have its own branch, so lights can be switched independently and one broken lamp does not turn all the others off.",
+    "cue": "This matches the revision pack idea that branches stay on when another branch breaks."
+  },
+  {
+    "id": "card-368-7j-current-electricity-how-can-a-variable-resistor-control-a",
+    "unit": "7J Current electricity",
+    "type": "Self-test",
+    "front": "How can a variable resistor control a lamp or motor?",
+    "back": "Changing resistance changes the current, which can change lamp brightness or motor speed.",
+    "cue": "Higher resistance usually means lower current."
   }
 ];
