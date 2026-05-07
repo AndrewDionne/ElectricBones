@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#7c3aed" />
   <meta name="description" content="A fun Year 7 science flashcard app for end-of-year revision." />
-  <title>Year 7 Science Flashcards</title>
+  <title>Electric Bones · Year 7 Science Flashcards</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="stylesheet" href="styles.css" />
@@ -18,13 +18,16 @@
       <a class="brand" href="#top" aria-label="Year 7 Science Flashcards home">
         <span class="brand-mark" aria-hidden="true">⚗️</span>
         <span>
-          <strong>Science Quest</strong>
+          <strong>Electric Bones</strong>
           <small>Year 7 flashcards</small>
         </span>
       </a>
       <div class="top-actions">
         <button class="ghost-button" id="soundToggle" type="button" aria-pressed="true">🔊 Sound on</button>
         <button class="ghost-button" id="calmToggle" type="button" aria-pressed="false">🌙 Calm mode</button>
+        <button class="ghost-button" id="exportProgress" type="button">Export progress</button>
+        <label class="ghost-button import-label" for="importProgressFile">Import progress</label>
+        <input class="visually-hidden" id="importProgressFile" type="file" accept="application/json,.json" />
         <button class="ghost-button" id="resetProgress" type="button">Reset progress</button>
       </div>
     </nav>
@@ -32,12 +35,16 @@
     <section class="hero-grid" id="top">
       <div class="hero-copy">
         <p class="eyebrow">End-of-year revision</p>
-        <h1>Build science superpowers one card at a time.</h1>
-        <p class="lead">Practise muscles and bones, acids and alkalis, and current electricity with flip cards, quick quizzes, streaks, badges, and fireworks.</p>
+        <h1>Build science superpowers one card, diagram, and boss round at a time.</h1>
+        <p class="lead">Practise muscles and bones, acids and alkalis, and current electricity with flip cards, visual labs, quick quizzes, streaks, badges, and fireworks.</p>
         <div class="hero-buttons" role="group" aria-label="Main study modes">
           <button class="primary-button" data-set-mode="quiz" type="button">Start quiz 🚀</button>
           <button class="secondary-button" data-set-mode="study" type="button">Flip cards 🃏</button>
           <button class="secondary-button" data-set-mode="equations" type="button">Equation arena ⚡</button>
+          <button class="secondary-button" data-set-mode="visual" type="button">Visual lab 🔎</button>
+          <button class="secondary-button" data-set-mode="lab" type="button">Label lab 🧩</button>
+          <button class="secondary-button" data-set-mode="circuit" type="button">Circuit builder 🔌</button>
+          <button class="secondary-button" data-set-mode="exam" type="button">Exam coach 📝</button>
         </div>
       </div>
       <aside class="stats-panel" aria-label="Progress summary">
@@ -73,6 +80,11 @@
           <option value="Vocabulary">Vocabulary</option>
           <option value="Equation/relationship">Equations & relationships</option>
           <option value="Self-test">Self-test questions</option>
+          <option value="Multiple choice">Multiple choice questions</option>
+          <option value="Visual challenge">Visual challenge cards</option>
+          <option value="Practical method">Practical method cards</option>
+          <option value="Spot the mistake">Spot the mistake cards</option>
+          <option value="Exam-style question">Exam-style questions</option>
         </select>
 
         <label for="searchBox">Search cards</label>
@@ -84,7 +96,13 @@
         <button class="mode-button active" data-mode="study" type="button">🃏 Flip cards</button>
         <button class="mode-button" data-mode="quiz" type="button">🎯 Multiple choice</button>
         <button class="mode-button" data-mode="equations" type="button">⚡ Equation arena</button>
+        <button class="mode-button" data-mode="visual" type="button">🔎 Visual lab</button>
+        <button class="mode-button" data-mode="lab" type="button">🧩 Label lab</button>
+        <button class="mode-button" data-mode="circuit" type="button">🔌 Circuit builder</button>
+        <button class="mode-button" data-mode="exam" type="button">📝 Exam coach</button>
+        <button class="mode-button" data-mode="weak" type="button">🔁 Weak review</button>
         <button class="mode-button" data-mode="boss" type="button">🐉 Boss round</button>
+        <p class="mode-note">Visual lab uses diagram questions. Label lab and Circuit builder are interactive. Exam coach uses mark schemes. Weak review revisits missed cards.</p>
       </section>
 
       <section class="control-card achievements-card">
@@ -109,15 +127,19 @@
         <div class="progress-fill" id="progressFill"></div>
       </div>
 
+      <div class="card-meta-bar" id="cardMetaBar" aria-label="Current card details">
+        <span class="unit-badge" id="cardUnitBadge">Topic</span>
+        <span class="type-badge" id="cardTypeBadge">Card type</span>
+      </div>
+
       <article class="flashcard" id="flashcard" tabindex="0" aria-label="Flashcard. Press enter or space to flip.">
         <div class="card-face card-front">
-          <span class="card-tag" id="cardTag">Vocabulary</span>
-          <h3 id="cardFront">Loading…</h3>
+          <div class="card-visual hidden" id="cardVisual" aria-label="Question diagram"></div>
+          <h3 id="cardFront" data-autofit>Loading…</h3>
           <p id="frontHint">Tap the card to flip it.</p>
         </div>
         <div class="card-face card-back">
-          <span class="card-tag answer-tag">Answer</span>
-          <h3 id="cardBack">Loading…</h3>
+          <h3 id="cardBack" data-autofit>Loading…</h3>
           <p id="cardCue"></p>
         </div>
       </article>
@@ -126,6 +148,12 @@
         <div class="answer-grid" id="answerGrid"></div>
         <p class="feedback" id="feedback" aria-live="polite"></p>
       </section>
+
+      <section class="lab-panel hidden" id="labPanel" aria-label="Interactive label lab"></section>
+
+      <section class="circuit-panel hidden" id="circuitPanel" aria-label="Interactive circuit builder"></section>
+
+      <section class="exam-panel hidden" id="examPanel" aria-label="Exam coach practice"></section>
 
       <div class="button-row">
         <button class="danger-soft" id="needPracticeButton" type="button">Need practice</button>
