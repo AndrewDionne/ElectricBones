@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#7c3aed" />
+  <meta name="description" content="A fun Year 7 science flashcard app for end-of-year revision." />
+  <title>Year 7 Science Flashcards</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="fireworksCanvas" aria-hidden="true"></canvas>
+
+  <header class="hero">
+    <nav class="topbar" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Year 7 Science Flashcards home">
+        <span class="brand-mark" aria-hidden="true">⚗️</span>
+        <span>
+          <strong>Science Quest</strong>
+          <small>Year 7 flashcards</small>
+        </span>
+      </a>
+      <div class="top-actions">
+        <button class="ghost-button" id="soundToggle" type="button" aria-pressed="true">🔊 Sound on</button>
+        <button class="ghost-button" id="calmToggle" type="button" aria-pressed="false">🌙 Calm mode</button>
+        <button class="ghost-button" id="resetProgress" type="button">Reset progress</button>
+      </div>
+    </nav>
+
+    <section class="hero-grid" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">End-of-year revision</p>
+        <h1>Build science superpowers one card at a time.</h1>
+        <p class="lead">Practise muscles and bones, acids and alkalis, and current electricity with flip cards, quick quizzes, streaks, badges, and fireworks.</p>
+        <div class="hero-buttons" role="group" aria-label="Main study modes">
+          <button class="primary-button" data-set-mode="quiz" type="button">Start quiz 🚀</button>
+          <button class="secondary-button" data-set-mode="study" type="button">Flip cards 🃏</button>
+          <button class="secondary-button" data-set-mode="equations" type="button">Equation arena ⚡</button>
+        </div>
+      </div>
+      <aside class="stats-panel" aria-label="Progress summary">
+        <div class="mascot" aria-hidden="true">🧪</div>
+        <div>
+          <p class="panel-kicker">Today’s mission</p>
+          <h2 id="missionTitle">Answer 10 questions</h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card"><span id="xpValue">0</span><small>XP</small></div>
+          <div class="stat-card"><span id="scoreValue">0%</span><small>Accuracy</small></div>
+          <div class="stat-card"><span id="streakValue">0</span><small>Streak</small></div>
+          <div class="stat-card"><span id="masteredValue">0</span><small>Mastered</small></div>
+        </div>
+        <div class="level-meter" aria-label="Level progress">
+          <div class="level-meter-fill" id="levelMeter"></div>
+        </div>
+        <p class="level-note" id="levelNote">Earn XP by getting answers right.</p>
+      </aside>
+    </section>
+  </header>
+
+  <main class="app-shell">
+    <aside class="control-panel" aria-label="Study controls">
+      <section class="control-card">
+        <h2>Choose your quest</h2>
+        <label for="unitFilter">Topic</label>
+        <select id="unitFilter"></select>
+
+        <label for="typeFilter">Card type</label>
+        <select id="typeFilter">
+          <option value="all">All cards</option>
+          <option value="Vocabulary">Vocabulary</option>
+          <option value="Equation/relationship">Equations & relationships</option>
+          <option value="Self-test">Self-test questions</option>
+        </select>
+
+        <label for="searchBox">Search cards</label>
+        <input id="searchBox" type="search" placeholder="Try: pH, current, skeleton..." autocomplete="off" />
+      </section>
+
+      <section class="control-card mode-card">
+        <h2>Modes</h2>
+        <button class="mode-button active" data-mode="study" type="button">🃏 Flip cards</button>
+        <button class="mode-button" data-mode="quiz" type="button">🎯 Multiple choice</button>
+        <button class="mode-button" data-mode="equations" type="button">⚡ Equation arena</button>
+        <button class="mode-button" data-mode="boss" type="button">🐉 Boss round</button>
+      </section>
+
+      <section class="control-card achievements-card">
+        <h2>Badges</h2>
+        <div class="badges" id="badges" aria-live="polite"></div>
+      </section>
+    </aside>
+
+    <section class="workspace" aria-live="polite">
+      <div class="workspace-header">
+        <div>
+          <p class="panel-kicker" id="modeKicker">Flip cards</p>
+          <h2 id="workspaceTitle">Practise the card, then check the answer.</h2>
+        </div>
+        <div class="workspace-actions">
+          <button class="ghost-button" id="shuffleButton" type="button">Shuffle 🔀</button>
+          <button class="ghost-button" id="speakButton" type="button">Read aloud</button>
+        </div>
+      </div>
+
+      <div class="progress-strip" aria-label="Question progress">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <article class="flashcard" id="flashcard" tabindex="0" aria-label="Flashcard. Press enter or space to flip.">
+        <div class="card-face card-front">
+          <span class="card-tag" id="cardTag">Vocabulary</span>
+          <h3 id="cardFront">Loading…</h3>
+          <p id="frontHint">Tap the card to flip it.</p>
+        </div>
+        <div class="card-face card-back">
+          <span class="card-tag answer-tag">Answer</span>
+          <h3 id="cardBack">Loading…</h3>
+          <p id="cardCue"></p>
+        </div>
+      </article>
+
+      <section class="quiz-panel hidden" id="quizPanel" aria-label="Quiz answers">
+        <div class="answer-grid" id="answerGrid"></div>
+        <p class="feedback" id="feedback" aria-live="polite"></p>
+      </section>
+
+      <div class="button-row">
+        <button class="danger-soft" id="needPracticeButton" type="button">Need practice</button>
+        <button class="secondary-button" id="nextButton" type="button">Next card</button>
+        <button class="primary-button" id="knowButton" type="button">I knew it ✨</button>
+      </div>
+
+      <section class="review-box">
+        <h3>Quick study tip</h3>
+        <p id="studyTip">Say the answer out loud before flipping the card. This makes your brain work harder.</p>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made for Year 7 science revision. Works as a static GitHub Pages site.</p>
+    <p class="keyboard-help">Keyboard: <kbd>Space</kbd> flip, <kbd>1</kbd>-<kbd>4</kbd> answer, <kbd>N</kbd> next.</p>
+  </footer>
+
+  <template id="badgeTemplate">
+    <span class="badge"></span>
+  </template>
+
+  <script src="data/flashcards.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
