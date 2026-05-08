@@ -2489,8 +2489,7 @@ window.YEAR7_FLASHCARDS = [
       "Ammeter.",
       "Cartilage.",
       "Red blood cells."
-    ],
-    "visual": "neutralisation-setup"
+    ]
   },
   {
     "id": "card-234-7f-acids-and-alkalis-in-the-neutralisation-setup-what-reacti",
@@ -2504,8 +2503,7 @@ window.YEAR7_FLASHCARDS = [
       "Glucose + oxygen → carbon dioxide + water.",
       "Current = voltage ÷ resistance.",
       "Bone + tendon → cartilage."
-    ],
-    "visual": "neutralisation-setup"
+    ]
   },
   {
     "id": "card-235-7f-acids-and-alkalis-what-is-the-purpose-of-heating-the-solu",
@@ -2519,8 +2517,7 @@ window.YEAR7_FLASHCARDS = [
       "To make current flow.",
       "To make the pH always 14.",
       "To contract the biceps."
-    ],
-    "visual": "evaporation-dish"
+    ]
   },
   {
     "id": "card-236-7f-acids-and-alkalis-what-is-the-main-safety-mistake-in-the-",
@@ -2564,8 +2561,7 @@ window.YEAR7_FLASHCARDS = [
       "Add water quickly to concentrated acid.",
       "Use no eye protection.",
       "Heat it until it splashes."
-    ],
-    "visual": "dilution-method"
+    ]
   },
   {
     "id": "card-239-7f-acids-and-alkalis-why-should-you-add-alkali-slowly-during",
@@ -2579,8 +2575,7 @@ window.YEAR7_FLASHCARDS = [
       "To make the bulb brighter.",
       "To stop muscles contracting.",
       "To make current flow backwards."
-    ],
-    "visual": "neutralisation-setup"
+    ]
   },
   {
     "id": "card-240-7f-acids-and-alkalis-a-student-says-ph-1-is-a-strong-alkali-",
@@ -2738,12 +2733,12 @@ window.YEAR7_FLASHCARDS = [
     "type": "Visual challenge",
     "front": "In the breathing diagram, which label shows the trachea/airway?",
     "back": "A",
-    "cue": "Air travels down the trachea towards the lungs.",
+    "cue": "Label A points to the trachea, the airway carrying air to and from the lungs.",
     "choices": [
       "A",
       "B",
       "C",
-      "None of them"
+      "D"
     ],
     "visual": "lungs-diaphragm"
   },
@@ -2753,12 +2748,12 @@ window.YEAR7_FLASHCARDS = [
     "type": "Visual challenge",
     "front": "In the breathing diagram, which label shows a lung?",
     "back": "B",
-    "cue": "The lungs are where gas exchange happens.",
+    "cue": "Label B points to a lung.",
     "choices": [
       "B",
       "A",
       "C",
-      "The pH scale"
+      "D"
     ],
     "visual": "lungs-diaphragm"
   },
@@ -2767,88 +2762,83 @@ window.YEAR7_FLASHCARDS = [
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
     "front": "In the breathing diagram, which label shows the diaphragm?",
-    "back": "C",
-    "cue": "The diaphragm moves down when you breathe in.",
+    "back": "D",
+    "cue": "Label D points to the diaphragm, the muscle under the lungs.",
     "choices": [
-      "C",
+      "D",
       "A",
       "B",
-      "A tendon"
+      "C"
     ],
     "visual": "lungs-diaphragm"
   },
   {
-    "id": "card-253-7c-muscles-and-bones-in-the-gas-exchange-diagram-where-does-",
+    "id": "card-253-7c-muscles-and-bones-in-the-gas-exchange-diagram-which-label",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "In the gas exchange diagram, where does oxygen move?",
-    "back": "From the air sac into the blood.",
-    "cue": "Oxygen diffuses from the alveolus into capillaries.",
-    "choices": [
-      "From the air sac into the blood.",
-      "From the blood into the air sac only.",
-      "From cartilage into bone.",
-      "From alkali into acid."
-    ],
-    "visual": "alveolus-gas-exchange"
-  },
-  {
-    "id": "card-254-7c-muscles-and-bones-in-the-gas-exchange-diagram-where-does-",
-    "unit": "7C Muscles and bones",
-    "type": "Visual challenge",
-    "front": "In the gas exchange diagram, where does carbon dioxide move?",
-    "back": "From the blood into the air sac.",
-    "cue": "Carbon dioxide is a waste gas removed by the lungs.",
-    "choices": [
-      "From the blood into the air sac.",
-      "From the air sac into the blood.",
-      "From the battery into the bulb.",
-      "From tendon into ligament."
-    ],
-    "visual": "alveolus-gas-exchange"
-  },
-  {
-    "id": "card-255-7c-muscles-and-bones-in-the-blood-vessel-diagram-which-label",
-    "unit": "7C Muscles and bones",
-    "type": "Visual challenge",
-    "front": "In the blood vessel diagram, which label is most like an artery?",
+    "front": "In the gas exchange diagram, which label shows oxygen moving into the blood?",
     "back": "A",
-    "cue": "Arteries usually have thick walls and carry blood away from the heart.",
+    "cue": "Oxygen moves from the air in the alveolus into the blood.",
     "choices": [
       "A",
       "B",
-      "C",
-      "None of them"
+      "C"
     ],
-    "visual": "blood-vessels"
+    "visual": "alveolus-gas-exchange"
   },
   {
-    "id": "card-256-7c-muscles-and-bones-in-the-blood-vessel-diagram-which-label",
+    "id": "card-254-7c-muscles-and-bones-in-the-gas-exchange-diagram-which-label",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "In the blood vessel diagram, which label is most like a vein?",
+    "front": "In the gas exchange diagram, which label shows carbon dioxide moving into the air sac?",
     "back": "B",
-    "cue": "Veins carry blood back to the heart and may have valves.",
+    "cue": "Carbon dioxide moves from the blood into the air in the alveolus.",
     "choices": [
-      "B",
       "A",
-      "C",
-      "The diaphragm"
+      "B",
+      "C"
+    ],
+    "visual": "alveolus-gas-exchange"
+  },
+  {
+    "id": "card-255-7c-muscles-and-bones-in-the-blood-vessels-diagram-which-labe",
+    "unit": "7C Muscles and bones",
+    "type": "Visual challenge",
+    "front": "In the blood-vessels diagram, which label shows the artery?",
+    "back": "A",
+    "cue": "The artery has the thickest wall and the smallest central space.",
+    "choices": [
+      "A",
+      "B",
+      "C"
     ],
     "visual": "blood-vessels"
   },
   {
-    "id": "card-257-7c-muscles-and-bones-in-the-blood-vessel-diagram-which-label",
+    "id": "card-256-7c-muscles-and-bones-in-the-blood-vessels-diagram-which-labe",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "In the blood vessel diagram, which label is most like capillaries?",
-    "back": "C",
-    "cue": "Capillaries are tiny vessels for exchange.",
+    "front": "In the blood-vessels diagram, which label shows the vein?",
+    "back": "B",
+    "cue": "The vein has a larger central space and a valve.",
     "choices": [
-      "C",
       "A",
       "B",
-      "A battery"
+      "C"
+    ],
+    "visual": "blood-vessels"
+  },
+  {
+    "id": "card-257-7c-muscles-and-bones-in-the-blood-vessels-diagram-which-labe",
+    "unit": "7C Muscles and bones",
+    "type": "Visual challenge",
+    "front": "In the blood-vessels diagram, which label shows capillaries?",
+    "back": "C",
+    "cue": "Capillaries are tiny, thin-walled vessels arranged in a network.",
+    "choices": [
+      "A",
+      "B",
+      "C"
     ],
     "visual": "blood-vessels"
   },
@@ -2864,8 +2854,7 @@ window.YEAR7_FLASHCARDS = [
       "pH value.",
       "Voltage.",
       "Bone strength."
-    ],
-    "visual": "reaction-time-ruler"
+    ]
   },
   {
     "id": "card-259-7c-muscles-and-bones-a-student-says-muscles-push-bones-to-mo",
@@ -2933,8 +2922,7 @@ window.YEAR7_FLASHCARDS = [
       "stomach",
       "skull",
       "femur"
-    ],
-    "visual": "lungs-diaphragm"
+    ]
   },
   {
     "id": "card-265-7c-muscles-and-bones-what-happens-to-oxygen-during-gas-excha",
@@ -2948,8 +2936,7 @@ window.YEAR7_FLASHCARDS = [
       "Oxygen is made by the ribs.",
       "Oxygen turns into plasma.",
       "Oxygen leaves the blood and enters the lungs."
-    ],
-    "visual": "alveolus-gas-exchange"
+    ]
   },
   {
     "id": "card-266-7c-muscles-and-bones-what-happens-to-carbon-dioxide-during-g",
@@ -2963,8 +2950,7 @@ window.YEAR7_FLASHCARDS = [
       "Carbon dioxide moves from air into the blood.",
       "Carbon dioxide becomes oxygen in the lungs.",
       "Carbon dioxide is made by bones."
-    ],
-    "visual": "alveolus-gas-exchange"
+    ]
   },
   {
     "id": "card-267-7c-muscles-and-bones-double-circulatory-system",
@@ -3046,8 +3032,7 @@ window.YEAR7_FLASHCARDS = [
       "artery",
       "vein",
       "tendon"
-    ],
-    "visual": "blood-vessels"
+    ]
   },
   {
     "id": "card-275-7c-muscles-and-bones-which-blood-vessels-carry-blood-away-fr",
@@ -3061,8 +3046,7 @@ window.YEAR7_FLASHCARDS = [
       "veins",
       "capillaries",
       "ligaments"
-    ],
-    "visual": "blood-vessels"
+    ]
   },
   {
     "id": "card-276-7c-muscles-and-bones-which-blood-vessels-carry-blood-back-to",
@@ -3076,8 +3060,7 @@ window.YEAR7_FLASHCARDS = [
       "arteries",
       "capillaries",
       "tendons"
-    ],
-    "visual": "blood-vessels"
+    ]
   },
   {
     "id": "card-277-7c-muscles-and-bones-newton",
@@ -3918,8 +3901,7 @@ window.YEAR7_FLASHCARDS = [
       "Each lamp gets twice the supply voltage.",
       "Voltage is used up before the first lamp.",
       "Voltage only exists in wires."
-    ],
-    "visual": "circuit-series"
+    ]
   },
   {
     "id": "card-353-7j-current-electricity-in-a-parallel-circuit-what-voltage-do",
@@ -3933,8 +3915,7 @@ window.YEAR7_FLASHCARDS = [
       "Zero voltage in every branch.",
       "Half the voltage only in the top branch.",
       "Voltage becomes current."
-    ],
-    "visual": "circuit-parallel"
+    ]
   },
   {
     "id": "card-354-7j-current-electricity-electrical-shock",
@@ -4411,5 +4392,259 @@ window.YEAR7_FLASHCARDS = [
       "3"
     ],
     "visual": "central-heating-model"
+  },
+  {
+    "id": "card-388-7c-muscles-and-bones-in-the-breathing-diagram-which-label-sh",
+    "unit": "7C Muscles and bones",
+    "type": "Visual challenge",
+    "front": "In the breathing diagram, which label shows the rib cage?",
+    "back": "C",
+    "cue": "Label C points to the rib cage around the lungs.",
+    "choices": [
+      "C",
+      "A",
+      "B",
+      "D"
+    ],
+    "visual": "lungs-diaphragm"
+  },
+  {
+    "id": "card-389-7c-muscles-and-bones-in-the-gas-exchange-diagram-which-label",
+    "unit": "7C Muscles and bones",
+    "type": "Visual challenge",
+    "front": "In the gas exchange diagram, which label shows the capillary blood vessel?",
+    "back": "C",
+    "cue": "The capillary is the blood vessel next to the alveolus.",
+    "choices": [
+      "A",
+      "B",
+      "C"
+    ],
+    "visual": "alveolus-gas-exchange"
+  },
+  {
+    "id": "card-390-7f-acids-and-alkalis-in-the-neutralisation-practical-diagram",
+    "unit": "7F Acids and alkalis",
+    "type": "Visual challenge",
+    "front": "In the neutralisation practical diagram, which label shows the burette?",
+    "back": "A",
+    "cue": "Label A points to the burette held on the clamp stand.",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "visual": "neutralisation-setup"
+  },
+  {
+    "id": "card-391-7f-acids-and-alkalis-in-the-neutralisation-practical-diagram",
+    "unit": "7F Acids and alkalis",
+    "type": "Visual challenge",
+    "front": "In the neutralisation practical diagram, which label shows the conical flask?",
+    "back": "B",
+    "cue": "Label B points to the conical flask under the burette.",
+    "choices": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "visual": "neutralisation-setup"
+  },
+  {
+    "id": "card-392-7f-acids-and-alkalis-in-the-neutralisation-practical-diagram",
+    "unit": "7F Acids and alkalis",
+    "type": "Visual challenge",
+    "front": "In the neutralisation practical diagram, which label shows the indicator bottle?",
+    "back": "C",
+    "cue": "Label C points to the indicator bottle or dropper.",
+    "choices": [
+      "C",
+      "A",
+      "B",
+      "D"
+    ],
+    "visual": "neutralisation-setup"
+  },
+  {
+    "id": "card-393-7f-acids-and-alkalis-in-the-neutralisation-practical-diagram",
+    "unit": "7F Acids and alkalis",
+    "type": "Visual challenge",
+    "front": "In the neutralisation practical diagram, which label shows the beaker?",
+    "back": "D",
+    "cue": "Label D points to the beaker of solution.",
+    "choices": [
+      "D",
+      "A",
+      "B",
+      "C"
+    ],
+    "visual": "neutralisation-setup"
+  },
+  {
+    "id": "card-394-7f-acids-and-alkalis-in-the-evaporation-setup-diagram-which-",
+    "unit": "7F Acids and alkalis",
+    "type": "Visual challenge",
+    "front": "In the evaporation setup diagram, which label shows the evaporation dish?",
+    "back": "A",
+    "cue": "Label A points to the evaporation dish containing the solution.",
+    "choices": [
+      "A",
+      "B",
+      "C"
+    ],
+    "visual": "evaporation-dish"
+  },
+  {
+    "id": "card-395-7f-acids-and-alkalis-in-the-evaporation-setup-diagram-which-",
+    "unit": "7F Acids and alkalis",
+    "type": "Visual challenge",
+    "front": "In the evaporation setup diagram, which label shows the support or tripod with gauze?",
+    "back": "B",
+    "cue": "Label B points to the support holding the evaporation dish above the flame.",
+    "choices": [
+      "A",
+      "B",
+      "C"
+    ],
+    "visual": "evaporation-dish"
+  },
+  {
+    "id": "card-396-7f-acids-and-alkalis-in-the-evaporation-setup-diagram-which-",
+    "unit": "7F Acids and alkalis",
+    "type": "Visual challenge",
+    "front": "In the evaporation setup diagram, which label shows the Bunsen burner?",
+    "back": "C",
+    "cue": "Label C points to the Bunsen burner under the dish.",
+    "choices": [
+      "A",
+      "B",
+      "C"
+    ],
+    "visual": "evaporation-dish"
+  },
+  {
+    "id": "card-397-7f-acids-and-alkalis-in-the-dilution-safety-diagram-which-la",
+    "unit": "7F Acids and alkalis",
+    "type": "Visual challenge",
+    "front": "In the dilution safety diagram, which label shows the water in the beaker?",
+    "back": "A",
+    "cue": "Label A points to the water already in the beaker.",
+    "choices": [
+      "A",
+      "B",
+      "C"
+    ],
+    "visual": "dilution-method"
+  },
+  {
+    "id": "card-398-7f-acids-and-alkalis-in-the-dilution-safety-diagram-which-la",
+    "unit": "7F Acids and alkalis",
+    "type": "Visual challenge",
+    "front": "In the dilution safety diagram, which label shows the acid container?",
+    "back": "B",
+    "cue": "Label B points to the acid container being tipped.",
+    "choices": [
+      "B",
+      "A",
+      "C"
+    ],
+    "visual": "dilution-method"
+  },
+  {
+    "id": "card-399-7f-acids-and-alkalis-in-the-dilution-safety-diagram-which-la",
+    "unit": "7F Acids and alkalis",
+    "type": "Visual challenge",
+    "front": "In the dilution safety diagram, which label shows the safe pouring direction?",
+    "back": "C",
+    "cue": "Label C points to the direction showing acid being added to water safely.",
+    "choices": [
+      "C",
+      "A",
+      "B"
+    ],
+    "visual": "dilution-method"
+  },
+  {
+    "id": "card-400-7c-muscles-and-bones-in-the-ruler-drop-test-diagram-which-la",
+    "unit": "7C Muscles and bones",
+    "type": "Visual challenge",
+    "front": "In the ruler-drop test diagram, which label shows the ruler?",
+    "back": "A",
+    "cue": "Label A points to the ruler that is dropped.",
+    "choices": [
+      "A",
+      "B",
+      "C"
+    ],
+    "visual": "reaction-time-ruler"
+  },
+  {
+    "id": "card-401-7c-muscles-and-bones-in-the-ruler-drop-test-diagram-which-la",
+    "unit": "7C Muscles and bones",
+    "type": "Visual challenge",
+    "front": "In the ruler-drop test diagram, which label shows the catching hand?",
+    "back": "B",
+    "cue": "Label B points to the hand that catches the ruler.",
+    "choices": [
+      "B",
+      "A",
+      "C"
+    ],
+    "visual": "reaction-time-ruler"
+  },
+  {
+    "id": "card-402-7c-muscles-and-bones-in-the-ruler-drop-test-diagram-which-la",
+    "unit": "7C Muscles and bones",
+    "type": "Visual challenge",
+    "front": "In the ruler-drop test diagram, which label shows the measured falling distance?",
+    "back": "C",
+    "cue": "Label C points to the distance the ruler falls before it is caught.",
+    "choices": [
+      "C",
+      "A",
+      "B"
+    ],
+    "visual": "reaction-time-ruler"
+  },
+  {
+    "id": "card-403-7j-current-electricity-in-the-circuit-comparison-diagram-whi",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the circuit comparison diagram, which label shows the series circuit?",
+    "back": "A",
+    "cue": "Label A is the single-loop circuit with both bulbs in one path.",
+    "choices": [
+      "A",
+      "B"
+    ],
+    "visual": "circuit-comparison"
+  },
+  {
+    "id": "card-404-7j-current-electricity-in-the-circuit-comparison-diagram-whi",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the circuit comparison diagram, which label shows the parallel circuit?",
+    "back": "B",
+    "cue": "Label B is the circuit with separate branches.",
+    "choices": [
+      "B",
+      "A"
+    ],
+    "visual": "circuit-comparison"
+  },
+  {
+    "id": "card-405-7j-current-electricity-in-the-circuit-comparison-diagram-whi",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the circuit comparison diagram, which label shows the circuit where one bulb can stay on if the other breaks?",
+    "back": "B",
+    "cue": "Label B is the parallel circuit, so one branch can still work if another breaks.",
+    "choices": [
+      "B",
+      "A"
+    ],
+    "visual": "circuit-comparison"
   }
 ];

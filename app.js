@@ -1121,6 +1121,16 @@
       "double-circulation": { src: "assets/visuals/double-circulation.png", alt: "Double circulation diagram showing the lungs, heart, body, and flow paths." },
       "plug-safety": { src: "assets/visuals/plug-safety.png", alt: "UK plug safety cutaway diagram with lettered callouts." },
       "central-heating-model": { src: "assets/visuals/central-heating-model.png", alt: "Central-heating model and electric-circuit comparison diagram." },
+      "blood-vessels": { src: "assets/visuals/blood-vessels.png", alt: "Three lettered blood-vessel diagrams for a visual challenge." },
+      "alveolus-gas-exchange": { src: "assets/visuals/alveolus-gas-exchange.png", alt: "Alveolus gas-exchange diagram with lettered arrows and a callout." },
+      "neutralisation-setup": { src: "assets/visuals/neutralisation-setup.png", alt: "Neutralisation practical setup with lettered apparatus callouts." },
+      "evaporation-dish": { src: "assets/visuals/evaporation-dish.png", alt: "Evaporation setup with lettered apparatus callouts." },
+      "lungs-diaphragm": { src: "assets/visuals/lungs-diaphragm.png", alt: "Breathing system overview with lettered anatomy callouts." },
+      "dilution-method": { src: "assets/visuals/dilution-method.png", alt: "Safe dilution diagram with three lettered callouts." },
+      "litmus-test": { src: "assets/visuals/litmus-test.png", alt: "Litmus test setup with four lettered callouts." },
+      "indicator-palette": { src: "assets/visuals/indicator-palette.png", alt: "Universal indicator colour strip with three lettered callouts and pH numbers." },
+      "reaction-time-ruler": { src: "assets/visuals/reaction-time-ruler.png", alt: "Ruler-drop reaction time test diagram with three lettered callouts." },
+      "circuit-comparison": { src: "assets/visuals/circuit-comparison.png", alt: "Two lettered circuit diagrams shown side by side for comparison." },
     };
     if (imageVisuals[key]) return renderRasterVisual(imageVisuals[key].src, imageVisuals[key].alt);
 
