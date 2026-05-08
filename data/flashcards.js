@@ -3342,8 +3342,7 @@ window.YEAR7_FLASHCARDS = [
       "stomach acid",
       "oven cleaner",
       "vinegar"
-    ],
-    "visual": "ph-scale"
+    ]
   },
   {
     "id": "card-304-7f-acids-and-alkalis-which-example-is-usually-alkaline",
@@ -3371,8 +3370,7 @@ window.YEAR7_FLASHCARDS = [
       "milk",
       "fizzy drink",
       "lemon juice"
-    ],
-    "visual": "ph-scale"
+    ]
   },
   {
     "id": "card-306-7f-acids-and-alkalis-which-drink-is-acidic-on-the-revision-p",
@@ -3386,8 +3384,7 @@ window.YEAR7_FLASHCARDS = [
       "pure water",
       "washing powder",
       "oven cleaner"
-    ],
-    "visual": "ph-scale"
+    ]
   },
   {
     "id": "card-307-7f-acids-and-alkalis-which-substance-is-used-to-neutralise-e",
@@ -3825,8 +3822,7 @@ window.YEAR7_FLASHCARDS = [
       "Yes, because one switch is closed.",
       "Yes, because B is closed.",
       "The lamp becomes a voltmeter."
-    ],
-    "visual": "circuit-and-switches"
+    ]
   },
   {
     "id": "card-347-7j-current-electricity-and-truth-table-switch-a-closed-and-s",
@@ -3840,8 +3836,7 @@ window.YEAR7_FLASHCARDS = [
       "No, because one switch must be open.",
       "No, because current is used up.",
       "Only if the pH is 7."
-    ],
-    "visual": "circuit-and-switches"
+    ]
   },
   {
     "id": "card-348-7j-current-electricity-or-truth-table-switch-a-open-and-swit",
@@ -3855,8 +3850,7 @@ window.YEAR7_FLASHCARDS = [
       "No, because both switches must be closed.",
       "No, because B is open.",
       "Only if an ammeter is parallel."
-    ],
-    "visual": "circuit-or-switches"
+    ]
   },
   {
     "id": "card-349-7j-current-electricity-or-truth-table-switch-a-open-and-swit",
@@ -3870,8 +3864,7 @@ window.YEAR7_FLASHCARDS = [
       "Yes, because there are two branches.",
       "Yes, because current splits.",
       "The lamp is always on."
-    ],
-    "visual": "circuit-or-switches"
+    ]
   },
   {
     "id": "card-350-7j-current-electricity-voltage-division-in-series",

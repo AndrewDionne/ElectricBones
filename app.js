@@ -939,6 +939,8 @@
     progress: loadProgress(),
     sessionAnswered: 0,
     sessionCorrect: 0,
+    sessionMastered: 0,
+    sessionNeedsReview: 0,
     audioContext: null,
     oceanSource: null,
     oceanGain: null,
@@ -985,6 +987,40 @@
   function accuracy(progress = state.progress) {
     if (!progress.attempted) return 0;
     return Math.round((progress.correct / progress.attempted) * 100);
+  }
+
+
+  function sessionRoundComplete() {
+    return state.sessionAnswered > 0 && state.sessionAnswered % 10 === 0;
+  }
+
+  function recommendedNextMode() {
+    if ((state.progress.weakIds || []).length || state.sessionNeedsReview) return "Weak review";
+    if (state.sessionCorrect >= 8) return "Exam coach";
+    if (state.mode === "visual") return "Label lab";
+    if (state.mode === "lab") return "Visual lab";
+    if (state.mode === "circuit") return "Circuit builder";
+    return "Flip cards";
+  }
+
+  function setReviewBox(title, text, { complete = false } = {}) {
+    const heading = els.reviewBox?.querySelector("h3");
+    if (heading) heading.textContent = title;
+    if (els.studyTip) els.studyTip.textContent = text;
+    els.reviewBox?.classList.toggle("round-complete", Boolean(complete));
+  }
+
+  function setModeTip(text) {
+    if (sessionRoundComplete()) {
+      const incorrect = Math.max(0, state.sessionAnswered - state.sessionCorrect);
+      setReviewBox(
+        "End of round summary",
+        `You answered ${state.sessionAnswered} questions: ${state.sessionCorrect} correct and ${incorrect} for review. Mastered this session: ${state.sessionMastered}. Further review marks: ${state.sessionNeedsReview}. Recommended next: ${recommendedNextMode()}.`,
+        { complete: true }
+      );
+      return;
+    }
+    setReviewBox("Round progress", "Answer 10 questions to complete a round.", { complete: false });
   }
 
   function uniqueValues(key) {
@@ -1600,9 +1636,9 @@
     renderCardVisual(card);
     els.cardFront.textContent = card.front;
     els.cardBack.textContent = card.back;
-    els.cardCue.textContent = card.cue || "No extra cue for this card.";
+    els.cardCue.textContent = card.cue || "";
     els.frontHint.textContent = isQuizMode() ? "Choose an answer below." : "Tap the card to flip it.";
-    els.studyTip.textContent = tips[(state.index + state.sessionAnswered) % tips.length];
+    setModeTip(tips[(state.index + state.sessionAnswered) % tips.length]);
 
     const progressPercent = deck.length ? ((state.index + 1) / deck.length) * 100 : 0;
     els.progressFill.style.width = `${progressPercent}%`;
@@ -1645,7 +1681,7 @@
       lab: ["Label lab", "Drag or tap labels onto diagrams to prove you can recognise the science parts."],
       circuit: ["Circuit builder", "Tap or drag components into the circuit slots, then test whether your circuit works."],
       exam: ["Exam coach", "Practise mark-scheme answers, practical methods, and explanation questions."],
-      weak: ["Weak review", "Only missed cards appear here. Clear them by answering correctly."],
+      weak: ["Weak review", "Reviewing cards marked Further review or previously missed. Clear them by answering correctly."],
       boss: ["Boss round", "A mixed challenge from every topic. Keep answering to build the biggest streak."],
     };
     const [kicker, title] = modeNames[state.mode] || modeNames.study;
@@ -1761,7 +1797,7 @@
     });
 
     state.flipped = true;
-    recordAttempt(card, correct);
+    recordAttempt(card, correct, { source: "quiz" });
 
     if (correct) {
       els.feedback.textContent = state.progress.calm
@@ -1788,7 +1824,7 @@
     els.flashcard.classList.add("flipped");
   }
 
-  function recordAttempt(card, correct) {
+  function recordAttempt(card, correct, options = {}) {
     state.progress.attempted += 1;
     state.sessionAnswered += 1;
 
@@ -1808,8 +1844,12 @@
       if (!state.progress.mastered.includes(card.id)) {
         state.progress.mastered.push(card.id);
       }
+      if (options.source === "mastered-button") {
+        state.sessionMastered += 1;
+      }
     } else {
       weakIds.add(card.id);
+      state.sessionNeedsReview += 1;
       state.progress.currentStreak = 0;
     }
     state.progress.weakIds = [...weakIds].slice(-220);
@@ -1819,7 +1859,7 @@
   function markKnown() {
     const card = currentCard();
     if (!card) return;
-    recordAttempt(card, true);
+    recordAttempt(card, true, { source: "mastered-button" });
     state.flipped = true;
     celebrate();
     bounce(els.flashcard);
@@ -1829,7 +1869,7 @@
   function markNeedsPractice() {
     const card = currentCard();
     if (!card) return;
-    recordAttempt(card, false);
+    recordAttempt(card, false, { source: "further-review-button" });
     playTone("wrong");
     shake(els.flashcard);
     nextCard();
@@ -1843,6 +1883,10 @@
 
   function setMode(mode) {
     state.mode = mode;
+    state.sessionAnswered = 0;
+    state.sessionCorrect = 0;
+    state.sessionMastered = 0;
+    state.sessionNeedsReview = 0;
     if (mode === "boss") {
       state.unit = "all";
       state.type = "all";
@@ -2217,7 +2261,7 @@
     const game = currentLabGame(labDeck);
     els.cardUnitBadge.textContent = game?.unit || "No lab games";
     els.cardTypeBadge.textContent = "Interactive label lab";
-    els.studyTip.textContent = "Tap a label, then tap a coloured light. A thin wire shows the connection without covering the diagram.";
+    setModeTip("Tap a label, then tap a coloured light. A thin wire shows the connection without covering the diagram.");
 
     const progressPercent = labDeck.length ? ((state.labIndex + 1) / labDeck.length) * 100 : 0;
     els.progressFill.style.width = `${progressPercent}%`;
@@ -2565,7 +2609,7 @@
     const game = currentCircuitGame(circuitDeck);
     els.cardUnitBadge.textContent = game?.unit || "No circuit games";
     els.cardTypeBadge.textContent = "Interactive circuit builder";
-    els.studyTip.textContent = "Tap a component, then tap an empty circuit slot. On desktop you can also drag parts into place.";
+    setModeTip("Tap a component, then tap an empty circuit slot. On desktop you can also drag parts into place.");
 
     const progressPercent = circuitDeck.length ? ((state.circuitIndex + 1) / circuitDeck.length) * 100 : 0;
     els.progressFill.style.width = `${progressPercent}%`;
@@ -2908,7 +2952,7 @@
     els.buttonRow.classList.add("hidden");
     els.reviewBox.classList.remove("hidden");
     els.cardMetaBar.classList.add("hidden");
-    els.studyTip.textContent = "Exam coach is about mark-scheme language: answer, reveal, compare, then self-mark honestly.";
+    setModeTip("Exam coach is about mark-scheme language: answer, reveal, compare, then self-mark honestly.");
 
     if (!examDeck.length) {
       els.progressFill.style.width = "0%";
@@ -2955,7 +2999,7 @@
           </aside>
         </div>
         <div class="exam-actions">
-          ${isChoice ? "" : `<button class="primary-button exam-reveal" type="button">Reveal mark scheme</button>`}
+          ${isChoice ? "" : `<button class="primary-button exam-reveal" type="button">Check answer</button>`}
           ${!isChoice ? `<button class="secondary-button exam-self-good" type="button">I got the key points</button><button class="danger-soft exam-self-practice" type="button">Need more practice</button>` : ""}
           <button class="secondary-button exam-next" type="button">Next exam question</button>
         </div>
@@ -2982,7 +3026,7 @@
   function renderExamWritten(question, hits) {
     return `
       <label class="exam-answer-label" for="examResponse">Your answer</label>
-      <textarea id="examResponse" class="exam-response" rows="7" placeholder="Type a short exam-style answer here. Then reveal the mark scheme and self-mark honestly.">${escapeHtml(state.examResponse)}</textarea>
+      <textarea id="examResponse" class="exam-response" rows="7" placeholder="Type your answer here, then check it.">${escapeHtml(state.examResponse)}</textarea>
       <div class="keyword-meter" aria-label="Keyword coverage">
         <span style="width:${Math.min(100, Math.round((hits.length / Math.max(1, (question.keywords || []).length)) * 100))}%"></span>
       </div>
@@ -3078,12 +3122,12 @@
   function examFeedbackText(question, hits) {
     if (state.examLocked) {
       return state.progress.calm
-        ? "Marked and saved. Move on steadily, or review the mark scheme first. 🌊"
-        : "Marked and saved. XP banked — keep the streak alive! ⚡";
+        ? "Saved. Move on when you are ready. 🌊"
+        : "Saved. XP banked — keep going! ⚡";
     }
-    if (Array.isArray(question.choices) && question.choices.length) return "Choose the best answer. Use number keys 1–4 if you like.";
-    if (!state.examRevealed) return "Write your answer first, then reveal the mark scheme.";
-    return `Compare your answer with the mark scheme. Keyword guide: ${hits.length}/${(question.keywords || []).length}.`;
+    if (Array.isArray(question.choices) && question.choices.length) return "Choose the best answer.";
+    if (!state.examRevealed) return "Write your answer, then check it.";
+    return `Check your answer. Keyword guide: ${hits.length}/${(question.keywords || []).length}.`;
   }
 
   function examAsCard(question) {
@@ -3174,6 +3218,7 @@
     els.heroModeButtons.forEach((button) => {
       button.addEventListener("click", () => {
         setMode(button.dataset.setMode);
+        showStudyScreen();
       });
     });
 
@@ -3223,6 +3268,10 @@
       const confirmed = window.confirm("Reset XP, streaks and badges for this browser?");
       if (!confirmed) return;
       state.progress = { ...defaultProgress };
+      state.sessionAnswered = 0;
+      state.sessionCorrect = 0;
+      state.sessionMastered = 0;
+      state.sessionNeedsReview = 0;
       stopOceanNoise();
       saveProgress();
       render();

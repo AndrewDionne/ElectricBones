@@ -730,14 +730,6 @@ kbd {
   border: 0 !important;
 }
 
-.mode-note {
-  margin: 4px 2px 0;
-  color: var(--muted);
-  font-size: 0.9rem;
-  line-height: 1.45;
-  font-weight: 750;
-}
-
 .card-meta-bar {
   display: flex;
   flex-wrap: wrap;
@@ -2254,8 +2246,7 @@ body.calm .keyword-meter span {
   letter-spacing: -0.03em;
 }
 
-.revision-mini-card p,
-.launch-note {
+.revision-mini-card p {
   margin: 0;
   color: #475467;
   line-height: 1.55;
@@ -2604,5 +2595,70 @@ body.calm .keyword-meter span {
     max-width: 36%;
     min-height: 24px;
     font-size: 0.62rem;
+  }
+}
+
+/* v22 learning-flow QA and polish */
+.review-box.round-complete {
+  border-color: rgba(16, 185, 129, 0.35);
+  background: linear-gradient(135deg, rgba(236, 253, 245, 0.92), rgba(255, 255, 255, 0.88));
+}
+
+.review-box.round-complete h3 {
+  color: #047857;
+}
+
+.review-box.round-complete p {
+  color: #065f46;
+  font-weight: 850;
+}
+
+@media (max-width: 760px) {
+  .study-screen .workspace {
+    min-height: auto;
+    padding: 16px;
+  }
+
+  .study-screen .control-panel {
+    gap: 12px;
+  }
+
+  .study-screen .mode-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .study-screen .button-row {
+    position: sticky;
+    bottom: 8px;
+    z-index: 20;
+    padding: 10px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.14);
+    backdrop-filter: blur(12px);
+  }
+
+  .study-diagram-image,
+  .study-diagram {
+    max-height: 230px;
+  }
+
+  .interactive-diagram-image,
+  .interactive-diagram {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .study-screen .mode-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .study-screen .button-row {
+    gap: 8px;
+  }
+
+  .review-box {
+    padding: 16px;
   }
 }
