@@ -176,119 +176,95 @@
       id: "circuit-build-complete-lamp",
       unit: "7J Current electricity",
       title: "Build a complete lamp circuit",
-      brief: "Use a cell, closed switch, and lamp so the lamp would light.",
+      brief: "Drag the symbols into the gaps to make one closed rectangular loop with a lamp.",
       layout: "simple-loop",
+      poweredOnSuccess: true,
       labels: ["cell", "lamp", "closed switch", "open switch", "voltmeter"],
       slots: [
-        { id: "source", label: "power source", answer: "cell", x: 18, y: 58 },
-        { id: "switch", label: "switch", answer: "closed switch", x: 48, y: 28 },
-        { id: "load", label: "load", answer: "lamp", x: 78, y: 58 },
+        { id: "source", label: "source", answer: "cell", x: 20, y: 68 },
+        { id: "switch", label: "switch", answer: "closed switch", x: 50, y: 29 },
+        { id: "load", label: "lamp", answer: "lamp", x: 80, y: 68 },
       ],
-      success: "A closed switch completes the loop, so current can flow through the lamp.",
+      success: "A closed circuit has no gap, so current can flow all the way around the loop and light the lamp.",
     },
     {
       id: "circuit-build-lamp-off",
       unit: "7J Current electricity",
-      title: "Build a circuit where the lamp is off",
-      brief: "Use an open switch to break the circuit so current cannot flow.",
+      title: "Build a circuit where the lamp stays off",
+      brief: "Use an open switch so the rectangular loop has a gap and the lamp will not light.",
       layout: "simple-loop",
+      poweredOnSuccess: false,
       labels: ["cell", "lamp", "open switch", "closed switch", "ammeter"],
       slots: [
-        { id: "source", label: "power source", answer: "cell", x: 18, y: 58 },
-        { id: "switch", label: "switch", answer: "open switch", x: 48, y: 28 },
-        { id: "load", label: "load", answer: "lamp", x: 78, y: 58 },
+        { id: "source", label: "source", answer: "cell", x: 20, y: 68 },
+        { id: "switch", label: "switch", answer: "open switch", x: 50, y: 29 },
+        { id: "load", label: "lamp", answer: "lamp", x: 80, y: 68 },
       ],
-      success: "An open switch creates a gap, so the circuit is incomplete and the lamp stays off.",
+      success: "The open switch leaves a gap, so the circuit is incomplete and no current flows.",
     },
     {
       id: "circuit-build-measure-current",
       unit: "7J Current electricity",
-      title: "Measure current correctly",
-      brief: "Build the circuit so current can be measured correctly.",
+      title: "Measure current in series",
+      brief: "Make one closed rectangular loop and place the ammeter in series with the lamp.",
       layout: "meter-loop",
+      poweredOnSuccess: true,
       labels: ["cell", "lamp", "ammeter", "voltmeter", "closed switch"],
       slots: [
-        { id: "source", label: "source", answer: "cell", x: 16, y: 61 },
-        { id: "meter", label: "meter", answer: "ammeter", x: 43, y: 25 },
-        { id: "switch", label: "switch", answer: "closed switch", x: 68, y: 25 },
-        { id: "load", label: "load", answer: "lamp", x: 78, y: 62 },
+        { id: "source", label: "source", answer: "cell", x: 18, y: 68 },
+        { id: "meter", label: "ammeter", answer: "ammeter", x: 40, y: 29 },
+        { id: "switch", label: "switch", answer: "closed switch", x: 60, y: 29 },
+        { id: "load", label: "lamp", answer: "lamp", x: 80, y: 68 },
       ],
-      success: "Ammeters go in series because current must flow through the meter.",
+      success: "Ammeters go in series, so all the current in the loop passes through the meter.",
     },
     {
       id: "circuit-build-measure-voltage",
       unit: "7J Current electricity",
       title: "Measure voltage across a lamp",
-      brief: "Build the circuit so the voltage across the lamp can be measured.",
+      brief: "Make a closed main loop, then put the voltmeter on a parallel branch across the lamp.",
       layout: "parallel-meter",
+      poweredOnSuccess: true,
       labels: ["cell", "lamp", "voltmeter", "ammeter", "closed switch"],
       slots: [
-        { id: "source", label: "source", answer: "cell", x: 16, y: 58 },
-        { id: "load", label: "load", answer: "lamp", x: 64, y: 43 },
-        { id: "meter", label: "meter", answer: "voltmeter", x: 64, y: 74 },
-        { id: "switch", label: "switch", answer: "closed switch", x: 84, y: 58 },
+        { id: "source", label: "source", answer: "cell", x: 18, y: 68 },
+        { id: "load", label: "lamp", answer: "lamp", x: 56, y: 39 },
+        { id: "meter", label: "voltmeter", answer: "voltmeter", x: 56, y: 79 },
+        { id: "switch", label: "switch", answer: "closed switch", x: 82, y: 68 },
       ],
-      success: "Voltmeters go in parallel because they compare the energy difference across a component.",
+      success: "Voltmeters are connected in parallel across a component to compare the energy difference across it.",
     },
     {
       id: "circuit-build-series-two-lamps",
       unit: "7J Current electricity",
       title: "Build a series circuit with two lamps",
-      brief: "Place two lamps so they are part of the same circuit path.",
+      brief: "Place both lamps in the same closed rectangular loop so there is only one path.",
       layout: "series-two-lamps",
+      poweredOnSuccess: true,
       labels: ["cell", "lamp", "lamp", "closed switch", "voltmeter"],
       slots: [
-        { id: "source", label: "source", answer: "cell", x: 16, y: 58 },
-        { id: "load1", label: "lamp 1", answer: "lamp", x: 44, y: 28 },
-        { id: "load2", label: "lamp 2", answer: "lamp", x: 70, y: 28 },
-        { id: "switch", label: "switch", answer: "closed switch", x: 84, y: 58 },
+        { id: "source", label: "source", answer: "cell", x: 18, y: 68 },
+        { id: "load1", label: "lamp 1", answer: "lamp", x: 42, y: 29 },
+        { id: "load2", label: "lamp 2", answer: "lamp", x: 66, y: 29 },
+        { id: "switch", label: "switch", answer: "closed switch", x: 82, y: 68 },
       ],
-      success: "A series circuit has one loop, so the same current path passes through both lamps.",
+      success: "In series, both lamps are on the same loop, so the current has only one path through both.",
     },
     {
       id: "circuit-build-parallel-two-lamps",
       unit: "7J Current electricity",
       title: "Build a parallel circuit with two lamps",
-      brief: "Place two lamps so they are on separate branches.",
+      brief: "Place one lamp on each branch so the circuit has two separate paths.",
       layout: "parallel-two-lamps",
+      poweredOnSuccess: true,
       labels: ["cell", "lamp", "lamp", "closed switch", "ammeter"],
       slots: [
-        { id: "source", label: "source", answer: "cell", x: 16, y: 58 },
-        { id: "branch1", label: "top branch", answer: "lamp", x: 58, y: 41 },
+        { id: "source", label: "source", answer: "cell", x: 18, y: 68 },
+        { id: "branch1", label: "top branch", answer: "lamp", x: 58, y: 44 },
         { id: "branch2", label: "bottom branch", answer: "lamp", x: 58, y: 73 },
-        { id: "switch", label: "switch", answer: "closed switch", x: 84, y: 58 },
+        { id: "switch", label: "switch", answer: "closed switch", x: 82, y: 68 },
       ],
-      success: "Parallel circuits have branches, so each lamp has its own path.",
-    },
-    {
-      id: "circuit-build-and-switches",
-      unit: "7J Current electricity",
-      title: "Build an AND switch circuit",
-      brief: "The lamp should light only when both switches are closed.",
-      layout: "and-switches",
-      labels: ["cell", "closed switch", "closed switch", "lamp", "open switch"],
-      slots: [
-        { id: "source", label: "source", answer: "cell", x: 16, y: 58 },
-        { id: "switch1", label: "switch 1", answer: "closed switch", x: 38, y: 28 },
-        { id: "switch2", label: "switch 2", answer: "closed switch", x: 62, y: 28 },
-        { id: "load", label: "load", answer: "lamp", x: 84, y: 58 },
-      ],
-      success: "Two closed switches in series act like AND: switch 1 AND switch 2 must both be closed.",
-    },
-    {
-      id: "circuit-build-or-switches",
-      unit: "7J Current electricity",
-      title: "Build an OR switch circuit",
-      brief: "The lamp should be able to light if either branch switch is closed.",
-      layout: "or-switches",
-      labels: ["cell", "closed switch", "open switch", "lamp", "closed switch"],
-      slots: [
-        { id: "source", label: "source", answer: "cell", x: 16, y: 58 },
-        { id: "branch1", label: "top branch", answer: "closed switch", x: 54, y: 41 },
-        { id: "branch2", label: "bottom branch", answer: "closed switch", x: 54, y: 73 },
-        { id: "load", label: "load", answer: "lamp", x: 84, y: 58 },
-      ],
-      success: "Switches on parallel branches act like OR: either branch can complete the circuit.",
+      success: "In parallel, the lamps are on different branches, so there are two paths for current.",
     },
   ];
 
@@ -932,6 +908,8 @@
     circuitAnswers: {},
     selectedCircuitPart: "",
     circuitLocked: false,
+    circuitPowered: false,
+    circuitFeedbackMessage: "",
     examIndex: 0,
     examRevealed: false,
     examLocked: false,
@@ -2609,7 +2587,7 @@
     const game = currentCircuitGame(circuitDeck);
     els.cardUnitBadge.textContent = game?.unit || "No circuit games";
     els.cardTypeBadge.textContent = "Interactive circuit builder";
-    setModeTip("Tap a component, then tap an empty circuit slot. On desktop you can also drag parts into place.");
+    setModeTip("Drag a circuit symbol into a gap in the loop. When the build is correct, the working circuit powers up.");
 
     const progressPercent = circuitDeck.length ? ((state.circuitIndex + 1) / circuitDeck.length) * 100 : 0;
     els.progressFill.style.width = `${progressPercent}%`;
@@ -2624,8 +2602,10 @@
       return;
     }
 
+    const feedbackText = state.circuitFeedbackMessage || (state.selectedCircuitPart ? `Selected: ${escapeHtml(state.selectedCircuitPart)}` : "Drag a symbol into a gap in the circuit.");
+
     els.circuitPanel.innerHTML = `
-      <div class="circuit-card" data-game-id="${escapeHtml(game.id)}">
+      <div class="circuit-card ${state.circuitPowered ? "powered" : ""}" data-game-id="${escapeHtml(game.id)}">
         <div class="lab-head">
           <div>
             <p class="panel-kicker">${escapeHtml(game.unit)}</p>
@@ -2635,8 +2615,8 @@
           <div class="lab-counter">${state.circuitIndex + 1}/${circuitDeck.length}</div>
         </div>
         <div class="circuit-layout">
-          <div class="circuit-stage" aria-label="Circuit builder board">
-            <div class="circuit-diagram">${renderCircuitBuilderDiagram(game.layout)}</div>
+          <div class="circuit-stage ${state.circuitPowered ? "powered" : ""}" aria-label="Circuit builder board">
+            <div class="circuit-diagram">${renderCircuitBuilderDiagram(game)}</div>
             ${game.slots.map((slot) => renderCircuitSlot(slot)).join("")}
           </div>
           <div class="circuit-bank" aria-label="Circuit component bank">
@@ -2646,7 +2626,7 @@
             <button class="ghost-button circuit-clear" type="button">Clear circuit</button>
           </div>
         </div>
-        <p class="circuit-feedback" aria-live="polite">${state.selectedCircuitPart ? `Selected: ${escapeHtml(state.selectedCircuitPart)}` : "Choose a component to start."}</p>
+        <p class="circuit-feedback" aria-live="polite">${feedbackText}</p>
         <div class="lab-actions">
           <button class="primary-button circuit-check" type="button">Test circuit</button>
           <button class="secondary-button circuit-next" type="button">Next build</button>
@@ -2659,9 +2639,9 @@
   function renderCircuitSlot(slot) {
     const placed = state.circuitAnswers[slot.id] || "";
     return `
-      <button class="circuit-slot ${placed ? "filled" : ""}" type="button" data-slot-id="${escapeHtml(slot.id)}" style="left:${slot.x}%;top:${slot.y}%" aria-label="${placed ? `${escapeHtml(placed)} placed in ${escapeHtml(slot.label)}` : `Empty snap slot for ${escapeHtml(slot.label)}`}">
-        <span class="slot-symbol" aria-hidden="true">${placed ? circuitSymbolSvg(placed, "slot") : circuitEmptySlotSvg()}</span>
-        <span class="slot-label">${placed ? escapeHtml(placed) : escapeHtml(slot.label)}</span>
+      <button class="circuit-slot ${placed ? "filled" : ""}" type="button" data-slot-id="${escapeHtml(slot.id)}" style="left:${slot.x}%;top:${slot.y}%" aria-label="${placed ? `${escapeHtml(placed)} placed in ${escapeHtml(slot.label)}` : `Empty circuit gap for ${escapeHtml(slot.label)}`}" title="${escapeHtml(slot.label)}">
+        <span class="slot-role">${escapeHtml(slot.label)}</span>
+        <span class="slot-symbol" aria-hidden="true">${placed ? circuitSymbolSvg(placed, "slot") : circuitGapSlotSvg()}</span>
       </button>
     `;
   }
@@ -2677,11 +2657,12 @@
     `;
   }
 
-  function circuitEmptySlotSvg() {
+  function circuitGapSlotSvg() {
     return `
-      <svg class="circuit-symbol-svg empty-symbol" viewBox="0 0 120 70" focusable="false">
-        <circle cx="60" cy="35" r="12"/>
-        <path d="M24 35 H46 M74 35 H96"/>
+      <svg class="circuit-symbol-svg empty-symbol gap-symbol" viewBox="0 0 120 70" focusable="false">
+        <path d="M8 35 H28 M92 35 H112"/>
+        <path d="M34 18 H86 M34 52 H86"/>
+        <path d="M34 18 V52 M86 18 V52"/>
       </svg>
     `;
   }
@@ -2793,6 +2774,8 @@
       state.circuitAnswers = {};
       state.selectedCircuitPart = "";
       state.circuitLocked = false;
+      state.circuitPowered = false;
+      state.circuitFeedbackMessage = "";
       renderCircuitMode();
     });
   }
@@ -2801,6 +2784,8 @@
     if (!slotId || !part || state.circuitLocked) return;
     state.circuitAnswers[slotId] = part;
     state.selectedCircuitPart = "";
+    state.circuitPowered = false;
+    state.circuitFeedbackMessage = "";
     renderCircuitMode();
   }
 
@@ -2810,7 +2795,8 @@
     const total = game.slots.length;
     const placed = game.slots.filter((slot) => state.circuitAnswers[slot.id]).length;
     if (placed < total) {
-      feedback.textContent = `You have placed ${placed}/${total} components. Complete every slot, then test the circuit.`;
+      state.circuitFeedbackMessage = `You have placed ${placed}/${total} symbols. Fill every gap, then test the circuit.`;
+      feedback.textContent = state.circuitFeedbackMessage;
       return;
     }
 
@@ -2826,14 +2812,18 @@
     recordAttempt({ id: game.id, type: "Circuit builder" }, correct);
     if (correct) {
       state.circuitLocked = true;
+      state.circuitPowered = game.poweredOnSuccess !== false;
       state.progress.circuitWins = (state.progress.circuitWins || 0) + 1;
       saveProgress();
-      feedback.textContent = state.progress.calm
-        ? `Circuit works. ${game.success} 🌊`
-        : `Circuit powered up! ${game.success} ⚡🎆`;
+      state.circuitFeedbackMessage = state.circuitPowered
+        ? (state.progress.calm ? `Circuit works. ${game.success} 🌊` : `Circuit powered up! ${game.success} ⚡`)
+        : `Correct build. ${game.success}`;
+      renderCircuitMode();
       celebrate();
     } else {
-      feedback.textContent = `Not powered yet. ${wrongSlots.length} component${wrongSlots.length === 1 ? "" : "s"} need moving.`;
+      state.circuitPowered = false;
+      state.circuitFeedbackMessage = `Not powered yet. ${wrongSlots.length} symbol${wrongSlots.length === 1 ? "" : "s"} need moving.`;
+      feedback.textContent = state.circuitFeedbackMessage;
       playTone("wrong");
       shake(els.circuitPanel.querySelector(".circuit-card"));
     }
@@ -2848,25 +2838,31 @@
     state.circuitAnswers = {};
     state.selectedCircuitPart = "";
     state.circuitLocked = false;
+    state.circuitPowered = false;
+    state.circuitFeedbackMessage = "";
     render();
   }
 
-  function renderCircuitBuilderDiagram(layout) {
+  function renderCircuitBuilderDiagram(game) {
     const diagrams = {
       "simple-loop": circuitBuilderSimpleLoop,
       "meter-loop": circuitBuilderMeterLoop,
       "parallel-meter": circuitBuilderParallelMeter,
       "series-two-lamps": circuitBuilderSeriesTwoLamps,
       "parallel-two-lamps": circuitBuilderParallelTwoLamps,
-      "and-switches": circuitBuilderAndSwitches,
-      "or-switches": circuitBuilderOrSwitches,
     };
-    return (diagrams[layout] || circuitBuilderSimpleLoop)();
+    return (diagrams[game.layout] || circuitBuilderSimpleLoop)(game);
   }
 
   function circuitBuilderSvg(title, inner, viewBox = "0 0 720 380") {
     return `
       <svg class="circuit-builder-svg" viewBox="${viewBox}" role="img" aria-label="${escapeHtml(title)}">
+        <defs>
+          <filter id="circuitGlow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="5" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
         <rect x="14" y="14" width="692" height="352" rx="34" class="builder-bg"/>
         <text x="36" y="48" class="builder-title">Circuit board</text>
         ${inner}
@@ -2874,50 +2870,102 @@
     `;
   }
 
+  function circuitPower(paths) {
+    if (!state.circuitPowered) return "";
+    return paths.map((d) => `<path d="${d}" class="electric-flow"/>`).join("");
+  }
+
   function circuitBuilderSimpleLoop() {
-    return circuitBuilderSvg("Simple circuit board", `
-      <path d="M132 214 H220 M330 214 H390 M500 214 H590 V104 H360 M260 104 H132 Z" class="builder-wire"/>
+    const wires = [
+      'M104 268 H192',
+      'M272 268 H448',
+      'M528 268 H612',
+      'M104 108 H280',
+      'M440 108 H612',
+      'M104 108 V268',
+      'M612 108 V268'
+    ];
+    return circuitBuilderSvg("Simple rectangular loop", `
+      ${wires.map((d) => `<path d="${d}" class="builder-wire"/>`).join("")}
+      ${circuitPower(['M104 268 H192 M272 268 H448 M528 268 H612 V108 H440 M280 108 H104 V268'])}
     `);
   }
 
   function circuitBuilderMeterLoop() {
-    return circuitBuilderSvg("Meter circuit board", `
-      <path d="M116 220 H204 M310 220 H444 M560 220 H612 V104 H430 M350 104 H246 M150 104 H116 Z" class="builder-wire"/>
+    const wires = [
+      'M104 268 H182',
+      'M260 268 H382',
+      'M460 268 H612',
+      'M104 108 H222',
+      'M302 108 H382',
+      'M460 108 H612',
+      'M104 108 V268',
+      'M612 108 V268'
+    ];
+    return circuitBuilderSvg("Series meter loop", `
+      ${wires.map((d) => `<path d="${d}" class="builder-wire"/>`).join("")}
+      ${circuitPower(['M104 268 H182 M260 268 H382 M460 268 H612 V108 H460 M382 108 H302 M222 108 H104 V268'])}
     `);
   }
 
   function circuitBuilderParallelMeter() {
-    return circuitBuilderSvg("Meter circuit board", `
-      <path d="M116 220 H310 M470 220 H612 V104 H116 Z" class="builder-wire"/>
-      <path d="M376 170 V286 H500 V170" class="builder-wire branch-wire"/>
+    const wires = [
+      'M104 268 H182',
+      'M262 268 H502',
+      'M582 268 H612',
+      'M104 108 H612',
+      'M104 108 V268',
+      'M612 108 V268',
+      'M372 108 V158',
+      'M452 108 V158',
+      'M372 238 V288',
+      'M452 238 V288',
+      'M372 158 H452',
+      'M372 288 H452'
+    ];
+    return circuitBuilderSvg("Voltage across a lamp", `
+      ${wires.map((d) => `<path d="${d}" class="builder-wire"/>`).join("")}
+      ${circuitPower(['M104 268 H182 M262 268 H502 M582 268 H612 V108 H452 V158 H372 V108 H104 V268'])}
     `);
   }
 
   function circuitBuilderSeriesTwoLamps() {
-    return circuitBuilderSvg("Two-lamp circuit board", `
-      <path d="M116 220 H204 M300 220 H390 M496 220 H612 V104 H116 Z" class="builder-wire"/>
+    const wires = [
+      'M104 268 H182',
+      'M262 268 H452',
+      'M532 268 H612',
+      'M104 108 H238',
+      'M318 108 H414',
+      'M494 108 H612',
+      'M104 108 V268',
+      'M612 108 V268'
+    ];
+    return circuitBuilderSvg("Series with two lamps", `
+      ${wires.map((d) => `<path d="${d}" class="builder-wire"/>`).join("")}
+      ${circuitPower(['M104 268 H182 M262 268 H452 M532 268 H612 V108 H494 M414 108 H318 M238 108 H104 V268'])}
     `);
   }
 
   function circuitBuilderParallelTwoLamps() {
-    return circuitBuilderSvg("Two-lamp circuit board", `
-      <path d="M116 220 H252 M522 220 H612 V104 H116 Z" class="builder-wire"/>
-      <path d="M280 158 H504 M280 278 H504" class="builder-wire branch-wire"/>
-      <path d="M280 158 V278 M504 158 V278" class="builder-wire branch-wire"/>
-    `);
-  }
-
-  function circuitBuilderAndSwitches() {
-    return circuitBuilderSvg("Switch circuit board", `
-      <path d="M116 220 H204 M292 220 H368 M456 220 H612 V104 H116 Z" class="builder-wire"/>
-    `);
-  }
-
-  function circuitBuilderOrSwitches() {
-    return circuitBuilderSvg("Switch circuit board", `
-      <path d="M116 220 H252 M522 220 H612 V104 H116 Z" class="builder-wire"/>
-      <path d="M280 158 H504 M280 278 H504" class="builder-wire branch-wire"/>
-      <path d="M280 158 V278 M504 158 V278" class="builder-wire branch-wire"/>
+    const wires = [
+      'M104 268 H182',
+      'M262 268 H612',
+      'M104 108 H612',
+      'M104 108 V268',
+      'M612 108 V268',
+      'M368 108 V144',
+      'M448 108 V144',
+      'M368 220 V256',
+      'M448 220 V256',
+      'M368 144 H448',
+      'M368 256 H448'
+    ];
+    return circuitBuilderSvg("Parallel with two lamps", `
+      ${wires.map((d) => `<path d="${d}" class="builder-wire"/>`).join("")}
+      ${circuitPower([
+        'M104 268 H182 M262 268 H612 V108 H448 V144 H368 V108 H104 V268',
+        'M104 268 H182 M262 268 H612 V108 H448 V256 H368 V108 H104 V268'
+      ])}
     `);
   }
 
