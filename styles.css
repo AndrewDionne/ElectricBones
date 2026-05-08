@@ -3100,3 +3100,65 @@ body.boss-session-active .boss-card {
     flex: 1 1 100%;
   }
 }
+
+/* v27 Difficulty levels and Boss level-up gate */
+.boss-level-strip {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  margin: 10px 0 18px;
+}
+
+.boss-level-pill {
+  display: grid;
+  gap: 3px;
+  min-height: 62px;
+  align-content: center;
+  justify-items: center;
+  border-radius: 20px;
+  background: #fff;
+  border: 1px solid rgba(100, 116, 139, .16);
+  color: #475467;
+  font-weight: 1000;
+  box-shadow: 0 8px 22px rgba(15,23,42,.06);
+}
+
+.boss-level-pill small {
+  font-size: .7rem;
+  color: #667085;
+  font-weight: 900;
+}
+
+.boss-level-pill.active {
+  color: #fff;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-color: transparent;
+  box-shadow: 0 16px 34px rgba(124,58,237,.24);
+}
+
+.boss-level-pill.active small {
+  color: rgba(255,255,255,.86);
+}
+
+.boss-level-pill.locked {
+  opacity: .55;
+  background: #f8fafc;
+}
+
+.boss-level-pill.locked::before {
+  content: "🔒";
+  font-size: .9rem;
+}
+
+.boss-summary-card .boss-recommendation {
+  border-radius: 22px;
+  padding: 14px 16px;
+  background: rgba(237,233,254,.62);
+  border: 1px solid rgba(124,58,237,.14);
+}
+
+@media (max-width: 760px) {
+  .boss-level-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

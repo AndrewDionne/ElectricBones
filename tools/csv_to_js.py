@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CSV_PATH = ROOT / "data" / "flashcards.csv"
 JS_PATH = ROOT / "data" / "flashcards.js"
 REQUIRED_COLUMNS = ["Unit", "Type", "Front", "Back", "Extra cue"]
-OPTIONAL_COLUMNS = ["Choices", "Visual"]
+OPTIONAL_COLUMNS = ["Choices", "Visual", "Difficulty"]
 
 
 def slugify(value: str) -> str:
@@ -49,6 +49,12 @@ def main() -> None:
             visual = row.get("Visual", "").strip()
             if visual:
                 card["visual"] = visual
+            raw_difficulty = row.get("Difficulty", "").strip()
+            try:
+                difficulty = int(raw_difficulty) if raw_difficulty else 1
+            except ValueError:
+                difficulty = 1
+            card["difficulty"] = max(1, min(5, difficulty))
             cards.append(card)
 
     JS_PATH.write_text(

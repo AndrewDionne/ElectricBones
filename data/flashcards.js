@@ -6,7 +6,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Respiration",
     "back": "The process cells use to release energy from food. Oxygen and glucose are used; carbon dioxide and water are made.",
-    "cue": "Do not confuse with breathing. Breathing gets oxygen in; respiration releases energy in cells."
+    "cue": "Do not confuse with breathing. Breathing gets oxygen in; respiration releases energy in cells.",
+    "difficulty": 2
   },
   {
     "id": "card-002-7c-muscles-and-bones-gas-exchange",
@@ -14,7 +15,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Gas exchange",
     "back": "The swap of gases in the lungs: oxygen moves into the blood and carbon dioxide moves out of the blood.",
-    "cue": "Happens in the lungs, then blood carries gases around the body."
+    "cue": "Happens in the lungs, then blood carries gases around the body.",
+    "difficulty": 2
   },
   {
     "id": "card-003-7c-muscles-and-bones-breathing",
@@ -22,7 +24,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Breathing",
     "back": "The muscle movement that makes the lungs expand and contract.",
-    "cue": "Breathing is the movement; ventilation is the movement of air."
+    "cue": "Breathing is the movement; ventilation is the movement of air.",
+    "difficulty": 2
   },
   {
     "id": "card-004-7c-muscles-and-bones-ventilation",
@@ -30,7 +33,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Ventilation",
     "back": "Air moving into and out of the lungs.",
-    "cue": "Inhalation + exhalation together."
+    "cue": "Inhalation + exhalation together.",
+    "difficulty": 2
   },
   {
     "id": "card-005-7c-muscles-and-bones-inhalation",
@@ -38,7 +42,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Inhalation",
     "back": "Breathing in.",
-    "cue": "Diaphragm contracts and moves down; rib muscles help increase chest volume."
+    "cue": "Diaphragm contracts and moves down; rib muscles help increase chest volume.",
+    "difficulty": 2
   },
   {
     "id": "card-006-7c-muscles-and-bones-exhalation",
@@ -46,7 +51,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Exhalation",
     "back": "Breathing out.",
-    "cue": "Chest volume decreases; air is forced out."
+    "cue": "Chest volume decreases; air is forced out.",
+    "difficulty": 1
   },
   {
     "id": "card-007-7c-muscles-and-bones-diaphragm",
@@ -54,7 +60,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Diaphragm",
     "back": "A sheet of muscle below the lungs that helps change the volume of the chest.",
-    "cue": "Contracts and moves down during inhalation."
+    "cue": "Contracts and moves down during inhalation.",
+    "difficulty": 2
   },
   {
     "id": "card-008-7c-muscles-and-bones-intercostal-muscles",
@@ -62,7 +69,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Intercostal muscles",
     "back": "Muscles between the ribs that move the rib cage during breathing.",
-    "cue": "Used with the diaphragm."
+    "cue": "Used with the diaphragm.",
+    "difficulty": 2
   },
   {
     "id": "card-009-7c-muscles-and-bones-oxygen",
@@ -70,7 +78,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Oxygen",
     "back": "Gas needed for respiration.",
-    "cue": "Carried mainly by red blood cells."
+    "cue": "Carried mainly by red blood cells.",
+    "difficulty": 2
   },
   {
     "id": "card-010-7c-muscles-and-bones-carbon-dioxide",
@@ -78,7 +87,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Carbon dioxide",
     "back": "Waste gas made by respiration.",
-    "cue": "Removed from blood at the lungs and exhaled."
+    "cue": "Removed from blood at the lungs and exhaled.",
+    "difficulty": 2
   },
   {
     "id": "card-011-7c-muscles-and-bones-circulatory-system",
@@ -86,7 +96,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Circulatory system",
     "back": "The heart, blood and blood vessels that transport materials around the body.",
-    "cue": "Carries oxygen, nutrients and waste products."
+    "cue": "Carries oxygen, nutrients and waste products.",
+    "difficulty": 1
   },
   {
     "id": "card-012-7c-muscles-and-bones-heart",
@@ -94,7 +105,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Heart",
     "back": "The organ that pumps blood around the body.",
-    "cue": "Pulse is caused by the heart pumping blood into arteries."
+    "cue": "Pulse is caused by the heart pumping blood into arteries.",
+    "difficulty": 1
   },
   {
     "id": "card-013-7c-muscles-and-bones-artery",
@@ -102,7 +114,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Artery",
     "back": "Blood vessel that carries blood away from the heart.",
-    "cue": "Usually has thick walls and a pulse."
+    "cue": "Usually has thick walls and a pulse.",
+    "difficulty": 1
   },
   {
     "id": "card-014-7c-muscles-and-bones-vein",
@@ -110,7 +123,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Vein",
     "back": "Blood vessel that carries blood back towards the heart.",
-    "cue": "Returns blood to the heart."
+    "cue": "Returns blood to the heart.",
+    "difficulty": 1
   },
   {
     "id": "card-015-7c-muscles-and-bones-capillary",
@@ -118,7 +132,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Capillary",
     "back": "Tiny, thin-walled blood vessel where substances move between blood and body cells.",
-    "cue": "Thin walls help exchange oxygen, nutrients and carbon dioxide."
+    "cue": "Thin walls help exchange oxygen, nutrients and carbon dioxide.",
+    "difficulty": 2
   },
   {
     "id": "card-016-7c-muscles-and-bones-plasma",
@@ -126,7 +141,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Plasma",
     "back": "Liquid part of the blood.",
-    "cue": "Carries dissolved nutrients and other substances."
+    "cue": "Carries dissolved nutrients and other substances.",
+    "difficulty": 1
   },
   {
     "id": "card-017-7c-muscles-and-bones-red-blood-cell",
@@ -134,7 +150,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Red blood cell",
     "back": "Blood cell that carries oxygen using haemoglobin.",
-    "cue": "Adapted by having large surface area and no nucleus."
+    "cue": "Adapted by having large surface area and no nucleus.",
+    "difficulty": 1
   },
   {
     "id": "card-018-7c-muscles-and-bones-white-blood-cell",
@@ -142,7 +159,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "White blood cell",
     "back": "Blood cell that helps fight micro-organisms.",
-    "cue": "Part of body defence."
+    "cue": "Part of body defence.",
+    "difficulty": 1
   },
   {
     "id": "card-019-7c-muscles-and-bones-bone-marrow",
@@ -150,7 +168,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Bone marrow",
     "back": "Tissue inside some bones where blood cells are made.",
-    "cue": "Links skeleton to blood production."
+    "cue": "Links skeleton to blood production.",
+    "difficulty": 1
   },
   {
     "id": "card-020-7c-muscles-and-bones-skeleton",
@@ -158,7 +177,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Skeleton",
     "back": "The framework of bones that supports and protects the body and helps movement.",
-    "cue": "Functions: support, protection, movement."
+    "cue": "Functions: support, protection, movement.",
+    "difficulty": 1
   },
   {
     "id": "card-021-7c-muscles-and-bones-skull",
@@ -166,7 +186,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Skull",
     "back": "Bones that protect the brain.",
-    "cue": "Example of protection by skeleton."
+    "cue": "Example of protection by skeleton.",
+    "difficulty": 1
   },
   {
     "id": "card-022-7c-muscles-and-bones-ribs-sternum",
@@ -174,7 +195,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Ribs/sternum",
     "back": "Bones that protect the lungs and heart.",
-    "cue": "Another protection example."
+    "cue": "Another protection example.",
+    "difficulty": 1
   },
   {
     "id": "card-023-7c-muscles-and-bones-vertebrae-backbone",
@@ -182,7 +204,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Vertebrae/backbone",
     "back": "Small bones forming the spine.",
-    "cue": "Support the body and protect the spinal cord."
+    "cue": "Support the body and protect the spinal cord.",
+    "difficulty": 1
   },
   {
     "id": "card-024-7c-muscles-and-bones-joint",
@@ -190,7 +213,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Joint",
     "back": "Place where two or more bones meet.",
-    "cue": "Can be fixed or flexible."
+    "cue": "Can be fixed or flexible.",
+    "difficulty": 1
   },
   {
     "id": "card-025-7c-muscles-and-bones-fixed-joint",
@@ -198,7 +222,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Fixed joint",
     "back": "Joint where bones meet but do not move much.",
-    "cue": "Example: skull joints."
+    "cue": "Example: skull joints.",
+    "difficulty": 1
   },
   {
     "id": "card-026-7c-muscles-and-bones-flexible-joint",
@@ -206,7 +231,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Flexible joint",
     "back": "Joint that can be moved by muscles.",
-    "cue": "Example: elbow."
+    "cue": "Example: elbow.",
+    "difficulty": 1
   },
   {
     "id": "card-027-7c-muscles-and-bones-hinge-joint",
@@ -214,7 +240,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Hinge joint",
     "back": "Joint that allows back-and-forth movement in one direction.",
-    "cue": "Example: elbow/knee."
+    "cue": "Example: elbow/knee.",
+    "difficulty": 1
   },
   {
     "id": "card-028-7c-muscles-and-bones-cartilage",
@@ -222,7 +249,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Cartilage",
     "back": "Smooth, slippery tissue at bone ends that reduces rubbing.",
-    "cue": "Helps joints move smoothly."
+    "cue": "Helps joints move smoothly.",
+    "difficulty": 1
   },
   {
     "id": "card-029-7c-muscles-and-bones-ligament",
@@ -230,7 +258,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Ligament",
     "back": "Tissue that connects bone to bone.",
-    "cue": "Different from tendon."
+    "cue": "Different from tendon.",
+    "difficulty": 1
   },
   {
     "id": "card-030-7c-muscles-and-bones-tendon",
@@ -238,7 +267,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Tendon",
     "back": "Tissue that connects muscle to bone.",
-    "cue": "Allows muscle pull to move bone."
+    "cue": "Allows muscle pull to move bone.",
+    "difficulty": 1
   },
   {
     "id": "card-031-7c-muscles-and-bones-muscle",
@@ -246,7 +276,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Muscle",
     "back": "Tissue/organ that can contract and relax to create movement.",
-    "cue": "Muscles pull; they do not push."
+    "cue": "Muscles pull; they do not push.",
+    "difficulty": 1
   },
   {
     "id": "card-032-7c-muscles-and-bones-contract",
@@ -254,7 +285,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Contract",
     "back": "Get shorter and thicker.",
-    "cue": "Contracting muscles pull bones."
+    "cue": "Contracting muscles pull bones.",
+    "difficulty": 1
   },
   {
     "id": "card-033-7c-muscles-and-bones-relax",
@@ -262,7 +294,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Relax",
     "back": "Stop pulling strongly; can be stretched longer by the opposite muscle or load.",
-    "cue": "Muscles pull; they do not actively push themselves longer."
+    "cue": "Muscles pull; they do not actively push themselves longer.",
+    "difficulty": 1
   },
   {
     "id": "card-034-7c-muscles-and-bones-antagonistic-pair",
@@ -270,7 +303,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Antagonistic pair",
     "back": "Two muscles that move a bone in opposite directions.",
-    "cue": "One contracts while the other relaxes."
+    "cue": "One contracts while the other relaxes.",
+    "difficulty": 2
   },
   {
     "id": "card-035-7c-muscles-and-bones-biceps-and-triceps",
@@ -278,7 +312,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Biceps and triceps",
     "back": "Arm muscle pair that bends and straightens the elbow.",
-    "cue": "Biceps contracts to bend; triceps contracts to straighten."
+    "cue": "Biceps contracts to bend; triceps contracts to straighten.",
+    "difficulty": 1
   },
   {
     "id": "card-036-7c-muscles-and-bones-impulse",
@@ -286,7 +321,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Impulse",
     "back": "Electrical signal in the nervous system.",
-    "cue": "Carries messages from brain/spinal cord to muscles."
+    "cue": "Carries messages from brain/spinal cord to muscles.",
+    "difficulty": 1
   },
   {
     "id": "card-037-7c-muscles-and-bones-nervous-system",
@@ -294,7 +330,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Nervous system",
     "back": "Brain, spinal cord and nerves.",
-    "cue": "Controls muscle action and reaction time."
+    "cue": "Controls muscle action and reaction time.",
+    "difficulty": 1
   },
   {
     "id": "card-038-7c-muscles-and-bones-drug",
@@ -302,7 +339,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Drug",
     "back": "Substance that affects how the body works.",
-    "cue": "Medicines are useful drugs; recreational drugs can be harmful."
+    "cue": "Medicines are useful drugs; recreational drugs can be harmful.",
+    "difficulty": 1
   },
   {
     "id": "card-039-7c-muscles-and-bones-stimulant",
@@ -310,7 +348,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Stimulant",
     "back": "Drug that speeds up nervous system messages.",
-    "cue": "Example: caffeine."
+    "cue": "Example: caffeine.",
+    "difficulty": 1
   },
   {
     "id": "card-040-7c-muscles-and-bones-depressant",
@@ -318,7 +357,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Depressant",
     "back": "Drug that slows down nervous system messages.",
-    "cue": "Example: alcohol."
+    "cue": "Example: alcohol.",
+    "difficulty": 1
   },
   {
     "id": "card-041-7c-muscles-and-bones-reaction-time",
@@ -326,7 +366,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Reaction time",
     "back": "Time taken to respond to something.",
-    "cue": "Can be changed by drugs."
+    "cue": "Can be changed by drugs.",
+    "difficulty": 1
   },
   {
     "id": "card-042-7c-muscles-and-bones-side-effect",
@@ -334,7 +375,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Side-effect",
     "back": "Unwanted or harmful effect of a drug.",
-    "cue": "Important in drug safety/testing."
+    "cue": "Important in drug safety/testing.",
+    "difficulty": 1
   },
   {
     "id": "card-043-7c-muscles-and-bones-respiration-word-equation",
@@ -342,7 +384,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "Respiration word equation",
     "back": "glucose + oxygen -> carbon dioxide + water + energy released",
-    "cue": "This is the main biology equation to memorise. It happens in cells, not just in the lungs."
+    "cue": "This is the main biology equation to memorise. It happens in cells, not just in the lungs.",
+    "difficulty": 3
   },
   {
     "id": "card-044-7c-muscles-and-bones-breathing-rate",
@@ -350,7 +393,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "Breathing rate",
     "back": "breathing rate = number of breaths per minute",
-    "cue": "Count one inhale + one exhale as one breath."
+    "cue": "Count one inhale + one exhale as one breath.",
+    "difficulty": 3
   },
   {
     "id": "card-045-7c-muscles-and-bones-pulse-rate",
@@ -358,7 +402,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "Pulse rate",
     "back": "pulse rate = number of heart beats per minute",
-    "cue": "Measured where an artery is close to the skin, such as the wrist or neck."
+    "cue": "Measured where an artery is close to the skin, such as the wrist or neck.",
+    "difficulty": 3
   },
   {
     "id": "card-046-7c-muscles-and-bones-gas-exchange-direction",
@@ -366,7 +411,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "Gas exchange direction",
     "back": "oxygen: air in lungs -> blood; carbon dioxide: blood -> air in lungs",
-    "cue": "Use arrows to describe movement clearly."
+    "cue": "Use arrows to describe movement clearly.",
+    "difficulty": 3
   },
   {
     "id": "card-047-7c-muscles-and-bones-pressure-relationship",
@@ -374,7 +420,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "Pressure relationship",
     "back": "pressure = force / area",
-    "cue": "Useful extension from the skeleton topic: the same force over a smaller area gives greater pressure."
+    "cue": "Useful extension from the skeleton topic: the same force over a smaller area gives greater pressure.",
+    "difficulty": 3
   },
   {
     "id": "card-048-7c-muscles-and-bones-what-is-the-difference-between-breathin",
@@ -382,7 +429,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "What is the difference between breathing and respiration?",
     "back": "Breathing moves air in/out of the lungs; respiration releases energy in cells.",
-    "cue": ""
+    "cue": "",
+    "difficulty": 2
   },
   {
     "id": "card-049-7c-muscles-and-bones-why-do-muscles-need-oxygen-and-nutrient",
@@ -390,7 +438,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "Why do muscles need oxygen and nutrients?",
     "back": "For respiration, which releases energy for muscle contraction.",
-    "cue": ""
+    "cue": "",
+    "difficulty": 3
   },
   {
     "id": "card-050-7c-muscles-and-bones-why-are-antagonistic-pairs-needed",
@@ -398,7 +447,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "Why are antagonistic pairs needed?",
     "back": "A muscle can pull but cannot push, so another muscle is needed to pull the bone back.",
-    "cue": ""
+    "cue": "",
+    "difficulty": 4
   },
   {
     "id": "card-051-7c-muscles-and-bones-what-do-red-blood-cells-white-blood-cel",
@@ -406,7 +456,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "What do red blood cells, white blood cells and plasma do?",
     "back": "Red blood cells carry oxygen; white blood cells fight micro-organisms; plasma carries dissolved substances.",
-    "cue": ""
+    "cue": "",
+    "difficulty": 2
   },
   {
     "id": "card-052-7f-acids-and-alkalis-hazard",
@@ -414,7 +465,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Hazard",
     "back": "Something that could cause harm.",
-    "cue": "Example: corrosive acid."
+    "cue": "Example: corrosive acid.",
+    "difficulty": 1
   },
   {
     "id": "card-053-7f-acids-and-alkalis-risk",
@@ -422,7 +474,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Risk",
     "back": "The chance that a hazard will actually cause harm.",
-    "cue": "Risk can be lowered with precautions."
+    "cue": "Risk can be lowered with precautions.",
+    "difficulty": 1
   },
   {
     "id": "card-054-7f-acids-and-alkalis-precaution",
@@ -430,7 +483,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Precaution",
     "back": "Action taken to reduce risk.",
-    "cue": "Example: wear eye protection."
+    "cue": "Example: wear eye protection.",
+    "difficulty": 1
   },
   {
     "id": "card-055-7f-acids-and-alkalis-corrosive",
@@ -438,7 +492,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Corrosive",
     "back": "Able to damage or destroy materials and living tissue.",
-    "cue": "Most concentrated acids can be corrosive."
+    "cue": "Most concentrated acids can be corrosive.",
+    "difficulty": 1
   },
   {
     "id": "card-056-7f-acids-and-alkalis-irritant",
@@ -446,7 +501,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Irritant",
     "back": "Causes soreness or stinging, especially to skin or eyes.",
-    "cue": "Many dilute acids are irritants."
+    "cue": "Many dilute acids are irritants.",
+    "difficulty": 1
   },
   {
     "id": "card-057-7f-acids-and-alkalis-toxic",
@@ -454,7 +510,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Toxic",
     "back": "Poisonous.",
-    "cue": "Avoid contact and ingestion."
+    "cue": "Avoid contact and ingestion.",
+    "difficulty": 1
   },
   {
     "id": "card-058-7f-acids-and-alkalis-flammable",
@@ -462,7 +519,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Flammable",
     "back": "Catches fire easily.",
-    "cue": "Keep away from flames."
+    "cue": "Keep away from flames.",
+    "difficulty": 1
   },
   {
     "id": "card-059-7f-acids-and-alkalis-explosive",
@@ -470,7 +528,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Explosive",
     "back": "Reacts very quickly, releasing energy, gas and sound.",
-    "cue": "Can be triggered by heat."
+    "cue": "Can be triggered by heat.",
+    "difficulty": 1
   },
   {
     "id": "card-060-7f-acids-and-alkalis-acid",
@@ -478,7 +537,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Acid",
     "back": "Solution with pH less than 7; turns blue litmus red.",
-    "cue": "Lower pH means more acidic."
+    "cue": "Lower pH means more acidic.",
+    "difficulty": 1
   },
   {
     "id": "card-061-7f-acids-and-alkalis-alkali",
@@ -486,7 +546,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Alkali",
     "back": "Solution with pH more than 7; turns red litmus blue.",
-    "cue": "Higher pH means more alkaline."
+    "cue": "Higher pH means more alkaline.",
+    "difficulty": 1
   },
   {
     "id": "card-062-7f-acids-and-alkalis-base",
@@ -494,7 +555,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Base",
     "back": "Substance that neutralises an acid to form salt and water.",
-    "cue": "Can be soluble or insoluble. A soluble base is an alkali."
+    "cue": "Can be soluble or insoluble. A soluble base is an alkali.",
+    "difficulty": 1
   },
   {
     "id": "card-063-7f-acids-and-alkalis-soluble",
@@ -502,7 +564,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Soluble",
     "back": "Able to dissolve in a liquid.",
-    "cue": "Soluble base = alkali."
+    "cue": "Soluble base = alkali.",
+    "difficulty": 1
   },
   {
     "id": "card-064-7f-acids-and-alkalis-insoluble",
@@ -510,7 +573,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Insoluble",
     "back": "Unable to dissolve in a liquid.",
-    "cue": "Some bases are insoluble."
+    "cue": "Some bases are insoluble.",
+    "difficulty": 1
   },
   {
     "id": "card-065-7f-acids-and-alkalis-concentrated",
@@ -518,7 +582,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Concentrated",
     "back": "Contains a large amount of dissolved substance in a small amount of solvent.",
-    "cue": "More concentrated usually means more hazardous."
+    "cue": "More concentrated usually means more hazardous.",
+    "difficulty": 1
   },
   {
     "id": "card-066-7f-acids-and-alkalis-dilute-diluted",
@@ -526,7 +591,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Dilute/diluted",
     "back": "Made less concentrated by adding water.",
-    "cue": "Dilute acids are less hazardous than concentrated acids."
+    "cue": "Dilute acids are less hazardous than concentrated acids.",
+    "difficulty": 1
   },
   {
     "id": "card-067-7f-acids-and-alkalis-indicator",
@@ -534,7 +600,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Indicator",
     "back": "Dye that changes colour in acids and alkalis.",
-    "cue": "Used to test unknown solutions."
+    "cue": "Used to test unknown solutions.",
+    "difficulty": 2
   },
   {
     "id": "card-068-7f-acids-and-alkalis-litmus",
@@ -542,7 +609,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Litmus",
     "back": "Indicator: red in acid, blue in alkali.",
-    "cue": "Neutral keeps red litmus red and blue litmus blue."
+    "cue": "Neutral keeps red litmus red and blue litmus blue.",
+    "difficulty": 2
   },
   {
     "id": "card-069-7f-acids-and-alkalis-universal-indicator",
@@ -550,7 +618,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Universal indicator",
     "back": "Indicator that shows a range of colours for different pH values.",
-    "cue": "Used to estimate pH."
+    "cue": "Used to estimate pH.",
+    "difficulty": 2
   },
   {
     "id": "card-070-7f-acids-and-alkalis-ph-scale",
@@ -558,7 +627,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "pH scale",
     "back": "Scale from 1 to 14 showing acidity/alkalinity.",
-    "cue": "Acid < 7; neutral = 7; alkali > 7."
+    "cue": "Acid < 7; neutral = 7; alkali > 7.",
+    "difficulty": 1
   },
   {
     "id": "card-071-7f-acids-and-alkalis-neutral",
@@ -566,7 +636,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Neutral",
     "back": "Neither acid nor alkali; pH 7.",
-    "cue": "Pure water is neutral."
+    "cue": "Pure water is neutral.",
+    "difficulty": 1
   },
   {
     "id": "card-072-7f-acids-and-alkalis-chemical-reaction",
@@ -574,7 +645,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Chemical reaction",
     "back": "Change where new substances are formed.",
-    "cue": "Reactants become products."
+    "cue": "Reactants become products.",
+    "difficulty": 1
   },
   {
     "id": "card-073-7f-acids-and-alkalis-reactants",
@@ -582,7 +654,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Reactants",
     "back": "Starting substances in a reaction.",
-    "cue": "Written on the left of a word equation."
+    "cue": "Written on the left of a word equation.",
+    "difficulty": 1
   },
   {
     "id": "card-074-7f-acids-and-alkalis-products",
@@ -590,7 +663,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Products",
     "back": "New substances made in a reaction.",
-    "cue": "Written on the right of a word equation."
+    "cue": "Written on the right of a word equation.",
+    "difficulty": 1
   },
   {
     "id": "card-075-7f-acids-and-alkalis-word-equation",
@@ -598,7 +672,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Word equation",
     "back": "Equation using names of substances with an arrow from reactants to products.",
-    "cue": "Arrow means react to form."
+    "cue": "Arrow means react to form.",
+    "difficulty": 1
   },
   {
     "id": "card-076-7f-acids-and-alkalis-neutralisation",
@@ -606,7 +681,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Neutralisation",
     "back": "Reaction where an acid reacts with an alkali/base to make salt and water only.",
-    "cue": "Core chemistry reaction for this unit."
+    "cue": "Core chemistry reaction for this unit.",
+    "difficulty": 2
   },
   {
     "id": "card-077-7f-acids-and-alkalis-salt",
@@ -614,7 +690,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Salt",
     "back": "Substance made, besides water, when an acid is neutralised by a base/alkali.",
-    "cue": "Salt name depends on acid and metal/base used."
+    "cue": "Salt name depends on acid and metal/base used.",
+    "difficulty": 1
   },
   {
     "id": "card-078-7f-acids-and-alkalis-antacid",
@@ -622,7 +699,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Antacid",
     "back": "Medicine containing a base that neutralises excess stomach acid.",
-    "cue": "Everyday neutralisation example."
+    "cue": "Everyday neutralisation example.",
+    "difficulty": 2
   },
   {
     "id": "card-079-7f-acids-and-alkalis-acid-rain",
@@ -630,7 +708,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Acid rain",
     "back": "Rainwater made more acidic by air pollution.",
-    "cue": "Can damage plants, water systems and buildings."
+    "cue": "Can damage plants, water systems and buildings.",
+    "difficulty": 1
   },
   {
     "id": "card-080-7f-acids-and-alkalis-neutralisation-with-alkali",
@@ -638,7 +717,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "Neutralisation with alkali",
     "back": "acid + alkali -> salt + water",
-    "cue": "Learn this exactly."
+    "cue": "Learn this exactly.",
+    "difficulty": 3
   },
   {
     "id": "card-081-7f-acids-and-alkalis-neutralisation-with-base",
@@ -646,7 +726,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "Neutralisation with base",
     "back": "acid + base -> salt + water",
-    "cue": "A base may be soluble or insoluble."
+    "cue": "A base may be soluble or insoluble.",
+    "difficulty": 3
   },
   {
     "id": "card-082-7f-acids-and-alkalis-hydrochloric-acid-salt-rule",
@@ -654,7 +735,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "Hydrochloric acid salt rule",
     "back": "hydrochloric acid -> chloride salts",
-    "cue": "Example: zinc oxide + hydrochloric acid -> zinc chloride + water."
+    "cue": "Example: zinc oxide + hydrochloric acid -> zinc chloride + water.",
+    "difficulty": 3
   },
   {
     "id": "card-083-7f-acids-and-alkalis-nitric-acid-salt-rule",
@@ -662,7 +744,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "Nitric acid salt rule",
     "back": "nitric acid -> nitrate salts",
-    "cue": "Example: magnesium oxide + nitric acid -> magnesium nitrate + water."
+    "cue": "Example: magnesium oxide + nitric acid -> magnesium nitrate + water.",
+    "difficulty": 3
   },
   {
     "id": "card-084-7f-acids-and-alkalis-sulfuric-acid-salt-rule",
@@ -670,7 +753,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "Sulfuric acid salt rule",
     "back": "sulfuric acid -> sulfate salts",
-    "cue": "Example: copper oxide + sulfuric acid -> copper sulfate + water."
+    "cue": "Example: copper oxide + sulfuric acid -> copper sulfate + water.",
+    "difficulty": 3
   },
   {
     "id": "card-085-7f-acids-and-alkalis-ph-classification",
@@ -678,7 +762,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "pH classification",
     "back": "acid: pH < 7; neutral: pH = 7; alkali: pH > 7",
-    "cue": "The lower the acid pH, the more acidic. The higher the alkali pH, the more alkaline."
+    "cue": "The lower the acid pH, the more acidic. The higher the alkali pH, the more alkaline.",
+    "difficulty": 3
   },
   {
     "id": "card-086-7f-acids-and-alkalis-what-is-the-difference-between-a-hazard",
@@ -686,7 +771,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "What is the difference between a hazard and a risk?",
     "back": "A hazard can cause harm; a risk is the chance it actually causes harm.",
-    "cue": ""
+    "cue": "",
+    "difficulty": 2
   },
   {
     "id": "card-087-7f-acids-and-alkalis-what-colour-is-litmus-in-acid-and-alkal",
@@ -694,7 +780,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "What colour is litmus in acid and alkali?",
     "back": "Acid: red. Alkali: blue.",
-    "cue": ""
+    "cue": "",
+    "difficulty": 2
   },
   {
     "id": "card-088-7f-acids-and-alkalis-what-are-the-products-of-neutralisation",
@@ -702,7 +789,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "What are the products of neutralisation?",
     "back": "A salt and water.",
-    "cue": ""
+    "cue": "",
+    "difficulty": 4
   },
   {
     "id": "card-089-7f-acids-and-alkalis-how-do-you-decide-the-second-part-of-a-",
@@ -710,7 +798,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "How do you decide the second part of a salt name?",
     "back": "It comes from the acid: hydrochloric gives chloride, nitric gives nitrate, sulfuric gives sulfate.",
-    "cue": ""
+    "cue": "",
+    "difficulty": 2
   },
   {
     "id": "card-090-7j-current-electricity-electricity",
@@ -718,7 +807,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Electricity",
     "back": "A way of transferring energy through wires by moving charges.",
-    "cue": "Needs a complete circuit and a source such as a cell."
+    "cue": "Needs a complete circuit and a source such as a cell.",
+    "difficulty": 1
   },
   {
     "id": "card-091-7j-current-electricity-charge",
@@ -726,7 +816,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Charge",
     "back": "Tiny charged particles, such as electrons, can move around a circuit.",
-    "cue": "The flow of charged particles is current."
+    "cue": "The flow of charged particles is current.",
+    "difficulty": 2
   },
   {
     "id": "card-092-7j-current-electricity-current",
@@ -734,7 +825,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Current",
     "back": "Flow of electricity/charges around a circuit.",
-    "cue": "Measured in amps with an ammeter."
+    "cue": "Measured in amps with an ammeter.",
+    "difficulty": 2
   },
   {
     "id": "card-093-7j-current-electricity-ampere-amp-a",
@@ -742,7 +834,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Ampere / amp (A)",
     "back": "Unit of current.",
-    "cue": "Symbol A."
+    "cue": "Symbol A.",
+    "difficulty": 2
   },
   {
     "id": "card-094-7j-current-electricity-ammeter",
@@ -750,7 +843,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Ammeter",
     "back": "Instrument that measures current.",
-    "cue": "Connect in series."
+    "cue": "Connect in series.",
+    "difficulty": 2
   },
   {
     "id": "card-095-7j-current-electricity-voltage",
@@ -758,7 +852,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Voltage",
     "back": "Measure of energy transferred by electricity; the push from the source.",
-    "cue": "Measured in volts with a voltmeter."
+    "cue": "Measured in volts with a voltmeter.",
+    "difficulty": 2
   },
   {
     "id": "card-096-7j-current-electricity-volt-v",
@@ -766,7 +861,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Volt (V)",
     "back": "Unit of voltage.",
-    "cue": "Symbol V."
+    "cue": "Symbol V.",
+    "difficulty": 2
   },
   {
     "id": "card-097-7j-current-electricity-voltmeter",
@@ -774,7 +870,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Voltmeter",
     "back": "Instrument that measures voltage.",
-    "cue": "Connect in parallel across a component."
+    "cue": "Connect in parallel across a component.",
+    "difficulty": 2
   },
   {
     "id": "card-098-7j-current-electricity-cell",
@@ -782,7 +879,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Cell",
     "back": "Source of electrical energy in a circuit.",
-    "cue": "Cells push charges around a circuit."
+    "cue": "Cells push charges around a circuit.",
+    "difficulty": 1
   },
   {
     "id": "card-099-7j-current-electricity-power-pack",
@@ -790,7 +888,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Power pack",
     "back": "School-safe low-voltage supply.",
-    "cue": "Acts as a source of voltage."
+    "cue": "Acts as a source of voltage.",
+    "difficulty": 2
   },
   {
     "id": "card-100-7j-current-electricity-component",
@@ -798,7 +897,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Component",
     "back": "Part of a circuit, such as a bulb, switch, resistor or motor.",
-    "cue": "Use correct circuit symbols."
+    "cue": "Use correct circuit symbols.",
+    "difficulty": 1
   },
   {
     "id": "card-101-7j-current-electricity-switch",
@@ -806,7 +906,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Switch",
     "back": "Component that opens or closes a circuit.",
-    "cue": "Open switch = gap = no current."
+    "cue": "Open switch = gap = no current.",
+    "difficulty": 2
   },
   {
     "id": "card-102-7j-current-electricity-bulb",
@@ -814,7 +915,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Bulb",
     "back": "Component that transfers electrical energy to light and heat.",
-    "cue": "Brightness can change with current/voltage and circuit layout."
+    "cue": "Brightness can change with current/voltage and circuit layout.",
+    "difficulty": 2
   },
   {
     "id": "card-103-7j-current-electricity-filament",
@@ -822,7 +924,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Filament",
     "back": "Thin wire in a bulb that glows when current flows.",
-    "cue": "Transfers energy as light and heat."
+    "cue": "Transfers energy as light and heat.",
+    "difficulty": 2
   },
   {
     "id": "card-104-7j-current-electricity-conductor",
@@ -830,7 +933,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Conductor",
     "back": "Material that allows electricity to flow through it.",
-    "cue": "Metals are good conductors."
+    "cue": "Metals are good conductors.",
+    "difficulty": 1
   },
   {
     "id": "card-105-7j-current-electricity-insulator",
@@ -838,7 +942,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Insulator",
     "back": "Material that does not allow electricity to flow easily.",
-    "cue": "Plastic is a good insulator."
+    "cue": "Plastic is a good insulator.",
+    "difficulty": 1
   },
   {
     "id": "card-106-7j-current-electricity-resistance",
@@ -846,7 +951,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Resistance",
     "back": "How difficult it is for current to flow.",
-    "cue": "High resistance gives smaller current."
+    "cue": "High resistance gives smaller current.",
+    "difficulty": 2
   },
   {
     "id": "card-107-7j-current-electricity-resistor",
@@ -854,7 +960,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Resistor",
     "back": "Component that increases resistance and reduces current.",
-    "cue": "Used to control current."
+    "cue": "Used to control current.",
+    "difficulty": 2
   },
   {
     "id": "card-108-7j-current-electricity-variable-resistor",
@@ -862,7 +969,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Variable resistor",
     "back": "Resistor whose resistance can be changed.",
-    "cue": "Changing resistance changes current."
+    "cue": "Changing resistance changes current.",
+    "difficulty": 2
   },
   {
     "id": "card-109-7j-current-electricity-series-circuit",
@@ -870,7 +978,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Series circuit",
     "back": "Circuit with one loop/path.",
-    "cue": "Same current everywhere; one break stops all components."
+    "cue": "Same current everywhere; one break stops all components.",
+    "difficulty": 2
   },
   {
     "id": "card-110-7j-current-electricity-parallel-circuit",
@@ -878,7 +987,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Parallel circuit",
     "back": "Circuit with branches.",
-    "cue": "Current splits at branches; components can work independently."
+    "cue": "Current splits at branches; components can work independently.",
+    "difficulty": 2
   },
   {
     "id": "card-111-7j-current-electricity-and-circuit",
@@ -886,7 +996,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "AND circuit",
     "back": "Two switches arranged so both must be closed for the component to turn on.",
-    "cue": "Like switches in series."
+    "cue": "Like switches in series.",
+    "difficulty": 2
   },
   {
     "id": "card-112-7j-current-electricity-or-circuit",
@@ -894,7 +1005,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "OR circuit",
     "back": "Two switches arranged so either switch can turn the component on.",
-    "cue": "Like switches in parallel."
+    "cue": "Like switches in parallel.",
+    "difficulty": 2
   },
   {
     "id": "card-113-7j-current-electricity-static-electricity",
@@ -902,7 +1014,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Static electricity",
     "back": "Attraction or repulsion caused when materials rub and charges build up.",
-    "cue": "Different from current electricity in a circuit."
+    "cue": "Different from current electricity in a circuit.",
+    "difficulty": 2
   },
   {
     "id": "card-114-7j-current-electricity-model",
@@ -910,7 +1023,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Model",
     "back": "A representation that helps explain something complicated.",
-    "cue": "Circuit models are useful but not perfect."
+    "cue": "Circuit models are useful but not perfect.",
+    "difficulty": 2
   },
   {
     "id": "card-115-7j-current-electricity-analogy",
@@ -918,7 +1032,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Analogy",
     "back": "Model that compares something hard to understand with something familiar.",
-    "cue": "Example: central heating model for circuits."
+    "cue": "Example: central heating model for circuits.",
+    "difficulty": 2
   },
   {
     "id": "card-116-7j-current-electricity-fuse",
@@ -926,7 +1041,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Fuse",
     "back": "Safety wire that melts if current is too high.",
-    "cue": "Protects against overheating/fire."
+    "cue": "Protects against overheating/fire.",
+    "difficulty": 2
   },
   {
     "id": "card-117-7j-current-electricity-fuse-rating",
@@ -934,7 +1050,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Fuse rating",
     "back": "Largest current a fuse can carry without melting.",
-    "cue": "Use the correct fuse rating."
+    "cue": "Use the correct fuse rating.",
+    "difficulty": 2
   },
   {
     "id": "card-118-7j-current-electricity-circuit-breaker",
@@ -942,7 +1059,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Circuit breaker",
     "back": "Safety device that switches off current if it gets too high.",
-    "cue": "Can be reset."
+    "cue": "Can be reset.",
+    "difficulty": 2
   },
   {
     "id": "card-119-7j-current-electricity-live-wire",
@@ -950,7 +1068,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Live wire",
     "back": "Brown wire in a plug/cable; part of the circuit.",
-    "cue": "Dangerous if touched."
+    "cue": "Dangerous if touched.",
+    "difficulty": 1
   },
   {
     "id": "card-120-7j-current-electricity-neutral-wire",
@@ -958,7 +1077,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Neutral wire",
     "back": "Blue wire in a plug/cable; part of the circuit.",
-    "cue": "Completes the circuit."
+    "cue": "Completes the circuit.",
+    "difficulty": 1
   },
   {
     "id": "card-121-7j-current-electricity-earth-wire",
@@ -966,7 +1086,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Earth wire",
     "back": "Green/yellow safety wire.",
-    "cue": "Works with the fuse for safety."
+    "cue": "Works with the fuse for safety.",
+    "difficulty": 1
   },
   {
     "id": "card-122-7j-current-electricity-ring-main",
@@ -974,7 +1095,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Ring main",
     "back": "House wiring arrangement using a loop of parallel circuits.",
-    "cue": "Protected by circuit breakers."
+    "cue": "Protected by circuit breakers.",
+    "difficulty": 2
   },
   {
     "id": "card-123-7j-current-electricity-current-unit-relationship",
@@ -982,7 +1104,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "Current unit relationship",
     "back": "current is measured in amperes (A)",
-    "cue": "Use an ammeter in series."
+    "cue": "Use an ammeter in series.",
+    "difficulty": 4
   },
   {
     "id": "card-124-7j-current-electricity-voltage-unit-relationship",
@@ -990,7 +1113,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "Voltage unit relationship",
     "back": "voltage is measured in volts (V)",
-    "cue": "Use a voltmeter in parallel."
+    "cue": "Use a voltmeter in parallel.",
+    "difficulty": 4
   },
   {
     "id": "card-125-7j-current-electricity-series-current-rule",
@@ -998,7 +1122,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "Series current rule",
     "back": "I is the same everywhere in a series circuit",
-    "cue": "If one component breaks, the whole circuit stops."
+    "cue": "If one component breaks, the whole circuit stops.",
+    "difficulty": 4
   },
   {
     "id": "card-126-7j-current-electricity-parallel-current-rule",
@@ -1006,7 +1131,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "Parallel current rule",
     "back": "I_total = I_branch 1 + I_branch 2 + ...",
-    "cue": "Current splits at branches and recombines later."
+    "cue": "Current splits at branches and recombines later.",
+    "difficulty": 4
   },
   {
     "id": "card-127-7j-current-electricity-resistance-current-relationship",
@@ -1014,7 +1140,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "Resistance-current relationship",
     "back": "higher resistance -> lower current; lower resistance -> higher current",
-    "cue": "A resistor or thin wire increases resistance."
+    "cue": "A resistor or thin wire increases resistance.",
+    "difficulty": 4
   },
   {
     "id": "card-128-7j-current-electricity-voltage-current-relationship",
@@ -1022,7 +1149,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "Voltage-current relationship",
     "back": "higher voltage -> higher current, if resistance stays the same",
-    "cue": "Biggest current: high voltage and low resistance."
+    "cue": "Biggest current: high voltage and low resistance.",
+    "difficulty": 4
   },
   {
     "id": "card-129-7j-current-electricity-optional-extension-ohm-s-law",
@@ -1030,7 +1158,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "Optional extension: Ohm's law",
     "back": "voltage = current x resistance, or V = I x R",
-    "cue": "Only use this if your teacher has taught it; it is a useful extension beyond the pack."
+    "cue": "Only use this if your teacher has taught it; it is a useful extension beyond the pack.",
+    "difficulty": 5
   },
   {
     "id": "card-130-7j-current-electricity-how-do-you-connect-an-ammeter-and-a-v",
@@ -1038,7 +1167,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "How do you connect an ammeter and a voltmeter?",
     "back": "Ammeter in series; voltmeter in parallel across the component.",
-    "cue": ""
+    "cue": "",
+    "difficulty": 2
   },
   {
     "id": "card-131-7j-current-electricity-what-happens-to-bulbs-in-series-if-yo",
@@ -1046,7 +1176,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "What happens to bulbs in series if you add more bulbs?",
     "back": "They get dimmer because resistance increases and current becomes smaller.",
-    "cue": ""
+    "cue": "",
+    "difficulty": 4
   },
   {
     "id": "card-132-7j-current-electricity-what-happens-to-bulbs-in-parallel-if-",
@@ -1054,7 +1185,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "What happens to bulbs in parallel if one bulb breaks?",
     "back": "Other branches can still work.",
-    "cue": ""
+    "cue": "",
+    "difficulty": 3
   },
   {
     "id": "card-133-7j-current-electricity-what-circuit-condition-gives-the-larg",
@@ -1062,7 +1194,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "What circuit condition gives the largest current?",
     "back": "High voltage and low resistance.",
-    "cue": ""
+    "cue": "",
+    "difficulty": 4
   },
   {
     "id": "card-134-7c-muscles-and-bones-which-statement-best-describes-respirat",
@@ -1076,7 +1209,8 @@ window.YEAR7_FLASHCARDS = [
       "Air moves in and out of the lungs.",
       "The heart pumps blood around the body.",
       "Bones protect organs."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-135-7c-muscles-and-bones-what-is-the-main-job-of-red-blood-cells",
@@ -1090,7 +1224,8 @@ window.YEAR7_FLASHCARDS = [
       "Fight micro-organisms.",
       "Make blood clot.",
       "Digest food."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-136-7c-muscles-and-bones-which-blood-vessel-carries-blood-away-f",
@@ -1104,7 +1239,8 @@ window.YEAR7_FLASHCARDS = [
       "Vein.",
       "Capillary.",
       "Ligament."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-137-7c-muscles-and-bones-where-does-gas-exchange-happen",
@@ -1118,7 +1254,8 @@ window.YEAR7_FLASHCARDS = [
       "In the stomach, where food is broken down.",
       "In bones, where blood cells are made.",
       "In tendons, where muscles attach to bones."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-138-7c-muscles-and-bones-what-happens-to-the-diaphragm-when-you-",
@@ -1132,7 +1269,8 @@ window.YEAR7_FLASHCARDS = [
       "It relaxes and moves up.",
       "It turns oxygen into carbon dioxide.",
       "It pumps blood to the lungs."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-139-7c-muscles-and-bones-what-is-ventilation",
@@ -1146,7 +1284,8 @@ window.YEAR7_FLASHCARDS = [
       "Energy release in cells.",
       "Blood moving through arteries.",
       "Muscles pulling on bones."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-140-7c-muscles-and-bones-which-part-of-the-skeleton-protects-the",
@@ -1160,7 +1299,8 @@ window.YEAR7_FLASHCARDS = [
       "Ribs.",
       "Vertebrae.",
       "Cartilage."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-141-7c-muscles-and-bones-which-bones-help-protect-the-heart-and-",
@@ -1174,7 +1314,8 @@ window.YEAR7_FLASHCARDS = [
       "Skull and jaw.",
       "Femur and tibia.",
       "Biceps and triceps."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-142-7c-muscles-and-bones-what-is-a-joint",
@@ -1188,7 +1329,8 @@ window.YEAR7_FLASHCARDS = [
       "A blood vessel where gas exchange happens.",
       "A muscle that contracts.",
       "A drug that slows nerve messages."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-143-7c-muscles-and-bones-what-does-cartilage-do-at-the-ends-of-b",
@@ -1202,7 +1344,8 @@ window.YEAR7_FLASHCARDS = [
       "Connects muscle to bone.",
       "Carries oxygen.",
       "Makes acid neutral."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-144-7c-muscles-and-bones-what-connects-bone-to-bone",
@@ -1216,7 +1359,8 @@ window.YEAR7_FLASHCARDS = [
       "Tendon.",
       "Capillary.",
       "Plasma."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-145-7c-muscles-and-bones-what-connects-muscle-to-bone",
@@ -1230,7 +1374,8 @@ window.YEAR7_FLASHCARDS = [
       "Ligament.",
       "Artery.",
       "Cartilage."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-146-7c-muscles-and-bones-why-are-antagonistic-muscle-pairs-neede",
@@ -1244,7 +1389,8 @@ window.YEAR7_FLASHCARDS = [
       "Bones can only move when they make blood cells.",
       "Muscles only work when acid is neutralised.",
       "Blood flows only in one direction through them."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-147-7c-muscles-and-bones-when-the-biceps-contracts-what-usually-",
@@ -1258,7 +1404,8 @@ window.YEAR7_FLASHCARDS = [
       "The arm straightens.",
       "The ribs expand.",
       "The skull moves."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-148-7c-muscles-and-bones-when-the-triceps-contracts-what-usually",
@@ -1272,7 +1419,8 @@ window.YEAR7_FLASHCARDS = [
       "The arm bends.",
       "The diaphragm moves down.",
       "Blood becomes oxygen."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-149-7c-muscles-and-bones-what-is-the-nervous-system-made-from",
@@ -1286,7 +1434,8 @@ window.YEAR7_FLASHCARDS = [
       "Heart, blood and blood vessels.",
       "Bones, joints and cartilage.",
       "Acids, alkalis and indicators."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-150-7c-muscles-and-bones-what-is-an-impulse-in-the-nervous-syste",
@@ -1300,7 +1449,8 @@ window.YEAR7_FLASHCARDS = [
       "A type of bone.",
       "A waste gas.",
       "A liquid part of blood."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-151-7c-muscles-and-bones-what-is-a-stimulant",
@@ -1314,7 +1464,8 @@ window.YEAR7_FLASHCARDS = [
       "A drug that slows nervous system messages.",
       "A tissue connecting muscle to bone.",
       "A solution with pH less than 7."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-152-7c-muscles-and-bones-what-is-a-depressant",
@@ -1328,7 +1479,8 @@ window.YEAR7_FLASHCARDS = [
       "A drug that speeds up nervous system messages.",
       "A joint that moves in one direction.",
       "A tiny blood vessel."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-153-7c-muscles-and-bones-what-is-reaction-time",
@@ -1342,7 +1494,8 @@ window.YEAR7_FLASHCARDS = [
       "The amount of oxygen carried by blood.",
       "The number of bones in the skeleton.",
       "The pH of a solution."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-154-7c-muscles-and-bones-which-word-equation-is-correct-for-resp",
@@ -1356,7 +1509,8 @@ window.YEAR7_FLASHCARDS = [
       "carbon dioxide + water → glucose + oxygen",
       "acid + alkali → salt + water",
       "voltage = current × resistance"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-155-7c-muscles-and-bones-what-is-pulse-rate",
@@ -1370,7 +1524,8 @@ window.YEAR7_FLASHCARDS = [
       "Number of breaths per minute.",
       "Amount of oxygen per red blood cell.",
       "Pressure divided by area."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-156-7c-muscles-and-bones-what-does-plasma-do-in-blood",
@@ -1384,7 +1539,8 @@ window.YEAR7_FLASHCARDS = [
       "Carries bones around the body.",
       "Connects muscle to bone.",
       "Turns blue litmus red."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-157-7c-muscles-and-bones-why-do-muscles-need-oxygen-and-nutrient",
@@ -1398,7 +1554,8 @@ window.YEAR7_FLASHCARDS = [
       "To make indicators change colour.",
       "To increase the resistance of wires.",
       "To turn arteries into veins."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-158-7f-acids-and-alkalis-what-is-a-hazard",
@@ -1412,7 +1569,8 @@ window.YEAR7_FLASHCARDS = [
       "The chance harm will happen.",
       "A solution with pH 7.",
       "A salt made by neutralisation."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-159-7f-acids-and-alkalis-what-is-risk",
@@ -1426,7 +1584,8 @@ window.YEAR7_FLASHCARDS = [
       "Something that always causes harm.",
       "A dye that changes colour.",
       "A substance with pH more than 7."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-160-7f-acids-and-alkalis-what-does-corrosive-mean",
@@ -1440,7 +1599,8 @@ window.YEAR7_FLASHCARDS = [
       "Catches fire easily.",
       "Cannot dissolve in water.",
       "Shows pH using colours."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-161-7f-acids-and-alkalis-what-does-flammable-mean",
@@ -1454,7 +1614,8 @@ window.YEAR7_FLASHCARDS = [
       "Poisonous.",
       "Damages tissue.",
       "Neither acid nor alkali."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-162-7f-acids-and-alkalis-what-is-an-acid",
@@ -1468,7 +1629,8 @@ window.YEAR7_FLASHCARDS = [
       "A solution with pH more than 7.",
       "A neutral solution only.",
       "A substance that cannot dissolve."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-163-7f-acids-and-alkalis-what-is-an-alkali",
@@ -1482,7 +1644,8 @@ window.YEAR7_FLASHCARDS = [
       "A solution with pH less than 7.",
       "A substance that always catches fire.",
       "A tiny blood vessel."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-164-7f-acids-and-alkalis-what-ph-is-neutral",
@@ -1496,7 +1659,8 @@ window.YEAR7_FLASHCARDS = [
       "pH 1.",
       "pH 14.",
       "Any pH below 7."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-165-7f-acids-and-alkalis-what-colour-does-blue-litmus-turn-in-ac",
@@ -1510,7 +1674,8 @@ window.YEAR7_FLASHCARDS = [
       "Blue.",
       "Green.",
       "Purple."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-166-7f-acids-and-alkalis-what-colour-does-red-litmus-turn-in-alk",
@@ -1524,7 +1689,8 @@ window.YEAR7_FLASHCARDS = [
       "Red.",
       "Orange.",
       "Yellow."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-167-7f-acids-and-alkalis-what-is-universal-indicator-used-for",
@@ -1538,7 +1704,8 @@ window.YEAR7_FLASHCARDS = [
       "Measuring current in a circuit.",
       "Connecting muscle to bone.",
       "Making a circuit safer."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-168-7f-acids-and-alkalis-what-is-neutralisation",
@@ -1552,7 +1719,8 @@ window.YEAR7_FLASHCARDS = [
       "A wire melts when current is too high.",
       "Air moves into and out of the lungs.",
       "A muscle gets shorter and thicker."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-169-7f-acids-and-alkalis-what-are-the-products-of-acid-alkali",
@@ -1566,7 +1734,8 @@ window.YEAR7_FLASHCARDS = [
       "Glucose and oxygen.",
       "Carbon dioxide and energy.",
       "Current and voltage."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-170-7f-acids-and-alkalis-what-is-a-base",
@@ -1580,7 +1749,8 @@ window.YEAR7_FLASHCARDS = [
       "A gas needed for respiration.",
       "A circuit with one loop.",
       "A blood vessel that carries blood away."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-171-7f-acids-and-alkalis-what-does-soluble-mean",
@@ -1594,7 +1764,8 @@ window.YEAR7_FLASHCARDS = [
       "Unable to dissolve in a liquid.",
       "Can destroy living tissue.",
       "Has a pH less than 7."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-172-7f-acids-and-alkalis-what-does-insoluble-mean",
@@ -1608,7 +1779,8 @@ window.YEAR7_FLASHCARDS = [
       "Able to dissolve in a liquid.",
       "Made less concentrated by water.",
       "Turns red litmus blue."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-173-7f-acids-and-alkalis-what-does-dilute-mean",
@@ -1622,7 +1794,8 @@ window.YEAR7_FLASHCARDS = [
       "Contains a lot of solute in a small solvent volume.",
       "Cannot dissolve.",
       "Catches fire easily."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-174-7f-acids-and-alkalis-what-does-concentrated-mean",
@@ -1636,7 +1809,8 @@ window.YEAR7_FLASHCARDS = [
       "Made less concentrated by adding water.",
       "Neither acid nor alkali.",
       "A dye that always stays the same colour."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-175-7f-acids-and-alkalis-what-are-reactants",
@@ -1650,7 +1824,8 @@ window.YEAR7_FLASHCARDS = [
       "New substances made by a reaction.",
       "Tiny moving charges.",
       "The liquid part of blood."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-176-7f-acids-and-alkalis-what-are-products",
@@ -1664,7 +1839,8 @@ window.YEAR7_FLASHCARDS = [
       "Starting substances in a reaction.",
       "Materials that let current flow.",
       "Bones that protect the brain."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-177-7f-acids-and-alkalis-what-does-hydrochloric-acid-make-in-sal",
@@ -1678,7 +1854,8 @@ window.YEAR7_FLASHCARDS = [
       "Nitrate salts.",
       "Sulfate salts.",
       "Carbonate salts."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-178-7f-acids-and-alkalis-what-does-nitric-acid-make-in-salt-name",
@@ -1692,7 +1869,8 @@ window.YEAR7_FLASHCARDS = [
       "Chloride salts.",
       "Sulfate salts.",
       "Oxide salts."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-179-7f-acids-and-alkalis-what-does-sulfuric-acid-make-in-salt-na",
@@ -1706,7 +1884,8 @@ window.YEAR7_FLASHCARDS = [
       "Chloride salts.",
       "Nitrate salts.",
       "Hydroxide salts."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-180-7f-acids-and-alkalis-why-can-antacids-help-indigestion",
@@ -1720,7 +1899,8 @@ window.YEAR7_FLASHCARDS = [
       "They increase the acidity of the stomach.",
       "They carry oxygen to muscles.",
       "They reduce resistance in wires."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-181-7f-acids-and-alkalis-what-is-acid-rain",
@@ -1734,7 +1914,8 @@ window.YEAR7_FLASHCARDS = [
       "Rainwater with pH exactly 7.",
       "Water made more alkaline by salt.",
       "Rain that carries red blood cells."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-182-7j-current-electricity-what-is-current",
@@ -1748,7 +1929,8 @@ window.YEAR7_FLASHCARDS = [
       "The push from a cell.",
       "A material that blocks electricity.",
       "A branch in a parallel circuit."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-183-7j-current-electricity-what-unit-is-used-for-current",
@@ -1762,7 +1944,8 @@ window.YEAR7_FLASHCARDS = [
       "Volt (V).",
       "Ohm only.",
       "pH."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-184-7j-current-electricity-how-should-an-ammeter-be-connected",
@@ -1776,7 +1959,8 @@ window.YEAR7_FLASHCARDS = [
       "In parallel across the component.",
       "Outside the circuit.",
       "Only across the cell."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-185-7j-current-electricity-what-is-voltage",
@@ -1790,7 +1974,8 @@ window.YEAR7_FLASHCARDS = [
       "The number of branches in a circuit.",
       "The resistance of plastic.",
       "The unit of current."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-186-7j-current-electricity-how-should-a-voltmeter-be-connected",
@@ -1804,7 +1989,8 @@ window.YEAR7_FLASHCARDS = [
       "In series with the component.",
       "Inside the cell.",
       "Only next to a fuse."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-187-7j-current-electricity-what-does-a-cell-do-in-a-circuit",
@@ -1818,7 +2004,8 @@ window.YEAR7_FLASHCARDS = [
       "Measures current.",
       "Increases rubbing between bones.",
       "Neutralises acid."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-188-7j-current-electricity-what-does-a-switch-do",
@@ -1832,7 +2019,8 @@ window.YEAR7_FLASHCARDS = [
       "Measures voltage.",
       "Carries oxygen.",
       "Shows pH."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-189-7j-current-electricity-what-is-a-conductor",
@@ -1846,7 +2034,8 @@ window.YEAR7_FLASHCARDS = [
       "A material that blocks electricity.",
       "A solution with pH more than 7.",
       "A bone connection tissue."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-190-7j-current-electricity-what-is-an-insulator",
@@ -1860,7 +2049,8 @@ window.YEAR7_FLASHCARDS = [
       "A material that lets electricity flow easily.",
       "A device that measures current.",
       "A component that produces light."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-191-7j-current-electricity-what-is-resistance",
@@ -1874,7 +2064,8 @@ window.YEAR7_FLASHCARDS = [
       "The flow of charges.",
       "The unit of voltage.",
       "A gas exchange surface."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-192-7j-current-electricity-what-does-a-resistor-do",
@@ -1888,7 +2079,8 @@ window.YEAR7_FLASHCARDS = [
       "Measures voltage.",
       "Makes a solution neutral.",
       "Carries blood to the heart."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-193-7j-current-electricity-what-is-a-variable-resistor",
@@ -1902,7 +2094,8 @@ window.YEAR7_FLASHCARDS = [
       "A fixed wire that always melts.",
       "A cell with two voltmeters.",
       "A switch that cannot open."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-194-7j-current-electricity-what-is-a-series-circuit",
@@ -1916,7 +2109,8 @@ window.YEAR7_FLASHCARDS = [
       "A circuit with branches.",
       "A circuit with pH less than 7.",
       "A circuit with no components."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-195-7j-current-electricity-what-is-a-parallel-circuit",
@@ -1930,7 +2124,8 @@ window.YEAR7_FLASHCARDS = [
       "A circuit with one loop only.",
       "A circuit that cannot have switches.",
       "A circuit that contains only a cell."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-196-7j-current-electricity-what-happens-to-current-in-a-series-c",
@@ -1944,7 +2139,8 @@ window.YEAR7_FLASHCARDS = [
       "It is zero everywhere.",
       "It only flows through voltmeters.",
       "It doubles at every bulb."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-197-7j-current-electricity-what-is-the-current-rule-for-a-parall",
@@ -1958,7 +2154,8 @@ window.YEAR7_FLASHCARDS = [
       "Current is the same everywhere.",
       "Current only flows in one branch.",
       "Current is measured in volts."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-198-7j-current-electricity-what-happens-if-one-bulb-breaks-in-a-",
@@ -1972,7 +2169,8 @@ window.YEAR7_FLASHCARDS = [
       "Every bulb must go out.",
       "The circuit turns into an acid.",
       "The voltage becomes pH 7."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-199-7j-current-electricity-what-usually-happens-if-you-add-more-",
@@ -1986,7 +2184,8 @@ window.YEAR7_FLASHCARDS = [
       "Bulbs get brighter because resistance decreases.",
       "Only one bulb can be switched on.",
       "Current becomes pH 14."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-200-7j-current-electricity-what-condition-gives-the-largest-curr",
@@ -2000,7 +2199,8 @@ window.YEAR7_FLASHCARDS = [
       "Low voltage and high resistance.",
       "High pH and low pH.",
       "No cell and an open switch."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-201-7j-current-electricity-which-formula-is-ohm-s-law",
@@ -2014,7 +2214,8 @@ window.YEAR7_FLASHCARDS = [
       "I = V × R × pH.",
       "pressure = force / area.",
       "acid + alkali → salt + water."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-202-7j-current-electricity-what-is-an-and-circuit",
@@ -2028,7 +2229,8 @@ window.YEAR7_FLASHCARDS = [
       "Two switches arranged so either switch can turn it on.",
       "A circuit with no complete path.",
       "A pH indicator circuit."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-203-7j-current-electricity-what-is-an-or-circuit",
@@ -2042,7 +2244,8 @@ window.YEAR7_FLASHCARDS = [
       "Two switches arranged so both must be closed.",
       "A circuit with only resistors.",
       "A circuit that measures pulse rate."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-204-7j-current-electricity-what-does-a-fuse-do",
@@ -2056,7 +2259,8 @@ window.YEAR7_FLASHCARDS = [
       "Increases pH.",
       "Carries oxygen.",
       "Measures voltage across a bulb."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-205-7j-current-electricity-what-colour-is-the-earth-wire-in-a-uk",
@@ -2070,7 +2274,8 @@ window.YEAR7_FLASHCARDS = [
       "Brown.",
       "Blue.",
       "Red litmus."
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-206-7j-current-electricity-which-circuit-symbol-is-shown",
@@ -2085,7 +2290,8 @@ window.YEAR7_FLASHCARDS = [
       "Lamp / bulb",
       "Ammeter"
     ],
-    "visual": "symbol-cell"
+    "visual": "symbol-cell",
+    "difficulty": 3
   },
   {
     "id": "card-207-7j-current-electricity-which-circuit-symbol-is-shown",
@@ -2100,7 +2306,8 @@ window.YEAR7_FLASHCARDS = [
       "Voltmeter",
       "Resistor"
     ],
-    "visual": "symbol-battery"
+    "visual": "symbol-battery",
+    "difficulty": 3
   },
   {
     "id": "card-208-7j-current-electricity-which-circuit-symbol-is-shown",
@@ -2115,7 +2322,8 @@ window.YEAR7_FLASHCARDS = [
       "Fuse",
       "Switch"
     ],
-    "visual": "symbol-lamp"
+    "visual": "symbol-lamp",
+    "difficulty": 3
   },
   {
     "id": "card-209-7j-current-electricity-which-circuit-symbol-is-shown",
@@ -2130,7 +2338,8 @@ window.YEAR7_FLASHCARDS = [
       "Cell",
       "Ammeter"
     ],
-    "visual": "symbol-switchOpen"
+    "visual": "symbol-switchOpen",
+    "difficulty": 3
   },
   {
     "id": "card-210-7j-current-electricity-which-circuit-symbol-is-shown",
@@ -2145,7 +2354,8 @@ window.YEAR7_FLASHCARDS = [
       "Voltmeter",
       "Resistor"
     ],
-    "visual": "symbol-switchClosed"
+    "visual": "symbol-switchClosed",
+    "difficulty": 3
   },
   {
     "id": "card-211-7j-current-electricity-which-circuit-symbol-is-shown",
@@ -2160,7 +2370,8 @@ window.YEAR7_FLASHCARDS = [
       "Battery",
       "Ammeter"
     ],
-    "visual": "symbol-resistor"
+    "visual": "symbol-resistor",
+    "difficulty": 3
   },
   {
     "id": "card-212-7j-current-electricity-which-circuit-symbol-is-shown",
@@ -2175,7 +2386,8 @@ window.YEAR7_FLASHCARDS = [
       "Motor",
       "Cell"
     ],
-    "visual": "symbol-ammeter"
+    "visual": "symbol-ammeter",
+    "difficulty": 5
   },
   {
     "id": "card-213-7j-current-electricity-which-circuit-symbol-is-shown",
@@ -2190,7 +2402,8 @@ window.YEAR7_FLASHCARDS = [
       "Battery",
       "Switch"
     ],
-    "visual": "symbol-voltmeter"
+    "visual": "symbol-voltmeter",
+    "difficulty": 5
   },
   {
     "id": "card-214-7j-current-electricity-which-circuit-symbol-is-shown",
@@ -2205,7 +2418,8 @@ window.YEAR7_FLASHCARDS = [
       "Resistor",
       "Voltmeter"
     ],
-    "visual": "symbol-motor"
+    "visual": "symbol-motor",
+    "difficulty": 3
   },
   {
     "id": "card-215-7j-current-electricity-in-this-series-circuit-what-happens-i",
@@ -2220,7 +2434,8 @@ window.YEAR7_FLASHCARDS = [
       "Only bulb B gets brighter.",
       "The battery becomes neutral."
     ],
-    "visual": "circuit-series"
+    "visual": "circuit-series",
+    "difficulty": 4
   },
   {
     "id": "card-216-7j-current-electricity-in-this-parallel-circuit-what-happens",
@@ -2235,7 +2450,8 @@ window.YEAR7_FLASHCARDS = [
       "Current stops everywhere.",
       "The voltage becomes zero."
     ],
-    "visual": "circuit-parallel"
+    "visual": "circuit-parallel",
+    "difficulty": 4
   },
   {
     "id": "card-217-7j-current-electricity-why-is-the-ammeter-labelled-a-placed-",
@@ -2250,7 +2466,8 @@ window.YEAR7_FLASHCARDS = [
       "It is used to test pH.",
       "It makes the bulb brighter."
     ],
-    "visual": "circuit-ammeter-series"
+    "visual": "circuit-ammeter-series",
+    "difficulty": 5
   },
   {
     "id": "card-218-7j-current-electricity-why-is-the-voltmeter-labelled-a-conne",
@@ -2265,7 +2482,8 @@ window.YEAR7_FLASHCARDS = [
       "It replaces the battery.",
       "It measures pH."
     ],
-    "visual": "circuit-voltmeter-parallel"
+    "visual": "circuit-voltmeter-parallel",
+    "difficulty": 5
   },
   {
     "id": "card-219-7j-current-electricity-what-is-wrong-with-this-circuit",
@@ -2280,7 +2498,8 @@ window.YEAR7_FLASHCARDS = [
       "The battery is made from two bulbs.",
       "The switch is closed."
     ],
-    "visual": "circuit-voltmeter-mistake"
+    "visual": "circuit-voltmeter-mistake",
+    "difficulty": 5
   },
   {
     "id": "card-220-7j-current-electricity-for-the-and-switch-circuit-what-must-",
@@ -2295,7 +2514,8 @@ window.YEAR7_FLASHCARDS = [
       "Only switch A matters.",
       "The pH must be 7."
     ],
-    "visual": "circuit-and-switches"
+    "visual": "circuit-and-switches",
+    "difficulty": 3
   },
   {
     "id": "card-221-7j-current-electricity-for-the-or-switch-circuit-what-must-h",
@@ -2310,7 +2530,8 @@ window.YEAR7_FLASHCARDS = [
       "Both switches must be closed together.",
       "The bulb must be in acid."
     ],
-    "visual": "circuit-or-switches"
+    "visual": "circuit-or-switches",
+    "difficulty": 3
   },
   {
     "id": "card-222-7j-current-electricity-the-switch-labelled-a-is-open-what-do",
@@ -2325,7 +2546,8 @@ window.YEAR7_FLASHCARDS = [
       "It changes acid to alkali.",
       "It measures voltage."
     ],
-    "visual": "circuit-open-switch"
+    "visual": "circuit-open-switch",
+    "difficulty": 3
   },
   {
     "id": "card-223-7j-current-electricity-what-do-the-arrows-labelled-a-show",
@@ -2340,7 +2562,8 @@ window.YEAR7_FLASHCARDS = [
       "The pH scale direction.",
       "The movement of cartilage."
     ],
-    "visual": "circuit-current-arrows"
+    "visual": "circuit-current-arrows",
+    "difficulty": 3
   },
   {
     "id": "card-224-7j-current-electricity-what-is-wrong-with-this-circuit",
@@ -2355,7 +2578,8 @@ window.YEAR7_FLASHCARDS = [
       "The voltmeter is measuring pH.",
       "The switch is open."
     ],
-    "visual": "circuit-short-mistake"
+    "visual": "circuit-short-mistake",
+    "difficulty": 5
   },
   {
     "id": "card-225-7f-acids-and-alkalis-on-the-ph-scale-which-label-shows-an-ac",
@@ -2370,7 +2594,8 @@ window.YEAR7_FLASHCARDS = [
       "C",
       "None of them"
     ],
-    "visual": "ph-scale"
+    "visual": "ph-scale",
+    "difficulty": 3
   },
   {
     "id": "card-226-7f-acids-and-alkalis-on-the-ph-scale-which-label-is-neutral",
@@ -2385,7 +2610,8 @@ window.YEAR7_FLASHCARDS = [
       "C",
       "Both A and C"
     ],
-    "visual": "ph-scale"
+    "visual": "ph-scale",
+    "difficulty": 3
   },
   {
     "id": "card-227-7f-acids-and-alkalis-on-the-ph-scale-which-label-shows-the-m",
@@ -2400,7 +2626,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "None of them"
     ],
-    "visual": "ph-scale"
+    "visual": "ph-scale",
+    "difficulty": 3
   },
   {
     "id": "card-228-7f-acids-and-alkalis-what-does-blue-litmus-do-in-the-acid-be",
@@ -2415,7 +2642,8 @@ window.YEAR7_FLASHCARDS = [
       "Turns green.",
       "Makes a salt."
     ],
-    "visual": "litmus-test"
+    "visual": "litmus-test",
+    "difficulty": 3
   },
   {
     "id": "card-229-7f-acids-and-alkalis-what-does-red-litmus-do-in-the-alkali-b",
@@ -2430,7 +2658,8 @@ window.YEAR7_FLASHCARDS = [
       "Turns white.",
       "Measures current."
     ],
-    "visual": "litmus-test"
+    "visual": "litmus-test",
+    "difficulty": 3
   },
   {
     "id": "card-230-7f-acids-and-alkalis-in-the-universal-indicator-colours-whic",
@@ -2445,7 +2674,8 @@ window.YEAR7_FLASHCARDS = [
       "C",
       "A and C"
     ],
-    "visual": "indicator-palette"
+    "visual": "indicator-palette",
+    "difficulty": 3
   },
   {
     "id": "card-231-7f-acids-and-alkalis-in-the-universal-indicator-colours-whic",
@@ -2460,7 +2690,8 @@ window.YEAR7_FLASHCARDS = [
       "C",
       "None of them"
     ],
-    "visual": "indicator-palette"
+    "visual": "indicator-palette",
+    "difficulty": 3
   },
   {
     "id": "card-232-7f-acids-and-alkalis-in-the-universal-indicator-colours-whic",
@@ -2475,7 +2706,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "All of them"
     ],
-    "visual": "indicator-palette"
+    "visual": "indicator-palette",
+    "difficulty": 3
   },
   {
     "id": "card-233-7f-acids-and-alkalis-in-the-neutralisation-setup-what-is-usu",
@@ -2489,7 +2721,8 @@ window.YEAR7_FLASHCARDS = [
       "Ammeter.",
       "Cartilage.",
       "Red blood cells."
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "id": "card-234-7f-acids-and-alkalis-in-the-neutralisation-setup-what-reacti",
@@ -2503,7 +2736,8 @@ window.YEAR7_FLASHCARDS = [
       "Glucose + oxygen → carbon dioxide + water.",
       "Current = voltage ÷ resistance.",
       "Bone + tendon → cartilage."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-235-7f-acids-and-alkalis-what-is-the-purpose-of-heating-the-solu",
@@ -2517,7 +2751,8 @@ window.YEAR7_FLASHCARDS = [
       "To make current flow.",
       "To make the pH always 14.",
       "To contract the biceps."
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "id": "card-236-7f-acids-and-alkalis-what-is-the-main-safety-mistake-in-the-",
@@ -2532,7 +2767,8 @@ window.YEAR7_FLASHCARDS = [
       "The liquid is below pH 7.",
       "The student is using indicator."
     ],
-    "visual": "acid-safety-mistake"
+    "visual": "acid-safety-mistake",
+    "difficulty": 5
   },
   {
     "id": "card-237-7f-acids-and-alkalis-what-is-wrong-with-this-indicator-metho",
@@ -2547,7 +2783,8 @@ window.YEAR7_FLASHCARDS = [
       "Indicator should never change colour.",
       "The acid has become a muscle."
     ],
-    "visual": "indicator-mistake"
+    "visual": "indicator-mistake",
+    "difficulty": 5
   },
   {
     "id": "card-238-7f-acids-and-alkalis-what-is-the-safer-way-to-dilute-acid",
@@ -2561,7 +2798,8 @@ window.YEAR7_FLASHCARDS = [
       "Add water quickly to concentrated acid.",
       "Use no eye protection.",
       "Heat it until it splashes."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-239-7f-acids-and-alkalis-why-should-you-add-alkali-slowly-during",
@@ -2575,7 +2813,8 @@ window.YEAR7_FLASHCARDS = [
       "To make the bulb brighter.",
       "To stop muscles contracting.",
       "To make current flow backwards."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-240-7f-acids-and-alkalis-a-student-says-ph-1-is-a-strong-alkali-",
@@ -2590,7 +2829,8 @@ window.YEAR7_FLASHCARDS = [
       "pH 1 is the strongest alkali.",
       "pH only applies to electricity."
     ],
-    "visual": "ph-scale"
+    "visual": "ph-scale",
+    "difficulty": 5
   },
   {
     "id": "card-241-7c-muscles-and-bones-in-the-elbow-joint-diagram-which-label-",
@@ -2605,7 +2845,8 @@ window.YEAR7_FLASHCARDS = [
       "C",
       "None of them"
     ],
-    "visual": "elbow-joint"
+    "visual": "elbow-joint",
+    "difficulty": 3
   },
   {
     "id": "card-242-7c-muscles-and-bones-in-the-elbow-joint-diagram-which-label-",
@@ -2620,7 +2861,8 @@ window.YEAR7_FLASHCARDS = [
       "C",
       "All of them"
     ],
-    "visual": "elbow-joint"
+    "visual": "elbow-joint",
+    "difficulty": 3
   },
   {
     "id": "card-243-7c-muscles-and-bones-in-the-elbow-joint-diagram-which-label-",
@@ -2635,7 +2877,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "None of them"
     ],
-    "visual": "elbow-joint"
+    "visual": "elbow-joint",
+    "difficulty": 3
   },
   {
     "id": "card-244-7c-muscles-and-bones-in-the-arm-diagram-which-label-is-the-b",
@@ -2650,7 +2893,8 @@ window.YEAR7_FLASHCARDS = [
       "C",
       "The diaphragm"
     ],
-    "visual": "arm-antagonistic"
+    "visual": "arm-antagonistic",
+    "difficulty": 3
   },
   {
     "id": "card-245-7c-muscles-and-bones-in-the-arm-diagram-which-label-is-the-t",
@@ -2665,7 +2909,8 @@ window.YEAR7_FLASHCARDS = [
       "C",
       "Cartilage"
     ],
-    "visual": "arm-antagonistic"
+    "visual": "arm-antagonistic",
+    "difficulty": 3
   },
   {
     "id": "card-246-7c-muscles-and-bones-in-the-arm-diagram-why-are-a-and-b-call",
@@ -2680,7 +2925,8 @@ window.YEAR7_FLASHCARDS = [
       "They are both acids.",
       "They measure current."
     ],
-    "visual": "arm-antagonistic"
+    "visual": "arm-antagonistic",
+    "difficulty": 3
   },
   {
     "id": "card-247-7c-muscles-and-bones-in-the-skeleton-diagram-which-label-sho",
@@ -2695,7 +2941,8 @@ window.YEAR7_FLASHCARDS = [
       "C",
       "None of them"
     ],
-    "visual": "skeleton-basic"
+    "visual": "skeleton-basic",
+    "difficulty": 3
   },
   {
     "id": "card-248-7c-muscles-and-bones-in-the-skeleton-diagram-which-label-sho",
@@ -2710,7 +2957,8 @@ window.YEAR7_FLASHCARDS = [
       "C",
       "All of them"
     ],
-    "visual": "skeleton-basic"
+    "visual": "skeleton-basic",
+    "difficulty": 3
   },
   {
     "id": "card-249-7c-muscles-and-bones-in-the-skeleton-diagram-which-label-sho",
@@ -2725,7 +2973,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "A bulb"
     ],
-    "visual": "skeleton-basic"
+    "visual": "skeleton-basic",
+    "difficulty": 3
   },
   {
     "id": "card-250-7c-muscles-and-bones-in-the-breathing-diagram-which-label-sh",
@@ -2740,7 +2989,8 @@ window.YEAR7_FLASHCARDS = [
       "C",
       "D"
     ],
-    "visual": "lungs-diaphragm"
+    "visual": "lungs-diaphragm",
+    "difficulty": 3
   },
   {
     "id": "card-251-7c-muscles-and-bones-in-the-breathing-diagram-which-label-sh",
@@ -2755,7 +3005,8 @@ window.YEAR7_FLASHCARDS = [
       "C",
       "D"
     ],
-    "visual": "lungs-diaphragm"
+    "visual": "lungs-diaphragm",
+    "difficulty": 3
   },
   {
     "id": "card-252-7c-muscles-and-bones-in-the-breathing-diagram-which-label-sh",
@@ -2770,7 +3021,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "C"
     ],
-    "visual": "lungs-diaphragm"
+    "visual": "lungs-diaphragm",
+    "difficulty": 3
   },
   {
     "id": "card-253-7c-muscles-and-bones-in-the-gas-exchange-diagram-which-label",
@@ -2784,7 +3036,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "C"
     ],
-    "visual": "alveolus-gas-exchange"
+    "visual": "alveolus-gas-exchange",
+    "difficulty": 4
   },
   {
     "id": "card-254-7c-muscles-and-bones-in-the-gas-exchange-diagram-which-label",
@@ -2798,7 +3051,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "C"
     ],
-    "visual": "alveolus-gas-exchange"
+    "visual": "alveolus-gas-exchange",
+    "difficulty": 4
   },
   {
     "id": "card-255-7c-muscles-and-bones-in-the-blood-vessels-diagram-which-labe",
@@ -2812,7 +3066,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "C"
     ],
-    "visual": "blood-vessels"
+    "visual": "blood-vessels",
+    "difficulty": 3
   },
   {
     "id": "card-256-7c-muscles-and-bones-in-the-blood-vessels-diagram-which-labe",
@@ -2826,7 +3081,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "C"
     ],
-    "visual": "blood-vessels"
+    "visual": "blood-vessels",
+    "difficulty": 3
   },
   {
     "id": "card-257-7c-muscles-and-bones-in-the-blood-vessels-diagram-which-labe",
@@ -2840,7 +3096,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "C"
     ],
-    "visual": "blood-vessels"
+    "visual": "blood-vessels",
+    "difficulty": 3
   },
   {
     "id": "card-258-7c-muscles-and-bones-in-the-ruler-drop-test-what-does-the-di",
@@ -2854,7 +3111,8 @@ window.YEAR7_FLASHCARDS = [
       "pH value.",
       "Voltage.",
       "Bone strength."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-259-7c-muscles-and-bones-a-student-says-muscles-push-bones-to-mo",
@@ -2869,7 +3127,8 @@ window.YEAR7_FLASHCARDS = [
       "Bones contract to pull muscles.",
       "Tendons connect bone to bone."
     ],
-    "visual": "arm-antagonistic"
+    "visual": "arm-antagonistic",
+    "difficulty": 5
   },
   {
     "id": "card-260-7c-muscles-and-bones-a-student-says-tendons-connect-bone-to-",
@@ -2884,7 +3143,8 @@ window.YEAR7_FLASHCARDS = [
       "Ligaments connect muscles to batteries.",
       "Cartilage carries oxygen."
     ],
-    "visual": "elbow-joint"
+    "visual": "elbow-joint",
+    "difficulty": 5
   },
   {
     "id": "card-261-7c-muscles-and-bones-trachea",
@@ -2892,7 +3152,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Trachea",
     "back": "The tube that carries air from the mouth and nose down towards the lungs.",
-    "cue": "Also called the windpipe."
+    "cue": "Also called the windpipe.",
+    "difficulty": 1
   },
   {
     "id": "card-262-7c-muscles-and-bones-bronchi",
@@ -2900,7 +3161,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Bronchi",
     "back": "The two main tubes that carry air from the trachea into the lungs.",
-    "cue": "Each bronchus goes into one lung."
+    "cue": "Each bronchus goes into one lung.",
+    "difficulty": 1
   },
   {
     "id": "card-263-7c-muscles-and-bones-lungs",
@@ -2908,7 +3170,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Lungs",
     "back": "Organs where gas exchange happens: oxygen enters the blood and carbon dioxide leaves the blood.",
-    "cue": "The lungs are protected by the rib cage."
+    "cue": "The lungs are protected by the rib cage.",
+    "difficulty": 2
   },
   {
     "id": "card-264-7c-muscles-and-bones-which-organ-is-the-main-site-of-gas-exc",
@@ -2922,7 +3185,8 @@ window.YEAR7_FLASHCARDS = [
       "stomach",
       "skull",
       "femur"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-265-7c-muscles-and-bones-what-happens-to-oxygen-during-gas-excha",
@@ -2936,7 +3200,8 @@ window.YEAR7_FLASHCARDS = [
       "Oxygen is made by the ribs.",
       "Oxygen turns into plasma.",
       "Oxygen leaves the blood and enters the lungs."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-266-7c-muscles-and-bones-what-happens-to-carbon-dioxide-during-g",
@@ -2950,7 +3215,8 @@ window.YEAR7_FLASHCARDS = [
       "Carbon dioxide moves from air into the blood.",
       "Carbon dioxide becomes oxygen in the lungs.",
       "Carbon dioxide is made by bones."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-267-7c-muscles-and-bones-double-circulatory-system",
@@ -2958,7 +3224,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Double circulatory system",
     "back": "A circulation system with two loops: heart to lungs to heart, and heart to body to heart.",
-    "cue": "Blood passes through the heart twice for each full circuit of the body."
+    "cue": "Blood passes through the heart twice for each full circuit of the body.",
+    "difficulty": 2
   },
   {
     "id": "card-268-7c-muscles-and-bones-what-are-the-two-loops-in-the-human-dou",
@@ -2966,7 +3233,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "What are the two loops in the human double circulatory system?",
     "back": "Heart → lungs → heart, and heart → body → heart.",
-    "cue": "The lung loop picks up oxygen; the body loop delivers oxygen to cells."
+    "cue": "The lung loop picks up oxygen; the body loop delivers oxygen to cells.",
+    "difficulty": 4
   },
   {
     "id": "card-269-7c-muscles-and-bones-why-does-blood-go-to-the-lungs-in-one-l",
@@ -2980,7 +3248,8 @@ window.YEAR7_FLASHCARDS = [
       "To make bones harder.",
       "To digest food.",
       "To change red blood cells into white blood cells."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-270-7c-muscles-and-bones-what-happens-to-the-chambers-of-the-hea",
@@ -2994,7 +3263,8 @@ window.YEAR7_FLASHCARDS = [
       "The chambers fill with air.",
       "The chambers turn into capillaries.",
       "The chambers stop blood moving."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-271-7c-muscles-and-bones-artery-adaptation",
@@ -3002,7 +3272,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Artery adaptation",
     "back": "Arteries have thick, strong walls to carry blood away from the heart under pressure.",
-    "cue": "A pulse can be felt in arteries."
+    "cue": "A pulse can be felt in arteries.",
+    "difficulty": 2
   },
   {
     "id": "card-272-7c-muscles-and-bones-vein-adaptation",
@@ -3010,7 +3281,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Vein adaptation",
     "back": "Veins carry blood back to the heart and have thinner walls than arteries.",
-    "cue": "At this level, remember: arteries away, veins back."
+    "cue": "At this level, remember: arteries away, veins back.",
+    "difficulty": 1
   },
   {
     "id": "card-273-7c-muscles-and-bones-capillary-adaptation",
@@ -3018,7 +3290,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Capillary adaptation",
     "back": "Capillaries are tiny blood vessels with very thin walls, often one cell thick, for exchange with tissues.",
-    "cue": "Thin walls let oxygen and nutrients leave the blood easily."
+    "cue": "Thin walls let oxygen and nutrients leave the blood easily.",
+    "difficulty": 2
   },
   {
     "id": "card-274-7c-muscles-and-bones-which-blood-vessel-has-walls-one-cell-t",
@@ -3032,7 +3305,8 @@ window.YEAR7_FLASHCARDS = [
       "artery",
       "vein",
       "tendon"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-275-7c-muscles-and-bones-which-blood-vessels-carry-blood-away-fr",
@@ -3046,7 +3320,8 @@ window.YEAR7_FLASHCARDS = [
       "veins",
       "capillaries",
       "ligaments"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-276-7c-muscles-and-bones-which-blood-vessels-carry-blood-back-to",
@@ -3060,7 +3335,8 @@ window.YEAR7_FLASHCARDS = [
       "arteries",
       "capillaries",
       "tendons"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-277-7c-muscles-and-bones-newton",
@@ -3068,7 +3344,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Newton",
     "back": "The unit used to measure force; symbol N.",
-    "cue": "Example: a force of 10 N."
+    "cue": "Example: a force of 10 N.",
+    "difficulty": 1
   },
   {
     "id": "card-278-7c-muscles-and-bones-what-unit-is-force-measured-in",
@@ -3082,7 +3359,8 @@ window.YEAR7_FLASHCARDS = [
       "amps",
       "volts",
       "pH"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-279-7c-muscles-and-bones-quadriceps",
@@ -3090,7 +3368,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Quadriceps",
     "back": "A group of muscles at the front of the thigh that can help straighten the leg.",
-    "cue": "Like biceps/triceps, leg muscles work in antagonistic pairs."
+    "cue": "Like biceps/triceps, leg muscles work in antagonistic pairs.",
+    "difficulty": 2
   },
   {
     "id": "card-280-7c-muscles-and-bones-why-do-muscles-need-to-work-in-pairs",
@@ -3104,7 +3383,8 @@ window.YEAR7_FLASHCARDS = [
       "Muscles can only push.",
       "Bones contract by themselves.",
       "Tendons make oxygen."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-281-7c-muscles-and-bones-scientific-question",
@@ -3112,7 +3392,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Scientific question",
     "back": "A question that can be answered using evidence from observations or experiments.",
-    "cue": "Example: Does caffeine affect reaction time?"
+    "cue": "Example: Does caffeine affect reaction time?",
+    "difficulty": 1
   },
   {
     "id": "card-282-7c-muscles-and-bones-non-scientific-question",
@@ -3120,7 +3401,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Non-scientific question",
     "back": "A question that cannot be answered by a science experiment or measurement.",
-    "cue": "Example: Which sport is the most fun?"
+    "cue": "Example: Which sport is the most fun?",
+    "difficulty": 1
   },
   {
     "id": "card-283-7c-muscles-and-bones-ethical-question",
@@ -3128,7 +3410,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Ethical question",
     "back": "A question about what people think is fair, right, or wrong.",
-    "cue": "Example: Is it right to test a medicine on animals?"
+    "cue": "Example: Is it right to test a medicine on animals?",
+    "difficulty": 1
   },
   {
     "id": "card-284-7c-muscles-and-bones-which-is-a-scientific-question",
@@ -3142,7 +3425,8 @@ window.YEAR7_FLASHCARDS = [
       "Is running the best sport?",
       "Should everyone have to exercise?",
       "Is it fair to ban fizzy drinks?"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-285-7c-muscles-and-bones-which-is-an-ethical-question",
@@ -3156,7 +3440,8 @@ window.YEAR7_FLASHCARDS = [
       "What is pulse rate measured in?",
       "Does caffeine affect reaction time?",
       "How many bones are in the arm?"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-286-7c-muscles-and-bones-medicine",
@@ -3164,7 +3449,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Medicine",
     "back": "A drug used to help prevent or treat disease or pain.",
-    "cue": "Examples include paracetamol and antibiotics such as penicillin."
+    "cue": "Examples include paracetamol and antibiotics such as penicillin.",
+    "difficulty": 1
   },
   {
     "id": "card-287-7c-muscles-and-bones-recreational-drug",
@@ -3172,7 +3458,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Recreational drug",
     "back": "A drug taken because people like its effects on the body, not mainly to treat illness.",
-    "cue": "Some recreational drugs are legal and some are illegal."
+    "cue": "Some recreational drugs are legal and some are illegal.",
+    "difficulty": 2
   },
   {
     "id": "card-288-7c-muscles-and-bones-which-list-contains-stimulants-from-the",
@@ -3186,7 +3473,8 @@ window.YEAR7_FLASHCARDS = [
       "alcohol, heroin and solvents",
       "paracetamol and penicillin",
       "water and plasma"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-289-7c-muscles-and-bones-which-list-contains-depressants-from-th",
@@ -3200,7 +3488,8 @@ window.YEAR7_FLASHCARDS = [
       "caffeine, cocaine and ecstasy",
       "paracetamol and penicillin",
       "oxygen and glucose"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-290-7c-muscles-and-bones-which-two-examples-are-medicines-rather",
@@ -3214,7 +3503,8 @@ window.YEAR7_FLASHCARDS = [
       "caffeine and cocaine",
       "alcohol and heroin",
       "ecstasy and nicotine"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-291-7c-muscles-and-bones-addictive",
@@ -3222,7 +3512,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Addictive",
     "back": "Able to make someone feel they need to keep taking a drug.",
-    "cue": "Addiction is one reason drug abuse can be dangerous."
+    "cue": "Addiction is one reason drug abuse can be dangerous.",
+    "difficulty": 1
   },
   {
     "id": "card-292-7c-muscles-and-bones-give-one-short-term-and-one-long-term-e",
@@ -3230,7 +3521,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "Give one short-term and one long-term effect that drugs can have.",
     "back": "Short-term effects can include changed reaction time, mood, alertness or coordination; long-term abuse can damage organs or cause addiction.",
-    "cue": "A good answer names the drug where possible, for example alcohol can slow reactions and damage the liver if abused."
+    "cue": "A good answer names the drug where possible, for example alcohol can slow reactions and damage the liver if abused.",
+    "difficulty": 2
   },
   {
     "id": "card-293-7c-muscles-and-bones-why-can-depressants-increase-accident-r",
@@ -3244,7 +3536,8 @@ window.YEAR7_FLASHCARDS = [
       "They make bones conduct electricity.",
       "They neutralise stomach acid.",
       "They make capillary walls thicker."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-294-7c-muscles-and-bones-why-must-new-medicines-be-tested-before",
@@ -3252,7 +3545,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "Why must new medicines be tested before doctors use them widely?",
     "back": "To check that they work, find a safe dose, and identify harmful side-effects.",
-    "cue": "Testing reduces risk before many people use the medicine."
+    "cue": "Testing reduces risk before many people use the medicine.",
+    "difficulty": 3
   },
   {
     "id": "card-295-7c-muscles-and-bones-a-student-says-all-drugs-are-illegal-an",
@@ -3260,7 +3554,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Spot the mistake",
     "front": "A student says: “All drugs are illegal and harmful.” What is wrong?",
     "back": "Some drugs are medicines that can help treat illness, but drugs can also have risks and side-effects.",
-    "cue": "Drug means chemical that affects the body; it does not always mean illegal drug."
+    "cue": "Drug means chemical that affects the body; it does not always mean illegal drug.",
+    "difficulty": 5
   },
   {
     "id": "card-296-7f-acids-and-alkalis-citric-acid",
@@ -3268,7 +3563,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Citric acid",
     "back": "An acid found in citrus fruits such as lemons and oranges.",
-    "cue": "Lemon juice is acidic."
+    "cue": "Lemon juice is acidic.",
+    "difficulty": 1
   },
   {
     "id": "card-297-7f-acids-and-alkalis-ethanoic-acid",
@@ -3276,7 +3572,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Ethanoic acid",
     "back": "The acid found in vinegar.",
-    "cue": "Vinegar is an everyday acidic liquid."
+    "cue": "Vinegar is an everyday acidic liquid.",
+    "difficulty": 1
   },
   {
     "id": "card-298-7f-acids-and-alkalis-red-cabbage-indicator",
@@ -3284,7 +3581,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Red cabbage indicator",
     "back": "A natural indicator made from red cabbage juice that changes colour in acids and alkalis.",
-    "cue": "It is useful for simple school tests of pH type."
+    "cue": "It is useful for simple school tests of pH type.",
+    "difficulty": 2
   },
   {
     "id": "card-299-7f-acids-and-alkalis-phenolphthalein",
@@ -3292,7 +3590,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Phenolphthalein",
     "back": "An indicator that is colourless in more acidic solutions and pink in more alkaline solutions.",
-    "cue": "Useful in neutralisation/titration demonstrations."
+    "cue": "Useful in neutralisation/titration demonstrations.",
+    "difficulty": 2
   },
   {
     "id": "card-300-7f-acids-and-alkalis-methyl-orange",
@@ -3300,7 +3599,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Methyl orange",
     "back": "An indicator that is red in more acidic solutions and yellow in more alkaline solutions.",
-    "cue": "It gives different colours in acidic and alkaline solutions."
+    "cue": "It gives different colours in acidic and alkaline solutions.",
+    "difficulty": 2
   },
   {
     "id": "card-301-7f-acids-and-alkalis-which-everyday-liquid-is-acidic-because",
@@ -3314,7 +3614,8 @@ window.YEAR7_FLASHCARDS = [
       "oven cleaner",
       "washing powder",
       "pure water"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-302-7f-acids-and-alkalis-which-everyday-liquid-is-acidic-because",
@@ -3328,7 +3629,8 @@ window.YEAR7_FLASHCARDS = [
       "toothpaste",
       "washing powder",
       "indigestion powder"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-303-7f-acids-and-alkalis-which-of-these-is-neutral-on-the-ph-sca",
@@ -3342,7 +3644,8 @@ window.YEAR7_FLASHCARDS = [
       "stomach acid",
       "oven cleaner",
       "vinegar"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-304-7f-acids-and-alkalis-which-example-is-usually-alkaline",
@@ -3356,7 +3659,8 @@ window.YEAR7_FLASHCARDS = [
       "vinegar",
       "lemon juice",
       "fizzy drink"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-305-7f-acids-and-alkalis-which-example-is-a-strongly-alkaline-ho",
@@ -3370,7 +3674,8 @@ window.YEAR7_FLASHCARDS = [
       "milk",
       "fizzy drink",
       "lemon juice"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-306-7f-acids-and-alkalis-which-drink-is-acidic-on-the-revision-p",
@@ -3384,7 +3689,8 @@ window.YEAR7_FLASHCARDS = [
       "pure water",
       "washing powder",
       "oven cleaner"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-307-7f-acids-and-alkalis-which-substance-is-used-to-neutralise-e",
@@ -3398,7 +3704,8 @@ window.YEAR7_FLASHCARDS = [
       "vinegar",
       "lemon juice",
       "universal indicator"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-308-7f-acids-and-alkalis-in-the-hazard-symbols-diagram-which-lab",
@@ -3414,7 +3721,8 @@ window.YEAR7_FLASHCARDS = [
       "D",
       "E"
     ],
-    "visual": "hazard-symbols"
+    "visual": "hazard-symbols",
+    "difficulty": 4
   },
   {
     "id": "card-309-7f-acids-and-alkalis-in-the-hazard-symbols-diagram-which-lab",
@@ -3430,7 +3738,8 @@ window.YEAR7_FLASHCARDS = [
       "D",
       "E"
     ],
-    "visual": "hazard-symbols"
+    "visual": "hazard-symbols",
+    "difficulty": 4
   },
   {
     "id": "card-310-7f-acids-and-alkalis-in-the-hazard-symbols-diagram-which-lab",
@@ -3446,7 +3755,8 @@ window.YEAR7_FLASHCARDS = [
       "D",
       "E"
     ],
-    "visual": "hazard-symbols"
+    "visual": "hazard-symbols",
+    "difficulty": 4
   },
   {
     "id": "card-311-7f-acids-and-alkalis-in-the-hazard-symbols-diagram-which-lab",
@@ -3462,7 +3772,8 @@ window.YEAR7_FLASHCARDS = [
       "D",
       "E"
     ],
-    "visual": "hazard-symbols"
+    "visual": "hazard-symbols",
+    "difficulty": 4
   },
   {
     "id": "card-312-7f-acids-and-alkalis-in-the-hazard-symbols-diagram-which-lab",
@@ -3478,7 +3789,8 @@ window.YEAR7_FLASHCARDS = [
       "D",
       "E"
     ],
-    "visual": "hazard-symbols"
+    "visual": "hazard-symbols",
+    "difficulty": 4
   },
   {
     "id": "card-313-7f-acids-and-alkalis-what-colour-is-phenolphthalein-in-a-mor",
@@ -3492,7 +3804,8 @@ window.YEAR7_FLASHCARDS = [
       "pink",
       "blue",
       "yellow"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-314-7f-acids-and-alkalis-what-colour-is-phenolphthalein-in-a-mor",
@@ -3506,7 +3819,8 @@ window.YEAR7_FLASHCARDS = [
       "colourless",
       "red",
       "green"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-315-7f-acids-and-alkalis-what-colour-is-methyl-orange-in-a-more-",
@@ -3520,7 +3834,8 @@ window.YEAR7_FLASHCARDS = [
       "yellow",
       "blue",
       "pink"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-316-7f-acids-and-alkalis-what-colour-is-methyl-orange-in-a-more-",
@@ -3534,7 +3849,8 @@ window.YEAR7_FLASHCARDS = [
       "red",
       "colourless",
       "purple"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-317-7f-acids-and-alkalis-how-can-you-make-a-natural-indicator-fr",
@@ -3542,7 +3858,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Practical method",
     "front": "How can you make a natural indicator from red cabbage?",
     "back": "Crush or chop red cabbage, mix it with a small amount of water, filter or decant the coloured liquid, then test it with known acids and alkalis.",
-    "cue": "Use known solutions first so you can compare the colour changes."
+    "cue": "Use known solutions first so you can compare the colour changes.",
+    "difficulty": 5
   },
   {
     "id": "card-318-7f-acids-and-alkalis-how-should-you-use-an-indicator-to-test",
@@ -3550,7 +3867,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Practical method",
     "front": "How should you use an indicator to test an unknown liquid?",
     "back": "Add a few drops of indicator to a small sample, observe the colour, and compare with known results or a pH colour chart.",
-    "cue": "Use small samples and wear eye protection."
+    "cue": "Use small samples and wear eye protection.",
+    "difficulty": 5
   },
   {
     "id": "card-319-7f-acids-and-alkalis-which-tool-gives-a-numerical-ph-reading",
@@ -3564,7 +3882,8 @@ window.YEAR7_FLASHCARDS = [
       "litmus paper",
       "evaporating dish",
       "ammeter"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-320-7f-acids-and-alkalis-what-does-universal-indicator-paper-nee",
@@ -3578,7 +3897,8 @@ window.YEAR7_FLASHCARDS = [
       "a circuit symbol",
       "a pulse rate",
       "a tendon"
-    ]
+    ],
+    "difficulty": 5
   },
   {
     "id": "card-321-7f-acids-and-alkalis-hydrochloric-acid-sodium-hydroxide",
@@ -3586,7 +3906,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "hydrochloric acid + sodium hydroxide → ?",
     "back": "sodium chloride + water",
-    "cue": "Hydrochloric acid makes chloride salts."
+    "cue": "Hydrochloric acid makes chloride salts.",
+    "difficulty": 3
   },
   {
     "id": "card-322-7f-acids-and-alkalis-sulfuric-acid-magnesium-oxide",
@@ -3594,7 +3915,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "sulfuric acid + magnesium oxide → ?",
     "back": "magnesium sulfate + water",
-    "cue": "Sulfuric acid makes sulfate salts; magnesium oxide is a base."
+    "cue": "Sulfuric acid makes sulfate salts; magnesium oxide is a base.",
+    "difficulty": 3
   },
   {
     "id": "card-323-7f-acids-and-alkalis-nitric-acid-zinc-oxide",
@@ -3602,7 +3924,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "nitric acid + zinc oxide → ?",
     "back": "zinc nitrate + water",
-    "cue": "Nitric acid makes nitrate salts; zinc oxide is a base."
+    "cue": "Nitric acid makes nitrate salts; zinc oxide is a base.",
+    "difficulty": 3
   },
   {
     "id": "card-324-7f-acids-and-alkalis-hydrochloric-acid-potassium-hydroxide",
@@ -3610,7 +3933,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "hydrochloric acid + potassium hydroxide → ?",
     "back": "potassium chloride + water",
-    "cue": "The metal name comes from the alkali/base; chloride comes from hydrochloric acid."
+    "cue": "The metal name comes from the alkali/base; chloride comes from hydrochloric acid.",
+    "difficulty": 3
   },
   {
     "id": "card-325-7f-acids-and-alkalis-sulfuric-acid-calcium-oxide",
@@ -3618,7 +3942,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "sulfuric acid + calcium oxide → ?",
     "back": "calcium sulfate + water",
-    "cue": "Acid + base makes salt + water."
+    "cue": "Acid + base makes salt + water.",
+    "difficulty": 3
   },
   {
     "id": "card-326-7f-acids-and-alkalis-nitric-acid-sodium-hydroxide",
@@ -3626,7 +3951,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Equation/relationship",
     "front": "nitric acid + sodium hydroxide → ?",
     "back": "sodium nitrate + water",
-    "cue": "Sodium comes from sodium hydroxide; nitrate comes from nitric acid."
+    "cue": "Sodium comes from sodium hydroxide; nitrate comes from nitric acid.",
+    "difficulty": 3
   },
   {
     "id": "card-327-7f-acids-and-alkalis-which-salt-is-made-from-sulfuric-acid-a",
@@ -3640,7 +3966,8 @@ window.YEAR7_FLASHCARDS = [
       "copper chloride",
       "sodium sulfate",
       "magnesium nitrate"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-328-7f-acids-and-alkalis-which-salt-is-made-from-hydrochloric-ac",
@@ -3654,7 +3981,8 @@ window.YEAR7_FLASHCARDS = [
       "zinc nitrate",
       "sodium chloride",
       "magnesium sulfate"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-329-7f-acids-and-alkalis-how-do-antacids-help-with-indigestion",
@@ -3662,7 +3990,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "How do antacids help with indigestion?",
     "back": "They contain a base or alkali that neutralises extra stomach acid.",
-    "cue": "Neutralisation makes salt and water."
+    "cue": "Neutralisation makes salt and water.",
+    "difficulty": 4
   },
   {
     "id": "card-330-7f-acids-and-alkalis-why-can-toothpaste-help-protect-teeth-f",
@@ -3670,7 +3999,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "Why can toothpaste help protect teeth from acids?",
     "back": "Toothpaste is mildly alkaline and helps neutralise acids in the mouth.",
-    "cue": "Acids in the mouth can attack teeth."
+    "cue": "Acids in the mouth can attack teeth.",
+    "difficulty": 3
   },
   {
     "id": "card-331-7f-acids-and-alkalis-why-might-farmers-add-a-base-to-soil",
@@ -3678,7 +4008,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "Why might farmers add a base to soil?",
     "back": "To neutralise soil that is too acidic for crops.",
-    "cue": "This is an everyday neutralisation example."
+    "cue": "This is an everyday neutralisation example.",
+    "difficulty": 4
   },
   {
     "id": "card-332-7f-acids-and-alkalis-why-are-alkalis-used-with-acidic-gases-",
@@ -3686,7 +4017,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "Why are alkalis used with acidic gases from power stations?",
     "back": "The alkali neutralises the acidic gases before they are released.",
-    "cue": "This reduces harm from acidic pollution."
+    "cue": "This reduces harm from acidic pollution.",
+    "difficulty": 3
   },
   {
     "id": "card-333-7f-acids-and-alkalis-how-can-sulfuric-acid-help-remove-rust",
@@ -3694,7 +4026,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "How can sulfuric acid help remove rust?",
     "back": "It reacts with iron oxide in rust to make iron sulfate, helping remove rust from the surface.",
-    "cue": "This is an acid + metal oxide reaction example."
+    "cue": "This is an acid + metal oxide reaction example.",
+    "difficulty": 2
   },
   {
     "id": "card-334-7f-acids-and-alkalis-a-student-says-diluting-an-acid-makes-i",
@@ -3702,7 +4035,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Spot the mistake",
     "front": "A student says: “Diluting an acid makes it an alkali.” What is wrong?",
     "back": "Diluting an acid makes it less concentrated and usually less acidic, but it does not turn it into an alkali.",
-    "cue": "The pH moves closer to 7 but stays below 7 unless a neutralisation reaction happens."
+    "cue": "The pH moves closer to 7 but stays below 7 unless a neutralisation reaction happens.",
+    "difficulty": 5
   },
   {
     "id": "card-335-7f-acids-and-alkalis-a-student-says-a-concentrated-acid-is-a",
@@ -3710,7 +4044,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Spot the mistake",
     "front": "A student says: “A concentrated acid is always the same idea as a strong acid.” What is wrong?",
     "back": "Concentrated means a lot of acid particles in a certain volume; strong acid is a different chemistry idea. In Year 7, use more acidic/less acidic when reading pH.",
-    "cue": "This app now avoids using strong when it only means low pH."
+    "cue": "This app now avoids using strong when it only means low pH.",
+    "difficulty": 5
   },
   {
     "id": "card-336-7j-current-electricity-physical-model",
@@ -3718,7 +4053,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Physical model",
     "back": "A model that you can touch or build to represent something.",
-    "cue": "Example: a water/central-heating model of a circuit."
+    "cue": "Example: a water/central-heating model of a circuit.",
+    "difficulty": 3
   },
   {
     "id": "card-337-7j-current-electricity-abstract-model",
@@ -3726,7 +4062,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Abstract model",
     "back": "A model that exists as an idea, drawing, equation or diagram rather than a touchable object.",
-    "cue": "Circuit diagrams and mental models can be abstract models."
+    "cue": "Circuit diagrams and mental models can be abstract models.",
+    "difficulty": 2
   },
   {
     "id": "card-338-7j-current-electricity-scientific-model",
@@ -3734,7 +4071,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Scientific model",
     "back": "A simplified representation used to explain or predict how something works.",
-    "cue": "Models are useful but they are not exactly the same as the real thing."
+    "cue": "Models are useful but they are not exactly the same as the real thing.",
+    "difficulty": 3
   },
   {
     "id": "card-339-7j-current-electricity-why-are-models-useful-when-learning-a",
@@ -3748,7 +4086,8 @@ window.YEAR7_FLASHCARDS = [
       "Models prove circuits have no limits.",
       "Models replace all experiments.",
       "Models make current become pH 7."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-340-7j-current-electricity-in-the-central-heating-model-of-a-cir",
@@ -3756,7 +4095,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "In the central-heating model of a circuit, what represents the cell or power supply?",
     "back": "The boiler and pump.",
-    "cue": "They provide the push/energy, like the cell in a circuit."
+    "cue": "They provide the push/energy, like the cell in a circuit.",
+    "difficulty": 5
   },
   {
     "id": "card-341-7j-current-electricity-in-the-central-heating-model-of-a-cir",
@@ -3764,7 +4104,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "In the central-heating model of a circuit, what represent the wires?",
     "back": "The pipes.",
-    "cue": "Pipes carry water around the heating system; wires provide the path for charges."
+    "cue": "Pipes carry water around the heating system; wires provide the path for charges.",
+    "difficulty": 5
   },
   {
     "id": "card-342-7j-current-electricity-in-the-central-heating-model-of-a-cir",
@@ -3772,7 +4113,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "In the central-heating model of a circuit, what represent the bulbs?",
     "back": "The radiators.",
-    "cue": "Radiators transfer energy in the model, like bulbs transfer electrical energy to light and heat."
+    "cue": "Radiators transfer energy in the model, like bulbs transfer electrical energy to light and heat.",
+    "difficulty": 5
   },
   {
     "id": "card-343-7j-current-electricity-why-is-the-central-heating-model-not-",
@@ -3780,7 +4122,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Spot the mistake",
     "front": "Why is the central-heating model not exactly the same as an electric circuit?",
     "back": "Water is not the same as electric charge, and the parts of the heating system do not behave exactly like circuit components.",
-    "cue": "A model is useful when it helps explain some features, but it always has limits."
+    "cue": "A model is useful when it helps explain some features, but it always has limits.",
+    "difficulty": 5
   },
   {
     "id": "card-344-7j-current-electricity-which-is-a-physical-model",
@@ -3794,7 +4137,8 @@ window.YEAR7_FLASHCARDS = [
       "A circuit diagram in your mind.",
       "The idea that voltage is a push.",
       "A truth table written as logic only."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-345-7j-current-electricity-which-is-an-abstract-model",
@@ -3808,7 +4152,8 @@ window.YEAR7_FLASHCARDS = [
       "A plastic skeleton model.",
       "A working lamp circuit.",
       "A cardboard model of a house."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-346-7j-current-electricity-and-truth-table-switch-a-open-and-swi",
@@ -3822,7 +4167,8 @@ window.YEAR7_FLASHCARDS = [
       "Yes, because one switch is closed.",
       "Yes, because B is closed.",
       "The lamp becomes a voltmeter."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-347-7j-current-electricity-and-truth-table-switch-a-closed-and-s",
@@ -3836,7 +4182,8 @@ window.YEAR7_FLASHCARDS = [
       "No, because one switch must be open.",
       "No, because current is used up.",
       "Only if the pH is 7."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-348-7j-current-electricity-or-truth-table-switch-a-open-and-swit",
@@ -3850,7 +4197,8 @@ window.YEAR7_FLASHCARDS = [
       "No, because both switches must be closed.",
       "No, because B is open.",
       "Only if an ammeter is parallel."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-349-7j-current-electricity-or-truth-table-switch-a-open-and-swit",
@@ -3864,7 +4212,8 @@ window.YEAR7_FLASHCARDS = [
       "Yes, because there are two branches.",
       "Yes, because current splits.",
       "The lamp is always on."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-350-7j-current-electricity-voltage-division-in-series",
@@ -3872,7 +4221,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Voltage division in series",
     "back": "In a series circuit, the supply voltage is shared between components.",
-    "cue": "More components in series share the energy transfer."
+    "cue": "More components in series share the energy transfer.",
+    "difficulty": 2
   },
   {
     "id": "card-351-7j-current-electricity-voltage-in-parallel",
@@ -3880,7 +4230,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Voltage in parallel",
     "back": "Components connected across the same cell in parallel get the same voltage as each other.",
-    "cue": "Each branch has its own path across the supply."
+    "cue": "Each branch has its own path across the supply.",
+    "difficulty": 2
   },
   {
     "id": "card-352-7j-current-electricity-in-a-series-circuit-with-two-identica",
@@ -3894,7 +4245,8 @@ window.YEAR7_FLASHCARDS = [
       "Each lamp gets twice the supply voltage.",
       "Voltage is used up before the first lamp.",
       "Voltage only exists in wires."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-353-7j-current-electricity-in-a-parallel-circuit-what-voltage-do",
@@ -3908,7 +4260,8 @@ window.YEAR7_FLASHCARDS = [
       "Zero voltage in every branch.",
       "Half the voltage only in the top branch.",
       "Voltage becomes current."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-354-7j-current-electricity-electrical-shock",
@@ -3916,7 +4269,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Electrical shock",
     "back": "Injury caused when electric current passes through the body.",
-    "cue": "Severe shocks can stop the heart working."
+    "cue": "Severe shocks can stop the heart working.",
+    "difficulty": 2
   },
   {
     "id": "card-355-7j-current-electricity-electrical-burn",
@@ -3924,7 +4278,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Electrical burn",
     "back": "A burn caused by electricity heating body tissue or materials.",
-    "cue": "Electricity can cause burns and fires if used unsafely."
+    "cue": "Electricity can cause burns and fires if used unsafely.",
+    "difficulty": 1
   },
   {
     "id": "card-356-7j-current-electricity-which-dangers-can-electricity-cause-i",
@@ -3938,7 +4293,8 @@ window.YEAR7_FLASHCARDS = [
       "only sour taste",
       "only stronger bones",
       "only neutralisation"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-357-7j-current-electricity-why-should-you-not-use-electrical-equ",
@@ -3952,7 +4308,8 @@ window.YEAR7_FLASHCARDS = [
       "Water makes wires insulating.",
       "Wet hands reduce voltage to zero.",
       "Wet hands make a circuit parallel."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-358-7j-current-electricity-why-should-sockets-not-be-overloaded",
@@ -3966,7 +4323,8 @@ window.YEAR7_FLASHCARDS = [
       "It makes the pH too high.",
       "It makes the circuit diagram abstract.",
       "It makes bulbs become acids."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-359-7j-current-electricity-what-should-you-do-before-changing-co",
@@ -3980,7 +4338,8 @@ window.YEAR7_FLASHCARDS = [
       "Add water to the wires.",
       "Use the highest voltage setting first.",
       "Hold both terminals with wet hands."
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-360-7j-current-electricity-why-are-cells-safer-than-mains-electr",
@@ -3994,7 +4353,8 @@ window.YEAR7_FLASHCARDS = [
       "Cells are always pH 7.",
       "Cells contain no energy.",
       "Cells make circuits incomplete."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-361-7j-current-electricity-what-does-a-fuse-do-if-the-current-ge",
@@ -4008,7 +4368,8 @@ window.YEAR7_FLASHCARDS = [
       "It makes current larger.",
       "It turns blue litmus red.",
       "It measures voltage."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-362-7j-current-electricity-what-does-a-circuit-breaker-do-if-cur",
@@ -4022,7 +4383,8 @@ window.YEAR7_FLASHCARDS = [
       "It makes a salt.",
       "It pumps blood.",
       "It measures pH."
-    ]
+    ],
+    "difficulty": 3
   },
   {
     "id": "card-363-7j-current-electricity-which-wire-colours-are-used-for-live-",
@@ -4036,7 +4398,8 @@ window.YEAR7_FLASHCARDS = [
       "live blue, neutral brown, earth red",
       "live green/yellow, neutral brown, earth blue",
       "all wires are black"
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "id": "card-364-7j-current-electricity-which-wire-has-higher-resistance-if-t",
@@ -4050,7 +4413,8 @@ window.YEAR7_FLASHCARDS = [
       "a thick wire",
       "both always have zero resistance",
       "the wire with a pH meter"
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-365-7j-current-electricity-what-happens-to-resistance-when-wire-",
@@ -4064,7 +4428,8 @@ window.YEAR7_FLASHCARDS = [
       "resistance decreases to zero",
       "current becomes voltage",
       "pH becomes neutral"
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-366-7j-current-electricity-what-can-affect-the-resistance-of-a-w",
@@ -4078,7 +4443,8 @@ window.YEAR7_FLASHCARDS = [
       "only colour",
       "only smell",
       "only whether it is a medicine"
-    ]
+    ],
+    "difficulty": 4
   },
   {
     "id": "card-367-7j-current-electricity-why-are-house-lights-usually-wired-in",
@@ -4086,7 +4452,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "Why are house lights usually wired in parallel rather than series?",
     "back": "Parallel wiring lets each light have its own branch, so lights can be switched independently and one broken lamp does not turn all the others off.",
-    "cue": "This matches the revision pack idea that branches stay on when another branch breaks."
+    "cue": "This matches the revision pack idea that branches stay on when another branch breaks.",
+    "difficulty": 3
   },
   {
     "id": "card-368-7j-current-electricity-how-can-a-variable-resistor-control-a",
@@ -4094,7 +4461,8 @@ window.YEAR7_FLASHCARDS = [
     "type": "Self-test",
     "front": "How can a variable resistor control a lamp or motor?",
     "back": "Changing resistance changes the current, which can change lamp brightness or motor speed.",
-    "cue": "Higher resistance usually means lower current."
+    "cue": "Higher resistance usually means lower current.",
+    "difficulty": 4
   },
   {
     "id": "card-369-7c-muscles-and-bones-in-the-two-panel-breathing-diagram-whic",
@@ -4109,7 +4477,8 @@ window.YEAR7_FLASHCARDS = [
       "C",
       "D"
     ],
-    "visual": "breathing-two-panel"
+    "visual": "breathing-two-panel",
+    "difficulty": 3
   },
   {
     "id": "card-370-7c-muscles-and-bones-in-the-two-panel-breathing-diagram-whic",
@@ -4124,7 +4493,8 @@ window.YEAR7_FLASHCARDS = [
       "C",
       "D"
     ],
-    "visual": "breathing-two-panel"
+    "visual": "breathing-two-panel",
+    "difficulty": 3
   },
   {
     "id": "card-371-7c-muscles-and-bones-in-the-two-panel-breathing-diagram-whic",
@@ -4139,7 +4509,8 @@ window.YEAR7_FLASHCARDS = [
       "C",
       "D"
     ],
-    "visual": "breathing-two-panel"
+    "visual": "breathing-two-panel",
+    "difficulty": 3
   },
   {
     "id": "card-372-7c-muscles-and-bones-in-the-two-panel-breathing-diagram-whic",
@@ -4154,7 +4525,8 @@ window.YEAR7_FLASHCARDS = [
       "C",
       "D"
     ],
-    "visual": "breathing-two-panel"
+    "visual": "breathing-two-panel",
+    "difficulty": 3
   },
   {
     "id": "card-373-7c-muscles-and-bones-in-the-double-circulation-diagram-which",
@@ -4170,7 +4542,8 @@ window.YEAR7_FLASHCARDS = [
       "D",
       "E"
     ],
-    "visual": "double-circulation"
+    "visual": "double-circulation",
+    "difficulty": 4
   },
   {
     "id": "card-374-7c-muscles-and-bones-in-the-double-circulation-diagram-which",
@@ -4186,7 +4559,8 @@ window.YEAR7_FLASHCARDS = [
       "D",
       "E"
     ],
-    "visual": "double-circulation"
+    "visual": "double-circulation",
+    "difficulty": 4
   },
   {
     "id": "card-375-7c-muscles-and-bones-in-the-double-circulation-diagram-which",
@@ -4202,7 +4576,8 @@ window.YEAR7_FLASHCARDS = [
       "D",
       "E"
     ],
-    "visual": "double-circulation"
+    "visual": "double-circulation",
+    "difficulty": 4
   },
   {
     "id": "card-376-7c-muscles-and-bones-in-the-double-circulation-diagram-which",
@@ -4218,7 +4593,8 @@ window.YEAR7_FLASHCARDS = [
       "D",
       "E"
     ],
-    "visual": "double-circulation"
+    "visual": "double-circulation",
+    "difficulty": 4
   },
   {
     "id": "card-377-7c-muscles-and-bones-in-the-double-circulation-diagram-which",
@@ -4234,7 +4610,8 @@ window.YEAR7_FLASHCARDS = [
       "D",
       "E"
     ],
-    "visual": "double-circulation"
+    "visual": "double-circulation",
+    "difficulty": 4
   },
   {
     "id": "card-378-7j-current-electricity-in-the-plug-safety-diagram-which-labe",
@@ -4250,7 +4627,8 @@ window.YEAR7_FLASHCARDS = [
       "D",
       "E"
     ],
-    "visual": "plug-safety"
+    "visual": "plug-safety",
+    "difficulty": 4
   },
   {
     "id": "card-379-7j-current-electricity-in-the-plug-safety-diagram-which-labe",
@@ -4266,7 +4644,8 @@ window.YEAR7_FLASHCARDS = [
       "D",
       "E"
     ],
-    "visual": "plug-safety"
+    "visual": "plug-safety",
+    "difficulty": 4
   },
   {
     "id": "card-380-7j-current-electricity-in-the-plug-safety-diagram-which-labe",
@@ -4282,7 +4661,8 @@ window.YEAR7_FLASHCARDS = [
       "D",
       "E"
     ],
-    "visual": "plug-safety"
+    "visual": "plug-safety",
+    "difficulty": 4
   },
   {
     "id": "card-381-7j-current-electricity-in-the-plug-safety-diagram-which-labe",
@@ -4298,7 +4678,8 @@ window.YEAR7_FLASHCARDS = [
       "D",
       "E"
     ],
-    "visual": "plug-safety"
+    "visual": "plug-safety",
+    "difficulty": 4
   },
   {
     "id": "card-382-7j-current-electricity-in-the-plug-safety-diagram-which-labe",
@@ -4314,7 +4695,8 @@ window.YEAR7_FLASHCARDS = [
       "D",
       "E"
     ],
-    "visual": "plug-safety"
+    "visual": "plug-safety",
+    "difficulty": 4
   },
   {
     "id": "card-383-7j-current-electricity-in-the-central-heating-comparison-dia",
@@ -4328,7 +4710,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "C"
     ],
-    "visual": "central-heating-model"
+    "visual": "central-heating-model",
+    "difficulty": 5
   },
   {
     "id": "card-384-7j-current-electricity-in-the-central-heating-comparison-dia",
@@ -4342,7 +4725,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "C"
     ],
-    "visual": "central-heating-model"
+    "visual": "central-heating-model",
+    "difficulty": 5
   },
   {
     "id": "card-385-7j-current-electricity-in-the-central-heating-comparison-dia",
@@ -4356,7 +4740,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "C"
     ],
-    "visual": "central-heating-model"
+    "visual": "central-heating-model",
+    "difficulty": 5
   },
   {
     "id": "card-386-7j-current-electricity-in-the-electric-circuit-part-of-the-c",
@@ -4370,7 +4755,8 @@ window.YEAR7_FLASHCARDS = [
       "2",
       "3"
     ],
-    "visual": "central-heating-model"
+    "visual": "central-heating-model",
+    "difficulty": 3
   },
   {
     "id": "card-387-7j-current-electricity-in-the-electric-circuit-part-of-the-c",
@@ -4384,7 +4770,8 @@ window.YEAR7_FLASHCARDS = [
       "2",
       "3"
     ],
-    "visual": "central-heating-model"
+    "visual": "central-heating-model",
+    "difficulty": 4
   },
   {
     "id": "card-388-7c-muscles-and-bones-in-the-breathing-diagram-which-label-sh",
@@ -4399,7 +4786,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "D"
     ],
-    "visual": "lungs-diaphragm"
+    "visual": "lungs-diaphragm",
+    "difficulty": 3
   },
   {
     "id": "card-389-7c-muscles-and-bones-in-the-gas-exchange-diagram-which-label",
@@ -4413,7 +4801,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "C"
     ],
-    "visual": "alveolus-gas-exchange"
+    "visual": "alveolus-gas-exchange",
+    "difficulty": 4
   },
   {
     "id": "card-390-7f-acids-and-alkalis-in-the-neutralisation-practical-diagram",
@@ -4428,7 +4817,8 @@ window.YEAR7_FLASHCARDS = [
       "C",
       "D"
     ],
-    "visual": "neutralisation-setup"
+    "visual": "neutralisation-setup",
+    "difficulty": 4
   },
   {
     "id": "card-391-7f-acids-and-alkalis-in-the-neutralisation-practical-diagram",
@@ -4443,7 +4833,8 @@ window.YEAR7_FLASHCARDS = [
       "C",
       "D"
     ],
-    "visual": "neutralisation-setup"
+    "visual": "neutralisation-setup",
+    "difficulty": 4
   },
   {
     "id": "card-392-7f-acids-and-alkalis-in-the-neutralisation-practical-diagram",
@@ -4458,7 +4849,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "D"
     ],
-    "visual": "neutralisation-setup"
+    "visual": "neutralisation-setup",
+    "difficulty": 4
   },
   {
     "id": "card-393-7f-acids-and-alkalis-in-the-neutralisation-practical-diagram",
@@ -4473,7 +4865,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "C"
     ],
-    "visual": "neutralisation-setup"
+    "visual": "neutralisation-setup",
+    "difficulty": 4
   },
   {
     "id": "card-394-7f-acids-and-alkalis-in-the-evaporation-setup-diagram-which-",
@@ -4487,7 +4880,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "C"
     ],
-    "visual": "evaporation-dish"
+    "visual": "evaporation-dish",
+    "difficulty": 3
   },
   {
     "id": "card-395-7f-acids-and-alkalis-in-the-evaporation-setup-diagram-which-",
@@ -4501,7 +4895,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "C"
     ],
-    "visual": "evaporation-dish"
+    "visual": "evaporation-dish",
+    "difficulty": 3
   },
   {
     "id": "card-396-7f-acids-and-alkalis-in-the-evaporation-setup-diagram-which-",
@@ -4515,7 +4910,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "C"
     ],
-    "visual": "evaporation-dish"
+    "visual": "evaporation-dish",
+    "difficulty": 4
   },
   {
     "id": "card-397-7f-acids-and-alkalis-in-the-dilution-safety-diagram-which-la",
@@ -4529,7 +4925,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "C"
     ],
-    "visual": "dilution-method"
+    "visual": "dilution-method",
+    "difficulty": 4
   },
   {
     "id": "card-398-7f-acids-and-alkalis-in-the-dilution-safety-diagram-which-la",
@@ -4543,7 +4940,8 @@ window.YEAR7_FLASHCARDS = [
       "A",
       "C"
     ],
-    "visual": "dilution-method"
+    "visual": "dilution-method",
+    "difficulty": 4
   },
   {
     "id": "card-399-7f-acids-and-alkalis-in-the-dilution-safety-diagram-which-la",
@@ -4557,7 +4955,8 @@ window.YEAR7_FLASHCARDS = [
       "A",
       "B"
     ],
-    "visual": "dilution-method"
+    "visual": "dilution-method",
+    "difficulty": 5
   },
   {
     "id": "card-400-7c-muscles-and-bones-in-the-ruler-drop-test-diagram-which-la",
@@ -4571,7 +4970,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "C"
     ],
-    "visual": "reaction-time-ruler"
+    "visual": "reaction-time-ruler",
+    "difficulty": 3
   },
   {
     "id": "card-401-7c-muscles-and-bones-in-the-ruler-drop-test-diagram-which-la",
@@ -4585,7 +4985,8 @@ window.YEAR7_FLASHCARDS = [
       "A",
       "C"
     ],
-    "visual": "reaction-time-ruler"
+    "visual": "reaction-time-ruler",
+    "difficulty": 3
   },
   {
     "id": "card-402-7c-muscles-and-bones-in-the-ruler-drop-test-diagram-which-la",
@@ -4599,7 +5000,8 @@ window.YEAR7_FLASHCARDS = [
       "A",
       "B"
     ],
-    "visual": "reaction-time-ruler"
+    "visual": "reaction-time-ruler",
+    "difficulty": 5
   },
   {
     "id": "card-403-7j-current-electricity-in-the-circuit-comparison-diagram-whi",
@@ -4612,7 +5014,8 @@ window.YEAR7_FLASHCARDS = [
       "A",
       "B"
     ],
-    "visual": "circuit-comparison"
+    "visual": "circuit-comparison",
+    "difficulty": 4
   },
   {
     "id": "card-404-7j-current-electricity-in-the-circuit-comparison-diagram-whi",
@@ -4625,7 +5028,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "A"
     ],
-    "visual": "circuit-comparison"
+    "visual": "circuit-comparison",
+    "difficulty": 4
   },
   {
     "id": "card-405-7j-current-electricity-in-the-circuit-comparison-diagram-whi",
@@ -4638,7 +5042,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "A"
     ],
-    "visual": "circuit-comparison"
+    "visual": "circuit-comparison",
+    "difficulty": 5
   },
   {
     "id": "card-406-7j-current-electricity-in-the-circuit-comparison-diagram-whi",
@@ -4651,7 +5056,8 @@ window.YEAR7_FLASHCARDS = [
       "A",
       "B"
     ],
-    "visual": "circuit-comparison"
+    "visual": "circuit-comparison",
+    "difficulty": 4
   },
   {
     "id": "card-407-7j-current-electricity-in-the-circuit-comparison-diagram-whi",
@@ -4664,7 +5070,8 @@ window.YEAR7_FLASHCARDS = [
       "B",
       "A"
     ],
-    "visual": "circuit-comparison"
+    "visual": "circuit-comparison",
+    "difficulty": 4
   },
   {
     "id": "card-408-7j-current-electricity-in-the-series-circuit-diagram-how-man",
@@ -4679,7 +5086,8 @@ window.YEAR7_FLASHCARDS = [
       "Three branches.",
       "No complete path."
     ],
-    "visual": "circuit-series"
+    "visual": "circuit-series",
+    "difficulty": 4
   },
   {
     "id": "card-409-7j-current-electricity-in-the-parallel-circuit-diagram-how-m",
@@ -4694,7 +5102,8 @@ window.YEAR7_FLASHCARDS = [
       "No branches.",
       "Four branches."
     ],
-    "visual": "circuit-parallel"
+    "visual": "circuit-parallel",
+    "difficulty": 4
   },
   {
     "id": "card-410-7j-current-electricity-in-the-and-switch-diagram-if-switch-a",
@@ -4709,7 +5118,8 @@ window.YEAR7_FLASHCARDS = [
       "Yes, because one switch is enough.",
       "Only if the battery is removed."
     ],
-    "visual": "circuit-and-switches"
+    "visual": "circuit-and-switches",
+    "difficulty": 3
   },
   {
     "id": "card-411-7j-current-electricity-in-the-or-switch-diagram-if-switch-a-",
@@ -4724,7 +5134,8 @@ window.YEAR7_FLASHCARDS = [
       "No, because switch B is open.",
       "Only if both branches break."
     ],
-    "visual": "circuit-or-switches"
+    "visual": "circuit-or-switches",
+    "difficulty": 3
   },
   {
     "id": "card-412-7j-current-electricity-in-the-short-circuit-mistake-diagram-",
@@ -4739,6 +5150,7 @@ window.YEAR7_FLASHCARDS = [
       "Stop completely at the battery.",
       "Flow only through the switch."
     ],
-    "visual": "circuit-short-mistake"
+    "visual": "circuit-short-mistake",
+    "difficulty": 3
   }
 ];

@@ -895,6 +895,8 @@
     lastSavedAt: null,
     bossHistory: [],
     bossSeenIds: [],
+    bossUnlockedLevel: 1,
+    bossLevelCompletions: {},
   };
 
   const state = {
@@ -930,6 +932,7 @@
     bossUnit: "all",
     bossType: "all",
     bossMix: "balanced",
+    bossDifficulty: 1,
     bossSaved: false,
     homeUnits: ["7C Muscles and bones", "7F Acids and alkalis", "7J Current electricity"],
     practiceMix: "balanced",
@@ -957,6 +960,8 @@
         weakIds: Array.isArray(stored.weakIds) ? stored.weakIds : [],
         bossHistory: Array.isArray(stored.bossHistory) ? stored.bossHistory : [],
         bossSeenIds: Array.isArray(stored.bossSeenIds) ? stored.bossSeenIds : [],
+        bossUnlockedLevel: Math.max(1, Math.min(5, Number(stored.bossUnlockedLevel || 1))),
+        bossLevelCompletions: stored.bossLevelCompletions && typeof stored.bossLevelCompletions === "object" ? stored.bossLevelCompletions : {},
       };
     } catch {
       return { ...defaultProgress };
@@ -1633,6 +1638,38 @@
     `);
   }
 
+  function cardDifficulty(card) {
+    const value = Number(card?.difficulty || 1);
+    return Math.max(1, Math.min(5, Number.isFinite(value) ? value : 1));
+  }
+
+  function bossUnlockedLevel() {
+    return Math.max(1, Math.min(5, Number(state.progress.bossUnlockedLevel || 1)));
+  }
+
+  function bossDifficultyName(level) {
+    return ["", "Starter", "Core", "Thinker", "Challenge", "Boss"] [Number(level)] || `Level ${level}`;
+  }
+
+  function bossDifficultyOptions() {
+    const unlocked = bossUnlockedLevel();
+    return [1, 2, 3, 4, 5].map((level) => ({
+      level,
+      label: `Level ${level} · ${bossDifficultyName(level)}`,
+      locked: level > unlocked,
+    }));
+  }
+
+  function bossLevelCounts(unit = state.bossUnit, type = state.bossType) {
+    const counts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
+    cards.forEach((card) => {
+      const unitMatch = unit === "all" || card.unit === unit;
+      const typeMatch = !type || type === "all" || card.type === type;
+      if (unitMatch && typeMatch && card.front && card.back) counts[cardDifficulty(card)] += 1;
+    });
+    return counts;
+  }
+
   function renderBossMode() {
     els.quizPanel.classList.add("hidden");
     els.labPanel.classList.add("hidden");
@@ -1657,20 +1694,34 @@
 
   function renderBossSetup() {
     const units = ["all", ...uniqueValues("unit")];
-    const available = bossCandidateCards(state.bossUnit, state.bossMix, state.bossType).length;
+    const unlocked = bossUnlockedLevel();
+    if (state.bossDifficulty > unlocked) state.bossDifficulty = unlocked;
+    const available = bossCandidateCards(state.bossUnit, state.bossMix, state.bossType, state.bossDifficulty).length;
     const history = state.progress.bossHistory || [];
     const recent = history.slice(-5).reverse();
+    const levelCounts = bossLevelCounts(state.bossUnit, state.bossType);
+    const levelPills = [1, 2, 3, 4, 5].map((level) => {
+      const locked = level > unlocked;
+      const active = level === state.bossDifficulty;
+      return `<span class="boss-level-pill ${active ? "active" : ""} ${locked ? "locked" : ""}">Level ${level}<small>${locked ? "locked" : `${levelCounts[level]} cards`}</small></span>`;
+    }).join("");
     els.progressFill.style.width = "0%";
     els.examPanel.innerHTML = `
       <section class="boss-card boss-setup-card">
         <div class="boss-topline">
           <div>
             <p class="panel-kicker">Boss Round</p>
-            <h3>Build your test set</h3>
+            <h3>Start at Level 1. Get 100% to level up.</h3>
           </div>
-          <span class="boss-lock-badge">XP mode</span>
+          <span class="boss-lock-badge">Level ${unlocked} unlocked</span>
         </div>
+        <div class="boss-level-strip" aria-label="Boss difficulty levels">${levelPills}</div>
         <div class="boss-setup-grid compact-boss-grid">
+          <label>Level
+            <select id="bossDifficultySelect">
+              ${bossDifficultyOptions().map((option) => `<option value="${option.level}" ${option.level === state.bossDifficulty ? "selected" : ""} ${option.locked ? "disabled" : ""}>${escapeHtml(option.label)}${option.locked ? " · locked" : ""}</option>`).join("")}
+            </select>
+          </label>
           <label>Topic
             <select id="bossUnitSelect">
               ${units.map((unit) => `<option value="${escapeHtml(unit)}" ${unit === state.bossUnit ? "selected" : ""}>${escapeHtml(unit === "all" ? "All topics" : unit)}</option>`).join("")}
@@ -1697,11 +1748,11 @@
         </div>
         <div class="boss-history-panel">
           <h4>Test history</h4>
-          ${recent.length ? `<div class="boss-history-list">${recent.map((item) => `<span class="boss-history-pill">${escapeHtml(item.date || "Round")} · ${item.correct}/${item.total} · ${item.accuracy}%</span>`).join("")}</div>` : `<p>No saved Boss Rounds yet.</p>`}
+          ${recent.length ? `<div class="boss-history-list">${recent.map((item) => `<span class="boss-history-pill">L${escapeHtml(item.difficulty || "?")} · ${escapeHtml(item.date || "Round")} · ${item.correct}/${item.total} · ${item.accuracy}%</span>`).join("")}</div>` : `<p>No saved Boss Rounds yet.</p>`}
         </div>
         <div class="boss-actions">
           <button class="primary-button boss-start" type="button" ${available ? "" : "disabled"}>Let’s GO</button>
-          <span class="boss-available">${available} possible question${available === 1 ? "" : "s"}</span>
+          <span class="boss-available">Level ${state.bossDifficulty}: ${available} possible question${available === 1 ? "" : "s"}</span>
         </div>
       </section>
     `;
@@ -1709,10 +1760,15 @@
   }
 
   function wireBossSetup() {
+    const difficultySelect = els.examPanel.querySelector("#bossDifficultySelect");
     const unitSelect = els.examPanel.querySelector("#bossUnitSelect");
     const lengthSelect = els.examPanel.querySelector("#bossLengthSelect");
     const typeSelect = els.examPanel.querySelector("#bossTypeSelect");
     const mixSelect = els.examPanel.querySelector("#bossMixSelect");
+    difficultySelect?.addEventListener("change", (event) => {
+      state.bossDifficulty = Math.max(1, Math.min(bossUnlockedLevel(), Number(event.target.value) || 1));
+      renderBossSetup();
+    });
     unitSelect?.addEventListener("change", (event) => {
       state.bossUnit = event.target.value;
       renderBossSetup();
@@ -1746,11 +1802,13 @@
     ];
   }
 
-  function bossCandidateCards(unit = state.bossUnit, mix = state.bossMix, type = state.bossType) {
+  function bossCandidateCards(unit = state.bossUnit, mix = state.bossMix, type = state.bossType, difficulty = state.bossDifficulty) {
+    const level = Math.max(1, Math.min(5, Number(difficulty || 1)));
     const pool = cards.filter((card) => {
       const unitMatch = unit === "all" || card.unit === unit;
       const typeMatch = !type || type === "all" || card.type === type;
-      return unitMatch && typeMatch && card.front && card.back;
+      const levelMatch = cardDifficulty(card) === level;
+      return unitMatch && typeMatch && levelMatch && card.front && card.back;
     });
     const seenIds = new Set(state.progress.bossSeenIds || []);
     const unseenFirst = (items) => [
@@ -1778,6 +1836,7 @@
     const selected = selectBossCards(pool, state.bossLength, state.bossMix);
     state.bossDeck = selected.map((card) => ({
       cardId: card.id,
+      difficulty: cardDifficulty(card),
       choices: bossChoicesForCard(card, pool),
     }));
     state.bossAnswers = [];
@@ -1861,7 +1920,7 @@
       <section class="boss-card boss-question-card ${answer ? "answered" : ""}">
         <div class="boss-topline">
           <div>
-            <p class="panel-kicker">Question ${state.bossIndex + 1} / ${state.bossDeck.length}</p>
+            <p class="panel-kicker">Level ${cardDifficulty(card)} · Question ${state.bossIndex + 1} / ${state.bossDeck.length}</p>
             <h3>${escapeHtml(card.front)}</h3>
           </div>
           <button class="danger-soft boss-bail" type="button">Bail out</button>
@@ -1940,24 +1999,30 @@
     const correct = state.bossAnswers.filter((answer) => answer?.correct).length;
     const review = Math.max(0, total - correct);
     const accuracy = total ? Math.round((correct / total) * 100) : 0;
-    const xp = correct * 10 + (total && correct === total ? 30 : accuracy >= 80 ? 20 : 0);
-    return { total, correct, review, accuracy, xp };
+    const perfect = total > 0 && correct === total;
+    const difficulty = Math.max(1, Math.min(5, Number(state.bossDifficulty || 1)));
+    const canUnlock = perfect && difficulty === bossUnlockedLevel() && difficulty < 5;
+    const nextLevel = canUnlock ? difficulty + 1 : bossUnlockedLevel();
+    const xp = correct * (8 + difficulty * 2) + (perfect ? 30 + difficulty * 10 : accuracy >= 80 ? 15 : 0);
+    return { total, correct, review, accuracy, xp, perfect, difficulty, canUnlock, nextLevel };
   }
 
   function renderBossSummary() {
     const stats = bossRoundStats();
-    const recommendation = stats.review ? "Weak Review" : stats.accuracy >= 90 ? "Try a longer Boss Round" : "Practice Mode";
+    const recommendation = stats.perfect
+      ? (stats.canUnlock ? `Level ${stats.nextLevel} unlocked after saving` : "Try the next unlocked level")
+      : "Replay this level until you get 100%";
     els.examPanel.innerHTML = `
       <section class="boss-card boss-summary-card">
-        <p class="panel-kicker">Boss Round Complete</p>
-        <h3>Score: ${stats.correct} / ${stats.total}</h3>
+        <p class="panel-kicker">Level ${stats.difficulty} Boss Round Complete</p>
+        <h3>${stats.perfect ? "Perfect round!" : `Score: ${stats.correct} / ${stats.total}`}</h3>
         <div class="boss-score-grid">
           <div><strong>${stats.accuracy}%</strong><span>accuracy</span></div>
           <div><strong>${stats.xp}</strong><span>XP ready</span></div>
           <div><strong>${stats.correct}</strong><span>mastered</span></div>
           <div><strong>${stats.review}</strong><span>review</span></div>
         </div>
-        <p class="boss-recommendation">Recommended next: <strong>${escapeHtml(recommendation)}</strong></p>
+        <p class="boss-recommendation">${stats.perfect ? "You earned the level-up check." : "You need 100% to level up."} <strong>${escapeHtml(recommendation)}</strong></p>
         <div class="boss-actions">
           <button class="primary-button boss-save-score" type="button" ${state.bossSaved ? "disabled" : ""}>${state.bossSaved ? "Score saved" : "Save score"}</button>
           <button class="danger-soft boss-forget-score" type="button">Forget this ever happened</button>
@@ -1996,6 +2061,19 @@
         weakIds.add(answer.cardId);
       }
     });
+    const completions = { ...(state.progress.bossLevelCompletions || {}) };
+    const levelKey = String(stats.difficulty);
+    const prior = completions[levelKey] || { attempts: 0, perfect: 0, best: 0 };
+    completions[levelKey] = {
+      attempts: (prior.attempts || 0) + 1,
+      perfect: (prior.perfect || 0) + (stats.perfect ? 1 : 0),
+      best: Math.max(prior.best || 0, stats.accuracy),
+    };
+    state.progress.bossLevelCompletions = completions;
+    if (stats.canUnlock) {
+      state.progress.bossUnlockedLevel = Math.max(bossUnlockedLevel(), stats.nextLevel);
+      state.bossDifficulty = stats.nextLevel;
+    }
     state.progress.weakIds = [...weakIds].slice(-220);
     state.progress.mastered = [...mastered];
     state.progress.bossSeenIds = [...seenIds].slice(-1000);
@@ -2007,6 +2085,8 @@
         correct: stats.correct,
         accuracy: stats.accuracy,
         xp: stats.xp,
+        difficulty: stats.difficulty,
+        unlocked: stats.canUnlock ? stats.nextLevel : bossUnlockedLevel(),
         unit: state.bossUnit,
         type: state.bossType,
         mix: state.bossMix,
@@ -3695,6 +3775,8 @@
           weakIds: Array.isArray(imported.weakIds) ? imported.weakIds : [],
           bossHistory: Array.isArray(imported.bossHistory) ? imported.bossHistory : [],
           bossSeenIds: Array.isArray(imported.bossSeenIds) ? imported.bossSeenIds : [],
+          bossUnlockedLevel: Math.max(1, Math.min(5, Number(imported.bossUnlockedLevel || 1))),
+          bossLevelCompletions: imported.bossLevelCompletions && typeof imported.bossLevelCompletions === "object" ? imported.bossLevelCompletions : {},
         };
         saveProgress();
         syncCalmSoundscape();
