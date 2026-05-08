@@ -11,9 +11,14 @@
     homeScreen: $("#homeScreen"),
     studyScreen: $("#studyScreen"),
     launchStudyButton: $("#launchStudyButton"),
+    homePracticeButton: $("#homePracticeButton"),
+    homeBossButton: $("#homeBossButton"),
+    brandHomeLink: $("#brandHomeLink"),
+    homeTopicButtons: $$("[data-home-topic]"),
     homeButton: $("#homeButton"),
     unitFilter: $("#unitFilter"),
     typeFilter: $("#typeFilter"),
+    practiceMixSelect: $("#practiceMixSelect"),
     searchBox: $("#searchBox"),
     modeButtons: $$(".mode-button"),
     heroModeButtons: $$('[data-set-mode]'),
@@ -888,6 +893,8 @@
     calm: false,
     sound: true,
     lastSavedAt: null,
+    bossHistory: [],
+    bossSeenIds: [],
   };
 
   const state = {
@@ -921,8 +928,11 @@
     bossAnswers: [],
     bossLength: 10,
     bossUnit: "all",
+    bossType: "all",
     bossMix: "balanced",
     bossSaved: false,
+    homeUnits: ["7C Muscles and bones", "7F Acids and alkalis", "7J Current electricity"],
+    practiceMix: "balanced",
     progress: loadProgress(),
     sessionAnswered: 0,
     sessionCorrect: 0,
@@ -945,6 +955,8 @@
         ...stored,
         mastered: Array.isArray(stored.mastered) ? stored.mastered : [],
         weakIds: Array.isArray(stored.weakIds) ? stored.weakIds : [],
+        bossHistory: Array.isArray(stored.bossHistory) ? stored.bossHistory : [],
+        bossSeenIds: Array.isArray(stored.bossSeenIds) ? stored.bossSeenIds : [],
       };
     } catch {
       return { ...defaultProgress };
@@ -974,6 +986,45 @@
     requestAnimationFrame(() => {
       els.studyScreen?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
+  }
+
+
+  function goHome() {
+    if (state.bossActive) {
+      const confirmed = window.confirm("Are you sure you want to quit this Boss Round? This score will not be saved.");
+      if (!confirmed) return;
+      resetBossRound();
+    }
+    showHomeScreen();
+  }
+
+  function selectedHomeUnits() {
+    return state.homeUnits && state.homeUnits.length ? state.homeUnits : uniqueValues("unit");
+  }
+
+  function applyHomeTopicDefaults() {
+    const selected = selectedHomeUnits();
+    state.unit = selected.length === 1 ? selected[0] : "all";
+    state.bossUnit = selected.length === 1 ? selected[0] : "all";
+    if (els.unitFilter) els.unitFilter.value = state.unit;
+  }
+
+  function syncHomeTopicButtons() {
+    els.homeTopicButtons.forEach((button) => {
+      button.classList.toggle("active", selectedHomeUnits().includes(button.dataset.homeTopic));
+    });
+  }
+
+  function startPracticeFromHome(mode = state.mode === "boss" ? "study" : state.mode) {
+    applyHomeTopicDefaults();
+    setMode(mode === "boss" ? "study" : mode);
+    showStudyScreen();
+  }
+
+  function startBossFromHome() {
+    applyHomeTopicDefaults();
+    setMode("boss");
+    showStudyScreen();
   }
 
   function accuracy(progress = state.progress) {
@@ -1606,19 +1657,20 @@
 
   function renderBossSetup() {
     const units = ["all", ...uniqueValues("unit")];
-    const available = bossCandidateCards(state.bossUnit, state.bossMix).length;
+    const available = bossCandidateCards(state.bossUnit, state.bossMix, state.bossType).length;
+    const history = state.progress.bossHistory || [];
+    const recent = history.slice(-5).reverse();
     els.progressFill.style.width = "0%";
     els.examPanel.innerHTML = `
       <section class="boss-card boss-setup-card">
         <div class="boss-topline">
           <div>
-            <p class="panel-kicker">Boss Mode</p>
+            <p class="panel-kicker">Boss Round</p>
             <h3>Build your test set</h3>
-            <p class="boss-subtitle">Pick the round. Once it starts, the questions are locked.</p>
           </div>
           <span class="boss-lock-badge">XP mode</span>
         </div>
-        <div class="boss-setup-grid">
+        <div class="boss-setup-grid compact-boss-grid">
           <label>Topic
             <select id="bossUnitSelect">
               ${units.map((unit) => `<option value="${escapeHtml(unit)}" ${unit === state.bossUnit ? "selected" : ""}>${escapeHtml(unit === "all" ? "All topics" : unit)}</option>`).join("")}
@@ -1627,6 +1679,11 @@
           <label>Length
             <select id="bossLengthSelect">
               ${[10, 20, 30].map((length) => `<option value="${length}" ${length === state.bossLength ? "selected" : ""}>${length} questions</option>`).join("")}
+            </select>
+          </label>
+          <label>Card type
+            <select id="bossTypeSelect">
+              ${bossTypeOptions().map((option) => `<option value="${escapeHtml(option.value)}" ${option.value === state.bossType ? "selected" : ""}>${escapeHtml(option.label)}</option>`).join("")}
             </select>
           </label>
           <label>Question mix
@@ -1638,13 +1695,9 @@
             </select>
           </label>
         </div>
-        <div class="boss-rules">
-          <h4>Boss rules</h4>
-          <ul>
-            <li>No switching topic, search, or mode during the round.</li>
-            <li>No XP is added until the round is finished and saved.</li>
-            <li>You can bail out, but the score will not count.</li>
-          </ul>
+        <div class="boss-history-panel">
+          <h4>Test history</h4>
+          ${recent.length ? `<div class="boss-history-list">${recent.map((item) => `<span class="boss-history-pill">${escapeHtml(item.date || "Round")} · ${item.correct}/${item.total} · ${item.accuracy}%</span>`).join("")}</div>` : `<p>No saved Boss Rounds yet.</p>`}
         </div>
         <div class="boss-actions">
           <button class="primary-button boss-start" type="button" ${available ? "" : "disabled"}>Let’s GO</button>
@@ -1658,6 +1711,7 @@
   function wireBossSetup() {
     const unitSelect = els.examPanel.querySelector("#bossUnitSelect");
     const lengthSelect = els.examPanel.querySelector("#bossLengthSelect");
+    const typeSelect = els.examPanel.querySelector("#bossTypeSelect");
     const mixSelect = els.examPanel.querySelector("#bossMixSelect");
     unitSelect?.addEventListener("change", (event) => {
       state.bossUnit = event.target.value;
@@ -1667,6 +1721,10 @@
       state.bossLength = Number(event.target.value) || 10;
       renderBossSetup();
     });
+    typeSelect?.addEventListener("change", (event) => {
+      state.bossType = event.target.value;
+      renderBossSetup();
+    });
     mixSelect?.addEventListener("change", (event) => {
       state.bossMix = event.target.value;
       renderBossSetup();
@@ -1674,24 +1732,44 @@
     els.examPanel.querySelector(".boss-start")?.addEventListener("click", startBossRound);
   }
 
-  function bossCandidateCards(unit = state.bossUnit, mix = state.bossMix) {
+  function bossTypeOptions() {
+    return [
+      { value: "all", label: "All cards" },
+      { value: "Vocabulary", label: "Vocabulary" },
+      { value: "Equation/relationship", label: "Equations" },
+      { value: "Self-test", label: "Self-test" },
+      { value: "Multiple choice", label: "Multiple choice" },
+      { value: "Visual challenge", label: "Visual challenge" },
+      { value: "Practical method", label: "Practical method" },
+      { value: "Spot the mistake", label: "Spot the mistake" },
+      { value: "Exam-style question", label: "Exam-style" },
+    ];
+  }
+
+  function bossCandidateCards(unit = state.bossUnit, mix = state.bossMix, type = state.bossType) {
     const pool = cards.filter((card) => {
       const unitMatch = unit === "all" || card.unit === unit;
-      return unitMatch && card.front && card.back;
+      const typeMatch = !type || type === "all" || card.type === type;
+      return unitMatch && typeMatch && card.front && card.back;
     });
+    const seenIds = new Set(state.progress.bossSeenIds || []);
+    const unseenFirst = (items) => [
+      ...items.filter((card) => !seenIds.has(card.id)),
+      ...items.filter((card) => seenIds.has(card.id)),
+    ];
     if (mix === "weak") {
       const weak = pool.filter((card) => (state.progress.weakIds || []).includes(card.id));
-      return weak.length ? [...weak, ...pool.filter((card) => !weak.includes(card))] : pool;
+      return weak.length ? unseenFirst([...weak, ...pool.filter((card) => !weak.includes(card))]) : unseenFirst(pool);
     }
     if (mix === "visual") {
       const visual = pool.filter((card) => Boolean(card.visual) || visualLabTypes.has(card.type));
-      return visual.length ? [...visual, ...pool.filter((card) => !visual.includes(card))] : pool;
+      return visual.length ? unseenFirst([...visual, ...pool.filter((card) => !visual.includes(card))]) : unseenFirst(pool);
     }
     if (mix === "exam") {
       const exam = pool.filter((card) => card.type === "Exam-style question" || card.type === "Practical method" || card.type === "Spot the mistake");
-      return exam.length ? [...exam, ...pool.filter((card) => !exam.includes(card))] : pool;
+      return exam.length ? unseenFirst([...exam, ...pool.filter((card) => !exam.includes(card))]) : unseenFirst(pool);
     }
-    return pool;
+    return unseenFirst(pool);
   }
 
   function startBossRound() {
@@ -1711,8 +1789,12 @@
   }
 
   function selectBossCards(pool, length, mix) {
-    const copy = [...pool];
-    shuffleArray(copy);
+    const seenIds = new Set(state.progress.bossSeenIds || []);
+    const unseen = pool.filter((card) => !seenIds.has(card.id));
+    const seen = pool.filter((card) => seenIds.has(card.id));
+    shuffleArray(unseen);
+    shuffleArray(seen);
+    const copy = [...unseen, ...seen];
     if (mix !== "balanced") return copy.slice(0, Math.min(length, copy.length));
 
     const groups = [
@@ -1903,8 +1985,10 @@
       state.progress.currentStreak = 0;
     }
     state.progress.bestStreak = Math.max(state.progress.bestStreak || 0, state.progress.currentStreak || 0);
+    const seenIds = new Set(state.progress.bossSeenIds || []);
     state.bossAnswers.forEach((answer) => {
       if (!answer?.cardId) return;
+      seenIds.add(answer.cardId);
       if (answer.correct) {
         weakIds.delete(answer.cardId);
         mastered.add(answer.cardId);
@@ -1914,6 +1998,21 @@
     });
     state.progress.weakIds = [...weakIds].slice(-220);
     state.progress.mastered = [...mastered];
+    state.progress.bossSeenIds = [...seenIds].slice(-1000);
+    state.progress.bossHistory = [
+      ...(state.progress.bossHistory || []),
+      {
+        date: new Date().toLocaleDateString(undefined, { month: "short", day: "numeric" }),
+        total: stats.total,
+        correct: stats.correct,
+        accuracy: stats.accuracy,
+        xp: stats.xp,
+        unit: state.bossUnit,
+        type: state.bossType,
+        mix: state.bossMix,
+        ids: state.bossDeck.map((item) => item.cardId),
+      },
+    ].slice(-30);
     state.bossSaved = true;
     saveProgress();
     celebrate();
@@ -1926,6 +2025,7 @@
     document.body.classList.toggle("calm", state.progress.calm);
     document.body.classList.toggle("fun", !state.progress.calm);
     document.body.classList.toggle("boss-session-active", state.mode === "boss" && state.bossActive);
+    document.body.classList.toggle("boss-mode-screen", state.mode === "boss");
     const card = currentCard();
     const deck = deckCards();
     const labDeck = filteredLabGames();
@@ -2019,7 +2119,7 @@
       circuit: ["Circuit builder", "Tap or drag components into the circuit slots, then test whether your circuit works."],
       exam: ["Exam coach", "Practise mark-scheme answers, practical methods, and explanation questions."],
       weak: ["Weak review", "Reviewing cards marked Further review or previously missed. Clear them by answering correctly."],
-      boss: ["Boss round", state.bossActive ? "Locked test mode: finish the round to earn XP." : "Build a fixed test set. Save the score at the end to earn XP."],
+      boss: [state.bossActive ? `Boss Round · ${state.bossDeck.length} cards` : "Boss round", state.bossActive ? "" : "Build your test set."],
     };
     const [kicker, title] = modeNames[state.mode] || modeNames.study;
     els.modeKicker.textContent = `${kicker} · ${count} card${count === 1 ? "" : "s"}`;
@@ -2033,8 +2133,11 @@
 
   function updateHomeModeButtons() {
     els.heroModeButtons.forEach((button) => {
-      button.classList.toggle("active-launch", button.dataset.setMode === state.mode);
+      button.classList.toggle("active-launch", button.dataset.setMode === state.mode && state.mode !== "boss");
     });
+    els.homePracticeButton?.classList.toggle("active-launch", state.mode !== "boss");
+    els.homeBossButton?.classList.toggle("active-launch", state.mode === "boss");
+    syncHomeTopicButtons();
   }
 
   function renderStats() {
@@ -2046,7 +2149,7 @@
     const level = Math.floor(state.progress.xp / 100) + 1;
     const levelProgress = state.progress.xp % 100;
     els.levelMeter.style.width = `${levelProgress}%`;
-    els.levelNote.textContent = `Level ${level}: ${100 - levelProgress} XP until the next level.`;
+    els.levelNote.textContent = `Level ${level}: ${100 - levelProgress} XP until the next level. Boss Round scores earn XP.`;
 
     const remaining = Math.max(0, 10 - state.sessionAnswered);
     els.missionTitle.textContent = remaining
@@ -2232,7 +2335,6 @@
     state.sessionMastered = 0;
     state.sessionNeedsReview = 0;
     if (mode === "boss") {
-      state.unit = "all";
       state.type = "all";
       state.bossActive = false;
       state.bossFinished = false;
@@ -2240,8 +2342,8 @@
       state.bossAnswers = [];
       state.bossIndex = 0;
       state.bossSaved = false;
-      els.unitFilter.value = "all";
-      els.typeFilter.value = "all";
+      if (els.unitFilter) els.unitFilter.value = state.unit;
+      if (els.typeFilter) els.typeFilter.value = "all";
     }
     if (mode === "equations") {
       state.type = "Equation/relationship";
@@ -3590,6 +3692,9 @@
           ...defaultProgress,
           ...imported,
           mastered: Array.isArray(imported.mastered) ? imported.mastered : [],
+          weakIds: Array.isArray(imported.weakIds) ? imported.weakIds : [],
+          bossHistory: Array.isArray(imported.bossHistory) ? imported.bossHistory : [],
+          bossSeenIds: Array.isArray(imported.bossSeenIds) ? imported.bossSeenIds : [],
         };
         saveProgress();
         syncCalmSoundscape();
@@ -3631,23 +3736,49 @@
       rebuildDeck({ shuffle: true });
     });
 
+    els.practiceMixSelect?.addEventListener("change", (event) => {
+      state.practiceMix = event.target.value;
+      if (state.practiceMix === "weak") setMode("weak");
+      else if (state.practiceMix === "visual") setMode("visual");
+      else if (state.practiceMix === "exam") setMode("exam");
+      else rebuildDeck({ shuffle: true });
+    });
+
+    els.homeTopicButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const topic = button.dataset.homeTopic;
+        const selected = new Set(selectedHomeUnits());
+        if (selected.has(topic) && selected.size > 1) selected.delete(topic);
+        else selected.add(topic);
+        state.homeUnits = [...selected];
+        syncHomeTopicButtons();
+      });
+    });
+
     els.modeButtons.forEach((button) => {
       button.addEventListener("click", () => setMode(button.dataset.mode));
     });
 
     els.heroModeButtons.forEach((button) => {
       button.addEventListener("click", () => {
-        setMode(button.dataset.setMode);
-        showStudyScreen();
+        startPracticeFromHome(button.dataset.setMode);
       });
     });
 
     els.launchStudyButton?.addEventListener("click", () => {
-      showStudyScreen();
+      startPracticeFromHome(state.mode);
     });
 
-    els.homeButton?.addEventListener("click", () => {
-      showHomeScreen();
+    els.homePracticeButton?.addEventListener("click", () => {
+      startPracticeFromHome("study");
+    });
+
+    els.homeBossButton?.addEventListener("click", startBossFromHome);
+
+    els.homeButton?.addEventListener("click", goHome);
+    els.brandHomeLink?.addEventListener("click", (event) => {
+      event.preventDefault();
+      goHome();
     });
 
     els.flashcard.addEventListener("click", flipCard);

@@ -15,9 +15,9 @@
 
   <header class="site-header">
     <nav class="topbar" aria-label="Main navigation">
-      <a class="brand" href="#top" aria-label="Year 7 Science Flashcards home">
-        <span class="brand-mark" aria-hidden="true">⚗️</span>
-        <span>
+      <a class="brand brand-home-link" id="brandHomeLink" href="#top" aria-label="Electric Bones home">
+        <img class="brand-image" src="assets/branding/electric-bones-header.png" alt="Electric Bones home" />
+        <span class="brand-copy">
           <strong>Electric Bones</strong>
           <small>Year 7 flashcards</small>
         </span>
@@ -35,12 +35,7 @@
 
   <main>
     <section class="home-shell" id="homeScreen">
-      <section class="home-top-card" id="top" aria-label="Electric Bones header">
-        <div class="home-top-copy">
-          <p class="eyebrow">Year 7 revision</p>
-          <h1>Electric Bones</h1>
-          <p class="home-subtitle">Choose a mode and start revising.</p>
-        </div>
+      <section class="home-top-card image-only-hero" id="top" aria-label="Electric Bones header">
         <img class="home-top-graphic" src="assets/branding/electric-bones-header.png" alt="Horizontal bone surrounded by blue electricity." />
       </section>
 
@@ -48,21 +43,18 @@
         <section class="revision-card">
           <p class="panel-kicker">End of year revision card</p>
           <h2>Pick what you want to practise.</h2>
-          <p class="lead compact-lead">Muscles and bones, acids and alkalis, and current electricity.</p>
-          <div class="topic-chip-row" aria-label="Revision topics">
-            <span class="topic-chip">7C Muscles and bones</span>
-            <span class="topic-chip">7F Acids and alkalis</span>
-            <span class="topic-chip">7J Current electricity</span>
+          <p class="lead compact-lead">Choose your topics, then start Practice or Boss Round.</p>
+          <div class="topic-chip-row topic-toggle-row" aria-label="Revision topics">
+            <button class="topic-chip topic-toggle active" data-home-topic="7C Muscles and bones" type="button">7C Muscles and bones</button>
+            <button class="topic-chip topic-toggle active" data-home-topic="7F Acids and alkalis" type="button">7F Acids and alkalis</button>
+            <button class="topic-chip topic-toggle active" data-home-topic="7J Current electricity" type="button">7J Current electricity</button>
           </div>
-          <div class="revision-card-grid">
-            <div class="revision-mini-card">
-              <h3>Progress</h3>
-              <p>Keep building your score.</p>
-            </div>
-            <div class="revision-mini-card achievements-card">
-              <h3>Badges</h3>
-              <div class="badges" id="badges" aria-live="polite"></div>
-            </div>
+          <div class="home-mode-choice" aria-label="Choose practice or boss round">
+            <button class="secondary-button home-practice-button" id="homePracticeButton" type="button">Practice</button>
+            <button class="secondary-button boss-pill home-boss-button" id="homeBossButton" type="button">Boss Round</button>
+          </div>
+          <div class="badge-rail" id="badgeRail" aria-label="Badges">
+            <div class="badges" id="badges" aria-live="polite"></div>
           </div>
         </section>
 
@@ -87,19 +79,17 @@
       <section class="home-launch-card" aria-label="Learning mode launcher">
         <div>
           <p class="panel-kicker">Learning modes</p>
-          <div class="hero-buttons mode-launch-buttons" role="group" aria-label="Main study modes">
+          <div class="hero-buttons mode-launch-buttons" role="group" aria-label="Practice modes">
             <button class="secondary-button" data-set-mode="study" type="button">Flip cards</button>
             <button class="secondary-button" data-set-mode="equations" type="button">Equation arena</button>
             <button class="secondary-button" data-set-mode="visual" type="button">Visual lab</button>
             <button class="secondary-button" data-set-mode="lab" type="button">Label lab</button>
             <button class="secondary-button" data-set-mode="circuit" type="button">Circuit builder</button>
             <button class="secondary-button" data-set-mode="exam" type="button">Exam coach</button>
-            <button class="secondary-button boss-pill" data-set-mode="boss" type="button">Boss round</button>
           </div>
         </div>
         <div class="launch-action-row">
           <button class="primary-button lets-go-button" id="launchStudyButton" type="button">Let’s GO</button>
-          
         </div>
       </section>
     </section>
@@ -118,32 +108,38 @@
       </section>
 
       <div class="app-shell">
-        <aside class="control-panel" aria-label="Study controls">
-          <section class="control-card">
-            <h2>Choose your quest</h2>
-            <label for="unitFilter">Topic</label>
-            <select id="unitFilter"></select>
-
-            <label for="typeFilter">Card type</label>
-            <select id="typeFilter">
-              <option value="all">All cards</option>
-              <option value="Vocabulary">Vocabulary</option>
-              <option value="Equation/relationship">Equations &amp; relationships</option>
-              <option value="Self-test">Self-test questions</option>
-              <option value="Multiple choice">Multiple choice questions</option>
-              <option value="Visual challenge">Visual challenge cards</option>
-              <option value="Practical method">Practical method cards</option>
-              <option value="Spot the mistake">Spot the mistake cards</option>
-              <option value="Exam-style question">Exam-style questions</option>
-            </select>
-
-            <label for="searchBox">Search cards</label>
-            <input id="searchBox" type="search" placeholder="Try: pH, current, skeleton..." autocomplete="off" />
-          </section>
-
-          <section class="control-card mode-card">
-            <h2>Modes</h2>
-            <div class="mode-grid">
+        <aside class="control-panel compact-study-controls" aria-label="Study controls">
+          <section class="control-card compact-filter-card">
+            <div class="compact-select-row">
+              <label>Topic
+                <select id="unitFilter"></select>
+              </label>
+              <label>Card type
+                <select id="typeFilter">
+                  <option value="all">All cards</option>
+                  <option value="Vocabulary">Vocabulary</option>
+                  <option value="Equation/relationship">Equations &amp; relationships</option>
+                  <option value="Self-test">Self-test questions</option>
+                  <option value="Multiple choice">Multiple choice questions</option>
+                  <option value="Visual challenge">Visual challenge cards</option>
+                  <option value="Practical method">Practical method cards</option>
+                  <option value="Spot the mistake">Spot the mistake cards</option>
+                  <option value="Exam-style question">Exam-style questions</option>
+                </select>
+              </label>
+              <label>Question mix
+                <select id="practiceMixSelect">
+                  <option value="balanced">Balanced</option>
+                  <option value="weak">Weak review</option>
+                  <option value="visual">Visual heavy</option>
+                  <option value="exam">Exam style</option>
+                </select>
+              </label>
+              <label class="search-control">Search
+                <input id="searchBox" type="search" placeholder="Try: pH, current, skeleton..." autocomplete="off" />
+              </label>
+            </div>
+            <div class="mode-grid compact-mode-grid">
               <button class="mode-button active" data-mode="study" type="button">🃏 Flip cards</button>
               <button class="mode-button" data-mode="quiz" type="button">🎯 Multiple choice</button>
               <button class="mode-button" data-mode="equations" type="button">⚡ Equation arena</button>
@@ -152,9 +148,7 @@
               <button class="mode-button" data-mode="circuit" type="button">🔌 Circuit builder</button>
               <button class="mode-button" data-mode="exam" type="button">📝 Exam coach</button>
               <button class="mode-button" data-mode="weak" type="button">🔁 Weak review</button>
-              <button class="mode-button" data-mode="boss" type="button">🐉 Boss round</button>
             </div>
-            
           </section>
         </aside>
 
