@@ -2680,3 +2680,191 @@ body.calm .keyword-meter span {
     padding: 16px;
   }
 }
+
+/* v25 Boss Mode test sessions */
+body.boss-session-active .study-screen .control-panel,
+body.boss-session-active .workspace-actions,
+body.boss-session-active .card-meta-bar {
+  display: none !important;
+}
+
+body.boss-session-active .study-screen .workspace {
+  min-height: 780px;
+}
+
+.boss-card {
+  border-radius: 34px;
+  padding: clamp(20px, 3vw, 30px);
+  background:
+    radial-gradient(circle at 10% 12%, rgba(250, 204, 21, .2), transparent 12rem),
+    radial-gradient(circle at 92% 0%, rgba(124, 58, 237, .16), transparent 13rem),
+    rgba(255,255,255,.96);
+  border: 1px solid rgba(124, 58, 237, .16);
+  box-shadow: 0 22px 60px rgba(15, 23, 42, .14);
+}
+
+.boss-topline {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.boss-topline h3,
+.boss-summary-card h3 {
+  margin: 0;
+  font-size: clamp(1.55rem, 3vw, 2.3rem);
+  line-height: 1.1;
+  letter-spacing: -.04em;
+}
+
+.boss-subtitle,
+.boss-feedback,
+.boss-recommendation,
+.boss-rules li,
+.boss-available {
+  color: #475467;
+  font-weight: 850;
+  line-height: 1.45;
+}
+
+.boss-lock-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: #4c1d95;
+  background: #ede9fe;
+  font-weight: 1000;
+  white-space: nowrap;
+}
+
+.boss-setup-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 18px 0;
+}
+
+.boss-setup-grid label {
+  display: grid;
+  gap: 8px;
+  color: #172033;
+  font-weight: 1000;
+}
+
+.boss-setup-grid select {
+  width: 100%;
+  min-height: 48px;
+  border-radius: 16px;
+  border: 1px solid rgba(100,116,139,.24);
+  padding: 0 12px;
+  color: #172033;
+  background: #fff;
+  font: inherit;
+  font-weight: 850;
+}
+
+.boss-rules {
+  border-radius: 24px;
+  padding: 16px 18px;
+  background: rgba(248,250,252,.88);
+  border: 1px solid rgba(100,116,139,.14);
+}
+
+.boss-rules h4 {
+  margin: 0 0 8px;
+}
+
+.boss-rules ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.boss-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.boss-visual {
+  margin: 14px 0 18px;
+  border-radius: 26px;
+  background: #fff;
+  border: 1px solid rgba(100,116,139,.14);
+  padding: 10px;
+}
+
+.boss-visual .study-diagram,
+.boss-visual .study-diagram-image {
+  max-height: 300px;
+}
+
+.boss-answer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.boss-answer.locked {
+  cursor: default;
+}
+
+.boss-feedback {
+  min-height: 28px;
+  margin: 16px 0 0;
+  font-size: 1.05rem;
+}
+
+.boss-score-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.boss-score-grid div {
+  display: grid;
+  gap: 4px;
+  justify-items: center;
+  padding: 16px 10px;
+  border-radius: 22px;
+  background: #fff;
+  border: 1px solid rgba(100,116,139,.14);
+  box-shadow: 0 10px 24px rgba(15,23,42,.08);
+}
+
+.boss-score-grid strong {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  color: #4c1d95;
+}
+
+.boss-score-grid span {
+  color: #475467;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: .75rem;
+  letter-spacing: .05em;
+}
+
+@media (max-width: 760px) {
+  .boss-topline,
+  .boss-setup-grid,
+  .boss-answer-grid,
+  .boss-score-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .boss-topline {
+    display: grid;
+  }
+
+  .boss-actions > * {
+    width: 100%;
+  }
+}
