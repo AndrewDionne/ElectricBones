@@ -3421,74 +3421,84 @@ window.YEAR7_FLASHCARDS = [
     ]
   },
   {
-    "id": "card-308-7f-acids-and-alkalis-a-hazard-symbol-shows-liquid-damaging-a",
+    "id": "card-308-7f-acids-and-alkalis-in-the-hazard-symbols-diagram-which-lab",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "A hazard symbol shows liquid damaging a hand and metal. What does it mean?",
-    "back": "corrosive",
-    "cue": "Corrosive chemicals can damage skin, eyes and materials.",
+    "front": "In the hazard-symbols diagram, which label shows a corrosive substance?",
+    "back": "A",
+    "cue": "Label A is corrosive. Corrosive chemicals can damage skin, eyes and materials.",
     "choices": [
-      "corrosive",
-      "flammable",
-      "explosive",
-      "neutral"
-    ]
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "visual": "hazard-symbols"
   },
   {
-    "id": "card-309-7f-acids-and-alkalis-a-skull-and-crossbones-hazard-symbol-wa",
+    "id": "card-309-7f-acids-and-alkalis-in-the-hazard-symbols-diagram-which-lab",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "A skull-and-crossbones hazard symbol warns that a chemical is what?",
-    "back": "toxic",
-    "cue": "Toxic chemicals can poison or seriously harm living things.",
+    "front": "In the hazard-symbols diagram, which label shows a toxic substance?",
+    "back": "B",
+    "cue": "Label B is toxic. Toxic chemicals can poison or seriously harm living things.",
     "choices": [
-      "toxic",
-      "neutral",
-      "dilute",
-      "soluble"
-    ]
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "visual": "hazard-symbols"
   },
   {
-    "id": "card-310-7f-acids-and-alkalis-an-exploding-bomb-hazard-symbol-warns-t",
+    "id": "card-310-7f-acids-and-alkalis-in-the-hazard-symbols-diagram-which-lab",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "An exploding-bomb hazard symbol warns that a chemical is what?",
-    "back": "explosive",
-    "cue": "Explosive substances can burst violently.",
+    "front": "In the hazard-symbols diagram, which label shows an explosive substance?",
+    "back": "C",
+    "cue": "Label C is explosive. Explosive substances can burst violently.",
     "choices": [
-      "explosive",
-      "alkaline",
-      "universal",
-      "insoluble"
-    ]
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "visual": "hazard-symbols"
   },
   {
-    "id": "card-311-7f-acids-and-alkalis-an-exclamation-mark-hazard-symbol-is-of",
+    "id": "card-311-7f-acids-and-alkalis-in-the-hazard-symbols-diagram-which-lab",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "An exclamation-mark hazard symbol is often used for what kind of chemical?",
-    "back": "irritant or harmful",
-    "cue": "It warns about chemicals that can irritate skin/eyes or cause harm.",
+    "front": "In the hazard-symbols diagram, which label shows an irritant or harmful substance?",
+    "back": "D",
+    "cue": "Label D is irritant/harmful. It warns about chemicals that can irritate skin/eyes or cause harm.",
     "choices": [
-      "irritant or harmful",
-      "neutral water",
-      "salt crystal",
-      "voltmeter"
-    ]
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "visual": "hazard-symbols"
   },
   {
-    "id": "card-312-7f-acids-and-alkalis-a-dead-tree-and-fish-hazard-symbol-warn",
+    "id": "card-312-7f-acids-and-alkalis-in-the-hazard-symbols-diagram-which-lab",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "A dead tree and fish hazard symbol warns about danger to what?",
-    "back": "the environment",
-    "cue": "It means the chemical can harm organisms or ecosystems.",
+    "front": "In the hazard-symbols diagram, which label shows danger to the environment?",
+    "back": "E",
+    "cue": "Label E is the environmental hazard symbol. It means the chemical can harm organisms or ecosystems.",
     "choices": [
-      "the environment",
-      "the pH scale",
-      "a circuit branch",
-      "bone marrow"
-    ]
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "visual": "hazard-symbols"
   },
   {
     "id": "card-313-7f-acids-and-alkalis-what-colour-is-phenolphthalein-in-a-mor",
@@ -4111,5 +4121,295 @@ window.YEAR7_FLASHCARDS = [
     "front": "How can a variable resistor control a lamp or motor?",
     "back": "Changing resistance changes the current, which can change lamp brightness or motor speed.",
     "cue": "Higher resistance usually means lower current."
+  },
+  {
+    "id": "card-369-7c-muscles-and-bones-in-the-two-panel-breathing-diagram-whic",
+    "unit": "7C Muscles and bones",
+    "type": "Visual challenge",
+    "front": "In the two-panel breathing diagram, which panel shows inhalation?",
+    "back": "A",
+    "cue": "Panel A shows air moving in, ribs moving out, and the diaphragm moving down.",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "visual": "breathing-two-panel"
+  },
+  {
+    "id": "card-370-7c-muscles-and-bones-in-the-two-panel-breathing-diagram-whic",
+    "unit": "7C Muscles and bones",
+    "type": "Visual challenge",
+    "front": "In the two-panel breathing diagram, which panel shows exhalation?",
+    "back": "B",
+    "cue": "Panel B shows air moving out, ribs moving in, and the diaphragm moving up.",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "visual": "breathing-two-panel"
+  },
+  {
+    "id": "card-371-7c-muscles-and-bones-in-the-two-panel-breathing-diagram-whic",
+    "unit": "7C Muscles and bones",
+    "type": "Visual challenge",
+    "front": "In the two-panel breathing diagram, which label shows the trachea (airway)?",
+    "back": "C",
+    "cue": "Label C points to the trachea, the tube that carries air to and from the lungs.",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "visual": "breathing-two-panel"
+  },
+  {
+    "id": "card-372-7c-muscles-and-bones-in-the-two-panel-breathing-diagram-whic",
+    "unit": "7C Muscles and bones",
+    "type": "Visual challenge",
+    "front": "In the two-panel breathing diagram, which label shows the diaphragm?",
+    "back": "D",
+    "cue": "Label D points to the diaphragm, the sheet of muscle under the lungs.",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "visual": "breathing-two-panel"
+  },
+  {
+    "id": "card-373-7c-muscles-and-bones-in-the-double-circulation-diagram-which",
+    "unit": "7C Muscles and bones",
+    "type": "Visual challenge",
+    "front": "In the double-circulation diagram, which label shows the lungs?",
+    "back": "A",
+    "cue": "Label A marks the lungs. One loop of circulation goes from the heart to the lungs and back.",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "visual": "double-circulation"
+  },
+  {
+    "id": "card-374-7c-muscles-and-bones-in-the-double-circulation-diagram-which",
+    "unit": "7C Muscles and bones",
+    "type": "Visual challenge",
+    "front": "In the double-circulation diagram, which label shows blood flowing from the lungs back to the heart?",
+    "back": "B",
+    "cue": "Label B shows the route from the lungs back to the heart.",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "visual": "double-circulation"
+  },
+  {
+    "id": "card-375-7c-muscles-and-bones-in-the-double-circulation-diagram-which",
+    "unit": "7C Muscles and bones",
+    "type": "Visual challenge",
+    "front": "In the double-circulation diagram, which label shows the heart?",
+    "back": "C",
+    "cue": "Label C marks the heart, which pumps blood to the lungs and to the rest of the body.",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "visual": "double-circulation"
+  },
+  {
+    "id": "card-376-7c-muscles-and-bones-in-the-double-circulation-diagram-which",
+    "unit": "7C Muscles and bones",
+    "type": "Visual challenge",
+    "front": "In the double-circulation diagram, which label shows blood flowing from the heart to the body?",
+    "back": "D",
+    "cue": "Label D shows blood being pumped from the heart to the body.",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "visual": "double-circulation"
+  },
+  {
+    "id": "card-377-7c-muscles-and-bones-in-the-double-circulation-diagram-which",
+    "unit": "7C Muscles and bones",
+    "type": "Visual challenge",
+    "front": "In the double-circulation diagram, which label shows blood returning from the body to the heart?",
+    "back": "E",
+    "cue": "Label E shows blood returning from the body back to the heart.",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "visual": "double-circulation"
+  },
+  {
+    "id": "card-378-7j-current-electricity-in-the-plug-safety-diagram-which-labe",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the plug-safety diagram, which label shows the earth wire connection?",
+    "back": "A",
+    "cue": "Label A points to the earth connection at the top of the plug.",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "visual": "plug-safety"
+  },
+  {
+    "id": "card-379-7j-current-electricity-in-the-plug-safety-diagram-which-labe",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the plug-safety diagram, which label shows the live wire connection?",
+    "back": "B",
+    "cue": "Label B points to the live wire connection. In a UK plug, the live wire is brown.",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "visual": "plug-safety"
+  },
+  {
+    "id": "card-380-7j-current-electricity-in-the-plug-safety-diagram-which-labe",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the plug-safety diagram, which label shows the fuse?",
+    "back": "C",
+    "cue": "Label C points to the fuse, which melts if the current gets too high.",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "visual": "plug-safety"
+  },
+  {
+    "id": "card-381-7j-current-electricity-in-the-plug-safety-diagram-which-labe",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the plug-safety diagram, which label shows the neutral wire connection?",
+    "back": "D",
+    "cue": "Label D points to the neutral wire connection. In a UK plug, the neutral wire is blue.",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "visual": "plug-safety"
+  },
+  {
+    "id": "card-382-7j-current-electricity-in-the-plug-safety-diagram-which-labe",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the plug-safety diagram, which label shows the cable grip?",
+    "back": "E",
+    "cue": "Label E points to the cable grip, which stops the wires being pulled loose.",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "visual": "plug-safety"
+  },
+  {
+    "id": "card-383-7j-current-electricity-in-the-central-heating-comparison-dia",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the central-heating comparison diagram, which letter shows the boiler?",
+    "back": "A",
+    "cue": "Label A points to the boiler, which is part of the model for the power source.",
+    "choices": [
+      "A",
+      "B",
+      "C"
+    ],
+    "visual": "central-heating-model"
+  },
+  {
+    "id": "card-384-7j-current-electricity-in-the-central-heating-comparison-dia",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the central-heating comparison diagram, which letter shows a radiator?",
+    "back": "B",
+    "cue": "Label B points to a radiator. In the model, radiators are like bulbs because they transfer energy.",
+    "choices": [
+      "A",
+      "B",
+      "C"
+    ],
+    "visual": "central-heating-model"
+  },
+  {
+    "id": "card-385-7j-current-electricity-in-the-central-heating-comparison-dia",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the central-heating comparison diagram, which letter shows the pump?",
+    "back": "C",
+    "cue": "Label C points to the pump, which helps move the water around the system.",
+    "choices": [
+      "A",
+      "B",
+      "C"
+    ],
+    "visual": "central-heating-model"
+  },
+  {
+    "id": "card-386-7j-current-electricity-in-the-electric-circuit-part-of-the-c",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the electric-circuit part of the comparison diagram, which number shows the cell?",
+    "back": "1",
+    "cue": "Number 1 points to the cell, which is the power source in the circuit.",
+    "choices": [
+      "1",
+      "2",
+      "3"
+    ],
+    "visual": "central-heating-model"
+  },
+  {
+    "id": "card-387-7j-current-electricity-in-the-electric-circuit-part-of-the-c",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the electric-circuit part of the comparison diagram, which number shows a bulb?",
+    "back": "2",
+    "cue": "Number 2 is one bulb. Number 3 is the other bulb in the series circuit.",
+    "choices": [
+      "1",
+      "2",
+      "3"
+    ],
+    "visual": "central-heating-model"
   }
 ];

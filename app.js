@@ -1116,6 +1116,11 @@
       "elbow-joint": { src: "assets/visuals/elbow-joint.png", alt: "Elbow joint anatomy diagram with A, B, and C callouts." },
       "arm-antagonistic": { src: "assets/visuals/arm-antagonistic.png", alt: "Arm anatomy diagram with antagonistic muscles and A, B, and C callouts." },
       "acid-safety-mistake": { src: "assets/visuals/acid-safety-mistake.png", alt: "Lab safety scene showing a student pouring acid without eye protection." },
+      "hazard-symbols": { src: "assets/visuals/hazard-symbols.png", alt: "Hazard symbols diagram with five lettered symbols." },
+      "breathing-two-panel": { src: "assets/visuals/breathing-two-panel.png", alt: "Two-panel breathing diagram with lettered panels and callouts." },
+      "double-circulation": { src: "assets/visuals/double-circulation.png", alt: "Double circulation diagram showing the lungs, heart, body, and flow paths." },
+      "plug-safety": { src: "assets/visuals/plug-safety.png", alt: "UK plug safety cutaway diagram with lettered callouts." },
+      "central-heating-model": { src: "assets/visuals/central-heating-model.png", alt: "Central-heating model and electric-circuit comparison diagram." },
     };
     if (imageVisuals[key]) return renderRasterVisual(imageVisuals[key].src, imageVisuals[key].alt);
 
@@ -2167,7 +2172,7 @@
     const game = currentLabGame(labDeck);
     els.cardUnitBadge.textContent = game?.unit || "No lab games";
     els.cardTypeBadge.textContent = "Interactive label lab";
-    els.studyTip.textContent = "Tap a label, then tap a target. On desktop you can also drag labels onto targets.";
+    els.studyTip.textContent = "Tap a label, then tap a coloured light. A thin wire shows the connection without covering the diagram.";
 
     const progressPercent = labDeck.length ? ((state.labIndex + 1) / labDeck.length) * 100 : 0;
     els.progressFill.style.width = `${progressPercent}%`;
@@ -2195,7 +2200,8 @@
         <div class="lab-layout">
           <div class="lab-stage" aria-label="Interactive diagram">
             <div class="lab-diagram">${renderLabDiagram(game.diagram)}</div>
-            ${game.targets.map((target) => renderLabTarget(target)).join("")}
+            ${renderLabWireLayer(game)}
+            ${game.targets.map((target, index) => renderLabTarget(target, index)).join("")}
           </div>
           <div class="lab-bank" aria-label="Label bank">
             <h4>Labels</h4>
@@ -2213,12 +2219,54 @@
     wireLabPanel(game);
   }
 
-  function renderLabTarget(target) {
-    const placed = state.labAnswers[target.id] || "";
+  function labTargetColour(index) {
+    return `lab-colour-${index % 8}`;
+  }
+
+  function labWireAnchor(target, index) {
+    const side = target.x < 42 ? "left" : target.x > 58 ? "right" : index % 2 ? "right" : "left";
+    const y = Math.min(90, Math.max(10, 14 + index * 15));
+    return { side, x: side === "left" ? 7 : 93, y };
+  }
+
+  function renderLabWireLayer(game) {
+    const placedTargets = game.targets
+      .map((target, index) => ({ target, index, label: state.labAnswers[target.id] || "" }))
+      .filter((item) => item.label);
+    if (!placedTargets.length) return `<svg class="lab-wire-layer" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>`;
+
+    const lines = placedTargets.map(({ target, index }) => {
+      const anchor = labWireAnchor(target, index);
+      const colour = labTargetColour(index);
+      const midX = anchor.side === "left" ? Math.min(target.x - 8, 32) : Math.max(target.x + 8, 68);
+      return `<path class="lab-wire ${colour}" d="M ${anchor.x} ${anchor.y} C ${midX} ${anchor.y}, ${midX} ${target.y}, ${target.x} ${target.y}"/>`;
+    }).join("");
+
+    const tags = placedTargets.map(({ target, index, label }) => {
+      const anchor = labWireAnchor(target, index);
+      const colour = labTargetColour(index);
+      const width = Math.min(28, Math.max(13, label.length * 1.45 + 7));
+      const x = anchor.side === "left" ? 1.8 : 98.2 - width;
+      return `
+        <div class="lab-wire-tag ${colour} ${anchor.side}" style="left:${x}%;top:${anchor.y}%">
+          <span class="wire-dot" aria-hidden="true"></span>${escapeHtml(label)}
+        </div>`;
+    }).join("");
+
     return `
-      <button class="lab-target ${placed ? "filled" : ""}" type="button" data-target-id="${escapeHtml(target.id)}" style="left:${target.x}%;top:${target.y}%">
-        <span class="target-dot" aria-hidden="true"></span>
-        <span class="target-text">${placed ? escapeHtml(placed) : "Drop label"}</span>
+      <svg class="lab-wire-layer" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">${lines}</svg>
+      ${tags}
+    `;
+  }
+
+  function renderLabTarget(target, index) {
+    const placed = state.labAnswers[target.id] || "";
+    const colour = labTargetColour(index);
+    const label = placed ? `${placed} connected to target` : "Connect selected label to this target";
+    return `
+      <button class="lab-target ${colour} ${placed ? "filled" : ""}" type="button" data-target-id="${escapeHtml(target.id)}" title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}" style="left:${target.x}%;top:${target.y}%">
+        <span class="target-light" aria-hidden="true"></span>
+        <span class="visually-hidden">${placed ? escapeHtml(placed) : "Unlabelled target"}</span>
       </button>
     `;
   }
@@ -2253,7 +2301,7 @@
       targetButton.addEventListener("click", () => {
         const targetId = targetButton.dataset.targetId || "";
         if (!state.selectedLabLabel) {
-          feedback.textContent = "Choose a label first, then tap a target.";
+          feedback.textContent = "Choose a label first, then tap a coloured light.";
           return;
         }
         placeLabLabel(targetId, state.selectedLabLabel, game);
