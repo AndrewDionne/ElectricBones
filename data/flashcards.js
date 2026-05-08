@@ -4646,5 +4646,106 @@ window.YEAR7_FLASHCARDS = [
       "A"
     ],
     "visual": "circuit-comparison"
+  },
+  {
+    "id": "card-406-7j-current-electricity-in-the-circuit-comparison-diagram-whi",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the circuit comparison diagram, which label shows the circuit with one loop?",
+    "back": "A",
+    "cue": "Label A is the series circuit with one complete loop.",
+    "choices": [
+      "A",
+      "B"
+    ],
+    "visual": "circuit-comparison"
+  },
+  {
+    "id": "card-407-7j-current-electricity-in-the-circuit-comparison-diagram-whi",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the circuit comparison diagram, which label shows the circuit with two branches?",
+    "back": "B",
+    "cue": "Label B is the parallel circuit with two branches.",
+    "choices": [
+      "B",
+      "A"
+    ],
+    "visual": "circuit-comparison"
+  },
+  {
+    "id": "card-408-7j-current-electricity-in-the-series-circuit-diagram-how-man",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the series circuit diagram, how many paths does current have?",
+    "back": "One path only.",
+    "cue": "A series circuit has a single loop, so current has only one path.",
+    "choices": [
+      "One path only.",
+      "Two separate paths.",
+      "Three branches.",
+      "No complete path."
+    ],
+    "visual": "circuit-series"
+  },
+  {
+    "id": "card-409-7j-current-electricity-in-the-parallel-circuit-diagram-how-m",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the parallel circuit diagram, how many branches carry the two lamps?",
+    "back": "Two branches.",
+    "cue": "The two lamps are on separate branches in the parallel circuit.",
+    "choices": [
+      "Two branches.",
+      "One branch only.",
+      "No branches.",
+      "Four branches."
+    ],
+    "visual": "circuit-parallel"
+  },
+  {
+    "id": "card-410-7j-current-electricity-in-the-and-switch-diagram-if-switch-a",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the AND switch diagram, if switch A is closed but switch B stays open, will the lamp light?",
+    "back": "No, the lamp stays off.",
+    "cue": "An AND circuit needs both switches closed to complete the circuit.",
+    "choices": [
+      "No, the lamp stays off.",
+      "Yes, because switch A is closed.",
+      "Yes, because one switch is enough.",
+      "Only if the battery is removed."
+    ],
+    "visual": "circuit-and-switches"
+  },
+  {
+    "id": "card-411-7j-current-electricity-in-the-or-switch-diagram-if-switch-a-",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the OR switch diagram, if switch A closes while switch B stays open, will the lamp light?",
+    "back": "Yes, the lamp lights.",
+    "cue": "An OR circuit works if either branch is complete.",
+    "choices": [
+      "Yes, the lamp lights.",
+      "No, both switches must be closed.",
+      "No, because switch B is open.",
+      "Only if both branches break."
+    ],
+    "visual": "circuit-or-switches"
+  },
+  {
+    "id": "card-412-7j-current-electricity-in-the-short-circuit-mistake-diagram-",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "In the short-circuit mistake diagram, what will most of the current do?",
+    "back": "Take the short path and bypass the lamp.",
+    "cue": "The extra wire provides an easier path, so current bypasses the lamp.",
+    "choices": [
+      "Take the short path and bypass the lamp.",
+      "Go through the lamp normally.",
+      "Stop completely at the battery.",
+      "Flow only through the switch."
+    ],
+    "visual": "circuit-short-mistake"
   }
 ];

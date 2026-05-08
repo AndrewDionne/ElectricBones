@@ -70,11 +70,11 @@
       diagram: "skeleton",
       labels: ["skull", "rib cage", "spine", "pelvis", "femur"],
       targets: [
-        { id: "skull", label: "skull", x: 50, y: 15 },
-        { id: "rib", label: "rib cage", x: 50, y: 31 },
-        { id: "spine", label: "spine", x: 50, y: 44 },
-        { id: "pelvis", label: "pelvis", x: 50, y: 56 },
-        { id: "femur", label: "femur", x: 48, y: 73 },
+        { id: "skull", label: "skull", x: 50, y: 10.5 },
+        { id: "rib", label: "rib cage", x: 50, y: 29 },
+        { id: "spine", label: "spine", x: 50, y: 40 },
+        { id: "pelvis", label: "pelvis", x: 50, y: 54 },
+        { id: "femur", label: "femur", x: 48, y: 69.5 },
       ],
     },
     {
@@ -85,11 +85,11 @@
       diagram: "arm",
       labels: ["biceps", "triceps", "humerus", "radius and ulna", "elbow joint"],
       targets: [
-        { id: "biceps", label: "biceps", x: 46, y: 31 },
-        { id: "triceps", label: "triceps", x: 28, y: 49 },
-        { id: "humerus", label: "humerus", x: 36, y: 42 },
-        { id: "forearm", label: "radius and ulna", x: 67, y: 61 },
-        { id: "elbow", label: "elbow joint", x: 46, y: 63 },
+        { id: "biceps", label: "biceps", x: 42.5, y: 43 },
+        { id: "triceps", label: "triceps", x: 29, y: 48.5 },
+        { id: "humerus", label: "humerus", x: 35.5, y: 36.5 },
+        { id: "forearm", label: "radius and ulna", x: 63.5, y: 60.5 },
+        { id: "elbow", label: "elbow joint", x: 43, y: 62.5 },
       ],
     },
     {
@@ -100,11 +100,11 @@
       diagram: "lungs",
       labels: ["trachea", "lung", "rib cage", "diaphragm", "air moves in"],
       targets: [
-        { id: "trachea", label: "trachea", x: 50, y: 19 },
-        { id: "lung", label: "lung", x: 38, y: 46 },
-        { id: "rib", label: "rib cage", x: 64, y: 48 },
-        { id: "diaphragm", label: "diaphragm", x: 50, y: 74 },
-        { id: "air", label: "air moves in", x: 50, y: 9 },
+        { id: "trachea", label: "trachea", x: 50, y: 30 },
+        { id: "lung", label: "lung", x: 45.5, y: 56 },
+        { id: "rib", label: "rib cage", x: 35, y: 55 },
+        { id: "diaphragm", label: "diaphragm", x: 50, y: 79 },
+        { id: "air", label: "air moves in", x: 50, y: 10 },
       ],
     },
     {
@@ -1130,7 +1130,6 @@
       "litmus-test": { src: "assets/visuals/litmus-test.png", alt: "Litmus test setup with four lettered callouts." },
       "indicator-palette": { src: "assets/visuals/indicator-palette.png", alt: "Universal indicator colour strip with three lettered callouts and pH numbers." },
       "reaction-time-ruler": { src: "assets/visuals/reaction-time-ruler.png", alt: "Ruler-drop reaction time test diagram with three lettered callouts." },
-      "circuit-comparison": { src: "assets/visuals/circuit-comparison.png", alt: "Two lettered circuit diagrams shown side by side for comparison." },
     };
     if (imageVisuals[key]) return renderRasterVisual(imageVisuals[key].src, imageVisuals[key].alt);
 
@@ -1156,6 +1155,7 @@
       "alveolus-gas-exchange": alveolusGasExchangeSvg,
       "blood-vessels": bloodVesselsSvg,
       "reaction-time-ruler": reactionTimeRulerSvg,
+      "circuit-comparison": circuitComparisonSvg,
     };
     const renderer = diagrams[key];
     return renderer ? renderer() : "";
@@ -1203,27 +1203,31 @@
 
   function circuitSeriesSvg() {
     return diagramFrame("Series circuit", `
-      <g class="circuit-line">
-        <path d="M95 85 H425 V205 H95 Z" fill="none"/>
-        <line x1="105" y1="122" x2="105" y2="168"/><line x1="130" y1="104" x2="130" y2="186"/>
-        <circle cx="250" cy="85" r="30"/><line x1="230" y1="65" x2="270" y2="105"/><line x1="270" y1="65" x2="230" y2="105"/>
-        <circle cx="338" cy="205" r="30"/><line x1="318" y1="185" x2="358" y2="225"/><line x1="358" y1="185" x2="318" y2="225"/>
+      <g class="circuit-line revision-circuit">
+        <path d="M96 84 H424 V206 H96 Z"/>
+        <line x1="126" y1="110" x2="126" y2="180"/><line x1="148" y1="124" x2="148" y2="166"/>
+        <circle cx="258" cy="84" r="24"/><line x1="242" y1="68" x2="274" y2="100"/><line x1="274" y1="68" x2="242" y2="100"/>
+        <circle cx="340" cy="206" r="24"/><line x1="324" y1="190" x2="356" y2="222"/><line x1="356" y1="190" x2="324" y2="222"/>
       </g>
-      ${labelBubble(250, 44, "A")}${labelBubble(338, 246, "B")}
+      <text x="258" y="52" class="diagram-note">lamp A</text>
+      <text x="340" y="248" class="diagram-note">lamp B</text>
+      ${labelBubble(258, 46, "A")}${labelBubble(340, 244, "B")}
     `);
   }
 
   function circuitParallelSvg() {
     return diagramFrame("Parallel circuit", `
-      <g class="circuit-line">
-        <path d="M95 85 H425 V205 H95 Z" fill="none"/>
-        <line x1="105" y1="122" x2="105" y2="168"/><line x1="130" y1="104" x2="130" y2="186"/>
-        <line x1="180" y1="85" x2="180" y2="205"/><line x1="355" y1="85" x2="355" y2="205"/>
-        <line x1="180" y1="120" x2="355" y2="120"/><line x1="180" y1="172" x2="355" y2="172"/>
-        <circle cx="268" cy="120" r="24"/><line x1="252" y1="104" x2="284" y2="136"/><line x1="284" y1="104" x2="252" y2="136"/>
-        <circle cx="268" cy="172" r="24"/><line x1="252" y1="156" x2="284" y2="188"/><line x1="284" y1="156" x2="252" y2="188"/>
+      <g class="circuit-line revision-circuit">
+        <path d="M96 84 H424 V206 H96 Z"/>
+        <line x1="126" y1="110" x2="126" y2="180"/><line x1="148" y1="124" x2="148" y2="166"/>
+        <line x1="196" y1="84" x2="196" y2="206"/><line x1="348" y1="84" x2="348" y2="206"/>
+        <line x1="196" y1="118" x2="348" y2="118"/><line x1="196" y1="172" x2="348" y2="172"/>
+        <circle cx="272" cy="118" r="20"/><line x1="258" y1="104" x2="286" y2="132"/><line x1="286" y1="104" x2="258" y2="132"/>
+        <circle cx="272" cy="172" r="20"/><line x1="258" y1="158" x2="286" y2="186"/><line x1="286" y1="158" x2="258" y2="186"/>
       </g>
-      ${labelBubble(268, 80, "A")}${labelBubble(268, 214, "B")}
+      <text x="272" y="92" class="diagram-note">lamp A</text>
+      <text x="272" y="210" class="diagram-note">lamp B</text>
+      ${labelBubble(228, 118, "A")}${labelBubble(228, 172, "B")}
     `);
   }
 
@@ -1265,30 +1269,34 @@
   }
 
   function circuitAndSwitchesSvg() {
-    return diagramFrame("Switch circuit", `
-      <g class="circuit-line">
-        <path d="M90 145 H140 M330 145 H425 V205 H90 Z" fill="none"/>
-        <line x1="100" y1="172" x2="100" y2="204"/><line x1="124" y1="158" x2="124" y2="218"/>
-        <circle cx="150" cy="145" r="6"/><circle cx="220" cy="145" r="6"/><line x1="156" y1="140" x2="202" y2="108"/>
-        <circle cx="232" cy="145" r="6"/><circle cx="302" cy="145" r="6"/><line x1="238" y1="140" x2="284" y2="108"/>
-        <circle cx="355" cy="205" r="25"/><line x1="339" y1="189" x2="371" y2="221"/><line x1="371" y1="189" x2="339" y2="221"/>
+    return diagramFrame("AND switch circuit", `
+      <g class="circuit-line revision-circuit">
+        <path d="M90 148 H144 M336 148 H424 V206 H90 Z"/>
+        <line x1="116" y1="172" x2="116" y2="206"/><line x1="138" y1="160" x2="138" y2="218"/>
+        <circle cx="154" cy="148" r="5"/><circle cx="228" cy="148" r="5"/><line x1="160" y1="144" x2="210" y2="110" class="switch-blade-open"/>
+        <circle cx="240" cy="148" r="5"/><circle cx="314" cy="148" r="5"/><line x1="246" y1="144" x2="296" y2="110" class="switch-blade-open"/>
+        <circle cx="356" cy="206" r="22"/><line x1="342" y1="192" x2="370" y2="220"/><line x1="370" y1="192" x2="342" y2="220"/>
       </g>
-      ${labelBubble(185, 90, "A")}${labelBubble(267, 90, "B")}
+      <text x="190" y="92" class="diagram-note">switch A</text>
+      <text x="274" y="92" class="diagram-note">switch B</text>
+      ${labelBubble(190, 102, "A")}${labelBubble(274, 102, "B")}
     `);
   }
 
   function circuitOrSwitchesSvg() {
-    return diagramFrame("Switch circuit", `
-      <g class="circuit-line">
-        <path d="M90 145 H150 M320 145 H425 V205 H90 Z" fill="none"/>
-        <line x1="100" y1="172" x2="100" y2="204"/><line x1="124" y1="158" x2="124" y2="218"/>
-        <path d="M150 145 V102 H320 V145" fill="none"/>
-        <path d="M150 145 V188 H320 V145" fill="none"/>
-        <circle cx="175" cy="102" r="6"/><circle cx="275" cy="102" r="6"/><line x1="181" y1="98" x2="253" y2="66"/>
-        <circle cx="175" cy="188" r="6"/><circle cx="275" cy="188" r="6"/><line x1="181" y1="188" x2="270" y2="188"/>
-        <circle cx="355" cy="205" r="25"/><line x1="339" y1="189" x2="371" y2="221"/><line x1="371" y1="189" x2="339" y2="221"/>
+    return diagramFrame("OR switch circuit", `
+      <g class="circuit-line revision-circuit">
+        <path d="M90 148 H158 M318 148 H424 V206 H90 Z"/>
+        <line x1="116" y1="172" x2="116" y2="206"/><line x1="138" y1="160" x2="138" y2="218"/>
+        <path d="M158 148 V102 H318 V148"/>
+        <path d="M158 148 V194 H318 V148"/>
+        <circle cx="184" cy="102" r="5"/><circle cx="276" cy="102" r="5"/><line x1="190" y1="98" x2="258" y2="66" class="switch-blade-open"/>
+        <circle cx="184" cy="194" r="5"/><circle cx="276" cy="194" r="5"/><line x1="190" y1="194" x2="270" y2="194" class="switch-blade-closed"/>
+        <circle cx="356" cy="206" r="22"/><line x1="342" y1="192" x2="370" y2="220"/><line x1="370" y1="192" x2="342" y2="220"/>
       </g>
-      ${labelBubble(225, 60, "A")}${labelBubble(225, 224, "B")}
+      <text x="232" y="58" class="diagram-note">switch A</text>
+      <text x="232" y="236" class="diagram-note">switch B</text>
+      ${labelBubble(232, 72, "A")}${labelBubble(232, 222, "B")}
     `);
   }
 
@@ -1317,14 +1325,41 @@
   }
 
   function circuitShortMistakeSvg() {
-    return diagramFrame("Circuit diagram", `
-      <g class="circuit-line">
-        <path d="M95 95 H425 V205 H95 Z" fill="none"/>
-        <line x1="105" y1="127" x2="105" y2="168"/><line x1="130" y1="110" x2="130" y2="185"/>
-        <path d="M170 95 V205" fill="none"/>
-        <circle cx="320" cy="205" r="28"/><line x1="302" y1="187" x2="338" y2="223"/><line x1="338" y1="187" x2="302" y2="223"/>
+    return diagramFrame("Circuit with a short circuit mistake", `
+      <g class="circuit-line revision-circuit">
+        <path d="M96 95 H424 V205 H96 Z"/>
+        <line x1="126" y1="120" x2="126" y2="180"/><line x1="148" y1="132" x2="148" y2="168"/>
+        <circle cx="326" cy="205" r="24"/><line x1="310" y1="189" x2="342" y2="221"/><line x1="342" y1="189" x2="310" y2="221"/>
       </g>
-      ${labelBubble(170, 150, "A")}${labelBubble(320, 246, "B")}${labelBubble(118, 92, "C")}
+      <g class="mistake-line">
+        <path d="M178 95 V205"/>
+      </g>
+      <text x="184" y="150" class="mistake-note">short path</text>
+      <text x="326" y="246" class="diagram-note">lamp</text>
+      ${labelBubble(178, 150, "A")}${labelBubble(326, 244, "B")}${labelBubble(138, 92, "C")}
+    `);
+  }
+
+  function circuitComparisonSvg() {
+    return diagramFrame("Series and parallel comparison", `
+      <g class="circuit-line revision-circuit circuit-mini">
+        <text x="150" y="68" class="diagram-note">A</text>
+        <path d="M54 88 H236 V198 H54 Z"/>
+        <line x1="78" y1="112" x2="78" y2="174"/><line x1="96" y1="124" x2="96" y2="162"/>
+        <circle cx="145" cy="88" r="18"/><line x1="133" y1="76" x2="157" y2="100"/><line x1="157" y1="76" x2="133" y2="100"/>
+        <circle cx="194" cy="198" r="18"/><line x1="182" y1="186" x2="206" y2="210"/><line x1="206" y1="186" x2="182" y2="210"/>
+      </g>
+      <text x="145" y="220" class="diagram-note">one loop</text>
+      <g class="circuit-line revision-circuit circuit-mini">
+        <text x="392" y="68" class="diagram-note">B</text>
+        <path d="M286 88 H466 V198 H286 Z"/>
+        <line x1="308" y1="112" x2="308" y2="174"/><line x1="326" y1="124" x2="326" y2="162"/>
+        <line x1="360" y1="88" x2="360" y2="198"/><line x1="432" y1="88" x2="432" y2="198"/>
+        <line x1="360" y1="122" x2="432" y2="122"/><line x1="360" y1="168" x2="432" y2="168"/>
+        <circle cx="396" cy="122" r="16"/><line x1="386" y1="112" x2="406" y2="132"/><line x1="406" y1="112" x2="386" y2="132"/>
+        <circle cx="396" cy="168" r="16"/><line x1="386" y1="158" x2="406" y2="178"/><line x1="406" y1="158" x2="386" y2="178"/>
+      </g>
+      <text x="394" y="220" class="diagram-note">two branches</text>
     `);
   }
 
@@ -2273,8 +2308,9 @@
     const placed = state.labAnswers[target.id] || "";
     const colour = labTargetColour(index);
     const label = placed ? `${placed} connected to target` : "Connect selected label to this target";
+    const targetStyle = `left:${target.x}%;top:${target.y}%`;
     return `
-      <button class="lab-target ${colour} ${placed ? "filled" : ""}" type="button" data-target-id="${escapeHtml(target.id)}" title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}" style="left:${target.x}%;top:${target.y}%">
+      <button class="lab-target ${colour} ${placed ? "filled" : ""}" type="button" data-target-id="${escapeHtml(target.id)}" title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}" style="${targetStyle}" data-target-x="${target.x}" data-target-y="${target.y}">
         <span class="target-light" aria-hidden="true"></span>
         <span class="visually-hidden">${placed ? escapeHtml(placed) : "Unlabelled target"}</span>
       </button>
@@ -2560,7 +2596,8 @@
             ${game.slots.map((slot) => renderCircuitSlot(slot)).join("")}
           </div>
           <div class="circuit-bank" aria-label="Circuit component bank">
-            <h4>Components</h4>
+            <h4>Symbol board</h4>
+            <p class="symbol-board-note">Choose a standard circuit symbol, then snap it into a slot.</p>
             ${game.labels.map((label, index) => renderCircuitPart(label, index)).join("")}
             <button class="ghost-button circuit-clear" type="button">Clear circuit</button>
           </div>
@@ -2578,9 +2615,9 @@
   function renderCircuitSlot(slot) {
     const placed = state.circuitAnswers[slot.id] || "";
     return `
-      <button class="circuit-slot ${placed ? "filled" : ""}" type="button" data-slot-id="${escapeHtml(slot.id)}" style="left:${slot.x}%;top:${slot.y}%">
-        <span class="component-icon" aria-hidden="true">${placed ? circuitPartIcon(placed) : "＋"}</span>
-        <span class="component-text">${placed ? escapeHtml(placed) : escapeHtml(slot.label)}</span>
+      <button class="circuit-slot ${placed ? "filled" : ""}" type="button" data-slot-id="${escapeHtml(slot.id)}" style="left:${slot.x}%;top:${slot.y}%" aria-label="${placed ? `${escapeHtml(placed)} placed in ${escapeHtml(slot.label)}` : `Empty snap slot for ${escapeHtml(slot.label)}`}">
+        <span class="slot-symbol" aria-hidden="true">${placed ? circuitSymbolSvg(placed, "slot") : circuitEmptySlotSvg()}</span>
+        <span class="slot-label">${placed ? escapeHtml(placed) : escapeHtml(slot.label)}</span>
       </button>
     `;
   }
@@ -2590,23 +2627,74 @@
     const selected = state.selectedCircuitPart === label;
     return `
       <button class="circuit-part ${selected ? "selected" : ""} ${usedCount ? "used" : ""}" type="button" draggable="true" data-part="${escapeHtml(label)}" data-index="${index}" aria-pressed="${selected}">
-        <span>${circuitPartIcon(label)}</span>
+        <span class="symbol-tile" aria-hidden="true">${circuitSymbolSvg(label, "bank")}</span>
         <strong>${escapeHtml(label)}</strong>
       </button>
     `;
   }
 
-  function circuitPartIcon(part) {
-    const icons = {
-      cell: "🔋",
-      lamp: "💡",
-      "closed switch": "✅",
-      "open switch": "↗️",
-      ammeter: "A",
-      voltmeter: "V",
-      wire: "─",
+  function circuitEmptySlotSvg() {
+    return `
+      <svg class="circuit-symbol-svg empty-symbol" viewBox="0 0 120 70" focusable="false">
+        <circle cx="60" cy="35" r="12"/>
+        <path d="M24 35 H46 M74 35 H96"/>
+      </svg>
+    `;
+  }
+
+  function circuitSymbolSvg(part, variant = "bank") {
+    const safePart = String(part || "").toLowerCase();
+    const className = `circuit-symbol-svg ${variant === "slot" ? "slot-svg" : "bank-svg"}`;
+    const drawings = {
+      cell: `
+        <line x1="14" y1="35" x2="46" y2="35"/>
+        <line x1="46" y1="14" x2="46" y2="56"/>
+        <line x1="68" y1="23" x2="68" y2="47"/>
+        <line x1="68" y1="35" x2="106" y2="35"/>
+      `,
+      lamp: `
+        <line x1="12" y1="35" x2="32" y2="35"/>
+        <circle cx="60" cy="35" r="25"/>
+        <line x1="43" y1="18" x2="77" y2="52"/>
+        <line x1="77" y1="18" x2="43" y2="52"/>
+        <line x1="88" y1="35" x2="108" y2="35"/>
+      `,
+      "open switch": `
+        <line x1="12" y1="35" x2="42" y2="35"/>
+        <circle cx="46" cy="35" r="5"/>
+        <circle cx="82" cy="35" r="5"/>
+        <line x1="50" y1="31" x2="74" y2="16"/>
+        <line x1="86" y1="35" x2="108" y2="35"/>
+      `,
+      "closed switch": `
+        <line x1="12" y1="35" x2="42" y2="35"/>
+        <circle cx="46" cy="35" r="5"/>
+        <circle cx="82" cy="35" r="5"/>
+        <line x1="50" y1="35" x2="78" y2="35"/>
+        <line x1="86" y1="35" x2="108" y2="35"/>
+      `,
+      ammeter: `
+        <line x1="12" y1="35" x2="34" y2="35"/>
+        <circle cx="60" cy="35" r="26"/>
+        <text x="60" y="44">A</text>
+        <line x1="86" y1="35" x2="108" y2="35"/>
+      `,
+      voltmeter: `
+        <line x1="12" y1="35" x2="34" y2="35"/>
+        <circle cx="60" cy="35" r="26"/>
+        <text x="60" y="44">V</text>
+        <line x1="86" y1="35" x2="108" y2="35"/>
+      `,
+      wire: `
+        <line x1="14" y1="35" x2="106" y2="35"/>
+      `,
     };
-    return icons[part] || "⚙️";
+    const drawing = drawings[safePart] || drawings.wire;
+    return `
+      <svg class="${className}" viewBox="0 0 120 70" focusable="false" role="img" aria-label="${escapeHtml(part)} symbol">
+        <g>${drawing}</g>
+      </svg>
+    `;
   }
 
   function wireCircuitPanel(game) {
