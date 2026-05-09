@@ -1,6 +1,6 @@
 # Electric Bones — Year 7 Science Flashcards
 
-A static, dependency-free flashcard web app for Year 7 science revision. This v7 version keeps the **Exam Coach** and **Weak Review** modes and adds a content-completion patch based on a direct audit against the Year 7 student revision pack. Exam Coach uses mark-scheme answers, written-response prompts, keyword guidance, practical-method questions, and diagram reasoning. Weak Review automatically revisits missed flashcards. The app still works without a backend or build step.
+A static, dependency-free flashcard web app for Year 7 science revision. This version keeps the **Exam Coach**, **Weak Review**, **Label Lab**, and **Circuit Builder** modes, then adds a **Pack Drill** alignment pass based on the uploaded Year 7 revision pack. The patch tightens wording and section organisation without expanding the deck or copying full worksheet questions verbatim. The app works without a backend or build step.
 
 This repo is ready to drop into GitHub and publish with **GitHub Pages**. It includes study-pack flashcards for:
 
@@ -28,30 +28,28 @@ This repo is ready to drop into GitHub and publish with **GitHub Pages**. It inc
 
 ## Card bank
 
-Current v7 study bank after the content-completion patch:
+Current study bank after the pack-alignment patch:
 
 | Card type | Count |
 |---|---:|
 | Vocabulary | 130 |
 | Multiple choice | 123 |
-| Visual challenge | 47 |
+| Visual challenge | 91 |
 | Equation/relationship | 24 |
 | Self-test | 25 |
 | Spot the mistake | 11 |
 | Practical method | 8 |
-| **Total** | **368** |
+| **Total** | **412** |
 
 Unit split:
 
 | Unit | CSV card count |
 |---|---:|
-| 7C Muscles and bones | 130 |
-| 7F Acids and alkalis | 118 |
-| 7J Current electricity | 120 |
+| 7C Muscles and bones | 144 |
+| 7F Acids and alkalis | 128 |
+| 7J Current electricity | 140 |
 
-The v7 content-completion patch adds **108 new CSV cards** plus **12 new Exam Coach questions**. It targets the audit gaps in the revision pack: 7C drugs / working scientifically / double circulation; 7F household examples / hazard symbols / natural indicators / extra salt equations; and 7J scientific models / truth tables / voltage division / electrical safety.
-
-The app now contains **431 total revision items** when flashcards, label labs, circuit-builder games, and Exam Coach prompts are counted together: 368 CSV cards + 7 label labs + 8 circuit-builder tasks + 48 Exam Coach prompts.
+The pack-alignment patch keeps the CSV deck at **412 cards** and rewrites **187 existing card fronts** into closer school-pack command-word style. It also adds stable IDs, pack-section metadata, Pack Drill mode, and a revision-pack dashboard.
 
 ## Features
 
@@ -146,9 +144,9 @@ Exam Coach includes:
 Weak Review tracks missed items in browser storage and gives the learner a focused place to clean up mistakes. Correct answers remove items from the weak list and count toward the **Comeback kid** badge.
 
 
-## V7 content-completion patch
+## Previous V7 content-completion patch
 
-The v7 patch is a content and accuracy pass against the Year 7 student revision pack. It includes:
+The earlier content-completion patch was a content and accuracy pass against the Year 7 student revision pack. It included:
 
 - wording cleanups around pH, acid/alkali language, concentration, charge, and muscle relaxation
 - 7C additions for double circulation, gas-exchange organ functions, vessel adaptations, force in newtons, scientific/non-scientific/ethical questions, and drug examples/effects/testing
@@ -295,3 +293,19 @@ Boss round ignores the normal topic/type boundaries and mixes the full deck. It 
 ### Progress without a database
 
 The app saves progress in browser `localStorage`, so XP/streak/mastered cards persist after closing and reopening the site on the same device and browser. It does not sync across devices. Use **Export progress** and **Import progress** to back up or move progress using a JSON file.
+
+
+## V7 Pack Alignment Drill patch
+
+This alignment pass keeps the content bank size stable and focuses on wording and structure instead of adding another large batch of cards.
+
+What changed:
+
+- Added stable card IDs in `data/flashcards.csv` so future wording edits do not wipe local progress.
+- Added `Pack section` and `Source focus` metadata for each flashcard.
+- Added **Pack drill** mode, grouped by the same section structure as the revision pack: 7Ca-7Ce, 7Fa-7Fe, and 7Ja-7Je.
+- Added a small revision-pack coverage dashboard showing mastered counts by pack section.
+- Rewrote paraphrased question fronts into closer school-pack command-word style, using wording patterns like **state**, **describe**, **explain**, **which statement**, **look at the diagram**, and **complete the word equation**.
+- Avoided copying full Pearson worksheet questions verbatim into this public static app.
+
+The result is a tighter revision-pack feel without growing the deck or turning the public repo into a direct copy of the pack worksheets.

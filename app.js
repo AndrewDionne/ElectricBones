@@ -18,6 +18,7 @@
     homeButton: $("#homeButton"),
     unitFilter: $("#unitFilter"),
     typeFilter: $("#typeFilter"),
+    packFilter: $("#packFilter"),
     practiceMixSelect: $("#practiceMixSelect"),
     searchBox: $("#searchBox"),
     modeButtons: $$(".mode-button"),
@@ -49,6 +50,7 @@
     resetProgress: $("#resetProgress"),
     modeKicker: $("#modeKicker"),
     workspaceTitle: $("#workspaceTitle"),
+    packDashboard: $("#packDashboard"),
     progressFill: $("#progressFill"),
     xpValue: $("#xpValue"),
     scoreValue: $("#scoreValue"),
@@ -903,6 +905,7 @@
     mode: "study",
     unit: "all",
     type: "all",
+    packSection: "all",
     search: "",
     order: [],
     index: 0,
@@ -1081,6 +1084,39 @@
       `<option value="all">All topics</option>`,
       ...units.map((unit) => `<option value="${escapeHtml(unit)}">${escapeHtml(unit)}</option>`),
     ].join("");
+
+    const packSections = [...new Set(cards.map((card) => card.packSection).filter(Boolean))].sort(sectionSort);
+    if (els.packFilter) {
+      els.packFilter.innerHTML = [
+        `<option value="all">All pack sections</option>`,
+        ...packSections.map((section) => `<option value="${escapeHtml(section)}">${escapeHtml(packSectionLabel(section))}</option>`),
+      ].join("");
+    }
+  }
+
+  function sectionSort(a, b) {
+    return String(a).localeCompare(String(b), undefined, { numeric: true, sensitivity: "base" });
+  }
+
+  function packSectionLabel(section) {
+    const labels = {
+      "7Ca": "7Ca · organs, breathing, gas exchange",
+      "7Cb": "7Cb · circulation, pulse, blood",
+      "7Cc": "7Cc · skeleton and joints",
+      "7Cd": "7Cd · muscles and nervous control",
+      "7Ce": "7Ce · drugs and effects",
+      "7Fa": "7Fa · hazards, acids, indicators",
+      "7Fb": "7Fb · acids, alkalis, indicator tests",
+      "7Fc": "7Fc · pH scale and pH measurement",
+      "7Fd": "7Fd · neutralisation",
+      "7Fe": "7Fe · bases, salts, everyday reactions",
+      "7Ja": "7Ja · current and complete circuits",
+      "7Jb": "7Jb · models for electricity",
+      "7Jc": "7Jc · series, parallel, switches",
+      "7Jd": "7Jd · voltage and resistance",
+      "7Je": "7Je · electrical safety and plugs",
+    };
+    return labels[section] || section;
   }
 
   function filteredCards() {
@@ -1094,17 +1130,19 @@
         : forcedVisualMode
           ? Boolean(card.visual) || visualLabTypes.has(card.type)
           : state.type === "all" || card.type === state.type;
-      const searchText = `${card.unit} ${card.type} ${card.front} ${card.back} ${card.cue}`.toLowerCase();
+      const packMatch = state.packSection === "all" || card.packSection === state.packSection;
+      const packModeMatch = state.mode !== "pack" || Boolean(card.packSection);
+      const searchText = `${card.unit} ${card.type} ${card.front} ${card.back} ${card.cue} ${card.packSection || ""} ${card.sourceFocus || ""}`.toLowerCase();
       const searchMatch = !search || searchText.includes(search);
       const weakMatch = state.mode !== "weak" || (state.progress.weakIds || []).includes(card.id);
-      return unitMatch && typeMatch && searchMatch && weakMatch;
+      return unitMatch && typeMatch && packMatch && packModeMatch && searchMatch && weakMatch;
     });
   }
 
   function rebuildDeck({ shuffle = false } = {}) {
     const deck = filteredCards();
     state.order = deck.map((_, index) => index);
-    if (shuffle || ["quiz", "boss", "equations", "weak"].includes(state.mode)) {
+    if (shuffle || ["quiz", "boss", "equations", "weak", "pack"].includes(state.mode)) {
       shuffleArray(state.order);
     }
     state.index = 0;
@@ -2114,6 +2152,7 @@
 
     renderStats();
     renderBadges();
+    renderPackDashboard();
     renderModeChrome(state.mode === "lab" ? labDeck.length : state.mode === "circuit" ? circuitDeck.length : state.mode === "exam" ? examDeck.length : state.mode === "boss" ? (state.bossActive ? state.bossDeck.length : bossCandidateCards().length) : deck.length);
     updateToggleButtons();
 
@@ -2148,8 +2187,9 @@
     }
 
     els.flashcard.classList.toggle("flipped", state.flipped);
-    els.cardUnitBadge.textContent = card.unit;
+    els.cardUnitBadge.textContent = card.packSection ? `${card.unit} · ${card.packSection}` : card.unit;
     els.cardTypeBadge.textContent = card.type;
+    els.cardTypeBadge.title = card.sourceFocus || card.type;
     renderCardVisual(card);
     els.cardFront.textContent = card.front;
     els.cardBack.textContent = card.back;
@@ -2192,12 +2232,13 @@
   function renderModeChrome(count) {
     const modeNames = {
       study: ["Flip cards", "Practise the card, then check the answer."],
-      quiz: ["Multiple choice", "Pick the best answer and build confidence before Boss Mode."],
+      quiz: ["Multiple choice", "Pick the best answer. Distractors are now deliberately close, so read carefully."],
       equations: ["Equation arena", "Memorise equations and science relationships."],
       visual: ["Visual lab", "Practise diagrams, symbols, practical methods, and spot-the-mistake questions."],
       lab: ["Label lab", "Drag or tap labels onto diagrams to prove you can recognise the science parts."],
       circuit: ["Circuit builder", "Tap or drag components into the circuit slots, then test whether your circuit works."],
       exam: ["Exam coach", "Practise mark-scheme answers, practical methods, and explanation questions."],
+      pack: ["Pack drill", "Practise cards grouped by the same section structure as the revision pack."],
       weak: ["Weak review", "Reviewing cards marked Further review or previously missed. Clear them by answering correctly."],
       boss: [state.bossActive ? `Boss Round · ${state.bossDeck.length} cards` : "Boss round", state.bossActive ? "" : "Build your test set."],
     };
@@ -2218,6 +2259,44 @@
     els.homePracticeButton?.classList.toggle("active-launch", state.mode !== "boss");
     els.homeBossButton?.classList.toggle("active-launch", state.mode === "boss");
     syncHomeTopicButtons();
+  }
+
+  function renderPackDashboard() {
+    if (!els.packDashboard) return;
+    const relevant = cards.filter((card) => state.unit === "all" || card.unit === state.unit);
+    const grouped = [...new Set(relevant.map((card) => card.packSection).filter(Boolean))].sort(sectionSort);
+    if (!grouped.length) {
+      els.packDashboard.classList.add("hidden");
+      els.packDashboard.innerHTML = "";
+      return;
+    }
+    const mastered = new Set(state.progress.mastered || []);
+    const active = state.mode === "pack" || state.packSection !== "all";
+    els.packDashboard.classList.toggle("active", active);
+    els.packDashboard.classList.remove("hidden");
+    els.packDashboard.innerHTML = `
+      <div class="pack-dashboard-head">
+        <strong>Revision pack map</strong>
+        <small>${state.packSection === "all" ? "Choose a pack section to drill." : packSectionLabel(state.packSection)}</small>
+      </div>
+      <div class="pack-section-grid">
+        ${grouped.map((section) => {
+          const sectionCards = relevant.filter((card) => card.packSection === section);
+          const sectionMastered = sectionCards.filter((card) => mastered.has(card.id)).length;
+          const pct = sectionCards.length ? Math.round((sectionMastered / sectionCards.length) * 100) : 0;
+          return `<button class="pack-section-pill ${state.packSection === section ? "selected" : ""}" type="button" data-pack-section="${escapeHtml(section)}">
+            <span>${escapeHtml(section)}</span><small>${sectionMastered}/${sectionCards.length} · ${pct}%</small>
+          </button>`;
+        }).join("")}
+      </div>
+    `;
+    els.packDashboard.querySelectorAll("[data-pack-section]").forEach((button) => {
+      button.addEventListener("click", () => {
+        state.packSection = button.dataset.packSection || "all";
+        if (els.packFilter) els.packFilter.value = state.packSection;
+        setMode("pack");
+      });
+    });
   }
 
   function renderStats() {
@@ -2254,7 +2333,7 @@
   }
 
   function isQuizMode() {
-    return ["quiz", "equations", "visual", "boss", "weak"].includes(state.mode);
+    return ["quiz", "equations", "visual", "boss", "weak", "pack"].includes(state.mode);
   }
 
   function buildQuizChoices(card, deck) {
@@ -2429,7 +2508,7 @@
       state.type = "Equation/relationship";
       els.typeFilter.value = "Equation/relationship";
     }
-    if (mode === "visual" || mode === "lab" || mode === "circuit" || mode === "exam" || mode === "weak") {
+    if (mode === "visual" || mode === "lab" || mode === "circuit" || mode === "exam" || mode === "weak" || mode === "pack") {
       state.type = "all";
       els.typeFilter.value = "all";
     }
@@ -3809,6 +3888,12 @@
       rebuildDeck({ shuffle: true });
     });
 
+    els.packFilter?.addEventListener("change", (event) => {
+      state.packSection = event.target.value;
+      if (state.packSection !== "all") setMode("pack");
+      else rebuildDeck({ shuffle: true });
+    });
+
     els.searchBox.addEventListener("input", (event) => {
       state.search = event.target.value;
       state.labIndex = 0;
@@ -3823,6 +3908,7 @@
       if (state.practiceMix === "weak") setMode("weak");
       else if (state.practiceMix === "visual") setMode("visual");
       else if (state.practiceMix === "exam") setMode("exam");
+      else if (state.practiceMix === "pack") setMode("pack");
       else rebuildDeck({ shuffle: true });
     });
 
@@ -3947,6 +4033,7 @@
     populateFilters();
     els.unitFilter.value = state.unit;
     els.typeFilter.value = state.type;
+    if (els.packFilter) els.packFilter.value = state.packSection;
     wireEvents();
     syncCalmSoundscape();
     rebuildDeck({ shuffle: true });

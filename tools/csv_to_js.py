@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CSV_PATH = ROOT / "data" / "flashcards.csv"
 JS_PATH = ROOT / "data" / "flashcards.js"
 REQUIRED_COLUMNS = ["Unit", "Type", "Front", "Back", "Extra cue"]
-OPTIONAL_COLUMNS = ["Choices", "Visual", "Difficulty"]
+OPTIONAL_COLUMNS = ["Id", "Choices", "Visual", "Difficulty", "Pack section", "Source focus"]
 
 
 def slugify(value: str) -> str:
@@ -35,14 +35,21 @@ def main() -> None:
         for index, row in enumerate(reader, start=1):
             unit = row["Unit"].strip()
             front = row["Front"].strip()
+            stable_id = row.get("Id", "").strip()
             card = {
-                "id": f"card-{index:03d}-{slugify(unit + '-' + front)}",
+                "id": stable_id or f"card-{index:03d}-{slugify(unit + '-' + front)}",
                 "unit": unit,
                 "type": row["Type"].strip(),
                 "front": front,
                 "back": row["Back"].strip(),
                 "cue": row["Extra cue"].strip(),
             }
+            pack_section = row.get("Pack section", "").strip()
+            if pack_section:
+                card["packSection"] = pack_section
+            source_focus = row.get("Source focus", "").strip()
+            if source_focus:
+                card["sourceFocus"] = source_focus
             raw_choices = row.get("Choices", "").strip()
             if raw_choices:
                 card["choices"] = [choice.strip() for choice in raw_choices.split("|") if choice.strip()]
