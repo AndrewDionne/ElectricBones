@@ -18,7 +18,6 @@
     homeButton: $("#homeButton"),
     unitFilter: $("#unitFilter"),
     typeFilter: $("#typeFilter"),
-    packFilter: $("#packFilter"),
     practiceMixSelect: $("#practiceMixSelect"),
     searchBox: $("#searchBox"),
     modeButtons: $$(".mode-button"),
@@ -50,7 +49,6 @@
     resetProgress: $("#resetProgress"),
     modeKicker: $("#modeKicker"),
     workspaceTitle: $("#workspaceTitle"),
-    packDashboard: $("#packDashboard"),
     progressFill: $("#progressFill"),
     xpValue: $("#xpValue"),
     scoreValue: $("#scoreValue"),
@@ -117,17 +115,20 @@
     {
       id: "lab-circuit-symbols",
       unit: "7J Current electricity",
-      title: "Circuit symbol match-up",
-      brief: "Drop each component name onto the right circuit symbol.",
-      diagram: "symbols",
-      labels: ["cell", "lamp", "switch", "ammeter", "voltmeter"],
+      title: "Match components to circuit symbols",
+      brief: "Match each component name to the circuit symbol used in the revision pack.",
+      diagram: "symbols-extended",
+      labels: ["cell", "open switch", "closed switch", "bulb", "resistor", "voltmeter", "ammeter"],
       targets: [
-        { id: "cell", label: "cell", x: 18, y: 44 },
-        { id: "lamp", label: "lamp", x: 34, y: 44 },
-        { id: "switch", label: "switch", x: 50, y: 44 },
-        { id: "ammeter", label: "ammeter", x: 66, y: 44 },
-        { id: "voltmeter", label: "voltmeter", x: 82, y: 44 },
+        { id: "cell", label: "cell", x: 14, y: 34 },
+        { id: "open-switch", label: "open switch", x: 39, y: 34 },
+        { id: "closed-switch", label: "closed switch", x: 64, y: 34 },
+        { id: "bulb", label: "bulb", x: 88, y: 34 },
+        { id: "resistor", label: "resistor", x: 24, y: 73 },
+        { id: "voltmeter", label: "voltmeter", x: 50, y: 73 },
+        { id: "ammeter", label: "ammeter", x: 76, y: 73 },
       ],
+      success: "Nice work — those are the standard circuit symbols for Year 7 electricity.",
     },
     {
       id: "lab-series-parallel",
@@ -905,7 +906,6 @@
     mode: "study",
     unit: "all",
     type: "all",
-    packSection: "all",
     search: "",
     order: [],
     index: 0,
@@ -1084,39 +1084,6 @@
       `<option value="all">All topics</option>`,
       ...units.map((unit) => `<option value="${escapeHtml(unit)}">${escapeHtml(unit)}</option>`),
     ].join("");
-
-    const packSections = [...new Set(cards.map((card) => card.packSection).filter(Boolean))].sort(sectionSort);
-    if (els.packFilter) {
-      els.packFilter.innerHTML = [
-        `<option value="all">All pack sections</option>`,
-        ...packSections.map((section) => `<option value="${escapeHtml(section)}">${escapeHtml(packSectionLabel(section))}</option>`),
-      ].join("");
-    }
-  }
-
-  function sectionSort(a, b) {
-    return String(a).localeCompare(String(b), undefined, { numeric: true, sensitivity: "base" });
-  }
-
-  function packSectionLabel(section) {
-    const labels = {
-      "7Ca": "7Ca · organs, breathing, gas exchange",
-      "7Cb": "7Cb · circulation, pulse, blood",
-      "7Cc": "7Cc · skeleton and joints",
-      "7Cd": "7Cd · muscles and nervous control",
-      "7Ce": "7Ce · drugs and effects",
-      "7Fa": "7Fa · hazards, acids, indicators",
-      "7Fb": "7Fb · acids, alkalis, indicator tests",
-      "7Fc": "7Fc · pH scale and pH measurement",
-      "7Fd": "7Fd · neutralisation",
-      "7Fe": "7Fe · bases, salts, everyday reactions",
-      "7Ja": "7Ja · current and complete circuits",
-      "7Jb": "7Jb · models for electricity",
-      "7Jc": "7Jc · series, parallel, switches",
-      "7Jd": "7Jd · voltage and resistance",
-      "7Je": "7Je · electrical safety and plugs",
-    };
-    return labels[section] || section;
   }
 
   function filteredCards() {
@@ -1130,19 +1097,17 @@
         : forcedVisualMode
           ? Boolean(card.visual) || visualLabTypes.has(card.type)
           : state.type === "all" || card.type === state.type;
-      const packMatch = state.packSection === "all" || card.packSection === state.packSection;
-      const packModeMatch = state.mode !== "pack" || Boolean(card.packSection);
-      const searchText = `${card.unit} ${card.type} ${card.front} ${card.back} ${card.cue} ${card.packSection || ""} ${card.sourceFocus || ""}`.toLowerCase();
+      const searchText = `${card.unit} ${card.type} ${card.front} ${card.back} ${card.cue}`.toLowerCase();
       const searchMatch = !search || searchText.includes(search);
       const weakMatch = state.mode !== "weak" || (state.progress.weakIds || []).includes(card.id);
-      return unitMatch && typeMatch && packMatch && packModeMatch && searchMatch && weakMatch;
+      return unitMatch && typeMatch && searchMatch && weakMatch;
     });
   }
 
   function rebuildDeck({ shuffle = false } = {}) {
     const deck = filteredCards();
     state.order = deck.map((_, index) => index);
-    if (shuffle || ["quiz", "boss", "equations", "weak", "pack"].includes(state.mode)) {
+    if (shuffle || ["quiz", "boss", "equations", "weak"].includes(state.mode)) {
       shuffleArray(state.order);
     }
     state.index = 0;
@@ -1278,6 +1243,11 @@
       "blood-vessels": bloodVesselsSvg,
       "reaction-time-ruler": reactionTimeRulerSvg,
       "circuit-comparison": circuitComparisonSvg,
+      "circuit-dual-ammeters": circuitDualAmmetersSvg,
+      "circuit-xyz-parallel": circuitParallelXYZSvg,
+      "circuit-pack-mistakes": circuitPackMistakesSvg,
+      "circuit-pack-four": circuitPackFourSvg,
+      "circuit-concept-map": circuitConceptMapSvg,
     };
     const renderer = diagrams[key];
     return renderer ? renderer() : "";
@@ -1483,6 +1453,130 @@
       </g>
       <text x="394" y="220" class="diagram-note">two branches</text>
     `);
+  }
+
+  function circuitDualAmmetersSvg() {
+    return diagramFrame("Current in a series circuit", `
+      <g class="circuit-line revision-circuit">
+        <path d="M86 82 H434 V206 H86 Z"/>
+        <line x1="246" y1="106" x2="246" y2="184"/><line x1="274" y1="120" x2="274" y2="170"/>
+        <circle cx="128" cy="144" r="22"/><text x="128" y="152" class="meter-letter">A</text>
+        <circle cx="392" cy="144" r="22"/><text x="392" y="152" class="meter-letter">A</text>
+        <circle cx="190" cy="206" r="18"/><line x1="178" y1="194" x2="202" y2="218"/><line x1="202" y1="194" x2="178" y2="218"/>
+        <circle cx="260" cy="206" r="18"/><line x1="248" y1="194" x2="272" y2="218"/><line x1="272" y1="194" x2="248" y2="218"/>
+        <circle cx="330" cy="206" r="18"/><line x1="318" y1="194" x2="342" y2="218"/><line x1="342" y1="194" x2="318" y2="218"/>
+      </g>
+      <text x="128" y="114" class="diagram-note">3 A</text>
+      <text x="392" y="114" class="diagram-note">?</text>
+      <text x="260" y="54" class="diagram-note">3 V cell</text>
+    `);
+  }
+
+  function circuitParallelXYZSvg() {
+    return diagramFrame("Which circuits are parallel?", `
+      <g class="circuit-line revision-circuit circuit-mini">
+        <text x="100" y="54" class="diagram-note">X</text>
+        <path d="M44 80 H160 V196 H44 Z"/>
+        <line x1="44" y1="138" x2="160" y2="138"/>
+        <line x1="86" y1="116" x2="86" y2="160"/><line x1="104" y1="124" x2="104" y2="152"/>
+        <circle cx="102" cy="80" r="16"/><line x1="92" y1="70" x2="112" y2="90"/><line x1="112" y1="70" x2="92" y2="90"/>
+        <circle cx="102" cy="196" r="16"/><line x1="92" y1="186" x2="112" y2="206"/><line x1="112" y1="186" x2="92" y2="206"/>
+      </g>
+      <g class="circuit-line revision-circuit circuit-mini">
+        <text x="260" y="54" class="diagram-note">Y</text>
+        <path d="M204 80 H320 V196 H204 Z"/>
+        <line x1="204" y1="138" x2="320" y2="138"/>
+        <line x1="250" y1="104" x2="250" y2="172"/><line x1="266" y1="114" x2="266" y2="162"/>
+        <circle cx="262" cy="138" r="16"/><line x1="252" y1="128" x2="272" y2="148"/><line x1="272" y1="128" x2="252" y2="148"/>
+        <circle cx="262" cy="196" r="16"/><line x1="252" y1="186" x2="272" y2="206"/><line x1="272" y1="186" x2="252" y2="206"/>
+      </g>
+      <g class="circuit-line revision-circuit circuit-mini">
+        <text x="420" y="54" class="diagram-note">Z</text>
+        <path d="M362 80 H478 V196 H362 Z"/>
+        <line x1="404" y1="102" x2="404" y2="160"/><line x1="422" y1="114" x2="422" y2="150"/>
+        <circle cx="382" cy="80" r="16"/><line x1="372" y1="70" x2="392" y2="90"/><line x1="392" y1="70" x2="372" y2="90"/>
+        <circle cx="458" cy="196" r="16"/><line x1="448" y1="186" x2="468" y2="206"/><line x1="468" y1="186" x2="448" y2="206"/>
+      </g>
+    `);
+  }
+
+  function circuitPackMistakesSvg() {
+    const mini = (x, y, letter, inner) => `<g transform="translate(${x},${y})"><text x="-90" y="-72" class="diagram-note">${letter}</text><rect x="-100" y="-64" width="200" height="116" rx="18" class="diagram-bg"/><g class="circuit-line revision-circuit">${inner}</g></g>`;
+    return diagramFrame("Find the mistakes in the drawings", `
+      ${mini(138,92,'A', `<path d="M-54 -20 H54 V34 H-54 Z"/><line x1="4" y1="-34" x2="4" y2="-6"/><line x1="20" y1="-34" x2="20" y2="-6"/><line x1="36" y1="-34" x2="36" y2="-6"/><circle cx="0" cy="34" r="14"/><line x1="-8" y1="26" x2="8" y2="42"/><line x1="8" y1="26" x2="-8" y2="42"/>`)}
+      ${mini(382,92,'B', `<line x1="-70" y1="0" x2="-12" y2="0"/><line x1="0" y1="-24" x2="0" y2="24"/><line x1="20" y1="-34" x2="20" y2="34"/><line x1="32" y1="0" x2="72" y2="0"/><text x="-18" y="-18" class="meter-letter">+</text><text x="28" y="-18" class="meter-letter">−</text>`)}
+      ${mini(138,226,'C', `<path d="M-54 -22 H54 V34 H-54 Z"/><line x1="6" y1="-36" x2="6" y2="-8"/><line x1="24" y1="-36" x2="24" y2="-8"/><circle cx="-54" cy="6" r="14"/><text x="-54" y="12" class="meter-letter">A</text><circle cx="54" cy="6" r="14"/><text x="54" y="12" class="meter-letter">A</text><circle cx="0" cy="34" r="12"/><line x1="-8" y1="26" x2="8" y2="42"/><line x1="8" y1="26" x2="-8" y2="42"/><text x="-82" y="10" class="diagram-note">0.4 A</text><text x="84" y="10" class="diagram-note">0.5 A</text>`)}
+      ${mini(382,226,'D', `<path d="M-54 -22 H54 V34 H-54"/><line x1="6" y1="-36" x2="6" y2="-8"/><line x1="24" y1="-36" x2="24" y2="-8"/><circle cx="-54" cy="6" r="12"/><line x1="-62" y1="-2" x2="-46" y2="14"/><line x1="-46" y1="-2" x2="-62" y2="14"/><circle cx="54" cy="6" r="14"/><text x="54" y="12" class="meter-letter">A</text><circle cx="-4" cy="34" r="4"/><circle cx="34" cy="34" r="4"/><line x1="0" y1="30" x2="24" y2="14"/><text x="84" y="10" class="diagram-note">0.5 A</text>`)}
+      ${mini(138,360,'E', `<path d="M-54 -20 H54 V34 H-54 Z"/><circle cx="0" cy="-20" r="12"/><line x1="-8" y1="-28" x2="8" y2="-12"/><line x1="8" y1="-28" x2="-8" y2="-12"/><circle cx="-54" cy="8" r="12"/><line x1="-62" y1="0" x2="-46" y2="16"/><line x1="-46" y1="0" x2="-62" y2="16"/><circle cx="54" cy="8" r="14"/><text x="54" y="14" class="meter-letter">A</text><circle cx="-8" cy="34" r="4"/><circle cx="16" cy="34" r="4"/>`)}
+      ${mini(382,360,'F', `<path d="M-54 -20 H54 V34 H-54 Z"/><line x1="6" y1="-34" x2="6" y2="-6"/><line x1="24" y1="-34" x2="24" y2="-6"/><circle cx="-54" cy="8" r="12"/><line x1="-62" y1="0" x2="-46" y2="16"/><line x1="-46" y1="0" x2="-62" y2="16"/><circle cx="0" cy="34" r="12"/><line x1="-8" y1="26" x2="8" y2="42"/><line x1="8" y1="26" x2="-8" y2="42"/><circle cx="54" cy="8" r="14"/><text x="54" y="14" class="meter-letter">A</text><text x="80" y="12" class="diagram-note">0 A</text>`)}
+      ${mini(138,494,'G', `<rect x="-30" y="-40" width="80" height="18" rx="6"/><line x1="-10" y1="-38" x2="-2" y2="-24"/><line x1="12" y1="-38" x2="20" y2="-24"/><line x1="34" y1="-38" x2="42" y2="-24"/><path d="M-60 4 C-40 -8,-20 -10,-6 0"/><circle cx="-62" cy="8" r="12"/><circle cx="-14" cy="20" r="12"/><path d="M12 8 C28 4,40 8,56 18"/><circle cx="76" cy="-2" r="4"/><circle cx="96" cy="-2" r="4"/><line x1="80" y1="-6" x2="92" y2="-20"/><path d="M50 -24 C70 -10,78 -6,80 -2"/>`)}
+      ${mini(382,494,'H', `<rect x="-30" y="-40" width="80" height="18" rx="6"/><line x1="-10" y1="-38" x2="-2" y2="-24"/><line x1="12" y1="-24" x2="20" y2="-38"/><line x1="34" y1="-38" x2="42" y2="-24"/><path d="M-60 4 C-40 -8,-20 -10,-6 0"/><circle cx="-62" cy="8" r="12"/><circle cx="-14" cy="20" r="12"/><path d="M12 8 C28 4,40 8,56 18"/><circle cx="76" cy="-2" r="4"/><circle cx="96" cy="-2" r="4"/><line x1="80" y1="-6" x2="92" y2="-20"/><path d="M50 -24 C70 -10,78 -6,80 -2"/>`)}
+    `, "0 0 520 560");
+  }
+
+  function circuitPackFourSvg() {
+    const cell = `<line x1="0" y1="-16" x2="0" y2="16"/><line x1="16" y1="-10" x2="16" y2="10"/>`;
+    const lampAt = (x, y) => `<circle cx="${x}" cy="${y}" r="12"/><line x1="${x-8}" y1="${y-8}" x2="${x+8}" y2="${y+8}"/><line x1="${x+8}" y1="${y-8}" x2="${x-8}" y2="${y+8}"/>`;
+    return diagramFrame("Four circuits A–D", `
+      <g class="circuit-line revision-circuit circuit-mini">
+        <text x="120" y="46" class="diagram-note">A</text>
+        <path d="M62 72 H178 V186 H62 Z"/>
+        <g transform="translate(110,72)">${cell}</g>
+        <path d="M62 128 H178"/>
+        ${lampAt(120,128)}${lampAt(120,186)}
+        <circle cx="62" cy="100" r="4"/><circle cx="62" cy="128" r="4"/><line x1="66" y1="104" x2="88" y2="124"/>
+      </g>
+      <g class="circuit-line revision-circuit circuit-mini">
+        <text x="396" y="46" class="diagram-note">B</text>
+        <path d="M322 94 H470 V176 H322 Z"/>
+        <g transform="translate(372,94)">${cell}</g>
+        <circle cx="390" cy="176" r="12"/><line x1="382" y1="168" x2="398" y2="184"/><line x1="398" y1="168" x2="382" y2="184"/>
+        <circle cx="430" cy="176" r="12"/><line x1="422" y1="168" x2="438" y2="184"/><line x1="438" y1="168" x2="422" y2="184"/>
+        <circle cx="342" cy="176" r="4"/><circle cx="372" cy="176" r="4"/><line x1="346" y1="172" x2="366" y2="156"/>
+      </g>
+      <g class="circuit-line revision-circuit circuit-mini">
+        <text x="120" y="230" class="diagram-note">C</text>
+        <path d="M62 248 H178 V362 H62 Z"/>
+        ${lampAt(120,248)}${lampAt(120,362)}
+        <path d="M62 304 H178"/>
+        <g transform="translate(98,304)">${cell}</g>
+        <circle cx="126" cy="304" r="4"/><circle cx="162" cy="304" r="4"/><line x1="130" y1="300" x2="150" y2="286"/>
+      </g>
+      <g class="circuit-line revision-circuit circuit-mini">
+        <text x="396" y="230" class="diagram-note">D</text>
+        <path d="M332 264 H460 V370 H332 Z"/>
+        <g transform="translate(332,316) rotate(90)">${cell}</g>
+        ${lampAt(420,316)}${lampAt(388,340)}
+        <path d="M388 264 V340"/>
+        <circle cx="388" cy="276" r="4"/><circle cx="388" cy="316" r="4"/><line x1="392" y1="280" x2="414" y2="300"/>
+      </g>
+    `, "0 0 520 420");
+  }
+
+  function circuitConceptMapSvg() {
+    const bubble = (x,y,w,h,text) => `<g><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="18" class="diagram-bg"/><text x="${x+w/2}" y="${y+h/2+5}" class="diagram-note">${text}</text></g>`;
+    return diagramFrame("Electricity concept map", `
+      <rect x="48" y="56" width="424" height="54" rx="18" class="palette-bg"/>
+      <text x="260" y="78" class="diagram-note">ammeter   amp   bulb   charges   conductor   current   fuse</text>
+      <text x="260" y="99" class="diagram-note">heat   insulator   metal   parallel   plastic   resistance   resistor   series   switch   volt   voltage</text>
+      ${bubble(204,132,112,40,'electricity')}
+      ${bubble(94,198,114,40,'electrons')}
+      ${bubble(318,198,132,40,'a complete circuit')}
+      ${bubble(64,252,92,40,'current')}
+      ${bubble(220,214,106,40,'_____')}
+      ${bubble(334,272,110,40,'_____')}
+      <g class="circuit-line current-arrows">
+        <path d="M260 172 V210" marker-end="url(#arrow)"/>
+        <path d="M226 170 C198 176, 176 186, 152 198" marker-end="url(#arrow)"/>
+        <path d="M294 170 C322 176, 350 186, 384 198" marker-end="url(#arrow)"/>
+        <path d="M120 238 C112 244, 108 248, 104 252" marker-end="url(#arrow)"/>
+        <path d="M384 238 C390 248, 392 258, 390 270" marker-end="url(#arrow)"/>
+      </g>
+      <text x="186" y="183" class="diagram-note">is a flow of</text>
+      <text x="334" y="182" class="diagram-note">needs</text>
+      <text x="144" y="246" class="diagram-note">called a</text>
+      <text x="430" y="258" class="diagram-note">made from</text>
+    `, "0 0 520 340");
   }
 
   function phScaleSvg() {
@@ -2152,7 +2246,6 @@
 
     renderStats();
     renderBadges();
-    renderPackDashboard();
     renderModeChrome(state.mode === "lab" ? labDeck.length : state.mode === "circuit" ? circuitDeck.length : state.mode === "exam" ? examDeck.length : state.mode === "boss" ? (state.bossActive ? state.bossDeck.length : bossCandidateCards().length) : deck.length);
     updateToggleButtons();
 
@@ -2187,9 +2280,8 @@
     }
 
     els.flashcard.classList.toggle("flipped", state.flipped);
-    els.cardUnitBadge.textContent = card.packSection ? `${card.unit} · ${card.packSection}` : card.unit;
+    els.cardUnitBadge.textContent = card.unit;
     els.cardTypeBadge.textContent = card.type;
-    els.cardTypeBadge.title = card.sourceFocus || card.type;
     renderCardVisual(card);
     els.cardFront.textContent = card.front;
     els.cardBack.textContent = card.back;
@@ -2232,13 +2324,12 @@
   function renderModeChrome(count) {
     const modeNames = {
       study: ["Flip cards", "Practise the card, then check the answer."],
-      quiz: ["Multiple choice", "Pick the best answer. Distractors are now deliberately close, so read carefully."],
+      quiz: ["Multiple choice", "Pick the best answer and build confidence before Boss Mode."],
       equations: ["Equation arena", "Memorise equations and science relationships."],
       visual: ["Visual lab", "Practise diagrams, symbols, practical methods, and spot-the-mistake questions."],
       lab: ["Label lab", "Drag or tap labels onto diagrams to prove you can recognise the science parts."],
       circuit: ["Circuit builder", "Tap or drag components into the circuit slots, then test whether your circuit works."],
       exam: ["Exam coach", "Practise mark-scheme answers, practical methods, and explanation questions."],
-      pack: ["Pack drill", "Practise cards grouped by the same section structure as the revision pack."],
       weak: ["Weak review", "Reviewing cards marked Further review or previously missed. Clear them by answering correctly."],
       boss: [state.bossActive ? `Boss Round · ${state.bossDeck.length} cards` : "Boss round", state.bossActive ? "" : "Build your test set."],
     };
@@ -2259,44 +2350,6 @@
     els.homePracticeButton?.classList.toggle("active-launch", state.mode !== "boss");
     els.homeBossButton?.classList.toggle("active-launch", state.mode === "boss");
     syncHomeTopicButtons();
-  }
-
-  function renderPackDashboard() {
-    if (!els.packDashboard) return;
-    const relevant = cards.filter((card) => state.unit === "all" || card.unit === state.unit);
-    const grouped = [...new Set(relevant.map((card) => card.packSection).filter(Boolean))].sort(sectionSort);
-    if (!grouped.length) {
-      els.packDashboard.classList.add("hidden");
-      els.packDashboard.innerHTML = "";
-      return;
-    }
-    const mastered = new Set(state.progress.mastered || []);
-    const active = state.mode === "pack" || state.packSection !== "all";
-    els.packDashboard.classList.toggle("active", active);
-    els.packDashboard.classList.remove("hidden");
-    els.packDashboard.innerHTML = `
-      <div class="pack-dashboard-head">
-        <strong>Revision pack map</strong>
-        <small>${state.packSection === "all" ? "Choose a pack section to drill." : packSectionLabel(state.packSection)}</small>
-      </div>
-      <div class="pack-section-grid">
-        ${grouped.map((section) => {
-          const sectionCards = relevant.filter((card) => card.packSection === section);
-          const sectionMastered = sectionCards.filter((card) => mastered.has(card.id)).length;
-          const pct = sectionCards.length ? Math.round((sectionMastered / sectionCards.length) * 100) : 0;
-          return `<button class="pack-section-pill ${state.packSection === section ? "selected" : ""}" type="button" data-pack-section="${escapeHtml(section)}">
-            <span>${escapeHtml(section)}</span><small>${sectionMastered}/${sectionCards.length} · ${pct}%</small>
-          </button>`;
-        }).join("")}
-      </div>
-    `;
-    els.packDashboard.querySelectorAll("[data-pack-section]").forEach((button) => {
-      button.addEventListener("click", () => {
-        state.packSection = button.dataset.packSection || "all";
-        if (els.packFilter) els.packFilter.value = state.packSection;
-        setMode("pack");
-      });
-    });
   }
 
   function renderStats() {
@@ -2333,7 +2386,7 @@
   }
 
   function isQuizMode() {
-    return ["quiz", "equations", "visual", "boss", "weak", "pack"].includes(state.mode);
+    return ["quiz", "equations", "visual", "boss", "weak"].includes(state.mode);
   }
 
   function buildQuizChoices(card, deck) {
@@ -2508,7 +2561,7 @@
       state.type = "Equation/relationship";
       els.typeFilter.value = "Equation/relationship";
     }
-    if (mode === "visual" || mode === "lab" || mode === "circuit" || mode === "exam" || mode === "weak" || mode === "pack") {
+    if (mode === "visual" || mode === "lab" || mode === "circuit" || mode === "exam" || mode === "weak") {
       state.type = "all";
       els.typeFilter.value = "all";
     }
@@ -3099,6 +3152,7 @@
     const diagrams = {
       lungs: labLungsSvg,
       symbols: labSymbolsSvg,
+      "symbols-extended": labSymbolsExtendedSvg,
       "series-parallel": labSeriesParallelSvg,
       indicators: labIndicatorsSvg,
       "neutralisation-order": labNeutralisationOrderSvg,
@@ -3160,6 +3214,19 @@
       ${symbol(320, "switch", `<line x1="-30" y1="0" x2="-6" y2="0" class="wire"/><circle cx="-4" cy="0" r="4" class="wire-fill"/><line x1="2" y1="-6" x2="30" y2="-26" class="wire"/><circle cx="34" cy="0" r="4" class="wire-fill"/>`)}
       ${symbol(422, "ammeter", `<circle cx="0" cy="0" r="27" class="wire-fill"/><text x="0" y="9" text-anchor="middle" class="meter-letter">A</text>`)}
       ${symbol(524, "voltmeter", `<circle cx="0" cy="0" r="27" class="wire-fill"/><text x="0" y="9" text-anchor="middle" class="meter-letter">V</text>`)}
+    `);
+  }
+
+  function labSymbolsExtendedSvg() {
+    const tile = (x, y, inner) => `<g transform="translate(${x},${y})"><rect x="-46" y="-34" width="92" height="68" rx="18" class="symbol-tile"/>${inner}</g>`;
+    return labSvg("Circuit symbol pack", `
+      ${tile(96,120, `<line x1="-30" y1="0" x2="-10" y2="0" class="wire"/><line x1="-10" y1="-22" x2="-10" y2="22" class="wire"/><line x1="10" y1="-14" x2="10" y2="14" class="wire"/><line x1="10" y1="0" x2="30" y2="0" class="wire"/>`)}
+      ${tile(256,120, `<line x1="-30" y1="0" x2="-8" y2="0" class="wire"/><circle cx="-4" cy="0" r="4" class="wire-fill"/><circle cx="28" cy="0" r="4" class="wire-fill"/><line x1="0" y1="-4" x2="20" y2="-18" class="wire"/>`)}
+      ${tile(416,120, `<line x1="-30" y1="0" x2="-8" y2="0" class="wire"/><circle cx="-4" cy="0" r="4" class="wire-fill"/><circle cx="28" cy="0" r="4" class="wire-fill"/><line x1="0" y1="0" x2="24" y2="0" class="wire"/>`)}
+      ${tile(552,120, `<circle cx="0" cy="0" r="22" class="wire-fill"/><path d="M-14 -14 L14 14 M14 -14 L-14 14" class="wire"/>`)}
+      ${tile(160,250, `<rect x="-26" y="-14" width="52" height="28" rx="6" class="wire-fill"/><line x1="-46" y1="0" x2="-26" y2="0" class="wire"/><line x1="26" y1="0" x2="46" y2="0" class="wire"/>`)}
+      ${tile(320,250, `<circle cx="0" cy="0" r="22" class="wire-fill"/><text x="0" y="8" text-anchor="middle" class="meter-letter">V</text>`)}
+      ${tile(480,250, `<circle cx="0" cy="0" r="22" class="wire-fill"/><text x="0" y="8" text-anchor="middle" class="meter-letter">A</text>`)}
     `);
   }
 
@@ -3316,6 +3383,18 @@
         <line x1="43" y1="18" x2="77" y2="52"/>
         <line x1="77" y1="18" x2="43" y2="52"/>
         <line x1="88" y1="35" x2="108" y2="35"/>
+      `,
+      bulb: `
+        <line x1="12" y1="35" x2="32" y2="35"/>
+        <circle cx="60" cy="35" r="25"/>
+        <line x1="43" y1="18" x2="77" y2="52"/>
+        <line x1="77" y1="18" x2="43" y2="52"/>
+        <line x1="88" y1="35" x2="108" y2="35"/>
+      `,
+      resistor: `
+        <line x1="12" y1="35" x2="34" y2="35"/>
+        <rect x="34" y="20" width="52" height="30" rx="5"/>
+        <line x1="86" y1="35" x2="108" y2="35"/>
       `,
       "open switch": `
         <line x1="12" y1="35" x2="42" y2="35"/>
@@ -3888,12 +3967,6 @@
       rebuildDeck({ shuffle: true });
     });
 
-    els.packFilter?.addEventListener("change", (event) => {
-      state.packSection = event.target.value;
-      if (state.packSection !== "all") setMode("pack");
-      else rebuildDeck({ shuffle: true });
-    });
-
     els.searchBox.addEventListener("input", (event) => {
       state.search = event.target.value;
       state.labIndex = 0;
@@ -3908,7 +3981,6 @@
       if (state.practiceMix === "weak") setMode("weak");
       else if (state.practiceMix === "visual") setMode("visual");
       else if (state.practiceMix === "exam") setMode("exam");
-      else if (state.practiceMix === "pack") setMode("pack");
       else rebuildDeck({ shuffle: true });
     });
 
@@ -4033,7 +4105,6 @@
     populateFilters();
     els.unitFilter.value = state.unit;
     els.typeFilter.value = state.type;
-    if (els.packFilter) els.packFilter.value = state.packSection;
     wireEvents();
     syncCalmSoundscape();
     rebuildDeck({ shuffle: true });

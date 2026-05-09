@@ -7,8 +7,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Respiration",
     "back": "The process cells use to release energy from food. Oxygen and glucose are used; carbon dioxide and water are made.",
     "cue": "Do not confuse with breathing. Breathing gets oxygen in; respiration releases energy in cells.",
-    "packSection": "7Ca",
-    "sourceFocus": "7Ca · Organs, breathing and gas exchange · Key terminology",
     "difficulty": 2
   },
   {
@@ -18,8 +16,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Gas exchange",
     "back": "The swap of gases in the lungs: oxygen moves into the blood and carbon dioxide moves out of the blood.",
     "cue": "Happens in the lungs, then blood carries gases around the body.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Key terminology",
     "difficulty": 2
   },
   {
@@ -29,8 +25,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Breathing",
     "back": "The muscle movement that makes the lungs expand and contract.",
     "cue": "Breathing is the movement; ventilation is the movement of air.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Key terminology",
     "difficulty": 2
   },
   {
@@ -40,8 +34,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Ventilation",
     "back": "Air moving into and out of the lungs.",
     "cue": "Inhalation + exhalation together.",
-    "packSection": "7Ca",
-    "sourceFocus": "7Ca · Organs, breathing and gas exchange · Key terminology",
     "difficulty": 2
   },
   {
@@ -51,8 +43,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Inhalation",
     "back": "Breathing in.",
     "cue": "Diaphragm contracts and moves down; rib muscles help increase chest volume.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Key terminology",
     "difficulty": 2
   },
   {
@@ -62,8 +52,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Exhalation",
     "back": "Breathing out.",
     "cue": "Chest volume decreases; air is forced out.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Key terminology",
     "difficulty": 1
   },
   {
@@ -73,8 +61,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Diaphragm",
     "back": "A sheet of muscle below the lungs that helps change the volume of the chest.",
     "cue": "Contracts and moves down during inhalation.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Key terminology",
     "difficulty": 2
   },
   {
@@ -84,8 +70,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Intercostal muscles",
     "back": "Muscles between the ribs that move the rib cage during breathing.",
     "cue": "Used with the diaphragm.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Key terminology",
     "difficulty": 2
   },
   {
@@ -95,8 +79,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Oxygen",
     "back": "Gas needed for respiration.",
     "cue": "Carried mainly by red blood cells.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Key terminology",
     "difficulty": 2
   },
   {
@@ -106,8 +88,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Carbon dioxide",
     "back": "Waste gas made by respiration.",
     "cue": "Removed from blood at the lungs and exhaled.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Key terminology",
     "difficulty": 2
   },
   {
@@ -117,8 +97,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Circulatory system",
     "back": "The heart, blood and blood vessels that transport materials around the body.",
     "cue": "Carries oxygen, nutrients and waste products.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Key terminology",
     "difficulty": 1
   },
   {
@@ -128,8 +106,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Heart",
     "back": "The organ that pumps blood around the body.",
     "cue": "Pulse is caused by the heart pumping blood into arteries.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Key terminology",
     "difficulty": 1
   },
   {
@@ -139,8 +115,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Artery",
     "back": "Blood vessel that carries blood away from the heart.",
     "cue": "Usually has thick walls and a pulse.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Key terminology",
     "difficulty": 1
   },
   {
@@ -150,8 +124,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Vein",
     "back": "Blood vessel that carries blood back towards the heart.",
     "cue": "Returns blood to the heart.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Key terminology",
     "difficulty": 1
   },
   {
@@ -161,8 +133,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Capillary",
     "back": "Tiny, thin-walled blood vessel where substances move between blood and body cells.",
     "cue": "Thin walls help exchange oxygen, nutrients and carbon dioxide.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Key terminology",
     "difficulty": 2
   },
   {
@@ -172,8 +142,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Plasma",
     "back": "Liquid part of the blood.",
     "cue": "Carries dissolved nutrients and other substances.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Key terminology",
     "difficulty": 1
   },
   {
@@ -183,8 +151,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Red blood cell",
     "back": "Blood cell that carries oxygen using haemoglobin.",
     "cue": "Adapted by having large surface area and no nucleus.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Key terminology",
     "difficulty": 1
   },
   {
@@ -194,8 +160,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "White blood cell",
     "back": "Blood cell that helps fight micro-organisms.",
     "cue": "Part of body defence.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Key terminology",
     "difficulty": 1
   },
   {
@@ -205,8 +169,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Bone marrow",
     "back": "Tissue inside some bones where blood cells are made.",
     "cue": "Links skeleton to blood production.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Key terminology",
     "difficulty": 1
   },
   {
@@ -216,8 +178,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Skeleton",
     "back": "The framework of bones that supports and protects the body and helps movement.",
     "cue": "Functions: support, protection, movement.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Key terminology",
     "difficulty": 1
   },
   {
@@ -227,8 +187,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Skull",
     "back": "Bones that protect the brain.",
     "cue": "Example of protection by skeleton.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Key terminology",
     "difficulty": 1
   },
   {
@@ -238,8 +196,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Ribs/sternum",
     "back": "Bones that protect the lungs and heart.",
     "cue": "Another protection example.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Key terminology",
     "difficulty": 1
   },
   {
@@ -249,8 +205,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Vertebrae/backbone",
     "back": "Small bones forming the spine.",
     "cue": "Support the body and protect the spinal cord.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Key terminology",
     "difficulty": 1
   },
   {
@@ -260,8 +214,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Joint",
     "back": "Place where two or more bones meet.",
     "cue": "Can be fixed or flexible.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Key terminology",
     "difficulty": 1
   },
   {
@@ -271,8 +223,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Fixed joint",
     "back": "Joint where bones meet but do not move much.",
     "cue": "Example: skull joints.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Key terminology",
     "difficulty": 1
   },
   {
@@ -282,8 +232,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Flexible joint",
     "back": "Joint that can be moved by muscles.",
     "cue": "Example: elbow.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Key terminology",
     "difficulty": 1
   },
   {
@@ -293,8 +241,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Hinge joint",
     "back": "Joint that allows back-and-forth movement in one direction.",
     "cue": "Example: elbow/knee.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Key terminology",
     "difficulty": 1
   },
   {
@@ -304,8 +250,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Cartilage",
     "back": "Smooth, slippery tissue at bone ends that reduces rubbing.",
     "cue": "Helps joints move smoothly.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Key terminology",
     "difficulty": 1
   },
   {
@@ -315,8 +259,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Ligament",
     "back": "Tissue that connects bone to bone.",
     "cue": "Different from tendon.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Key terminology",
     "difficulty": 1
   },
   {
@@ -326,8 +268,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Tendon",
     "back": "Tissue that connects muscle to bone.",
     "cue": "Allows muscle pull to move bone.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Key terminology",
     "difficulty": 1
   },
   {
@@ -337,8 +277,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Muscle",
     "back": "Tissue/organ that can contract and relax to create movement.",
     "cue": "Muscles pull; they do not push.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Key terminology",
     "difficulty": 1
   },
   {
@@ -348,8 +286,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Contract",
     "back": "Get shorter and thicker.",
     "cue": "Contracting muscles pull bones.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Key terminology",
     "difficulty": 1
   },
   {
@@ -359,8 +295,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Relax",
     "back": "Stop pulling strongly; can be stretched longer by the opposite muscle or load.",
     "cue": "Muscles pull; they do not actively push themselves longer.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Key terminology",
     "difficulty": 1
   },
   {
@@ -370,8 +304,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Antagonistic pair",
     "back": "Two muscles that move a bone in opposite directions.",
     "cue": "One contracts while the other relaxes.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Key terminology",
     "difficulty": 2
   },
   {
@@ -381,8 +313,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Biceps and triceps",
     "back": "Arm muscle pair that bends and straightens the elbow.",
     "cue": "Biceps contracts to bend; triceps contracts to straighten.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Key terminology",
     "difficulty": 1
   },
   {
@@ -392,8 +322,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Impulse",
     "back": "Electrical signal in the nervous system.",
     "cue": "Carries messages from brain/spinal cord to muscles.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Key terminology",
     "difficulty": 1
   },
   {
@@ -403,8 +331,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Nervous system",
     "back": "Brain, spinal cord and nerves.",
     "cue": "Controls muscle action and reaction time.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Key terminology",
     "difficulty": 1
   },
   {
@@ -414,8 +340,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Drug",
     "back": "Substance that affects how the body works.",
     "cue": "Medicines are useful drugs; recreational drugs can be harmful.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Key terminology",
     "difficulty": 1
   },
   {
@@ -425,8 +349,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Stimulant",
     "back": "Drug that speeds up nervous system messages.",
     "cue": "Example: caffeine.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Key terminology",
     "difficulty": 1
   },
   {
@@ -436,8 +358,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Depressant",
     "back": "Drug that slows down nervous system messages.",
     "cue": "Example: alcohol.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Key terminology",
     "difficulty": 1
   },
   {
@@ -447,8 +367,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Reaction time",
     "back": "Time taken to respond to something.",
     "cue": "Can be changed by drugs.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Key terminology",
     "difficulty": 1
   },
   {
@@ -458,96 +376,78 @@ window.YEAR7_FLASHCARDS = [
     "front": "Side-effect",
     "back": "Unwanted or harmful effect of a drug.",
     "cue": "Important in drug safety/testing.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Key terminology",
     "difficulty": 1
   },
   {
     "id": "card-043-7c-muscles-and-bones-respiration-word-equation",
     "unit": "7C Muscles and bones",
     "type": "Equation/relationship",
-    "front": "Complete the word equation for respiration.",
+    "front": "Respiration word equation",
     "back": "glucose + oxygen -> carbon dioxide + water + energy released",
     "cue": "This is the main biology equation to memorise. It happens in cells, not just in the lungs.",
-    "packSection": "7Ca",
-    "sourceFocus": "7Ca · Organs, breathing and gas exchange · Equation recall",
     "difficulty": 3
   },
   {
     "id": "card-044-7c-muscles-and-bones-breathing-rate",
     "unit": "7C Muscles and bones",
     "type": "Equation/relationship",
-    "front": "State how to calculate breathing rate.",
+    "front": "Breathing rate",
     "back": "breathing rate = number of breaths per minute",
     "cue": "Count one inhale + one exhale as one breath.",
-    "packSection": "7Ca",
-    "sourceFocus": "7Ca · Organs, breathing and gas exchange · Equation recall",
     "difficulty": 3
   },
   {
     "id": "card-045-7c-muscles-and-bones-pulse-rate",
     "unit": "7C Muscles and bones",
     "type": "Equation/relationship",
-    "front": "State how to calculate pulse rate.",
+    "front": "Pulse rate",
     "back": "pulse rate = number of heart beats per minute",
     "cue": "Measured where an artery is close to the skin, such as the wrist or neck.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Equation recall",
     "difficulty": 3
   },
   {
     "id": "card-046-7c-muscles-and-bones-gas-exchange-direction",
     "unit": "7C Muscles and bones",
     "type": "Equation/relationship",
-    "front": "Describe the direction of gas exchange in the lungs.",
+    "front": "Gas exchange direction",
     "back": "oxygen: air in lungs -> blood; carbon dioxide: blood -> air in lungs",
     "cue": "Use arrows to describe movement clearly.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Equation recall",
     "difficulty": 3
   },
   {
     "id": "card-047-7c-muscles-and-bones-pressure-relationship",
     "unit": "7C Muscles and bones",
     "type": "Equation/relationship",
-    "front": "State the relationship between pressure, force and area.",
+    "front": "Pressure relationship",
     "back": "pressure = force / area",
     "cue": "Useful extension from the skeleton topic: the same force over a smaller area gives greater pressure.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Equation recall",
     "difficulty": 3
   },
   {
     "id": "card-048-7c-muscles-and-bones-what-is-the-difference-between-breathin",
     "unit": "7C Muscles and bones",
     "type": "Self-test",
-    "front": "Describe the difference between breathing and respiration?",
+    "front": "What is the difference between breathing and respiration?",
     "back": "Breathing moves air in/out of the lungs; respiration releases energy in cells.",
     "cue": "",
-    "packSection": "7Ca",
-    "sourceFocus": "7Ca · Organs, breathing and gas exchange · Progression Check recall",
     "difficulty": 2
   },
   {
     "id": "card-049-7c-muscles-and-bones-why-do-muscles-need-oxygen-and-nutrient",
     "unit": "7C Muscles and bones",
     "type": "Self-test",
-    "front": "Explain why muscles need oxygen and nutrients.",
+    "front": "Why do muscles need oxygen and nutrients?",
     "back": "For respiration, which releases energy for muscle contraction.",
     "cue": "",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Progression Check recall",
     "difficulty": 3
   },
   {
     "id": "card-050-7c-muscles-and-bones-why-are-antagonistic-pairs-needed",
     "unit": "7C Muscles and bones",
     "type": "Self-test",
-    "front": "Explain are antagonistic pairs needed?",
+    "front": "Why are antagonistic pairs needed?",
     "back": "A muscle can pull but cannot push, so another muscle is needed to pull the bone back.",
     "cue": "",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Progression Check recall",
     "difficulty": 4
   },
   {
@@ -557,8 +457,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "What do red blood cells, white blood cells and plasma do?",
     "back": "Red blood cells carry oxygen; white blood cells fight micro-organisms; plasma carries dissolved substances.",
     "cue": "",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Progression Check recall",
     "difficulty": 2
   },
   {
@@ -568,8 +466,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Hazard",
     "back": "Something that could cause harm.",
     "cue": "Example: corrosive acid.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Key terminology",
     "difficulty": 1
   },
   {
@@ -579,8 +475,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Risk",
     "back": "The chance that a hazard will actually cause harm.",
     "cue": "Risk can be lowered with precautions.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Key terminology",
     "difficulty": 1
   },
   {
@@ -590,8 +484,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Precaution",
     "back": "Action taken to reduce risk.",
     "cue": "Example: wear eye protection.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Key terminology",
     "difficulty": 1
   },
   {
@@ -601,8 +493,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Corrosive",
     "back": "Able to damage or destroy materials and living tissue.",
     "cue": "Most concentrated acids can be corrosive.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Key terminology",
     "difficulty": 1
   },
   {
@@ -612,8 +502,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Irritant",
     "back": "Causes soreness or stinging, especially to skin or eyes.",
     "cue": "Many dilute acids are irritants.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Key terminology",
     "difficulty": 1
   },
   {
@@ -623,8 +511,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Toxic",
     "back": "Poisonous.",
     "cue": "Avoid contact and ingestion.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Key terminology",
     "difficulty": 1
   },
   {
@@ -634,8 +520,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Flammable",
     "back": "Catches fire easily.",
     "cue": "Keep away from flames.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Key terminology",
     "difficulty": 1
   },
   {
@@ -645,8 +529,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Explosive",
     "back": "Reacts very quickly, releasing energy, gas and sound.",
     "cue": "Can be triggered by heat.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Key terminology",
     "difficulty": 1
   },
   {
@@ -656,8 +538,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Acid",
     "back": "Solution with pH less than 7; turns blue litmus red.",
     "cue": "Lower pH means more acidic.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Key terminology",
     "difficulty": 1
   },
   {
@@ -667,8 +547,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Alkali",
     "back": "Solution with pH more than 7; turns red litmus blue.",
     "cue": "Higher pH means more alkaline.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Key terminology",
     "difficulty": 1
   },
   {
@@ -678,8 +556,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Base",
     "back": "Substance that neutralises an acid to form salt and water.",
     "cue": "Can be soluble or insoluble. A soluble base is an alkali.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Key terminology",
     "difficulty": 1
   },
   {
@@ -689,8 +565,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Soluble",
     "back": "Able to dissolve in a liquid.",
     "cue": "Soluble base = alkali.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Key terminology",
     "difficulty": 1
   },
   {
@@ -700,8 +574,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Insoluble",
     "back": "Unable to dissolve in a liquid.",
     "cue": "Some bases are insoluble.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Key terminology",
     "difficulty": 1
   },
   {
@@ -711,8 +583,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Concentrated",
     "back": "Contains a large amount of dissolved substance in a small amount of solvent.",
     "cue": "More concentrated usually means more hazardous.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Key terminology",
     "difficulty": 1
   },
   {
@@ -722,8 +592,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Dilute/diluted",
     "back": "Made less concentrated by adding water.",
     "cue": "Dilute acids are less hazardous than concentrated acids.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Key terminology",
     "difficulty": 1
   },
   {
@@ -733,8 +601,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Indicator",
     "back": "Dye that changes colour in acids and alkalis.",
     "cue": "Used to test unknown solutions.",
-    "packSection": "7Fb",
-    "sourceFocus": "7Fb · Acids, alkalis and indicator tests · Key terminology",
     "difficulty": 2
   },
   {
@@ -743,9 +609,7 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Litmus",
     "back": "Indicator: red in acid, blue in alkali.",
-    "cue": "Use litmus for acid/alkali only: acids turn blue litmus red; alkalis turn red litmus blue.",
-    "packSection": "7Fb",
-    "sourceFocus": "7Fb · Acids, alkalis and indicator tests · Key terminology",
+    "cue": "Neutral keeps red litmus red and blue litmus blue.",
     "difficulty": 2
   },
   {
@@ -754,9 +618,7 @@ window.YEAR7_FLASHCARDS = [
     "type": "Vocabulary",
     "front": "Universal indicator",
     "back": "Indicator that shows a range of colours for different pH values.",
-    "cue": "Use the colour change to estimate pH on the pH scale.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Key terminology",
+    "cue": "Used to estimate pH.",
     "difficulty": 2
   },
   {
@@ -766,8 +628,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "pH scale",
     "back": "Scale from 1 to 14 showing acidity/alkalinity.",
     "cue": "Acid < 7; neutral = 7; alkali > 7.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Key terminology",
     "difficulty": 1
   },
   {
@@ -777,8 +637,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Neutral",
     "back": "Neither acid nor alkali; pH 7.",
     "cue": "Pure water is neutral.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Key terminology",
     "difficulty": 1
   },
   {
@@ -788,8 +646,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Chemical reaction",
     "back": "Change where new substances are formed.",
     "cue": "Reactants become products.",
-    "packSection": "7Fb",
-    "sourceFocus": "7Fb · Acids, alkalis and indicator tests · Key terminology",
     "difficulty": 1
   },
   {
@@ -799,8 +655,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Reactants",
     "back": "Starting substances in a reaction.",
     "cue": "Written on the left of a word equation.",
-    "packSection": "7Fb",
-    "sourceFocus": "7Fb · Acids, alkalis and indicator tests · Key terminology",
     "difficulty": 1
   },
   {
@@ -810,8 +664,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Products",
     "back": "New substances made in a reaction.",
     "cue": "Written on the right of a word equation.",
-    "packSection": "7Fb",
-    "sourceFocus": "7Fb · Acids, alkalis and indicator tests · Key terminology",
     "difficulty": 1
   },
   {
@@ -821,8 +673,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Word equation",
     "back": "Equation using names of substances with an arrow from reactants to products.",
     "cue": "Arrow means react to form.",
-    "packSection": "7Fb",
-    "sourceFocus": "7Fb · Acids, alkalis and indicator tests · Key terminology",
     "difficulty": 1
   },
   {
@@ -832,8 +682,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Neutralisation",
     "back": "Reaction where an acid reacts with an alkali/base to make salt and water only.",
     "cue": "Core chemistry reaction for this unit.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Key terminology",
     "difficulty": 2
   },
   {
@@ -843,8 +691,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Salt",
     "back": "Substance made, besides water, when an acid is neutralised by a base/alkali.",
     "cue": "Salt name depends on acid and metal/base used.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Key terminology",
     "difficulty": 1
   },
   {
@@ -854,8 +700,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Antacid",
     "back": "Medicine containing a base that neutralises excess stomach acid.",
     "cue": "Everyday neutralisation example.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Key terminology",
     "difficulty": 2
   },
   {
@@ -865,8 +709,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Acid rain",
     "back": "Rainwater made more acidic by air pollution.",
     "cue": "Can damage plants, water systems and buildings.",
-    "packSection": "7Fb",
-    "sourceFocus": "7Fb · Acids, alkalis and indicator tests · Key terminology",
     "difficulty": 1
   },
   {
@@ -876,8 +718,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Neutralisation with alkali",
     "back": "acid + alkali -> salt + water",
     "cue": "Learn this exactly.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Equation recall",
     "difficulty": 3
   },
   {
@@ -887,8 +727,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Neutralisation with base",
     "back": "acid + base -> salt + water",
     "cue": "A base may be soluble or insoluble.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Equation recall",
     "difficulty": 3
   },
   {
@@ -898,8 +736,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Hydrochloric acid salt rule",
     "back": "hydrochloric acid -> chloride salts",
     "cue": "Example: zinc oxide + hydrochloric acid -> zinc chloride + water.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Equation recall",
     "difficulty": 3
   },
   {
@@ -909,8 +745,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Nitric acid salt rule",
     "back": "nitric acid -> nitrate salts",
     "cue": "Example: magnesium oxide + nitric acid -> magnesium nitrate + water.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Equation recall",
     "difficulty": 3
   },
   {
@@ -920,8 +754,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Sulfuric acid salt rule",
     "back": "sulfuric acid -> sulfate salts",
     "cue": "Example: copper oxide + sulfuric acid -> copper sulfate + water.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Equation recall",
     "difficulty": 3
   },
   {
@@ -931,19 +763,15 @@ window.YEAR7_FLASHCARDS = [
     "front": "pH classification",
     "back": "acid: pH < 7; neutral: pH = 7; alkali: pH > 7",
     "cue": "The lower the acid pH, the more acidic. The higher the alkali pH, the more alkaline.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Equation recall",
     "difficulty": 3
   },
   {
     "id": "card-086-7f-acids-and-alkalis-what-is-the-difference-between-a-hazard",
     "unit": "7F Acids and alkalis",
     "type": "Self-test",
-    "front": "Describe the difference between a hazard and a risk?",
+    "front": "What is the difference between a hazard and a risk?",
     "back": "A hazard can cause harm; a risk is the chance it actually causes harm.",
     "cue": "",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Progression Check recall",
     "difficulty": 2
   },
   {
@@ -953,19 +781,15 @@ window.YEAR7_FLASHCARDS = [
     "front": "What colour is litmus in acid and alkali?",
     "back": "Acid: red. Alkali: blue.",
     "cue": "",
-    "packSection": "7Fb",
-    "sourceFocus": "7Fb · Acids, alkalis and indicator tests · Progression Check recall",
     "difficulty": 2
   },
   {
     "id": "card-088-7f-acids-and-alkalis-what-are-the-products-of-neutralisation",
     "unit": "7F Acids and alkalis",
     "type": "Self-test",
-    "front": "State the products of neutralisation?",
+    "front": "What are the products of neutralisation?",
     "back": "A salt and water.",
-    "cue": "Use the reaction pattern: acid + alkali/base -> salt + water.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Progression Check recall",
+    "cue": "",
     "difficulty": 4
   },
   {
@@ -975,8 +799,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "How do you decide the second part of a salt name?",
     "back": "It comes from the acid: hydrochloric gives chloride, nitric gives nitrate, sulfuric gives sulfate.",
     "cue": "",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Progression Check recall",
     "difficulty": 2
   },
   {
@@ -986,8 +808,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Electricity",
     "back": "A way of transferring energy through wires by moving charges.",
     "cue": "Needs a complete circuit and a source such as a cell.",
-    "packSection": "7Ja",
-    "sourceFocus": "7Ja · Current, components and complete circuits · Key terminology",
     "difficulty": 1
   },
   {
@@ -997,8 +817,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Charge",
     "back": "Tiny charged particles, such as electrons, can move around a circuit.",
     "cue": "The flow of charged particles is current.",
-    "packSection": "7Ja",
-    "sourceFocus": "7Ja · Current, components and complete circuits · Key terminology",
     "difficulty": 2
   },
   {
@@ -1008,8 +826,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Current",
     "back": "Flow of electricity/charges around a circuit.",
     "cue": "Measured in amps with an ammeter.",
-    "packSection": "7Ja",
-    "sourceFocus": "7Ja · Current, components and complete circuits · Key terminology",
     "difficulty": 2
   },
   {
@@ -1019,8 +835,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Ampere / amp (A)",
     "back": "Unit of current.",
     "cue": "Symbol A.",
-    "packSection": "7Ja",
-    "sourceFocus": "7Ja · Current, components and complete circuits · Key terminology",
     "difficulty": 2
   },
   {
@@ -1030,8 +844,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Ammeter",
     "back": "Instrument that measures current.",
     "cue": "Connect in series.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Key terminology",
     "difficulty": 2
   },
   {
@@ -1041,8 +853,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Voltage",
     "back": "Measure of energy transferred by electricity; the push from the source.",
     "cue": "Measured in volts with a voltmeter.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Key terminology",
     "difficulty": 2
   },
   {
@@ -1052,8 +862,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Volt (V)",
     "back": "Unit of voltage.",
     "cue": "Symbol V.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Key terminology",
     "difficulty": 2
   },
   {
@@ -1063,8 +871,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Voltmeter",
     "back": "Instrument that measures voltage.",
     "cue": "Connect in parallel across a component.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Key terminology",
     "difficulty": 2
   },
   {
@@ -1074,8 +880,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Cell",
     "back": "Source of electrical energy in a circuit.",
     "cue": "Cells push charges around a circuit.",
-    "packSection": "7Ja",
-    "sourceFocus": "7Ja · Current, components and complete circuits · Key terminology",
     "difficulty": 1
   },
   {
@@ -1085,8 +889,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Power pack",
     "back": "School-safe low-voltage supply.",
     "cue": "Acts as a source of voltage.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Key terminology",
     "difficulty": 2
   },
   {
@@ -1096,8 +898,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Component",
     "back": "Part of a circuit, such as a bulb, switch, resistor or motor.",
     "cue": "Use correct circuit symbols.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Key terminology",
     "difficulty": 1
   },
   {
@@ -1107,8 +907,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Switch",
     "back": "Component that opens or closes a circuit.",
     "cue": "Open switch = gap = no current.",
-    "packSection": "7Ja",
-    "sourceFocus": "7Ja · Current, components and complete circuits · Key terminology",
     "difficulty": 2
   },
   {
@@ -1118,8 +916,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Bulb",
     "back": "Component that transfers electrical energy to light and heat.",
     "cue": "Brightness can change with current/voltage and circuit layout.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Key terminology",
     "difficulty": 2
   },
   {
@@ -1129,8 +925,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Filament",
     "back": "Thin wire in a bulb that glows when current flows.",
     "cue": "Transfers energy as light and heat.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Key terminology",
     "difficulty": 2
   },
   {
@@ -1140,8 +934,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Conductor",
     "back": "Material that allows electricity to flow through it.",
     "cue": "Metals are good conductors.",
-    "packSection": "7Ja",
-    "sourceFocus": "7Ja · Current, components and complete circuits · Key terminology",
     "difficulty": 1
   },
   {
@@ -1151,8 +943,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Insulator",
     "back": "Material that does not allow electricity to flow easily.",
     "cue": "Plastic is a good insulator.",
-    "packSection": "7Ja",
-    "sourceFocus": "7Ja · Current, components and complete circuits · Key terminology",
     "difficulty": 1
   },
   {
@@ -1162,8 +952,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Resistance",
     "back": "How difficult it is for current to flow.",
     "cue": "High resistance gives smaller current.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Key terminology",
     "difficulty": 2
   },
   {
@@ -1173,8 +961,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Resistor",
     "back": "Component that increases resistance and reduces current.",
     "cue": "Used to control current.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Key terminology",
     "difficulty": 2
   },
   {
@@ -1184,8 +970,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Variable resistor",
     "back": "Resistor whose resistance can be changed.",
     "cue": "Changing resistance changes current.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Key terminology",
     "difficulty": 2
   },
   {
@@ -1195,8 +979,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Series circuit",
     "back": "Circuit with one loop/path.",
     "cue": "Same current everywhere; one break stops all components.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Key terminology",
     "difficulty": 2
   },
   {
@@ -1206,8 +988,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Parallel circuit",
     "back": "Circuit with branches.",
     "cue": "Current splits at branches; components can work independently.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Key terminology",
     "difficulty": 2
   },
   {
@@ -1217,8 +997,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "AND circuit",
     "back": "Two switches arranged so both must be closed for the component to turn on.",
     "cue": "Like switches in series.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Key terminology",
     "difficulty": 2
   },
   {
@@ -1228,8 +1006,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "OR circuit",
     "back": "Two switches arranged so either switch can turn the component on.",
     "cue": "Like switches in parallel.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Key terminology",
     "difficulty": 2
   },
   {
@@ -1239,8 +1015,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Static electricity",
     "back": "Attraction or repulsion caused when materials rub and charges build up.",
     "cue": "Different from current electricity in a circuit.",
-    "packSection": "7Ja",
-    "sourceFocus": "7Ja · Current, components and complete circuits · Key terminology",
     "difficulty": 2
   },
   {
@@ -1250,8 +1024,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Model",
     "back": "A representation that helps explain something complicated.",
     "cue": "Circuit models are useful but not perfect.",
-    "packSection": "7Jb",
-    "sourceFocus": "7Jb · Models for electricity · Key terminology",
     "difficulty": 2
   },
   {
@@ -1261,8 +1033,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Analogy",
     "back": "Model that compares something hard to understand with something familiar.",
     "cue": "Example: central heating model for circuits.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Key terminology",
     "difficulty": 2
   },
   {
@@ -1272,8 +1042,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Fuse",
     "back": "Safety wire that melts if current is too high.",
     "cue": "Protects against overheating/fire.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Key terminology",
     "difficulty": 2
   },
   {
@@ -1283,8 +1051,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Fuse rating",
     "back": "Largest current a fuse can carry without melting.",
     "cue": "Use the correct fuse rating.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Key terminology",
     "difficulty": 2
   },
   {
@@ -1294,8 +1060,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Circuit breaker",
     "back": "Safety device that switches off current if it gets too high.",
     "cue": "Can be reset.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Key terminology",
     "difficulty": 2
   },
   {
@@ -1305,8 +1069,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Live wire",
     "back": "Brown wire in a plug/cable; part of the circuit.",
     "cue": "Dangerous if touched.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Key terminology",
     "difficulty": 1
   },
   {
@@ -1316,8 +1078,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Neutral wire",
     "back": "Blue wire in a plug/cable; part of the circuit.",
     "cue": "Completes the circuit.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Key terminology",
     "difficulty": 1
   },
   {
@@ -1327,8 +1087,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Earth wire",
     "back": "Green/yellow safety wire.",
     "cue": "Works with the fuse for safety.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Key terminology",
     "difficulty": 1
   },
   {
@@ -1338,8 +1096,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Ring main",
     "back": "House wiring arrangement using a loop of parallel circuits.",
     "cue": "Protected by circuit breakers.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Key terminology",
     "difficulty": 2
   },
   {
@@ -1349,8 +1105,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Current unit relationship",
     "back": "current is measured in amperes (A)",
     "cue": "Use an ammeter in series.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Equation recall",
     "difficulty": 4
   },
   {
@@ -1360,8 +1114,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Voltage unit relationship",
     "back": "voltage is measured in volts (V)",
     "cue": "Use a voltmeter in parallel.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Equation recall",
     "difficulty": 4
   },
   {
@@ -1371,8 +1123,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Series current rule",
     "back": "I is the same everywhere in a series circuit",
     "cue": "If one component breaks, the whole circuit stops.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Equation recall",
     "difficulty": 4
   },
   {
@@ -1382,8 +1132,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Parallel current rule",
     "back": "I_total = I_branch 1 + I_branch 2 + ...",
     "cue": "Current splits at branches and recombines later.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Equation recall",
     "difficulty": 4
   },
   {
@@ -1393,8 +1141,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Resistance-current relationship",
     "back": "higher resistance -> lower current; lower resistance -> higher current",
     "cue": "A resistor or thin wire increases resistance.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Equation recall",
     "difficulty": 4
   },
   {
@@ -1404,8 +1150,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Voltage-current relationship",
     "back": "higher voltage -> higher current, if resistance stays the same",
     "cue": "Biggest current: high voltage and low resistance.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Equation recall",
     "difficulty": 4
   },
   {
@@ -1415,850 +1159,746 @@ window.YEAR7_FLASHCARDS = [
     "front": "Optional extension: Ohm's law",
     "back": "voltage = current x resistance, or V = I x R",
     "cue": "Only use this if your teacher has taught it; it is a useful extension beyond the pack.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Equation recall",
     "difficulty": 5
   },
   {
-    "id": "card-130-7j-current-electricity-how-do-you-connect-an-ammeter-and-a-v",
+    "id": "card-130-7j-current-electricity-explain-the-different-connection-rule",
     "unit": "7J Current electricity",
     "type": "Self-test",
-    "front": "How do you connect an ammeter and a voltmeter?",
-    "back": "Ammeter in series; voltmeter in parallel across the component.",
-    "cue": "Voltage is measured in volts (V) using a voltmeter connected in parallel.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Progression Check recall",
-    "difficulty": 2
-  },
-  {
-    "id": "card-131-7j-current-electricity-what-happens-to-bulbs-in-series-if-yo",
-    "unit": "7J Current electricity",
-    "type": "Self-test",
-    "front": "What happens to bulbs in series if you add more bulbs?",
-    "back": "They get dimmer because resistance increases and current becomes smaller.",
-    "cue": "",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Progression Check recall",
+    "front": "Explain the different connection rules for an ammeter and a voltmeter.",
+    "back": "An ammeter is connected in series so the current flows through it. A voltmeter is connected in parallel across the component to compare the two sides.",
+    "cue": "This is one of the most common exam mistakes in circuits.",
     "difficulty": 4
   },
   {
-    "id": "card-132-7j-current-electricity-what-happens-to-bulbs-in-parallel-if-",
+    "id": "card-131-7j-current-electricity-explain-why-adding-more-bulbs-in-seri",
     "unit": "7J Current electricity",
     "type": "Self-test",
-    "front": "What happens to bulbs in parallel if one bulb breaks?",
-    "back": "Other branches can still work.",
-    "cue": "",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Progression Check recall",
-    "difficulty": 3
+    "front": "Explain why adding more bulbs in series usually makes each bulb dimmer.",
+    "back": "Adding bulbs in series increases total resistance, so the current gets smaller. Smaller current means the bulbs are dimmer.",
+    "cue": "Do not say current is 'used up'; explain resistance and current.",
+    "difficulty": 4
   },
   {
-    "id": "card-133-7j-current-electricity-what-circuit-condition-gives-the-larg",
+    "id": "card-132-7j-current-electricity-explain-why-a-bulb-in-another-branch-",
     "unit": "7J Current electricity",
     "type": "Self-test",
-    "front": "What circuit condition gives the largest current?",
-    "back": "High voltage and low resistance.",
-    "cue": "",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Progression Check recall",
+    "front": "Explain why a bulb in another branch can stay on when one bulb breaks in a parallel circuit.",
+    "back": "Each branch has its own complete path. If one branch breaks, another branch can still be connected across the cell.",
+    "cue": "Parallel branches can work independently.",
+    "difficulty": 4
+  },
+  {
+    "id": "card-133-7j-current-electricity-use-the-ideas-of-voltage-and-resistan",
+    "unit": "7J Current electricity",
+    "type": "Self-test",
+    "front": "Use the ideas of voltage and resistance to describe the circuit condition that gives the largest current.",
+    "back": "Largest current is produced by high voltage and low resistance, as long as the circuit is complete.",
+    "cue": "Open circuits still have zero current even if the voltage is high.",
     "difficulty": 4
   },
   {
     "id": "card-134-7c-muscles-and-bones-which-statement-best-describes-respirat",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "A pupil says breathing and respiration mean the same thing. Which correction is best?",
-    "back": "Breathing moves air in and out of the lungs; respiration releases energy in cells.",
-    "cue": "Common trap: breathing is ventilation; respiration is a chemical process in cells.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Quiz style",
+    "front": "Which statement best describes respiration?",
+    "back": "Cells release energy from glucose using oxygen.",
+    "cue": "Respiration happens in cells; breathing happens in the lungs.",
     "choices": [
-      "Breathing moves air in and out of the lungs; respiration releases energy in cells.",
-      "Breathing releases energy in cells; respiration moves air into the lungs.",
-      "Both words mean oxygen moving from the lungs into the blood.",
-      "Both words mean the heart pumping blood around the body."
+      "Cells release energy from glucose using oxygen.",
+      "Air moves in and out of the lungs.",
+      "The heart pumps blood around the body.",
+      "Bones protect organs."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-135-7c-muscles-and-bones-what-is-the-main-job-of-red-blood-cells",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "A blood sample carries oxygen from the lungs to the muscles. Which part of the blood carries most of that oxygen?",
-    "back": "Red blood cells.",
-    "cue": "Red blood cells carry most oxygen; plasma carries many dissolved substances.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Quick Quiz style",
+    "front": "What is the main job of red blood cells?",
+    "back": "Carry oxygen.",
+    "cue": "Red blood cells contain haemoglobin, which carries oxygen.",
     "choices": [
-      "Red blood cells.",
-      "Plasma.",
-      "White blood cells.",
-      "Platelets."
+      "Carry oxygen.",
+      "Fight micro-organisms.",
+      "Make blood clot.",
+      "Digest food."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-136-7c-muscles-and-bones-which-blood-vessel-carries-blood-away-f",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "A vessel has thick muscular walls and carries blood away from the heart under high pressure. What type of vessel is it?",
+    "front": "Which blood vessel carries blood away from the heart?",
     "back": "Artery.",
-    "cue": "Away from heart = artery. Back to heart = vein.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Quiz style",
+    "cue": "Arteries go away from the heart.",
     "choices": [
       "Artery.",
       "Vein.",
       "Capillary.",
-      "Tendon."
+      "Ligament."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-137-7c-muscles-and-bones-where-does-gas-exchange-happen",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Which description correctly shows gas exchange in the lungs?",
-    "back": "Oxygen moves from air spaces into blood; carbon dioxide moves from blood into air spaces.",
-    "cue": "Think direction: oxygen into blood; carbon dioxide out of blood.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Quiz style",
+    "front": "Where does gas exchange happen?",
+    "back": "In the lungs, where oxygen enters blood and carbon dioxide leaves blood.",
+    "cue": "Gas exchange is about oxygen and carbon dioxide moving between air and blood.",
     "choices": [
-      "Oxygen moves from air spaces into blood; carbon dioxide moves from blood into air spaces.",
-      "Oxygen moves from blood into air spaces; carbon dioxide moves from air spaces into blood.",
-      "Both oxygen and carbon dioxide move from blood into air spaces.",
-      "Both oxygen and carbon dioxide are made inside the air spaces."
+      "In the lungs, where oxygen enters blood and carbon dioxide leaves blood.",
+      "In the stomach, where food is broken down.",
+      "In bones, where blood cells are made.",
+      "In tendons, where muscles attach to bones."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-138-7c-muscles-and-bones-what-happens-to-the-diaphragm-when-you-",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "During inhalation, which set of changes helps air enter the lungs?",
-    "back": "Diaphragm contracts and moves down; rib muscles lift the ribs.",
-    "cue": "Inhaling increases chest volume.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Quiz style",
+    "front": "What happens to the diaphragm when you inhale?",
+    "back": "It contracts and moves down.",
+    "cue": "Moving down increases chest volume so air moves in.",
     "choices": [
-      "Diaphragm contracts and moves down; rib muscles lift the ribs.",
-      "Diaphragm relaxes and moves up; rib muscles lower the ribs.",
-      "Diaphragm contracts and moves up; rib muscles lower the ribs.",
-      "Diaphragm relaxes and moves down; rib muscles lift the ribs."
+      "It contracts and moves down.",
+      "It relaxes and moves up.",
+      "It turns oxygen into carbon dioxide.",
+      "It pumps blood to the lungs."
     ],
-    "difficulty": 4
+    "difficulty": 3
   },
   {
     "id": "card-139-7c-muscles-and-bones-what-is-ventilation",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Which statement separates ventilation from respiration most accurately?",
-    "back": "Ventilation is air movement; respiration is energy release in cells.",
-    "cue": "This is a high-frequency Year 7 misconception.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Quiz style",
+    "front": "What is ventilation?",
+    "back": "Air moving into and out of the lungs.",
+    "cue": "Ventilation is inhalation plus exhalation.",
     "choices": [
-      "Ventilation is air movement; respiration is energy release in cells.",
-      "Ventilation releases energy; respiration moves air.",
-      "Ventilation is only gas exchange in blood; respiration is only breathing out.",
-      "Ventilation and respiration are identical processes."
+      "Air moving into and out of the lungs.",
+      "Energy release in cells.",
+      "Blood moving through arteries.",
+      "Muscles pulling on bones."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-140-7c-muscles-and-bones-which-part-of-the-skeleton-protects-the",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Which statement gives the function of the skull in the skeleton?",
-    "back": "It protects the brain.",
-    "cue": "Protection is one key function of the skeleton.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Quiz style",
+    "front": "Which part of the skeleton protects the brain?",
+    "back": "Skull.",
+    "cue": "The skull surrounds and protects the brain.",
     "choices": [
-      "It protects the brain.",
-      "It pumps blood to the brain.",
-      "It makes impulses for the nervous system.",
-      "It joins muscles to bones."
+      "Skull.",
+      "Ribs.",
+      "Vertebrae.",
+      "Cartilage."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-141-7c-muscles-and-bones-which-bones-help-protect-the-heart-and-",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Which statement gives the function of the rib cage?",
-    "back": "It helps protect the heart and lungs while still allowing breathing movements.",
-    "cue": "Ribs protect organs but still move during breathing.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Quiz style",
+    "front": "Which bones help protect the heart and lungs?",
+    "back": "Ribs and sternum.",
+    "cue": "The rib cage protects organs in the chest.",
     "choices": [
-      "It helps protect the heart and lungs while still allowing breathing movements.",
-      "It protects only the stomach and cannot move.",
-      "It makes blood cells and controls impulses.",
-      "It joins the upper arm bone to the shoulder."
+      "Ribs and sternum.",
+      "Skull and jaw.",
+      "Femur and tibia.",
+      "Biceps and triceps."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-142-7c-muscles-and-bones-what-is-a-joint",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "In a moving joint, which statement describes the joint itself?",
+    "front": "What is a joint?",
     "back": "A place where two or more bones meet.",
-    "cue": "Joint, tendon, cartilage and antagonistic pair are different ideas.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Quick Quiz style",
+    "cue": "Joints can be fixed or movable.",
     "choices": [
       "A place where two or more bones meet.",
-      "A cord that joins muscle to bone.",
-      "A smooth layer that reduces rubbing at bone ends.",
-      "A muscle pair that pulls bones in opposite directions."
+      "A blood vessel where gas exchange happens.",
+      "A muscle that contracts.",
+      "A drug that slows nerve messages."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-143-7c-muscles-and-bones-what-does-cartilage-do-at-the-ends-of-b",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Why is cartilage important at the ends of bones in a joint?",
-    "back": "It reduces friction and helps the bones move smoothly.",
-    "cue": "Cartilage is not a muscle or nerve.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Quiz style",
+    "front": "What does cartilage do at the ends of bones?",
+    "back": "Reduces rubbing and helps bones move smoothly.",
+    "cue": "Cartilage is smooth and slippery.",
     "choices": [
-      "It reduces friction and helps the bones move smoothly.",
-      "It contracts to bend the joint.",
-      "It carries oxygen to the joint.",
-      "It sends impulses from the brain."
+      "Reduces rubbing and helps bones move smoothly.",
+      "Connects muscle to bone.",
+      "Carries oxygen.",
+      "Makes acid neutral."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-144-7c-muscles-and-bones-what-connects-bone-to-bone",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "A tissue holds two bones together at a joint. What is it?",
+    "front": "What connects bone to bone?",
     "back": "Ligament.",
-    "cue": "Ligaments join bone to bone.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Quiz style",
+    "cue": "Ligaments link bones at joints.",
     "choices": [
       "Ligament.",
       "Tendon.",
-      "Cartilage.",
-      "Capillary."
+      "Capillary.",
+      "Plasma."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-145-7c-muscles-and-bones-what-connects-muscle-to-bone",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "A tissue joins a muscle to a bone so that the bone can be pulled. What is it?",
+    "front": "What connects muscle to bone?",
     "back": "Tendon.",
-    "cue": "Tendons join muscle to bone.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Quiz style",
+    "cue": "Tendons transmit the pull from a muscle to a bone.",
     "choices": [
       "Tendon.",
       "Ligament.",
-      "Cartilage.",
-      "Vein."
+      "Artery.",
+      "Cartilage."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-146-7c-muscles-and-bones-why-are-antagonistic-muscle-pairs-neede",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Why must many muscles work as antagonistic pairs?",
-    "back": "A muscle can pull when it contracts but cannot push the bone back.",
-    "cue": "Pairs allow movement in opposite directions.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Quiz style",
+    "front": "Why are antagonistic muscle pairs needed?",
+    "back": "Muscles pull but cannot push, so another muscle pulls the bone back.",
+    "cue": "Biceps and triceps are a common example.",
     "choices": [
-      "A muscle can pull when it contracts but cannot push the bone back.",
-      "A muscle can push but cannot pull, so the second muscle pulls.",
-      "A muscle can only work if a tendon changes into cartilage.",
-      "A muscle can move only when a capillary contracts."
+      "Muscles pull but cannot push, so another muscle pulls the bone back.",
+      "Bones can only move when they make blood cells.",
+      "Muscles only work when acid is neutralised.",
+      "Blood flows only in one direction through them."
     ],
-    "difficulty": 4
+    "difficulty": 3
   },
   {
     "id": "card-147-7c-muscles-and-bones-when-the-biceps-contracts-what-usually-",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "At the elbow, what happens when the biceps contracts and the triceps relaxes?",
-    "back": "The lower arm bends upwards.",
-    "cue": "Biceps contraction bends the elbow.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Quiz style",
+    "front": "When the biceps contracts, what usually happens at the elbow?",
+    "back": "The arm bends.",
+    "cue": "The biceps pulls the forearm up.",
     "choices": [
-      "The lower arm bends upwards.",
-      "The lower arm straightens.",
-      "The ribs move downwards.",
-      "The heart chambers get smaller."
+      "The arm bends.",
+      "The arm straightens.",
+      "The ribs expand.",
+      "The skull moves."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-148-7c-muscles-and-bones-when-the-triceps-contracts-what-usually",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "At the elbow, what happens when the triceps contracts and the biceps relaxes?",
-    "back": "The lower arm straightens.",
-    "cue": "Triceps contraction straightens the elbow.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Quiz style",
+    "front": "When the triceps contracts, what usually happens at the elbow?",
+    "back": "The arm straightens.",
+    "cue": "The triceps works opposite the biceps.",
     "choices": [
-      "The lower arm straightens.",
-      "The lower arm bends upwards.",
+      "The arm straightens.",
+      "The arm bends.",
       "The diaphragm moves down.",
-      "The skull protects the brain."
+      "Blood becomes oxygen."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-149-7c-muscles-and-bones-what-is-the-nervous-system-made-from",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Which list gives the main parts involved in the nervous system response pathway?",
+    "front": "What is the nervous system made from?",
     "back": "Brain, spinal cord and nerves.",
-    "cue": "Nerves carry impulses between receptors, CNS and effectors.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Quiz style",
+    "cue": "The nervous system sends impulses around the body.",
     "choices": [
       "Brain, spinal cord and nerves.",
-      "Heart, arteries and veins.",
-      "Bones, cartilage and ligaments.",
-      "Lungs, diaphragm and ribs only."
+      "Heart, blood and blood vessels.",
+      "Bones, joints and cartilage.",
+      "Acids, alkalis and indicators."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-150-7c-muscles-and-bones-what-is-an-impulse-in-the-nervous-syste",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "In the nervous system, what is an impulse?",
-    "back": "An electrical signal carried by nerve cells.",
-    "cue": "Impulse means signal, not movement of blood.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Quiz style",
+    "front": "What is an impulse in the nervous system?",
+    "back": "An electrical signal.",
+    "cue": "Nerves carry electrical impulses.",
     "choices": [
-      "An electrical signal carried by nerve cells.",
-      "A pulse of blood in an artery.",
-      "A gas moving across an alveolus.",
-      "A muscle that joins bone to bone."
+      "An electrical signal.",
+      "A type of bone.",
+      "A waste gas.",
+      "A liquid part of blood."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-151-7c-muscles-and-bones-what-is-a-stimulant",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Which statement best describes a stimulant drug?",
-    "back": "It speeds up activity in the nervous system.",
-    "cue": "Caffeine and nicotine are common examples.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Quick Quiz style",
+    "front": "What is a stimulant?",
+    "back": "A drug that speeds up nervous system messages.",
+    "cue": "Caffeine is a common example of a stimulant.",
     "choices": [
-      "It speeds up activity in the nervous system.",
-      "It always slows reaction time by reducing nerve messages.",
-      "It is any medicine that cures infection.",
-      "It is any substance that cannot affect the body."
+      "A drug that speeds up nervous system messages.",
+      "A drug that slows nervous system messages.",
+      "A tissue connecting muscle to bone.",
+      "A solution with pH less than 7."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-152-7c-muscles-and-bones-what-is-a-depressant",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Which statement best describes a depressant drug?",
-    "back": "It slows down activity in the nervous system.",
-    "cue": "Alcohol and heroin are common depressant examples in the pack.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Quick Quiz style",
+    "front": "What is a depressant?",
+    "back": "A drug that slows nervous system messages.",
+    "cue": "Depressants can slow reaction time.",
     "choices": [
-      "It slows down activity in the nervous system.",
-      "It speeds up all nerve impulses.",
-      "It only affects the skeleton, not the nervous system.",
-      "It is any legal medicine."
+      "A drug that slows nervous system messages.",
+      "A drug that speeds up nervous system messages.",
+      "A joint that moves in one direction.",
+      "A tiny blood vessel."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-153-7c-muscles-and-bones-what-is-reaction-time",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "A driver takes longer to brake after drinking alcohol. Which explanation fits the science?",
-    "back": "Reaction time increased because nervous-system messages were slowed.",
-    "cue": "Reaction time is the time taken to respond to a stimulus.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Quiz style",
+    "front": "What is reaction time?",
+    "back": "The time taken to respond to something.",
+    "cue": "A slower reaction time means a longer delay before responding.",
     "choices": [
-      "Reaction time increased because nervous-system messages were slowed.",
-      "Reaction time decreased because impulses travelled faster.",
-      "Pulse rate was measured in newtons instead of beats per minute.",
-      "The arm muscles could push but not pull."
+      "The time taken to respond to something.",
+      "The amount of oxygen carried by blood.",
+      "The number of bones in the skeleton.",
+      "The pH of a solution."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-154-7c-muscles-and-bones-which-word-equation-is-correct-for-resp",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Which word equation correctly represents aerobic respiration in humans?",
+    "front": "Which word equation is correct for respiration?",
     "back": "glucose + oxygen → carbon dioxide + water + energy released",
-    "cue": "Reactants are glucose and oxygen; products include carbon dioxide and water.",
-    "packSection": "7Ca",
-    "sourceFocus": "7Ca · Organs, breathing and gas exchange · Quick Quiz style",
+    "cue": "This is the key life-process equation in the unit.",
     "choices": [
       "glucose + oxygen → carbon dioxide + water + energy released",
-      "carbon dioxide + water → glucose + oxygen + energy absorbed",
-      "oxygen + water → glucose + carbon dioxide + salt",
-      "glucose + carbon dioxide → oxygen + water + energy released"
+      "carbon dioxide + water → glucose + oxygen",
+      "acid + alkali → salt + water",
+      "voltage = current × resistance"
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-155-7c-muscles-and-bones-what-is-pulse-rate",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "A student counts 25 pulse beats in 20 seconds. What is the pulse rate in beats per minute?",
-    "back": "75 beats per minute.",
-    "cue": "Multiply by 3 because 20 seconds fits into 60 seconds three times.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Quick Quiz style",
+    "front": "What is pulse rate?",
+    "back": "Number of heart beats per minute.",
+    "cue": "Pulse tells you how often the heart is beating.",
     "choices": [
-      "75 beats per minute.",
-      "25 beats per minute.",
-      "45 beats per minute.",
-      "500 beats per minute."
+      "Number of heart beats per minute.",
+      "Number of breaths per minute.",
+      "Amount of oxygen per red blood cell.",
+      "Pressure divided by area."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-156-7c-muscles-and-bones-what-does-plasma-do-in-blood",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Which function belongs mainly to plasma in the blood?",
-    "back": "Carrying dissolved substances such as carbon dioxide and nutrients.",
+    "front": "What does plasma do in blood?",
+    "back": "Carries dissolved substances.",
     "cue": "Plasma is the liquid part of blood.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Quiz style",
     "choices": [
-      "Carrying dissolved substances such as carbon dioxide and nutrients.",
-      "Carrying most oxygen using haemoglobin.",
-      "Making blood clot at a cut.",
-      "Destroying pathogens as the main defence cells."
+      "Carries dissolved substances.",
+      "Carries bones around the body.",
+      "Connects muscle to bone.",
+      "Turns blue litmus red."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-157-7c-muscles-and-bones-why-do-muscles-need-oxygen-and-nutrient",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Why do active muscles need a good supply of oxygen and nutrients?",
-    "back": "They are used in respiration to release energy for contraction.",
-    "cue": "Link oxygen/nutrients → respiration → energy → contraction.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Quiz style",
+    "front": "Why do muscles need oxygen and nutrients?",
+    "back": "For respiration to release energy for contraction.",
+    "cue": "Muscle contraction needs energy from respiration.",
     "choices": [
-      "They are used in respiration to release energy for contraction.",
-      "They are used to turn tendons into ligaments.",
-      "They are used to make blood flow backwards through arteries.",
-      "They are used to reduce the pH of the muscle."
+      "For respiration to release energy for contraction.",
+      "To make indicators change colour.",
+      "To increase the resistance of wires.",
+      "To turn arteries into veins."
     ],
-    "difficulty": 4
+    "difficulty": 3
   },
   {
     "id": "card-158-7f-acids-and-alkalis-what-is-a-hazard",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which organ is the main site where oxygen enters the blood and carbon dioxide leaves it?",
-    "back": "Lungs.",
-    "cue": "Gas exchange happens in the lungs.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Quick Quiz style",
+    "front": "What is a hazard?",
+    "back": "Something that could cause harm.",
+    "cue": "Hazard = possible source of harm.",
     "choices": [
-      "Lungs.",
-      "Stomach.",
-      "Skull.",
-      "Femur."
+      "Something that could cause harm.",
+      "The chance harm will happen.",
+      "A solution with pH 7.",
+      "A salt made by neutralisation."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-159-7f-acids-and-alkalis-what-is-risk",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "What happens to oxygen during gas exchange at the lung surface?",
-    "back": "It diffuses from the air spaces into the blood.",
-    "cue": "Oxygen goes into the blood.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Quiz style",
+    "front": "What is risk?",
+    "back": "The chance that a hazard will actually cause harm.",
+    "cue": "Risk can be reduced by precautions.",
     "choices": [
-      "It diffuses from the air spaces into the blood.",
-      "It diffuses from the blood into the air spaces.",
-      "It is made by the ribs when they move.",
-      "It changes into plasma before reaching the blood."
+      "The chance that a hazard will actually cause harm.",
+      "Something that always causes harm.",
+      "A dye that changes colour.",
+      "A substance with pH more than 7."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-160-7f-acids-and-alkalis-what-does-corrosive-mean",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "What happens to carbon dioxide during gas exchange at the lung surface?",
-    "back": "It diffuses from the blood into the air spaces to be breathed out.",
-    "cue": "Carbon dioxide is a waste gas removed from blood.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Quiz style",
+    "front": "What does corrosive mean?",
+    "back": "Can damage or destroy materials and living tissue.",
+    "cue": "Corrosive chemicals need careful handling.",
     "choices": [
-      "It diffuses from the blood into the air spaces to be breathed out.",
-      "It diffuses from the air spaces into the blood.",
-      "It is changed directly into oxygen by the lungs.",
-      "It is stored in bones until exercise starts."
+      "Can damage or destroy materials and living tissue.",
+      "Catches fire easily.",
+      "Cannot dissolve in water.",
+      "Shows pH using colours."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-161-7f-acids-and-alkalis-what-does-flammable-mean",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Why does one loop of double circulation carry blood to the lungs?",
-    "back": "So blood can pick up oxygen and lose carbon dioxide.",
-    "cue": "The lung loop exchanges gases.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Quick Quiz style",
+    "front": "What does flammable mean?",
+    "back": "Catches fire easily.",
+    "cue": "Flammable substances need to be kept away from flames.",
     "choices": [
-      "So blood can pick up oxygen and lose carbon dioxide.",
-      "So blood can digest food before reaching the stomach.",
-      "So red blood cells can turn into white blood cells.",
-      "So bones can make the heart contract."
+      "Catches fire easily.",
+      "Poisonous.",
+      "Damages tissue.",
+      "Neither acid nor alkali."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-162-7f-acids-and-alkalis-what-is-an-acid",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "What happens when the heart muscle contracts around a chamber full of blood?",
-    "back": "The chamber volume decreases and blood is forced out.",
-    "cue": "Contraction reduces volume and increases pressure.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Quiz style",
+    "front": "What is an acid?",
+    "back": "A solution with pH less than 7.",
+    "cue": "Acids turn blue litmus red.",
     "choices": [
-      "The chamber volume decreases and blood is forced out.",
-      "The chamber volume increases and blood is pulled out.",
-      "The chamber fills with air and becomes a lung.",
-      "The chamber wall becomes thinner so nutrients escape."
+      "A solution with pH less than 7.",
+      "A solution with pH more than 7.",
+      "A neutral solution only.",
+      "A substance that cannot dissolve."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-163-7f-acids-and-alkalis-what-is-an-alkali",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which adaptation makes capillaries suitable for exchange with body cells?",
-    "back": "Very thin walls so substances can move in and out quickly.",
-    "cue": "Thin walls shorten the distance for diffusion.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Quiz style",
+    "front": "What is an alkali?",
+    "back": "A solution with pH more than 7.",
+    "cue": "Alkalis turn red litmus blue.",
     "choices": [
-      "Very thin walls so substances can move in and out quickly.",
-      "Very thick walls so nothing can leave the blood.",
-      "Valves to stop air entering the lungs.",
-      "Tendons to attach them to muscles."
+      "A solution with pH more than 7.",
+      "A solution with pH less than 7.",
+      "A substance that always catches fire.",
+      "A tiny blood vessel."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-164-7f-acids-and-alkalis-what-ph-is-neutral",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which statement correctly identifies arteries?",
-    "back": "They carry blood away from the heart, usually under high pressure.",
-    "cue": "Arteries carry blood away from the heart.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Quiz style",
+    "front": "What pH is neutral?",
+    "back": "pH 7.",
+    "cue": "Water is often used as the simple neutral example.",
     "choices": [
-      "They carry blood away from the heart, usually under high pressure.",
-      "They carry blood back to the heart and always have very thin walls.",
-      "They are one-cell-thick vessels for exchange.",
-      "They join muscles to bones at joints."
+      "pH 7.",
+      "pH 1.",
+      "pH 14.",
+      "Any pH below 7."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-165-7f-acids-and-alkalis-what-colour-does-blue-litmus-turn-in-ac",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which statement correctly identifies veins?",
-    "back": "They carry blood back towards the heart and often contain valves.",
-    "cue": "Veins return blood to the heart.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Quiz style",
+    "front": "What colour does blue litmus turn in acid?",
+    "back": "Red.",
+    "cue": "Acid turns blue litmus red.",
     "choices": [
-      "They carry blood back towards the heart and often contain valves.",
-      "They carry blood away from the heart at high pressure.",
-      "They are microscopic vessels used mainly for exchange.",
-      "They are tissues that connect bone to bone."
+      "Red.",
+      "Blue.",
+      "Green.",
+      "Purple."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-166-7f-acids-and-alkalis-what-colour-does-red-litmus-turn-in-alk",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "A student records hand-grip force in kilograms. Which correction is best?",
-    "back": "Force should be recorded in newtons.",
-    "cue": "Newtons are the unit of force.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Quiz style",
+    "front": "What colour does red litmus turn in alkali?",
+    "back": "Blue.",
+    "cue": "Alkali turns red litmus blue.",
     "choices": [
-      "Force should be recorded in newtons.",
-      "Force should be recorded in volts.",
-      "Force should be recorded in beats per minute.",
-      "Force has no units in science."
+      "Blue.",
+      "Red.",
+      "Orange.",
+      "Yellow."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-167-7f-acids-and-alkalis-what-is-universal-indicator-used-for",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which statement best explains why the biceps and triceps are an antagonistic pair?",
-    "back": "One muscle contracts to move the arm one way; the other contracts to move it back.",
-    "cue": "Antagonistic muscles produce opposite movements.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Quiz style",
+    "front": "What is universal indicator used for?",
+    "back": "Showing a range of pH values using different colours.",
+    "cue": "Universal indicator gives more information than litmus.",
     "choices": [
-      "One muscle contracts to move the arm one way; the other contracts to move it back.",
-      "Both muscles contract at the same time to push the bone both ways.",
-      "One muscle carries oxygen while the other carries carbon dioxide.",
-      "Both muscles protect the heart and lungs."
+      "Showing a range of pH values using different colours.",
+      "Measuring current in a circuit.",
+      "Connecting muscle to bone.",
+      "Making a circuit safer."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-168-7f-acids-and-alkalis-what-is-neutralisation",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which question could be answered using a fair scientific investigation?",
-    "back": "Does caffeine change reaction time?",
-    "cue": "Scientific questions can be tested with evidence.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Quick Quiz style",
+    "front": "What is neutralisation?",
+    "back": "An acid reacts with an alkali or base to make salt and water.",
+    "cue": "Neutralisation is a chemical reaction.",
     "choices": [
-      "Does caffeine change reaction time?",
-      "Should energy drinks be banned for children?",
-      "Is football a better sport than swimming?",
-      "Is it fair to test medicines on animals?"
+      "An acid reacts with an alkali or base to make salt and water.",
+      "A wire melts when current is too high.",
+      "Air moves into and out of the lungs.",
+      "A muscle gets shorter and thicker."
     ],
-    "difficulty": 4
+    "difficulty": 3
   },
   {
     "id": "card-169-7f-acids-and-alkalis-what-are-the-products-of-acid-alkali",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which question is ethical rather than mainly scientific?",
-    "back": "Is it acceptable to test a new medicine on animals?",
-    "cue": "Ethical questions involve what people think is right or fair.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Quick Quiz style",
+    "front": "What are the products of acid + alkali?",
+    "back": "Salt and water.",
+    "cue": "The standard equation is acid + alkali → salt + water.",
     "choices": [
-      "Is it acceptable to test a new medicine on animals?",
-      "How many beats per minute is the pulse after exercise?",
-      "Does caffeine affect reaction time?",
-      "Which vessel carries blood away from the heart?"
+      "Salt and water.",
+      "Glucose and oxygen.",
+      "Carbon dioxide and energy.",
+      "Current and voltage."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-170-7f-acids-and-alkalis-what-is-a-base",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which list contains only stimulant examples from this topic?",
-    "back": "caffeine, nicotine and cocaine",
-    "cue": "Stimulants speed up nervous system activity.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Quick Quiz style",
+    "front": "What is a base?",
+    "back": "A substance that neutralises an acid to form salt and water.",
+    "cue": "An alkali is a soluble base.",
     "choices": [
-      "caffeine, nicotine and cocaine",
-      "alcohol, heroin and solvents",
-      "paracetamol, penicillin and ibuprofen",
-      "oxygen, glucose and plasma"
+      "A substance that neutralises an acid to form salt and water.",
+      "A gas needed for respiration.",
+      "A circuit with one loop.",
+      "A blood vessel that carries blood away."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-171-7f-acids-and-alkalis-what-does-soluble-mean",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which list contains only depressant examples from this topic?",
-    "back": "alcohol, heroin and solvents",
-    "cue": "Depressants slow nervous system activity.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Quiz style",
+    "front": "What does soluble mean?",
+    "back": "Able to dissolve in a liquid.",
+    "cue": "Soluble substances dissolve.",
     "choices": [
-      "alcohol, heroin and solvents",
-      "caffeine, nicotine and cocaine",
-      "paracetamol, penicillin and ibuprofen",
-      "oxygen, carbon dioxide and glucose"
+      "Able to dissolve in a liquid.",
+      "Unable to dissolve in a liquid.",
+      "Can destroy living tissue.",
+      "Has a pH less than 7."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-172-7f-acids-and-alkalis-what-does-insoluble-mean",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which pair are medicines rather than recreational stimulants or depressants?",
-    "back": "paracetamol and penicillin",
-    "cue": "Medicines are drugs used to treat or prevent disease or symptoms.",
-    "packSection": "7Fb",
-    "sourceFocus": "7Fb · Acids, alkalis and indicator tests · Quick Quiz style",
+    "front": "What does insoluble mean?",
+    "back": "Unable to dissolve in a liquid.",
+    "cue": "Insoluble substances do not dissolve.",
     "choices": [
-      "paracetamol and penicillin",
-      "caffeine and cocaine",
-      "alcohol and heroin",
-      "nicotine and ecstasy"
+      "Unable to dissolve in a liquid.",
+      "Able to dissolve in a liquid.",
+      "Made less concentrated by water.",
+      "Turns red litmus blue."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-173-7f-acids-and-alkalis-what-does-dilute-mean",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Why can depressant drugs increase the risk of accidents?",
-    "back": "They can slow impulses and increase reaction time.",
-    "cue": "Longer reaction time means a slower response.",
-    "packSection": "7Fb",
-    "sourceFocus": "7Fb · Acids, alkalis and indicator tests · Quick Quiz style",
+    "front": "What does dilute mean?",
+    "back": "Made less concentrated by adding water.",
+    "cue": "Diluting reduces concentration.",
     "choices": [
-      "They can slow impulses and increase reaction time.",
-      "They make impulses travel faster and reduce thinking time.",
-      "They turn arteries into veins during exercise.",
-      "They make cartilage thicker at joints."
+      "Made less concentrated by adding water.",
+      "Contains a lot of solute in a small solvent volume.",
+      "Cannot dissolve.",
+      "Catches fire easily."
     ],
-    "difficulty": 4
+    "difficulty": 3
   },
   {
     "id": "card-174-7f-acids-and-alkalis-what-does-concentrated-mean",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "A bottle has a warning symbol because it could damage skin. Which word best describes the danger source?",
-    "back": "Hazard.",
-    "cue": "Hazard = something that could cause harm.",
-    "packSection": "7Fb",
-    "sourceFocus": "7Fb · Acids, alkalis and indicator tests · Quick Quiz style",
+    "front": "What does concentrated mean?",
+    "back": "Contains a large amount of dissolved substance in a small amount of solvent.",
+    "cue": "Concentrated is not the same as strong acid at this level.",
     "choices": [
-      "Hazard.",
-      "Risk.",
-      "Neutralisation.",
-      "Indicator."
+      "Contains a large amount of dissolved substance in a small amount of solvent.",
+      "Made less concentrated by adding water.",
+      "Neither acid nor alkali.",
+      "A dye that always stays the same colour."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-175-7f-acids-and-alkalis-what-are-reactants",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "A class uses dilute acid. The teacher reduces the chance of harm by using goggles and small volumes. What is being reduced?",
-    "back": "Risk.",
-    "cue": "Risk is the chance that a hazard will cause harm.",
-    "packSection": "7Fb",
-    "sourceFocus": "7Fb · Acids, alkalis and indicator tests · Quick Quiz style",
+    "front": "What are reactants?",
+    "back": "Starting substances in a chemical reaction.",
+    "cue": "Reactants are written before the arrow in a word equation.",
     "choices": [
-      "Risk.",
-      "Hazard.",
-      "Product.",
-      "Base."
+      "Starting substances in a chemical reaction.",
+      "New substances made by a reaction.",
+      "Tiny moving charges.",
+      "The liquid part of blood."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-176-7f-acids-and-alkalis-what-are-products",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which description matches the corrosive hazard warning?",
-    "back": "It can damage living tissue and some materials.",
-    "cue": "Corrosive substances can cause burns/damage.",
-    "packSection": "7Fb",
-    "sourceFocus": "7Fb · Acids, alkalis and indicator tests · Quick Quiz style",
+    "front": "What are products?",
+    "back": "New substances made in a chemical reaction.",
+    "cue": "Products are written after the arrow in a word equation.",
     "choices": [
-      "It can damage living tissue and some materials.",
-      "It catches fire easily near a flame.",
-      "It is safe to touch because it is neutral.",
-      "It only changes colour with indicators."
+      "New substances made in a chemical reaction.",
+      "Starting substances in a reaction.",
+      "Materials that let current flow.",
+      "Bones that protect the brain."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-177-7f-acids-and-alkalis-what-does-hydrochloric-acid-make-in-sal",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which instruction is most important when using a flammable liquid near a Bunsen burner?",
-    "back": "Keep it away from flames because it catches fire easily.",
-    "cue": "Flammable means catches fire easily.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Quick Quiz style",
+    "front": "What does hydrochloric acid make in salt names?",
+    "back": "Chloride salts.",
+    "cue": "The acid gives the second part of the salt name.",
     "choices": [
-      "Keep it away from flames because it catches fire easily.",
-      "Add universal indicator before heating it.",
-      "Use a voltmeter to check whether it is safe.",
-      "Neutralise it with distilled water only."
+      "Chloride salts.",
+      "Nitrate salts.",
+      "Sulfate salts.",
+      "Carbonate salts."
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-178-7f-acids-and-alkalis-what-does-nitric-acid-make-in-salt-name",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "A solution turns blue litmus red and has pH 3. Which description is correct?",
-    "back": "It is acidic.",
-    "cue": "Acids have pH below 7 and turn blue litmus red.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Quick Quiz style",
+    "front": "What does nitric acid make in salt names?",
+    "back": "Nitrate salts.",
+    "cue": "Nitric acid gives nitrate.",
     "choices": [
-      "It is acidic.",
-      "It is alkaline.",
-      "It is neutral.",
-      "It must be pure water."
+      "Nitrate salts.",
+      "Chloride salts.",
+      "Sulfate salts.",
+      "Oxide salts."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-179-7f-acids-and-alkalis-what-does-sulfuric-acid-make-in-salt-na",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "A solution has pH 10 and turns red litmus blue. Which description is correct?",
-    "back": "It is alkaline.",
-    "cue": "Alkalis have pH above 7 and turn red litmus blue.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Quick Quiz style",
+    "front": "What does sulfuric acid make in salt names?",
+    "back": "Sulfate salts.",
+    "cue": "Sulfuric acid gives sulfate.",
     "choices": [
-      "It is alkaline.",
-      "It is acidic.",
-      "It is neutral.",
-      "It must be citric acid."
+      "Sulfate salts.",
+      "Chloride salts.",
+      "Nitrate salts.",
+      "Hydroxide salts."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-180-7f-acids-and-alkalis-why-can-antacids-help-indigestion",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "A liquid has pH 7. Which statement is most accurate?",
-    "back": "It is neutral, not acidic or alkaline.",
-    "cue": "pH 7 is neutral.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Quick Quiz style",
+    "front": "Why can antacids help indigestion?",
+    "back": "They contain bases that neutralise excess stomach acid.",
+    "cue": "Antacid means anti-acid.",
     "choices": [
-      "It is neutral, not acidic or alkaline.",
-      "It is a weak acid because 7 is below 14.",
-      "It is a strong alkali because 7 is high.",
-      "It must be corrosive."
+      "They contain bases that neutralise excess stomach acid.",
+      "They increase the acidity of the stomach.",
+      "They carry oxygen to muscles.",
+      "They reduce resistance in wires."
     ],
     "difficulty": 3
   },
@@ -2266,526 +1906,464 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-181-7f-acids-and-alkalis-what-is-acid-rain",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Blue litmus paper is dipped into hydrochloric acid. What should happen?",
-    "back": "It turns red.",
-    "cue": "Blue litmus turns red in acid.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Quick Quiz style",
+    "front": "What is acid rain?",
+    "back": "Rainwater made more acidic by air pollution.",
+    "cue": "Acid rain can damage materials and living things.",
     "choices": [
-      "It turns red.",
-      "It turns blue.",
-      "It turns purple.",
-      "It gives a number directly."
+      "Rainwater made more acidic by air pollution.",
+      "Rainwater with pH exactly 7.",
+      "Water made more alkaline by salt.",
+      "Rain that carries red blood cells."
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
-    "id": "card-182-7j-current-electricity-what-is-current",
+    "id": "card-182-7j-current-electricity-a-lamp-is-lit-in-a-complete-circuit-w",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "Red litmus paper is dipped into sodium hydroxide solution. What should happen?",
-    "back": "It turns blue.",
-    "cue": "Red litmus turns blue in alkali.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Quiz style",
+    "front": "A lamp is lit in a complete circuit. Which statement best describes the current in the wires?",
+    "back": "Charges flow around the complete circuit.",
+    "cue": "Current is the flow of charge; it is not the same as voltage or energy stored in the cell.",
     "choices": [
-      "It turns blue.",
-      "It turns red.",
-      "It turns green.",
-      "It dissolves to make a salt."
-    ],
-    "difficulty": 3
-  },
-  {
-    "id": "card-183-7j-current-electricity-what-unit-is-used-for-current",
-    "unit": "7J Current electricity",
-    "type": "Multiple choice",
-    "front": "Why is universal indicator more useful than litmus when comparing acid strengths?",
-    "back": "It shows a range of colours linked to different pH values.",
-    "cue": "Universal indicator gives more detail than litmus.",
-    "packSection": "7Ja",
-    "sourceFocus": "7Ja · Current, components and complete circuits · Quick Quiz style",
-    "choices": [
-      "It shows a range of colours linked to different pH values.",
-      "It only tells whether a liquid is hot or cold.",
-      "It gives only two colours: red or blue.",
-      "It neutralises acids before a reading is taken."
+      "Charges flow around the complete circuit.",
+      "Voltage is used up by the first bulb.",
+      "Resistance flows from the cell.",
+      "Only energy, not charges, moves through the wires."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-184-7j-current-electricity-how-should-an-ammeter-be-connected",
+    "id": "card-183-7j-current-electricity-an-ammeter-reading-is-written-as-0-35",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "Which statement best describes neutralisation?",
-    "back": "An acid reacts with a base or alkali to make a solution closer to neutral.",
-    "cue": "Neutralisation reduces acidity/alkalinity.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Quiz style",
+    "front": "An ammeter reading is written as 0.35 __. Which unit completes the reading?",
+    "back": "A",
+    "cue": "Current is measured in amperes, written as A.",
     "choices": [
-      "An acid reacts with a base or alkali to make a solution closer to neutral.",
-      "An acid is made more concentrated by removing water.",
-      "An indicator changes directly into a salt.",
-      "A solid disappears without reacting."
+      "A",
+      "V",
+      "Ω",
+      "J"
+    ],
+    "difficulty": 3
+  },
+  {
+    "id": "card-184-7j-current-electricity-a-student-wants-to-measure-the-curren",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "A student wants to measure the current through a bulb. Where should the ammeter be connected?",
+    "back": "In series with the bulb, so the same current passes through the ammeter and the bulb.",
+    "cue": "Ammeters are placed in the main path of the current.",
+    "choices": [
+      "In series with the bulb, so the same current passes through the ammeter and the bulb.",
+      "In parallel across the bulb, so it measures the energy transferred.",
+      "Across the cell only, because all current starts at the cell.",
+      "Next to the circuit but not connected, because it senses current."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-185-7j-current-electricity-what-is-voltage",
+    "id": "card-185-7j-current-electricity-a-cell-has-a-larger-voltage-than-anot",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "What are the products of the reaction: acid + alkali?",
-    "back": "Salt and water.",
-    "cue": "acid + alkali → salt + water.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Quiz style",
+    "front": "A cell has a larger voltage than another cell. What does that mean for the charges in the circuit?",
+    "back": "More energy is transferred to the charges by the cell.",
+    "cue": "Voltage is a measure of energy transferred per charge; at this level it is often described as electrical 'push'.",
     "choices": [
-      "Salt and water.",
-      "Acid and water.",
-      "Alkali and hydrogen.",
-      "Indicator and oxygen."
-    ],
-    "difficulty": 3
-  },
-  {
-    "id": "card-186-7j-current-electricity-how-should-a-voltmeter-be-connected",
-    "unit": "7J Current electricity",
-    "type": "Multiple choice",
-    "front": "Which statement describes a base in acid reactions?",
-    "back": "A substance that reacts with and neutralises an acid.",
-    "cue": "Many bases are insoluble; soluble bases are alkalis.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Quick Quiz style",
-    "choices": [
-      "A substance that reacts with and neutralises an acid.",
-      "A solution that must have pH below 7.",
-      "A dye used only to show acid strength.",
-      "A substance that cannot form salts."
+      "More energy is transferred to the charges by the cell.",
+      "The current must be smaller everywhere.",
+      "The wires become better insulators.",
+      "The circuit automatically becomes parallel."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-187-7j-current-electricity-what-does-a-cell-do-in-a-circuit",
+    "id": "card-186-7j-current-electricity-a-student-wants-to-measure-the-voltag",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "A white solid disappears completely when stirred into water. Which word describes the solid?",
-    "back": "Soluble.",
-    "cue": "Soluble means able to dissolve.",
-    "packSection": "7Ja",
-    "sourceFocus": "7Ja · Current, components and complete circuits · Quick Quiz style",
+    "front": "A student wants to measure the voltage across a lamp. Where should the voltmeter be connected?",
+    "back": "In parallel across the lamp.",
+    "cue": "Voltmeters compare the two sides of a component, so they connect across it.",
     "choices": [
-      "Soluble.",
-      "Insoluble.",
-      "Concentrated.",
-      "Corrosive."
-    ],
-    "difficulty": 3
-  },
-  {
-    "id": "card-188-7j-current-electricity-what-does-a-switch-do",
-    "unit": "7J Current electricity",
-    "type": "Multiple choice",
-    "front": "A metal oxide remains as a solid after stirring in water. Which word describes it?",
-    "back": "Insoluble.",
-    "cue": "Insoluble means not dissolving in the liquid.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Quiz style",
-    "choices": [
-      "Insoluble.",
-      "Soluble.",
-      "Neutral.",
-      "Dilute."
-    ],
-    "difficulty": 3
-  },
-  {
-    "id": "card-189-7j-current-electricity-what-is-a-conductor",
-    "unit": "7J Current electricity",
-    "type": "Multiple choice",
-    "front": "Water is added to an acid before the experiment. Which statement describes the new solution?",
-    "back": "It is more dilute because the acid particles are spread through more water.",
-    "cue": "Diluting lowers concentration; it does not guarantee pH 7.",
-    "packSection": "7Ja",
-    "sourceFocus": "7Ja · Current, components and complete circuits · Quick Quiz style",
-    "choices": [
-      "It is more dilute because the acid particles are spread through more water.",
-      "It is more concentrated because more liquid has been added.",
-      "It must now be neutral because all acids become pH 7 in water.",
-      "It is insoluble because water has been added."
+      "In parallel across the lamp.",
+      "In series before the lamp.",
+      "In series after the lamp.",
+      "In place of the cell."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-190-7j-current-electricity-what-is-an-insulator",
+    "id": "card-187-7j-current-electricity-a-simple-circuit-has-a-cell-wires-and",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "Which description fits a concentrated acid best?",
-    "back": "A large amount of acid dissolved in a relatively small volume of solution.",
-    "cue": "Concentration is about amount dissolved in a volume.",
-    "packSection": "7Ja",
-    "sourceFocus": "7Ja · Current, components and complete circuits · Quick Quiz style",
+    "front": "A simple circuit has a cell, wires and a bulb. What is the main role of the cell?",
+    "back": "It transfers energy to the charges and pushes them around the circuit.",
+    "cue": "A cell is a source of electrical energy.",
     "choices": [
-      "A large amount of acid dissolved in a relatively small volume of solution.",
-      "Any acid with pH exactly 7.",
-      "An acid that has been made safer by adding lots of water.",
-      "An acid that cannot react with bases."
+      "It transfers energy to the charges and pushes them around the circuit.",
+      "It measures how much current is flowing.",
+      "It increases resistance so no current flows.",
+      "It turns the wires into insulators."
+    ],
+    "difficulty": 3
+  },
+  {
+    "id": "card-188-7j-current-electricity-a-switch-is-open-in-a-simple-lamp-cir",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "A switch is open in a simple lamp circuit. Which explanation is correct?",
+    "back": "There is a gap in the circuit, so current cannot flow through the lamp.",
+    "cue": "Open switch = gap; closed switch = complete path.",
+    "choices": [
+      "There is a gap in the circuit, so current cannot flow through the lamp.",
+      "The cell has no voltage until the switch is removed.",
+      "The current flows only through the air gap.",
+      "The bulb is brighter because resistance is lower."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-191-7j-current-electricity-what-is-resistance",
+    "id": "card-189-7j-current-electricity-which-material-would-be-most-suitable",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "In the reaction hydrochloric acid + sodium hydroxide → sodium chloride + water, which are the reactants?",
-    "back": "hydrochloric acid and sodium hydroxide",
-    "cue": "Reactants are the substances at the start.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Quiz style",
+    "front": "Which material would be most suitable for the wires in a school circuit?",
+    "back": "A metal, because it allows electric charge to flow easily.",
+    "cue": "Metals are good electrical conductors.",
     "choices": [
-      "hydrochloric acid and sodium hydroxide",
-      "sodium chloride and water",
-      "hydrochloric acid and sodium chloride",
-      "sodium hydroxide and water"
+      "A metal, because it allows electric charge to flow easily.",
+      "Plastic, because it lets current pass with no resistance.",
+      "Rubber, because it stores current safely.",
+      "Wood, because it gives charges more energy."
+    ],
+    "difficulty": 3
+  },
+  {
+    "id": "card-190-7j-current-electricity-why-is-the-outside-of-many-electrical",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Why is the outside of many electrical cables made from plastic?",
+    "back": "Plastic is an insulator, so it reduces the chance of current passing through a person touching it.",
+    "cue": "Insulators are useful for safety because they do not allow charge to flow easily.",
+    "choices": [
+      "Plastic is an insulator, so it reduces the chance of current passing through a person touching it.",
+      "Plastic is a conductor, so it carries current faster than metal.",
+      "Plastic increases voltage so the circuit works better.",
+      "Plastic makes the circuit parallel."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-192-7j-current-electricity-what-does-a-resistor-do",
+    "id": "card-191-7j-current-electricity-a-wire-has-high-resistance-what-does-",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "In the reaction hydrochloric acid + sodium hydroxide → sodium chloride + water, which are the products?",
-    "back": "sodium chloride and water",
-    "cue": "Products are the substances made.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Quiz style",
+    "front": "A wire has high resistance. What does this tell you about current in that wire?",
+    "back": "It is more difficult for current to flow through the wire.",
+    "cue": "Higher resistance usually means smaller current for the same voltage.",
     "choices": [
-      "sodium chloride and water",
-      "hydrochloric acid and sodium hydroxide",
-      "hydrochloric acid and water",
-      "sodium hydroxide and sodium chloride"
+      "It is more difficult for current to flow through the wire.",
+      "Charges have more paths to choose from.",
+      "The voltage is always zero.",
+      "The wire must be a voltmeter."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-193-7j-current-electricity-what-is-a-variable-resistor",
+    "id": "card-192-7j-current-electricity-a-resistor-is-added-in-series-with-a-",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "Which salt-name ending is made when hydrochloric acid reacts with a base?",
-    "back": "chloride",
-    "cue": "Hydrochloric acid makes chloride salts.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Quiz style",
+    "front": "A resistor is added in series with a lamp. What is the most likely effect?",
+    "back": "The current is reduced, so the lamp may become dimmer.",
+    "cue": "More resistance makes current smaller if voltage stays the same.",
     "choices": [
-      "chloride",
-      "nitrate",
-      "sulfate",
-      "oxide"
-    ],
-    "difficulty": 3
-  },
-  {
-    "id": "card-194-7j-current-electricity-what-is-a-series-circuit",
-    "unit": "7J Current electricity",
-    "type": "Multiple choice",
-    "front": "Which salt-name ending is made when nitric acid reacts with a base?",
-    "back": "nitrate",
-    "cue": "Nitric acid makes nitrate salts.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Quiz style",
-    "choices": [
-      "nitrate",
-      "chloride",
-      "sulfate",
-      "oxide"
-    ],
-    "difficulty": 3
-  },
-  {
-    "id": "card-195-7j-current-electricity-what-is-a-parallel-circuit",
-    "unit": "7J Current electricity",
-    "type": "Multiple choice",
-    "front": "Which salt-name ending is made when sulfuric acid reacts with a base?",
-    "back": "sulfate",
-    "cue": "Sulfuric acid makes sulfate salts.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Quiz style",
-    "choices": [
-      "sulfate",
-      "chloride",
-      "nitrate",
-      "hydroxide"
-    ],
-    "difficulty": 3
-  },
-  {
-    "id": "card-196-7j-current-electricity-what-happens-to-current-in-a-series-c",
-    "unit": "7J Current electricity",
-    "type": "Multiple choice",
-    "front": "Why can an antacid help with indigestion?",
-    "back": "It contains a base that neutralises excess stomach acid.",
-    "cue": "Antacid = anti-acid; neutralises acid.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Quiz style",
-    "choices": [
-      "It contains a base that neutralises excess stomach acid.",
-      "It contains an acid that makes the stomach more acidic.",
-      "It is an indicator that changes the stomach colour.",
-      "It is a salt that stops all digestion."
+      "The current is reduced, so the lamp may become dimmer.",
+      "The current increases because there is another component.",
+      "The resistor stores all the current permanently.",
+      "The circuit turns from series into parallel."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-197-7j-current-electricity-what-is-the-current-rule-for-a-parall",
+    "id": "card-193-7j-current-electricity-a-dimmer-control-changes-the-brightne",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "Which statement best explains acid rain?",
-    "back": "Rainwater becomes more acidic when acidic gases dissolve in it.",
-    "cue": "Acid rain is linked to air pollution.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Quiz style",
+    "front": "A dimmer control changes the brightness of a lamp by changing resistance. Which component could do this?",
+    "back": "A variable resistor.",
+    "cue": "Variable resistors can change the size of the current.",
     "choices": [
-      "Rainwater becomes more acidic when acidic gases dissolve in it.",
-      "Rainwater becomes pH 7 whenever it falls through air.",
-      "Rainwater becomes alkaline when salt crystals dissolve in it.",
-      "Rainwater is called acid rain only if it is purple with universal indicator."
+      "A variable resistor.",
+      "A fixed cell.",
+      "A closed switch only.",
+      "An ammeter in parallel."
+    ],
+    "difficulty": 3
+  },
+  {
+    "id": "card-194-7j-current-electricity-which-description-identifies-a-series",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Which description identifies a series circuit?",
+    "back": "There is one loop, so all components are on the same current path.",
+    "cue": "Series circuits do not have separate branches.",
+    "choices": [
+      "There is one loop, so all components are on the same current path.",
+      "There are separate branches for each component.",
+      "The circuit must contain a voltmeter.",
+      "Each component has its own cell."
+    ],
+    "difficulty": 3
+  },
+  {
+    "id": "card-195-7j-current-electricity-which-description-identifies-a-parall",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Which description identifies a parallel circuit?",
+    "back": "The circuit splits into branches and then joins again.",
+    "cue": "Parallel circuits have more than one path for current.",
+    "choices": [
+      "The circuit splits into branches and then joins again.",
+      "All components are placed on one loop only.",
+      "There is no complete path for current.",
+      "The circuit contains no switches."
+    ],
+    "difficulty": 3
+  },
+  {
+    "id": "card-196-7j-current-electricity-two-ammeters-are-placed-at-different-",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Two ammeters are placed at different points in one series loop. What should their readings show?",
+    "back": "The same current at both points.",
+    "cue": "Current is the same everywhere in a series circuit.",
+    "choices": [
+      "The same current at both points.",
+      "Less current after each bulb.",
+      "More current after each bulb.",
+      "Zero current near the cell."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-198-7j-current-electricity-what-happens-if-one-bulb-breaks-in-a-",
+    "id": "card-197-7j-current-electricity-a-parallel-circuit-has-two-branches-t",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "Which liquid would you choose as an example of an acid containing ethanoic acid?",
-    "back": "vinegar",
-    "cue": "Vinegar contains ethanoic acid.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Quiz style",
+    "front": "A parallel circuit has two branches. The branch currents are 0.2 A and 0.3 A. What is the total current from the cell?",
+    "back": "0.5 A",
+    "cue": "In a parallel circuit, total current equals the sum of the branch currents.",
     "choices": [
-      "vinegar",
-      "oven cleaner",
-      "washing powder",
-      "pure water"
-    ],
-    "difficulty": 3
-  },
-  {
-    "id": "card-199-7j-current-electricity-what-usually-happens-if-you-add-more-",
-    "unit": "7J Current electricity",
-    "type": "Multiple choice",
-    "front": "Which liquid would you choose as an example of an acid containing citric acid?",
-    "back": "lemon juice",
-    "cue": "Citrus fruits contain citric acid.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Quiz style",
-    "choices": [
-      "lemon juice",
-      "toothpaste",
-      "washing powder",
-      "indigestion powder"
-    ],
-    "difficulty": 3
-  },
-  {
-    "id": "card-200-7j-current-electricity-what-condition-gives-the-largest-curr",
-    "unit": "7J Current electricity",
-    "type": "Multiple choice",
-    "front": "Which everyday substance is the best example of neutral pH?",
-    "back": "pure water",
-    "cue": "Pure water is neutral at about pH 7.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Quiz style",
-    "choices": [
-      "pure water",
-      "stomach acid",
-      "oven cleaner",
-      "vinegar"
-    ],
-    "difficulty": 3
-  },
-  {
-    "id": "card-201-7j-current-electricity-which-formula-is-ohm-s-law",
-    "unit": "7J Current electricity",
-    "type": "Multiple choice",
-    "front": "Which everyday substance is usually alkaline but not as strongly alkaline as oven cleaner?",
-    "back": "toothpaste",
-    "cue": "Toothpaste is mildly alkaline in many school pH examples.",
-    "packSection": "7Ja",
-    "sourceFocus": "7Ja · Current, components and complete circuits · Quick Quiz style",
-    "choices": [
-      "toothpaste",
-      "vinegar",
-      "lemon juice",
-      "fizzy drink"
+      "0.5 A",
+      "0.3 A",
+      "0.2 A",
+      "0.1 A"
     ],
     "difficulty": 4
   },
   {
-    "id": "card-202-7j-current-electricity-what-is-an-and-circuit",
+    "id": "card-198-7j-current-electricity-one-bulb-breaks-in-one-branch-of-a-pa",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "Which substance is the best example of a strongly alkaline household cleaner?",
-    "back": "oven cleaner",
-    "cue": "Oven cleaner is often strongly alkaline.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Quiz style",
+    "front": "One bulb breaks in one branch of a parallel circuit. What usually happens to a bulb in another complete branch?",
+    "back": "It can stay lit because its branch is still complete.",
+    "cue": "Branches can work independently if their paths remain complete.",
     "choices": [
-      "oven cleaner",
-      "milk",
-      "fizzy drink",
-      "lemon juice"
-    ],
-    "difficulty": 3
-  },
-  {
-    "id": "card-203-7j-current-electricity-what-is-an-or-circuit",
-    "unit": "7J Current electricity",
-    "type": "Multiple choice",
-    "front": "Which drink is acidic in the pack’s everyday pH examples?",
-    "back": "fizzy drink",
-    "cue": "Many fizzy drinks are acidic.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Quiz style",
-    "choices": [
-      "fizzy drink",
-      "pure water",
-      "washing powder",
-      "oven cleaner"
-    ],
-    "difficulty": 3
-  },
-  {
-    "id": "card-204-7j-current-electricity-what-does-a-fuse-do",
-    "unit": "7J Current electricity",
-    "type": "Multiple choice",
-    "front": "Which substance is used to neutralise excess stomach acid?",
-    "back": "indigestion powder or antacid",
-    "cue": "Antacids contain bases.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Quick Quiz style",
-    "choices": [
-      "indigestion powder or antacid",
-      "vinegar",
-      "lemon juice",
-      "universal indicator"
-    ],
-    "difficulty": 3
-  },
-  {
-    "id": "card-205-7j-current-electricity-what-colour-is-the-earth-wire-in-a-uk",
-    "unit": "7J Current electricity",
-    "type": "Multiple choice",
-    "front": "A solution is tested with phenolphthalein and remains colourless. Which conclusion is most likely?",
-    "back": "It is acidic or neutral rather than alkaline.",
-    "cue": "Phenolphthalein is colourless in acidic/neutral solution and pink in alkali.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Quick Quiz style",
-    "choices": [
-      "It is acidic or neutral rather than alkaline.",
-      "It is strongly alkaline.",
-      "It must contain copper sulfate.",
-      "It must be flammable."
+      "It can stay lit because its branch is still complete.",
+      "It must go out because current is used up.",
+      "It becomes a cell for the broken branch.",
+      "It makes the other branch series."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-206-7j-current-electricity-which-circuit-symbol-is-shown",
+    "id": "card-199-7j-current-electricity-a-second-identical-bulb-is-added-in-s",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "A second identical bulb is added in series with the first bulb. What usually happens to the brightness?",
+    "back": "Both bulbs are dimmer because total resistance increases and current decreases.",
+    "cue": "More components in one path usually means more resistance.",
+    "choices": [
+      "Both bulbs are dimmer because total resistance increases and current decreases.",
+      "Both bulbs are brighter because the voltage is doubled.",
+      "Only the first bulb lights because it uses all the current.",
+      "The second bulb lights but the first one becomes a switch."
+    ],
+    "difficulty": 4
+  },
+  {
+    "id": "card-200-7j-current-electricity-which-circuit-is-likely-to-have-the-l",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Which circuit is likely to have the largest current?",
+    "back": "A high-voltage supply with a low-resistance path.",
+    "cue": "Current increases with voltage and decreases with resistance.",
+    "choices": [
+      "A high-voltage supply with a low-resistance path.",
+      "A low-voltage supply with a high-resistance path.",
+      "An open switch with a low-resistance lamp.",
+      "No cell but very short wires."
+    ],
+    "difficulty": 4
+  },
+  {
+    "id": "card-201-7j-current-electricity-a-resistor-has-current-i-through-it-a",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "A resistor has current I through it and voltage V across it. Which equation links voltage, current and resistance?",
+    "back": "V = I × R",
+    "cue": "Ohm’s law can be rearranged to find current or resistance.",
+    "choices": [
+      "V = I × R",
+      "I = V × R",
+      "R = V × I",
+      "V = R ÷ I"
+    ],
+    "difficulty": 4
+  },
+  {
+    "id": "card-202-7j-current-electricity-a-lamp-should-turn-on-only-when-two-s",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "A lamp should turn on only when two separate switches are both closed. Which switch arrangement is needed?",
+    "back": "An AND circuit.",
+    "cue": "AND means switch A and switch B must both be closed.",
+    "choices": [
+      "An AND circuit.",
+      "An OR circuit.",
+      "A short circuit.",
+      "A voltmeter branch."
+    ],
+    "difficulty": 3
+  },
+  {
+    "id": "card-203-7j-current-electricity-a-lamp-should-turn-on-when-either-of-",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "A lamp should turn on when either of two switches is closed. Which switch arrangement is needed?",
+    "back": "An OR circuit.",
+    "cue": "OR means switch A or switch B can complete the path.",
+    "choices": [
+      "An OR circuit.",
+      "An AND circuit.",
+      "One open switch in series.",
+      "A resistor-only circuit."
+    ],
+    "difficulty": 3
+  },
+  {
+    "id": "card-204-7j-current-electricity-too-much-current-flows-through-a-plug",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Too much current flows through a plug. What should the fuse do?",
+    "back": "Melt and break the circuit before the cable overheats.",
+    "cue": "A fuse is a safety device that breaks the circuit when current is too large.",
+    "choices": [
+      "Melt and break the circuit before the cable overheats.",
+      "Increase the current so the appliance works faster.",
+      "Measure the voltage across the appliance.",
+      "Turn the live wire into the neutral wire."
+    ],
+    "difficulty": 4
+  },
+  {
+    "id": "card-205-7j-current-electricity-in-a-uk-style-plug-which-wire-is-gree",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "In a UK-style plug, which wire is green and yellow and is included for safety?",
+    "back": "Earth wire.",
+    "cue": "Live is brown, neutral is blue, earth is green/yellow.",
+    "choices": [
+      "Earth wire.",
+      "Live wire.",
+      "Neutral wire.",
+      "Fuse wire."
+    ],
+    "difficulty": 3
+  },
+  {
+    "id": "card-206-7j-current-electricity-this-symbol-has-one-long-line-and-one",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Which circuit symbol is shown in the diagram?",
+    "front": "This symbol has one long line and one short line. What component does it represent?",
     "back": "Cell",
-    "cue": "One cell supplies electrical energy to a circuit.",
-    "packSection": "7Ja",
-    "sourceFocus": "7Ja · Current, components and complete circuits · Quick Check diagram style",
+    "cue": "Recognise the symbol and link it to the job of the component.",
     "choices": [
       "Cell",
       "Battery",
-      "Lamp / bulb",
-      "Ammeter"
+      "Open switch",
+      "Resistor"
     ],
     "visual": "symbol-cell",
     "difficulty": 3
   },
   {
-    "id": "card-207-7j-current-electricity-which-circuit-symbol-is-shown",
+    "id": "card-207-7j-current-electricity-this-symbol-shows-more-than-one-cell-",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Which circuit symbol is shown in the diagram?",
+    "front": "This symbol shows more than one cell joined together. What does it represent?",
     "back": "Battery",
-    "cue": "A battery is two or more cells.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Check diagram style",
+    "cue": "Recognise the symbol and link it to the job of the component.",
     "choices": [
       "Battery",
-      "Cell",
+      "Single cell",
       "Voltmeter",
-      "Resistor"
+      "Closed switch"
     ],
     "visual": "symbol-battery",
     "difficulty": 3
   },
   {
-    "id": "card-208-7j-current-electricity-which-circuit-symbol-is-shown",
+    "id": "card-208-7j-current-electricity-this-symbol-has-a-circle-with-a-cross",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Which circuit symbol is shown in the diagram?",
+    "front": "This symbol has a circle with a cross inside it. What component does it represent?",
     "back": "Lamp / bulb",
-    "cue": "A lamp changes electrical energy into light and heat.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Quick Check diagram style",
+    "cue": "Recognise the symbol and link it to the job of the component.",
     "choices": [
       "Lamp / bulb",
       "Motor",
-      "Fuse",
-      "Switch"
+      "Resistor",
+      "Ammeter"
     ],
     "visual": "symbol-lamp",
     "difficulty": 3
   },
   {
-    "id": "card-209-7j-current-electricity-which-circuit-symbol-is-shown",
+    "id": "card-209-7j-current-electricity-this-switch-symbol-shows-a-gap-what-d",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Which circuit symbol is shown in the diagram?",
+    "front": "This switch symbol shows a gap. What does it represent?",
     "back": "Open switch",
-    "cue": "An open switch breaks the circuit, so current cannot flow.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Check diagram style",
+    "cue": "Recognise the symbol and link it to the job of the component.",
     "choices": [
       "Open switch",
       "Closed switch",
       "Cell",
-      "Ammeter"
+      "Fuse"
     ],
     "visual": "symbol-switchOpen",
     "difficulty": 3
   },
   {
-    "id": "card-210-7j-current-electricity-which-circuit-symbol-is-shown",
+    "id": "card-210-7j-current-electricity-this-switch-symbol-has-no-gap-between",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Which circuit symbol is shown in the diagram?",
+    "front": "This switch symbol has no gap between the contacts. What does it represent?",
     "back": "Closed switch",
-    "cue": "A closed switch completes the circuit, so current can flow.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Check diagram style",
+    "cue": "Recognise the symbol and link it to the job of the component.",
     "choices": [
       "Closed switch",
       "Open switch",
       "Voltmeter",
-      "Resistor"
+      "Variable resistor"
     ],
     "visual": "symbol-switchClosed",
     "difficulty": 3
   },
   {
-    "id": "card-211-7j-current-electricity-which-circuit-symbol-is-shown",
+    "id": "card-211-7j-current-electricity-this-rectangular-component-symbol-mak",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Which circuit symbol is shown in the diagram?",
+    "front": "This rectangular component symbol makes current more difficult to flow. What is it?",
     "back": "Resistor",
-    "cue": "A resistor makes it harder for current to flow.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Check diagram style",
+    "cue": "Recognise the symbol and link it to the job of the component.",
     "choices": [
       "Resistor",
       "Lamp / bulb",
@@ -2793,17 +2371,15 @@ window.YEAR7_FLASHCARDS = [
       "Ammeter"
     ],
     "visual": "symbol-resistor",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
-    "id": "card-212-7j-current-electricity-which-circuit-symbol-is-shown",
+    "id": "card-212-7j-current-electricity-this-meter-has-the-letter-a-how-shoul",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Which circuit symbol is shown in the diagram?",
+    "front": "This meter has the letter A. How should this component be used?",
     "back": "Ammeter",
-    "cue": "An ammeter measures current and is placed in series.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Check diagram style",
+    "cue": "Ammeter measures current and is connected in series.",
     "choices": [
       "Ammeter",
       "Voltmeter",
@@ -2811,17 +2387,15 @@ window.YEAR7_FLASHCARDS = [
       "Cell"
     ],
     "visual": "symbol-ammeter",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
-    "id": "card-213-7j-current-electricity-which-circuit-symbol-is-shown",
+    "id": "card-213-7j-current-electricity-this-meter-has-the-letter-v-what-quan",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Which circuit symbol is shown in the diagram?",
+    "front": "This meter has the letter V. What quantity does it measure?",
     "back": "Voltmeter",
-    "cue": "A voltmeter measures voltage and is placed in parallel.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Check diagram style",
+    "cue": "Voltmeter measures voltage and is connected in parallel.",
     "choices": [
       "Voltmeter",
       "Ammeter",
@@ -2829,17 +2403,15 @@ window.YEAR7_FLASHCARDS = [
       "Switch"
     ],
     "visual": "symbol-voltmeter",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
-    "id": "card-214-7j-current-electricity-which-circuit-symbol-is-shown",
+    "id": "card-214-7j-current-electricity-this-symbol-has-the-letter-m-inside-a",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Which circuit symbol is shown in the diagram?",
+    "front": "This symbol has the letter M inside a circle. What component does it represent?",
     "back": "Motor",
-    "cue": "A motor transfers electrical energy to movement.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Check diagram style",
+    "cue": "Recognise the symbol and link it to the job of the component.",
     "choices": [
       "Motor",
       "Lamp / bulb",
@@ -2850,181 +2422,161 @@ window.YEAR7_FLASHCARDS = [
     "difficulty": 3
   },
   {
-    "id": "card-215-7j-current-electricity-in-this-series-circuit-what-happens-i",
+    "id": "card-215-7j-current-electricity-in-this-series-circuit-bulb-a-breaks-",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "In this series circuit, what happens if bulb A breaks?",
-    "back": "Both bulbs go out.",
-    "cue": "A series circuit has only one path for current.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Check diagram style",
+    "front": "In this series circuit, bulb A breaks. Predict what happens to bulb B and explain why.",
+    "back": "Bulb B goes out because the single loop is broken and no current can flow anywhere in the circuit.",
+    "cue": "Series circuits have one path; one break stops the whole circuit.",
     "choices": [
-      "Both bulbs go out.",
-      "Only bulb A goes out.",
-      "Only bulb B gets brighter.",
-      "The battery becomes neutral."
+      "Bulb B goes out because the single loop is broken and no current can flow anywhere in the circuit.",
+      "Bulb B stays on because it has its own branch.",
+      "Bulb B gets brighter because it receives more voltage.",
+      "Only bulb A goes out because current can go around it."
     ],
     "visual": "circuit-series",
     "difficulty": 4
   },
   {
-    "id": "card-216-7j-current-electricity-in-this-parallel-circuit-what-happens",
+    "id": "card-216-7j-current-electricity-in-this-parallel-circuit-bulb-a-break",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "In this parallel circuit, what happens if bulb A breaks?",
-    "back": "Bulb B can stay on.",
-    "cue": "A parallel circuit has more than one path for current.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Check diagram style",
+    "front": "In this parallel circuit, bulb A breaks. Predict what happens to bulb B and explain why.",
+    "back": "Bulb B can stay on because it is in a different complete branch.",
+    "cue": "Parallel circuits have separate paths for current.",
     "choices": [
-      "Bulb B can stay on.",
-      "Both bulbs must go out.",
-      "Current stops everywhere.",
-      "The voltage becomes zero."
+      "Bulb B can stay on because it is in a different complete branch.",
+      "Bulb B must go out because current is used up in bulb A.",
+      "Bulb B gets no voltage because bulb A is broken.",
+      "The whole circuit becomes a series circuit."
     ],
     "visual": "circuit-parallel",
     "difficulty": 4
   },
   {
-    "id": "card-217-7j-current-electricity-why-is-the-ammeter-labelled-a-placed-",
+    "id": "card-217-7j-current-electricity-the-ammeter-labelled-a-is-in-the-main",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Why is the ammeter labelled A placed like this?",
-    "back": "It is in series, so it measures the current through the circuit.",
-    "cue": "Ammeters must be connected in series.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Check diagram style",
+    "front": "The ammeter labelled A is in the main loop. Why is this the correct position for measuring current?",
+    "back": "It is in series, so the same current that passes through the lamp also passes through the ammeter.",
+    "cue": "An ammeter must be part of the path whose current is being measured.",
     "choices": [
-      "It is in series, so it measures the current through the circuit.",
-      "It is in parallel, so it measures voltage.",
-      "It is used to test pH.",
-      "It makes the bulb brighter."
+      "It is in series, so the same current that passes through the lamp also passes through the ammeter.",
+      "It is in parallel, so it measures voltage across the lamp.",
+      "It is across the cell, so it measures resistance.",
+      "It is outside the loop, so it does not affect the circuit."
     ],
     "visual": "circuit-ammeter-series",
     "difficulty": 5
   },
   {
-    "id": "card-218-7j-current-electricity-why-is-the-voltmeter-labelled-a-conne",
+    "id": "card-218-7j-current-electricity-the-voltmeter-labelled-a-is-connected",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Why is the voltmeter labelled A connected like this?",
-    "back": "It is in parallel across the lamp, so it measures voltage across the lamp.",
-    "cue": "Voltmeters measure potential difference across a component.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Check diagram style",
+    "front": "The voltmeter labelled A is connected across the lamp. Why is this the correct position?",
+    "back": "It is in parallel across the lamp, so it measures the voltage across that lamp.",
+    "cue": "A voltmeter compares two points, so it goes across the component.",
     "choices": [
-      "It is in parallel across the lamp, so it measures voltage across the lamp.",
-      "It is in series to measure current.",
-      "It replaces the battery.",
-      "It measures pH."
+      "It is in parallel across the lamp, so it measures the voltage across that lamp.",
+      "It is in series, so it measures current through the lamp.",
+      "It replaces the cell and supplies the voltage.",
+      "It increases the resistance so the lamp is safe."
     ],
     "visual": "circuit-voltmeter-parallel",
     "difficulty": 5
   },
   {
-    "id": "card-219-7j-current-electricity-what-is-wrong-with-this-circuit",
+    "id": "card-219-7j-current-electricity-the-diagram-shows-a-voltmeter-connect",
     "unit": "7J Current electricity",
     "type": "Spot the mistake",
-    "front": "Look at the circuit diagram. What is the mistake?",
-    "back": "The voltmeter is connected in series instead of parallel.",
-    "cue": "Voltmeters should go across a component, not in the main loop.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Check mistake check",
+    "front": "The diagram shows a voltmeter connected in the main loop. What is wrong, and how should it be connected?",
+    "back": "The voltmeter is connected in series; it should be connected in parallel across the component.",
+    "cue": "Voltmeters go across components, not in the main current path.",
     "choices": [
-      "The voltmeter is connected in series instead of parallel.",
-      "The lamp is missing a filament.",
-      "The battery is made from two bulbs.",
-      "The switch is closed."
+      "The voltmeter is connected in series; it should be connected in parallel across the component.",
+      "The lamp symbol is upside down; it should be replaced by a switch.",
+      "The cell has no voltage; it should be replaced by an ammeter.",
+      "The circuit is parallel; all voltmeters must be in series."
     ],
     "visual": "circuit-voltmeter-mistake",
     "difficulty": 5
   },
   {
-    "id": "card-220-7j-current-electricity-for-the-and-switch-circuit-what-must-",
+    "id": "card-220-7j-current-electricity-in-the-and-switch-circuit-switch-a-cl",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the circuit diagram. For the AND switch circuit, what must happen for the lamp to light?",
-    "back": "Both switches A and B must be closed.",
-    "cue": "AND means A and B together.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Check diagram style",
+    "front": "In the AND switch circuit, switch A closes but switch B stays open. What happens?",
+    "back": "The lamp stays off because both switches must be closed to complete the circuit.",
+    "cue": "AND means A and B.",
     "choices": [
-      "Both switches A and B must be closed.",
-      "Either A or B can be closed.",
-      "Only switch A matters.",
-      "The pH must be 7."
+      "The lamp stays off because both switches must be closed to complete the circuit.",
+      "The lamp lights because one switch is closed.",
+      "The lamp lights because the switches are in parallel.",
+      "The lamp gets dimmer but stays on."
     ],
     "visual": "circuit-and-switches",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
-    "id": "card-221-7j-current-electricity-for-the-or-switch-circuit-what-must-h",
+    "id": "card-221-7j-current-electricity-in-the-or-switch-circuit-switch-a-clo",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the circuit diagram. For the OR switch circuit, what must happen for the lamp to light?",
-    "back": "Either switch A or switch B can be closed.",
-    "cue": "OR means this switch or that switch.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Check diagram style",
+    "front": "In the OR switch circuit, switch A closes and switch B stays open. What happens?",
+    "back": "The lamp lights because either switch can complete a branch.",
+    "cue": "OR means A or B.",
     "choices": [
-      "Either switch A or switch B can be closed.",
-      "Both switches must always be open.",
-      "Both switches must be closed together.",
-      "The bulb must be in acid."
+      "The lamp lights because either switch can complete a branch.",
+      "The lamp stays off because both switches must be closed.",
+      "The lamp stays off because switch B controls all branches.",
+      "The lamp lights only if both branches are broken."
     ],
     "visual": "circuit-or-switches",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
-    "id": "card-222-7j-current-electricity-the-switch-labelled-a-is-open-what-do",
+    "id": "card-222-7j-current-electricity-the-switch-labelled-a-is-open-explain",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the circuit diagram. The switch labelled A is open. What does this do?",
-    "back": "It breaks the circuit so the lamp is off.",
-    "cue": "Open means there is a gap.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Check diagram style",
+    "front": "The switch labelled A is open. Explain why the lamp is not lit.",
+    "back": "The open switch leaves a gap, so the circuit is incomplete and current cannot flow.",
+    "cue": "Open switch = incomplete circuit.",
     "choices": [
-      "It breaks the circuit so the lamp is off.",
-      "It makes current bigger.",
-      "It changes acid to alkali.",
-      "It measures voltage."
+      "The open switch leaves a gap, so the circuit is incomplete and current cannot flow.",
+      "The open switch lowers resistance to zero.",
+      "The cell has no energy when a switch is open.",
+      "The current jumps across the gap only at high voltage."
     ],
     "visual": "circuit-open-switch",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
-    "id": "card-223-7j-current-electricity-what-do-the-arrows-labelled-a-show",
+    "id": "card-223-7j-current-electricity-the-arrows-labelled-a-show-current-di",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "What do the arrows labelled A show?",
-    "back": "The direction of conventional current around the circuit.",
-    "cue": "Current flows when there is a complete circuit.",
-    "packSection": "7Ja",
-    "sourceFocus": "7Ja · Current, components and complete circuits · Quick Check diagram style",
+    "front": "The arrows labelled A show current direction. Which statement is the best interpretation?",
+    "back": "They show the direction of conventional current around the complete circuit.",
+    "cue": "At this level, arrows are often used to show conventional current direction.",
     "choices": [
-      "The direction of conventional current around the circuit.",
-      "The direction of breathing.",
-      "The pH scale direction.",
-      "The movement of cartilage."
+      "They show the direction of conventional current around the complete circuit.",
+      "They show the direction in which voltage is used up.",
+      "They show resistance moving from the bulb to the cell.",
+      "They show charges leaving the circuit permanently."
     ],
     "visual": "circuit-current-arrows",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
-    "id": "card-224-7j-current-electricity-what-is-wrong-with-this-circuit",
+    "id": "card-224-7j-current-electricity-the-diagram-contains-a-short-circuit-",
     "unit": "7J Current electricity",
     "type": "Spot the mistake",
-    "front": "Look at the circuit diagram. What is the mistake?",
-    "back": "There is a short path that bypasses the lamp.",
-    "cue": "A short circuit can let too much current flow.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Check mistake check",
+    "front": "The diagram contains a short-circuit path. What is wrong with the connection?",
+    "back": "The extra wire bypasses the lamp, so most current takes the easier path instead of passing through the lamp.",
+    "cue": "Short circuits provide an unintended low-resistance path.",
     "choices": [
-      "There is a short path that bypasses the lamp.",
-      "The lamp is in parallel correctly.",
-      "The voltmeter is measuring pH.",
-      "The switch is open."
+      "The extra wire bypasses the lamp, so most current takes the easier path instead of passing through the lamp.",
+      "The lamp is correctly placed in parallel with a switch.",
+      "The cell has been connected backwards.",
+      "The ammeter has been connected across the lamp."
     ],
     "visual": "circuit-short-mistake",
     "difficulty": 5
@@ -3036,8 +2588,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "On the pH scale, which label shows an acid?",
     "back": "A",
     "cue": "Acids have pH values below 7.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -3054,8 +2604,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "On the pH scale, which label is neutral?",
     "back": "B",
     "cue": "Pure water is about pH 7, which is neutral.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Check diagram style",
     "choices": [
       "B",
       "A",
@@ -3072,8 +2620,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "On the pH scale, which label shows the most alkaline solution?",
     "back": "C",
     "cue": "The highest pH values are the most alkaline.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Check diagram style",
     "choices": [
       "C",
       "A",
@@ -3090,8 +2636,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "What does blue litmus do in the acid beaker?",
     "back": "Turns red.",
     "cue": "Blue litmus turns red in acid.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Quick Check diagram style",
     "choices": [
       "Turns red.",
       "Turns blue.",
@@ -3108,8 +2652,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "What does red litmus do in the alkali beaker?",
     "back": "Turns blue.",
     "cue": "Red litmus turns blue in alkali.",
-    "packSection": "7Fb",
-    "sourceFocus": "7Fb · Acids, alkalis and indicator tests · Quick Check diagram style",
     "choices": [
       "Turns blue.",
       "Turns red.",
@@ -3126,8 +2668,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "In the universal indicator colours, which label is closest to neutral?",
     "back": "B",
     "cue": "Universal indicator is green near pH 7.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Check diagram style",
     "choices": [
       "B",
       "A",
@@ -3144,8 +2684,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "In the universal indicator colours, which label is most acidic?",
     "back": "A",
     "cue": "Red/orange colours indicate acid.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -3162,8 +2700,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "In the universal indicator colours, which label is most alkaline?",
     "back": "C",
     "cue": "Blue/purple colours indicate alkali.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Check diagram style",
     "choices": [
       "C",
       "A",
@@ -3177,11 +2713,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-233-7f-acids-and-alkalis-in-the-neutralisation-setup-what-is-usu",
     "unit": "7F Acids and alkalis",
     "type": "Practical method",
-    "front": "In this practical, in the neutralisation setup, what is usually added to show the end point?",
+    "front": "In the neutralisation setup, what is usually added to show the end point?",
     "back": "Indicator.",
     "cue": "Indicator changes colour when the acid has neutralised the alkali.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Quick Check practical method",
     "choices": [
       "Indicator.",
       "Ammeter.",
@@ -3194,11 +2728,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-234-7f-acids-and-alkalis-in-the-neutralisation-setup-what-reacti",
     "unit": "7F Acids and alkalis",
     "type": "Practical method",
-    "front": "In this practical, in the neutralisation setup, what reaction is being tested?",
+    "front": "In the neutralisation setup, what reaction is being tested?",
     "back": "Acid + alkali → salt + water.",
     "cue": "Neutralisation makes a salt and water.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Quick Check practical method",
     "choices": [
       "Acid + alkali → salt + water.",
       "Glucose + oxygen → carbon dioxide + water.",
@@ -3214,8 +2746,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "What is the purpose of heating the solution in an evaporation dish?",
     "back": "To evaporate water and leave salt crystals.",
     "cue": "Evaporation removes the solvent.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Quick Check practical method",
     "choices": [
       "To evaporate water and leave salt crystals.",
       "To make current flow.",
@@ -3231,8 +2761,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "What is the main safety mistake in the diagram?",
     "back": "Acid is being poured without clear eye protection.",
     "cue": "Acid practicals need goggles and careful handling.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Check mistake check",
     "choices": [
       "Acid is being poured without clear eye protection.",
       "The beaker is made of glass.",
@@ -3249,8 +2777,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "What is wrong with this indicator method?",
     "back": "Too much indicator has been added.",
     "cue": "Usually only a few drops of indicator are needed.",
-    "packSection": "7Fb",
-    "sourceFocus": "7Fb · Acids, alkalis and indicator tests · Quick Check mistake check",
     "choices": [
       "Too much indicator has been added.",
       "The beaker should be a battery.",
@@ -3267,8 +2793,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "What is the safer way to dilute acid?",
     "back": "Add acid slowly to water.",
     "cue": "Use care: acid into water, slowly, with goggles.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Quick Check practical method",
     "choices": [
       "Add acid slowly to water.",
       "Add water quickly to concentrated acid.",
@@ -3284,8 +2808,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Why should you add alkali slowly during neutralisation?",
     "back": "To avoid overshooting the neutral point.",
     "cue": "Adding too much can make the solution alkaline instead of neutral.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Quick Check practical method",
     "choices": [
       "To avoid overshooting the neutral point.",
       "To make the bulb brighter.",
@@ -3298,11 +2820,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-240-7f-acids-and-alkalis-a-student-says-ph-1-is-a-strong-alkali-",
     "unit": "7F Acids and alkalis",
     "type": "Spot the mistake",
-    "front": "A student gives this answer: “pH 1 is a strong alkali.” What is wrong?",
+    "front": "A student says: “pH 1 is a strong alkali.” What is wrong?",
     "back": "pH 1 is very acidic.",
     "cue": "Low pH means acidic; high pH means alkaline.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Check mistake check",
     "choices": [
       "pH 1 is very acidic.",
       "pH 1 is neutral.",
@@ -3316,11 +2836,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-241-7c-muscles-and-bones-in-the-elbow-joint-diagram-which-label-",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the elbow joint diagram, which label shows cartilage?",
+    "front": "In the elbow joint diagram, which label shows cartilage?",
     "back": "A",
     "cue": "Cartilage is smooth tissue at the ends of bones.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -3334,11 +2852,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-242-7c-muscles-and-bones-in-the-elbow-joint-diagram-which-label-",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the elbow joint diagram, which label shows a ligament?",
+    "front": "In the elbow joint diagram, which label shows a ligament?",
     "back": "B",
     "cue": "Ligaments connect bone to bone.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Check diagram style",
     "choices": [
       "B",
       "A",
@@ -3352,11 +2868,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-243-7c-muscles-and-bones-in-the-elbow-joint-diagram-which-label-",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the elbow joint diagram, which label shows a tendon?",
+    "front": "In the elbow joint diagram, which label shows a tendon?",
     "back": "C",
     "cue": "Tendons connect muscle to bone.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Check diagram style",
     "choices": [
       "C",
       "A",
@@ -3370,11 +2884,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-244-7c-muscles-and-bones-in-the-arm-diagram-which-label-is-the-b",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the arm diagram, which label is the biceps muscle?",
+    "front": "In the arm diagram, which label is the biceps muscle?",
     "back": "A",
     "cue": "The biceps contracts to bend the elbow.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -3388,11 +2900,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-245-7c-muscles-and-bones-in-the-arm-diagram-which-label-is-the-t",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the arm diagram, which label is the triceps muscle?",
+    "front": "In the arm diagram, which label is the triceps muscle?",
     "back": "B",
     "cue": "The triceps contracts to straighten the elbow.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Check diagram style",
     "choices": [
       "B",
       "A",
@@ -3406,11 +2916,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-246-7c-muscles-and-bones-in-the-arm-diagram-why-are-a-and-b-call",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the arm diagram, why are A and B called an antagonistic pair?",
+    "front": "In the arm diagram, why are A and B called an antagonistic pair?",
     "back": "One contracts while the other relaxes to move the bone in opposite directions.",
     "cue": "Muscles pull; they do not push.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Check diagram style",
     "choices": [
       "One contracts while the other relaxes to move the bone in opposite directions.",
       "They both push the bone together.",
@@ -3424,11 +2932,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-247-7c-muscles-and-bones-in-the-skeleton-diagram-which-label-sho",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the skeleton diagram, which label shows the skull?",
+    "front": "In the skeleton diagram, which label shows the skull?",
     "back": "A",
     "cue": "The skull protects the brain.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -3442,11 +2948,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-248-7c-muscles-and-bones-in-the-skeleton-diagram-which-label-sho",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the skeleton diagram, which label shows the ribs?",
+    "front": "In the skeleton diagram, which label shows the ribs?",
     "back": "B",
     "cue": "The ribs protect the heart and lungs.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Check diagram style",
     "choices": [
       "B",
       "A",
@@ -3460,11 +2964,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-249-7c-muscles-and-bones-in-the-skeleton-diagram-which-label-sho",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the skeleton diagram, which label shows the backbone/spine area?",
+    "front": "In the skeleton diagram, which label shows the backbone/spine area?",
     "back": "C",
     "cue": "The backbone supports the body and protects the spinal cord.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Check diagram style",
     "choices": [
       "C",
       "A",
@@ -3478,11 +2980,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-250-7c-muscles-and-bones-in-the-breathing-diagram-which-label-sh",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the breathing diagram, which label shows the trachea/airway?",
+    "front": "In the breathing diagram, which label shows the trachea/airway?",
     "back": "A",
     "cue": "Label A points to the trachea, the airway carrying air to and from the lungs.",
-    "packSection": "7Ca",
-    "sourceFocus": "7Ca · Organs, breathing and gas exchange · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -3496,11 +2996,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-251-7c-muscles-and-bones-in-the-breathing-diagram-which-label-sh",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the breathing diagram, which label shows a lung?",
+    "front": "In the breathing diagram, which label shows a lung?",
     "back": "B",
     "cue": "Label B points to a lung.",
-    "packSection": "7Ca",
-    "sourceFocus": "7Ca · Organs, breathing and gas exchange · Quick Check diagram style",
     "choices": [
       "B",
       "A",
@@ -3514,11 +3012,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-252-7c-muscles-and-bones-in-the-breathing-diagram-which-label-sh",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the breathing diagram, which label shows the diaphragm?",
+    "front": "In the breathing diagram, which label shows the diaphragm?",
     "back": "D",
     "cue": "Label D points to the diaphragm, the muscle under the lungs.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Check diagram style",
     "choices": [
       "D",
       "A",
@@ -3532,11 +3028,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-253-7c-muscles-and-bones-in-the-gas-exchange-diagram-which-label",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the gas exchange diagram, which label shows oxygen moving into the blood?",
+    "front": "In the gas exchange diagram, which label shows oxygen moving into the blood?",
     "back": "A",
     "cue": "Oxygen moves from the air in the alveolus into the blood.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -3549,11 +3043,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-254-7c-muscles-and-bones-in-the-gas-exchange-diagram-which-label",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the gas exchange diagram, which label shows carbon dioxide moving into the air sac?",
+    "front": "In the gas exchange diagram, which label shows carbon dioxide moving into the air sac?",
     "back": "B",
     "cue": "Carbon dioxide moves from the blood into the air in the alveolus.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -3566,11 +3058,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-255-7c-muscles-and-bones-in-the-blood-vessels-diagram-which-labe",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the blood-vessels diagram, which label shows the artery?",
+    "front": "In the blood-vessels diagram, which label shows the artery?",
     "back": "A",
     "cue": "The artery has the thickest wall and the smallest central space.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -3583,11 +3073,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-256-7c-muscles-and-bones-in-the-blood-vessels-diagram-which-labe",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the blood-vessels diagram, which label shows the vein?",
+    "front": "In the blood-vessels diagram, which label shows the vein?",
     "back": "B",
     "cue": "The vein has a larger central space and a valve.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -3600,11 +3088,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-257-7c-muscles-and-bones-in-the-blood-vessels-diagram-which-labe",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the blood-vessels diagram, which label shows capillaries?",
+    "front": "In the blood-vessels diagram, which label shows capillaries?",
     "back": "C",
     "cue": "Capillaries are tiny, thin-walled vessels arranged in a network.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -3617,11 +3103,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-258-7c-muscles-and-bones-in-the-ruler-drop-test-what-does-the-di",
     "unit": "7C Muscles and bones",
     "type": "Practical method",
-    "front": "In this practical, in the ruler-drop test, what does the distance fallen help estimate?",
+    "front": "In the ruler-drop test, what does the distance fallen help estimate?",
     "back": "Reaction time.",
     "cue": "The longer the ruler falls before being caught, the slower the reaction.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Check practical method",
     "choices": [
       "Reaction time.",
       "pH value.",
@@ -3634,11 +3118,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-259-7c-muscles-and-bones-a-student-says-muscles-push-bones-to-mo",
     "unit": "7C Muscles and bones",
     "type": "Spot the mistake",
-    "front": "A student gives this answer: “Muscles push bones to move them.” What is wrong?",
+    "front": "A student says: “Muscles push bones to move them.” What is wrong?",
     "back": "Muscles pull when they contract; they do not push.",
     "cue": "Movement usually needs antagonistic pairs.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Check mistake check",
     "choices": [
       "Muscles pull when they contract; they do not push.",
       "Muscles only work in acids.",
@@ -3652,11 +3134,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-260-7c-muscles-and-bones-a-student-says-tendons-connect-bone-to-",
     "unit": "7C Muscles and bones",
     "type": "Spot the mistake",
-    "front": "A student gives this answer: “Tendons connect bone to bone.” What is wrong?",
+    "front": "A student says: “Tendons connect bone to bone.” What is wrong?",
     "back": "Tendons connect muscle to bone; ligaments connect bone to bone.",
     "cue": "This is a common exam mix-up.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Check mistake check",
     "choices": [
       "Tendons connect muscle to bone; ligaments connect bone to bone.",
       "Tendons are pH indicators.",
@@ -3673,8 +3153,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Trachea",
     "back": "The tube that carries air from the mouth and nose down towards the lungs.",
     "cue": "Also called the windpipe.",
-    "packSection": "7Ca",
-    "sourceFocus": "7Ca · Organs, breathing and gas exchange · Key terminology",
     "difficulty": 1
   },
   {
@@ -3684,8 +3162,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Bronchi",
     "back": "The two main tubes that carry air from the trachea into the lungs.",
     "cue": "Each bronchus goes into one lung.",
-    "packSection": "7Ca",
-    "sourceFocus": "7Ca · Organs, breathing and gas exchange · Key terminology",
     "difficulty": 1
   },
   {
@@ -3695,41 +3171,35 @@ window.YEAR7_FLASHCARDS = [
     "front": "Lungs",
     "back": "Organs where gas exchange happens: oxygen enters the blood and carbon dioxide leaves the blood.",
     "cue": "The lungs are protected by the rib cage.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Key terminology",
     "difficulty": 2
   },
   {
     "id": "card-264-7c-muscles-and-bones-which-organ-is-the-main-site-of-gas-exc",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "A solution is tested with phenolphthalein and turns pink. Which conclusion is most likely?",
-    "back": "It is alkaline.",
-    "cue": "Pink phenolphthalein indicates alkali.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Quiz style",
+    "front": "Which organ is the main site of gas exchange?",
+    "back": "lungs",
+    "cue": "Gas exchange means oxygen enters blood and carbon dioxide leaves blood.",
     "choices": [
-      "It is alkaline.",
-      "It is acidic.",
-      "It is neutral pure water.",
-      "It contains no dissolved substances."
+      "lungs",
+      "stomach",
+      "skull",
+      "femur"
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-265-7c-muscles-and-bones-what-happens-to-oxygen-during-gas-excha",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "A solution turns methyl orange red. Which conclusion is most likely?",
-    "back": "It is acidic.",
-    "cue": "Methyl orange is red in acid.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Quiz style",
+    "front": "What happens to oxygen during gas exchange in the lungs?",
+    "back": "Oxygen moves from the air spaces into the blood.",
+    "cue": "Oxygen is then carried to body cells for respiration.",
     "choices": [
-      "It is acidic.",
-      "It is alkaline.",
-      "It is neutral pure water.",
-      "It is a pH meter."
+      "Oxygen moves from the air spaces into the blood.",
+      "Oxygen is made by the ribs.",
+      "Oxygen turns into plasma.",
+      "Oxygen leaves the blood and enters the lungs."
     ],
     "difficulty": 3
   },
@@ -3737,18 +3207,16 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-266-7c-muscles-and-bones-what-happens-to-carbon-dioxide-during-g",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "A solution turns methyl orange yellow. Which conclusion is most likely?",
-    "back": "It is alkaline rather than acidic.",
-    "cue": "Methyl orange is yellow in alkali.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Quiz style",
+    "front": "What happens to carbon dioxide during gas exchange in the lungs?",
+    "back": "Carbon dioxide moves from the blood into the air spaces in the lungs.",
+    "cue": "Carbon dioxide is a waste product of respiration and is exhaled.",
     "choices": [
-      "It is alkaline rather than acidic.",
-      "It is strongly acidic.",
-      "It is flammable because it is yellow.",
-      "It is an insoluble base."
+      "Carbon dioxide moves from the blood into the air spaces in the lungs.",
+      "Carbon dioxide moves from air into the blood.",
+      "Carbon dioxide becomes oxygen in the lungs.",
+      "Carbon dioxide is made by bones."
     ],
-    "difficulty": 4
+    "difficulty": 3
   },
   {
     "id": "card-267-7c-muscles-and-bones-double-circulatory-system",
@@ -3757,35 +3225,29 @@ window.YEAR7_FLASHCARDS = [
     "front": "Double circulatory system",
     "back": "A circulation system with two loops: heart to lungs to heart, and heart to body to heart.",
     "cue": "Blood passes through the heart twice for each full circuit of the body.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Key terminology",
     "difficulty": 2
   },
   {
     "id": "card-268-7c-muscles-and-bones-what-are-the-two-loops-in-the-human-dou",
     "unit": "7C Muscles and bones",
     "type": "Self-test",
-    "front": "Describe the two loops in the human double circulatory system.",
+    "front": "What are the two loops in the human double circulatory system?",
     "back": "Heart → lungs → heart, and heart → body → heart.",
     "cue": "The lung loop picks up oxygen; the body loop delivers oxygen to cells.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Progression Check recall",
     "difficulty": 4
   },
   {
     "id": "card-269-7c-muscles-and-bones-why-does-blood-go-to-the-lungs-in-one-l",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Which tool gives a numerical pH value without matching colours by eye?",
-    "back": "pH meter",
-    "cue": "A pH meter gives a number directly.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Quiz style",
+    "front": "Why does blood go to the lungs in one loop of double circulation?",
+    "back": "To pick up oxygen and get rid of carbon dioxide.",
+    "cue": "Then oxygen-rich blood returns to the heart before being pumped to the body.",
     "choices": [
-      "pH meter",
-      "litmus paper",
-      "evaporating dish",
-      "filter funnel"
+      "To pick up oxygen and get rid of carbon dioxide.",
+      "To make bones harder.",
+      "To digest food.",
+      "To change red blood cells into white blood cells."
     ],
     "difficulty": 3
   },
@@ -3793,16 +3255,14 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-270-7c-muscles-and-bones-what-happens-to-the-chambers-of-the-hea",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "After dipping universal indicator paper into a solution, what should it be compared with?",
-    "back": "a pH colour chart",
-    "cue": "Universal indicator needs a colour chart to estimate pH.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Quiz style",
+    "front": "What happens to the chambers of the heart when heart muscle contracts?",
+    "back": "The chambers get smaller and force blood out.",
+    "cue": "This pumping can be felt as a pulse in arteries.",
     "choices": [
-      "a pH colour chart",
-      "a hazard-symbol sheet",
-      "a salt-name table only",
-      "a thermometer scale"
+      "The chambers get smaller and force blood out.",
+      "The chambers fill with air.",
+      "The chambers turn into capillaries.",
+      "The chambers stop blood moving."
     ],
     "difficulty": 3
   },
@@ -3813,8 +3273,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Artery adaptation",
     "back": "Arteries have thick, strong walls to carry blood away from the heart under pressure.",
     "cue": "A pulse can be felt in arteries.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Key terminology",
     "difficulty": 2
   },
   {
@@ -3824,8 +3282,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Vein adaptation",
     "back": "Veins carry blood back to the heart and have thinner walls than arteries.",
     "cue": "At this level, remember: arteries away, veins back.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Key terminology",
     "difficulty": 1
   },
   {
@@ -3835,60 +3291,52 @@ window.YEAR7_FLASHCARDS = [
     "front": "Capillary adaptation",
     "back": "Capillaries are tiny blood vessels with very thin walls, often one cell thick, for exchange with tissues.",
     "cue": "Thin walls let oxygen and nutrients leave the blood easily.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Key terminology",
     "difficulty": 2
   },
   {
     "id": "card-274-7c-muscles-and-bones-which-blood-vessel-has-walls-one-cell-t",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Which salt is made when sulfuric acid reacts with copper oxide?",
-    "back": "copper sulfate",
-    "cue": "The metal gives the first part; sulfuric acid gives sulfate.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Quiz style",
+    "front": "Which blood vessel has walls one cell thick for exchange?",
+    "back": "capillary",
+    "cue": "Capillaries link arteries and veins and allow substances to move in and out of blood.",
     "choices": [
-      "copper sulfate",
-      "copper chloride",
-      "sodium sulfate",
-      "magnesium nitrate"
+      "capillary",
+      "artery",
+      "vein",
+      "tendon"
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-275-7c-muscles-and-bones-which-blood-vessels-carry-blood-away-fr",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Which salt is made when hydrochloric acid reacts with zinc oxide?",
-    "back": "zinc chloride",
-    "cue": "The metal gives zinc; hydrochloric acid gives chloride.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Quiz style",
+    "front": "Which blood vessels carry blood away from the heart?",
+    "back": "arteries",
+    "cue": "Artery starts with A: away from the heart.",
     "choices": [
-      "zinc chloride",
-      "zinc nitrate",
-      "sodium chloride",
-      "magnesium sulfate"
+      "arteries",
+      "veins",
+      "capillaries",
+      "ligaments"
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-276-7c-muscles-and-bones-which-blood-vessels-carry-blood-back-to",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Which statement best describes electric current in a complete circuit?",
-    "back": "A flow of charges through the circuit.",
-    "cue": "Current is flow; voltage is energy transfer/push; resistance opposes flow.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Quiz style",
+    "front": "Which blood vessels carry blood back to the heart?",
+    "back": "veins",
+    "cue": "Veins return blood to the heart.",
     "choices": [
-      "A flow of charges through the circuit.",
-      "A store of energy inside the bulb.",
-      "The energy transferred by each charge.",
-      "The opposition to flow in a component."
+      "veins",
+      "arteries",
+      "capillaries",
+      "tendons"
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-277-7c-muscles-and-bones-newton",
@@ -3897,26 +3345,22 @@ window.YEAR7_FLASHCARDS = [
     "front": "Newton",
     "back": "The unit used to measure force; symbol N.",
     "cue": "Example: a force of 10 N.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Key terminology",
     "difficulty": 1
   },
   {
     "id": "card-278-7c-muscles-and-bones-what-unit-is-force-measured-in",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Which unit and symbol are used for current?",
-    "back": "ampere, A",
-    "cue": "Current is measured in amperes/amps, symbol A.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Quiz style",
+    "front": "What unit is force measured in?",
+    "back": "newtons",
+    "cue": "The symbol for newtons is N.",
     "choices": [
-      "ampere, A",
-      "volt, V",
-      "ohm, Ω",
-      "newton, N"
+      "newtons",
+      "amps",
+      "volts",
+      "pH"
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-279-7c-muscles-and-bones-quadriceps",
@@ -3925,26 +3369,22 @@ window.YEAR7_FLASHCARDS = [
     "front": "Quadriceps",
     "back": "A group of muscles at the front of the thigh that can help straighten the leg.",
     "cue": "Like biceps/triceps, leg muscles work in antagonistic pairs.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Key terminology",
     "difficulty": 2
   },
   {
     "id": "card-280-7c-muscles-and-bones-why-do-muscles-need-to-work-in-pairs",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "A student wants to measure the current through a lamp. Where should the ammeter go?",
-    "back": "In series with the lamp so the same current passes through the meter and lamp.",
-    "cue": "Ammeters are connected in series.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Quiz style",
+    "front": "Why do muscles need to work in pairs?",
+    "back": "Muscles can pull but cannot push.",
+    "cue": "One muscle contracts while the other relaxes.",
     "choices": [
-      "In series with the lamp so the same current passes through the meter and lamp.",
-      "In parallel across the lamp so it measures energy transferred.",
-      "Across the cell only, replacing the wires.",
-      "Outside the complete circuit so it does not affect current."
+      "Muscles can pull but cannot push.",
+      "Muscles can only push.",
+      "Bones contract by themselves.",
+      "Tendons make oxygen."
     ],
-    "difficulty": 4
+    "difficulty": 3
   },
   {
     "id": "card-281-7c-muscles-and-bones-scientific-question",
@@ -3953,8 +3393,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Scientific question",
     "back": "A question that can be answered using evidence from observations or experiments.",
     "cue": "Example: Does caffeine affect reaction time?",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Key terminology",
     "difficulty": 1
   },
   {
@@ -3964,8 +3402,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Non-scientific question",
     "back": "A question that cannot be answered by a science experiment or measurement.",
     "cue": "Example: Which sport is the most fun?",
-    "packSection": "7Ca",
-    "sourceFocus": "7Ca · Organs, breathing and gas exchange · Key terminology",
     "difficulty": 1
   },
   {
@@ -3975,43 +3411,37 @@ window.YEAR7_FLASHCARDS = [
     "front": "Ethical question",
     "back": "A question about what people think is fair, right, or wrong.",
     "cue": "Example: Is it right to test a medicine on animals?",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Key terminology",
     "difficulty": 1
   },
   {
     "id": "card-284-7c-muscles-and-bones-which-is-a-scientific-question",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Which statement best describes voltage across a component?",
-    "back": "The energy transferred by the charges as they pass through the component.",
-    "cue": "Voltage is linked to energy transferred.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Quick Quiz style",
+    "front": "Which is a scientific question?",
+    "back": "Does exercise change pulse rate?",
+    "cue": "It can be tested by measuring pulse before and after exercise.",
     "choices": [
-      "The energy transferred by the charges as they pass through the component.",
-      "The number of charges passing each second.",
-      "The total opposition to current in the wires only.",
-      "The number of branches in the circuit."
+      "Does exercise change pulse rate?",
+      "Is running the best sport?",
+      "Should everyone have to exercise?",
+      "Is it fair to ban fizzy drinks?"
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-285-7c-muscles-and-bones-which-is-an-ethical-question",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "A student wants to measure the voltage across a lamp. Where should the voltmeter go?",
-    "back": "In parallel across the lamp.",
-    "cue": "Voltmeters are connected across components.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Quick Quiz style",
+    "front": "Which is an ethical question?",
+    "back": "Is it fair to test a new drug on animals?",
+    "cue": "Ethical questions are about right/wrong and fairness.",
     "choices": [
-      "In parallel across the lamp.",
-      "In series before the lamp.",
-      "In the same gap as the switch.",
-      "In place of the cell."
+      "Is it fair to test a new drug on animals?",
+      "What is pulse rate measured in?",
+      "Does caffeine affect reaction time?",
+      "How many bones are in the arm?"
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-286-7c-muscles-and-bones-medicine",
@@ -4020,8 +3450,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Medicine",
     "back": "A drug used to help prevent or treat disease or pain.",
     "cue": "Examples include paracetamol and antibiotics such as penicillin.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Key terminology",
     "difficulty": 1
   },
   {
@@ -4031,60 +3459,52 @@ window.YEAR7_FLASHCARDS = [
     "front": "Recreational drug",
     "back": "A drug taken because people like its effects on the body, not mainly to treat illness.",
     "cue": "Some recreational drugs are legal and some are illegal.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Key terminology",
     "difficulty": 2
   },
   {
     "id": "card-288-7c-muscles-and-bones-which-list-contains-stimulants-from-the",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Which statement best describes the role of a cell in a circuit?",
-    "back": "It supplies energy to the charges in the circuit.",
-    "cue": "Cells provide electrical energy.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Quick Quiz style",
+    "front": "Which list contains stimulants from the revision pack examples?",
+    "back": "caffeine, cocaine and ecstasy",
+    "cue": "Stimulants speed up the nervous system.",
     "choices": [
-      "It supplies energy to the charges in the circuit.",
-      "It measures the current in each branch.",
-      "It increases resistance so current stops.",
-      "It protects the circuit by melting."
+      "caffeine, cocaine and ecstasy",
+      "alcohol, heroin and solvents",
+      "paracetamol and penicillin",
+      "water and plasma"
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-289-7c-muscles-and-bones-which-list-contains-depressants-from-th",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "A lamp is off because the switch is open. What changes when the switch is closed?",
-    "back": "The gap is closed so there is a complete path for current.",
-    "cue": "Closed switch = complete circuit.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Quick Quiz style",
+    "front": "Which list contains depressants from the revision pack examples?",
+    "back": "alcohol, heroin and solvents",
+    "cue": "Depressants slow down the nervous system.",
     "choices": [
-      "The gap is closed so there is a complete path for current.",
-      "A new cell is created inside the switch.",
-      "The voltage across every component becomes zero.",
-      "The wires become insulators."
+      "alcohol, heroin and solvents",
+      "caffeine, cocaine and ecstasy",
+      "paracetamol and penicillin",
+      "oxygen and glucose"
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-290-7c-muscles-and-bones-which-two-examples-are-medicines-rather",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Which material would be the best conductor for connecting wires?",
-    "back": "copper",
-    "cue": "Metals are usually good conductors.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Quick Quiz style",
+    "front": "Which two examples are medicines rather than stimulants or depressants?",
+    "back": "paracetamol and penicillin",
+    "cue": "Paracetamol treats pain; penicillin is an antibiotic.",
     "choices": [
-      "copper",
-      "rubber",
-      "plastic",
-      "dry wood"
+      "paracetamol and penicillin",
+      "caffeine and cocaine",
+      "alcohol and heroin",
+      "ecstasy and nicotine"
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-291-7c-muscles-and-bones-addictive",
@@ -4093,8 +3513,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Addictive",
     "back": "Able to make someone feel they need to keep taking a drug.",
     "cue": "Addiction is one reason drug abuse can be dangerous.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Key terminology",
     "difficulty": 1
   },
   {
@@ -4104,24 +3522,20 @@ window.YEAR7_FLASHCARDS = [
     "front": "Give one short-term and one long-term effect that drugs can have.",
     "back": "Short-term effects can include changed reaction time, mood, alertness or coordination; long-term abuse can damage organs or cause addiction.",
     "cue": "A good answer names the drug where possible, for example alcohol can slow reactions and damage the liver if abused.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Progression Check recall",
     "difficulty": 2
   },
   {
     "id": "card-293-7c-muscles-and-bones-why-can-depressants-increase-accident-r",
     "unit": "7C Muscles and bones",
     "type": "Multiple choice",
-    "front": "Which material would be best for the outside covering of a wire?",
-    "back": "plastic",
-    "cue": "Insulators cover wires to reduce shock risk.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Quick Quiz style",
+    "front": "Why can depressants increase accident risk?",
+    "back": "They slow nervous-system impulses and can increase reaction time.",
+    "cue": "Slower reactions make it harder to respond quickly.",
     "choices": [
-      "plastic",
-      "copper",
-      "aluminium",
-      "steel"
+      "They slow nervous-system impulses and can increase reaction time.",
+      "They make bones conduct electricity.",
+      "They neutralise stomach acid.",
+      "They make capillary walls thicker."
     ],
     "difficulty": 3
   },
@@ -4129,22 +3543,18 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-294-7c-muscles-and-bones-why-must-new-medicines-be-tested-before",
     "unit": "7C Muscles and bones",
     "type": "Self-test",
-    "front": "Explain must new medicines be tested before doctors use them widely?",
+    "front": "Why must new medicines be tested before doctors use them widely?",
     "back": "To check that they work, find a safe dose, and identify harmful side-effects.",
     "cue": "Testing reduces risk before many people use the medicine.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Progression Check recall",
     "difficulty": 3
   },
   {
     "id": "card-295-7c-muscles-and-bones-a-student-says-all-drugs-are-illegal-an",
     "unit": "7C Muscles and bones",
     "type": "Spot the mistake",
-    "front": "A student gives this answer: “All drugs are illegal and harmful.” What is wrong?",
+    "front": "A student says: “All drugs are illegal and harmful.” What is wrong?",
     "back": "Some drugs are medicines that can help treat illness, but drugs can also have risks and side-effects.",
     "cue": "Drug means chemical that affects the body; it does not always mean illegal drug.",
-    "packSection": "7Ce",
-    "sourceFocus": "7Ce · Drugs and their effects · Quick Check mistake check",
     "difficulty": 5
   },
   {
@@ -4154,8 +3564,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Citric acid",
     "back": "An acid found in citrus fruits such as lemons and oranges.",
     "cue": "Lemon juice is acidic.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Key terminology",
     "difficulty": 1
   },
   {
@@ -4165,8 +3573,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Ethanoic acid",
     "back": "The acid found in vinegar.",
     "cue": "Vinegar is an everyday acidic liquid.",
-    "packSection": "7Fb",
-    "sourceFocus": "7Fb · Acids, alkalis and indicator tests · Key terminology",
     "difficulty": 1
   },
   {
@@ -4176,8 +3582,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Red cabbage indicator",
     "back": "A natural indicator made from red cabbage juice that changes colour in acids and alkalis.",
     "cue": "It is useful for simple school tests of pH type.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Key terminology",
     "difficulty": 2
   },
   {
@@ -4187,8 +3591,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Phenolphthalein",
     "back": "An indicator that is colourless in more acidic solutions and pink in more alkaline solutions.",
     "cue": "Useful in neutralisation/titration demonstrations.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Key terminology",
     "difficulty": 2
   },
   {
@@ -4198,138 +3600,120 @@ window.YEAR7_FLASHCARDS = [
     "front": "Methyl orange",
     "back": "An indicator that is red in more acidic solutions and yellow in more alkaline solutions.",
     "cue": "It gives different colours in acidic and alkaline solutions.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Key terminology",
     "difficulty": 2
   },
   {
     "id": "card-301-7f-acids-and-alkalis-which-everyday-liquid-is-acidic-because",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which statement best describes resistance?",
-    "back": "How difficult it is for current to flow through a component or wire.",
-    "cue": "Resistance opposes current.",
-    "packSection": "7Fb",
-    "sourceFocus": "7Fb · Acids, alkalis and indicator tests · Quick Quiz style",
+    "front": "Which everyday liquid is acidic because it contains ethanoic acid?",
+    "back": "vinegar",
+    "cue": "Ethanoic acid is the acid in vinegar.",
     "choices": [
-      "How difficult it is for current to flow through a component or wire.",
-      "How much charge passes a point each second.",
-      "The energy transferred by each charge.",
-      "A component that supplies electrical energy."
+      "vinegar",
+      "oven cleaner",
+      "washing powder",
+      "pure water"
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-302-7f-acids-and-alkalis-which-everyday-liquid-is-acidic-because",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "What is the effect of adding a resistor in series with a lamp?",
-    "back": "Total resistance increases, so current usually decreases.",
-    "cue": "More resistance normally means less current for the same voltage.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Quick Quiz style",
+    "front": "Which everyday liquid is acidic because it contains citric acid?",
+    "back": "lemon juice",
+    "cue": "Citrus fruits contain citric acid.",
     "choices": [
-      "Total resistance increases, so current usually decreases.",
-      "Total resistance decreases, so current always increases.",
-      "The resistor supplies energy like a cell.",
-      "The resistor measures current like an ammeter."
+      "lemon juice",
+      "toothpaste",
+      "washing powder",
+      "indigestion powder"
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-303-7f-acids-and-alkalis-which-of-these-is-neutral-on-the-ph-sca",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "What is the useful feature of a variable resistor?",
-    "back": "Its resistance can be changed to control current.",
-    "cue": "Variable means adjustable.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Quiz style",
+    "front": "Which of these is neutral on the pH scale?",
+    "back": "pure water",
+    "cue": "Neutral solutions have pH 7.",
     "choices": [
-      "Its resistance can be changed to control current.",
-      "It can only measure voltage across a lamp.",
-      "It melts every time current flows.",
-      "It turns a series circuit into an alkali."
+      "pure water",
+      "stomach acid",
+      "oven cleaner",
+      "vinegar"
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-304-7f-acids-and-alkalis-which-example-is-usually-alkaline",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which circuit description is series?",
-    "back": "All components are in one loop with no branches.",
-    "cue": "Series = one path.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Quick Quiz style",
+    "front": "Which example is usually alkaline?",
+    "back": "toothpaste",
+    "cue": "Toothpaste is mildly alkaline and helps neutralise acids in the mouth.",
     "choices": [
-      "All components are in one loop with no branches.",
-      "Each component is on a separate branch across the cell.",
-      "There is no complete path for current.",
-      "The voltmeter is connected across every wire in turn."
+      "toothpaste",
+      "vinegar",
+      "lemon juice",
+      "fizzy drink"
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-305-7f-acids-and-alkalis-which-example-is-a-strongly-alkaline-ho",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which circuit description is parallel?",
-    "back": "There are two or more branches for current to follow.",
-    "cue": "Parallel = branches.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Quiz style",
+    "front": "Which example is a strongly alkaline household cleaner?",
+    "back": "oven cleaner",
+    "cue": "Oven cleaner is shown near the high-pH end in the revision pack.",
     "choices": [
-      "There are two or more branches for current to follow.",
-      "There is exactly one loop and no branches.",
-      "There is no cell in the circuit.",
-      "Every component must be controlled by one switch only."
+      "oven cleaner",
+      "milk",
+      "fizzy drink",
+      "lemon juice"
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-306-7f-acids-and-alkalis-which-drink-is-acidic-on-the-revision-p",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "In a series circuit, ammeter A reads 0.4 A before a lamp. What should another ammeter read after the lamp?",
-    "back": "0.4 A",
-    "cue": "Current is the same everywhere in one series loop.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Quiz style",
+    "front": "Which drink is acidic on the revision pH scale examples?",
+    "back": "fizzy drink",
+    "cue": "Fizzy drinks are acidic.",
     "choices": [
-      "0.4 A",
-      "0.2 A",
-      "0 A",
-      "0.8 A"
+      "fizzy drink",
+      "pure water",
+      "washing powder",
+      "oven cleaner"
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-307-7f-acids-and-alkalis-which-substance-is-used-to-neutralise-e",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "A parallel circuit has branch currents of 0.2 A and 0.3 A. What is the total current from the cell?",
-    "back": "0.5 A",
-    "cue": "Total current is the sum of the branch currents.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Quick Quiz style",
+    "front": "Which substance is used to neutralise extra stomach acid in indigestion?",
+    "back": "indigestion powder or antacid",
+    "cue": "It contains a base/alkali that neutralises stomach acid.",
     "choices": [
-      "0.5 A",
-      "0.3 A",
-      "0.2 A",
-      "0.1 A"
+      "indigestion powder or antacid",
+      "vinegar",
+      "lemon juice",
+      "universal indicator"
     ],
-    "difficulty": 5
+    "difficulty": 2
   },
   {
     "id": "card-308-7f-acids-and-alkalis-in-the-hazard-symbols-diagram-which-lab",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the hazard-symbols diagram, which label shows a corrosive substance?",
+    "front": "In the hazard-symbols diagram, which label shows a corrosive substance?",
     "back": "A",
     "cue": "Label A is corrosive. Corrosive chemicals can damage skin, eyes and materials.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -4344,11 +3728,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-309-7f-acids-and-alkalis-in-the-hazard-symbols-diagram-which-lab",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the hazard-symbols diagram, which label shows a toxic substance?",
+    "front": "In the hazard-symbols diagram, which label shows a toxic substance?",
     "back": "B",
     "cue": "Label B is toxic. Toxic chemicals can poison or seriously harm living things.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -4363,11 +3745,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-310-7f-acids-and-alkalis-in-the-hazard-symbols-diagram-which-lab",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the hazard-symbols diagram, which label shows an explosive substance?",
+    "front": "In the hazard-symbols diagram, which label shows an explosive substance?",
     "back": "C",
     "cue": "Label C is explosive. Explosive substances can burst violently.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -4382,11 +3762,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-311-7f-acids-and-alkalis-in-the-hazard-symbols-diagram-which-lab",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the hazard-symbols diagram, which label shows an irritant or harmful substance?",
+    "front": "In the hazard-symbols diagram, which label shows an irritant or harmful substance?",
     "back": "D",
     "cue": "Label D is irritant/harmful. It warns about chemicals that can irritate skin/eyes or cause harm.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -4401,11 +3779,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-312-7f-acids-and-alkalis-in-the-hazard-symbols-diagram-which-lab",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the hazard-symbols diagram, which label shows danger to the environment?",
+    "front": "In the hazard-symbols diagram, which label shows danger to the environment?",
     "back": "E",
     "cue": "Label E is the environmental hazard symbol. It means the chemical can harm organisms or ecosystems.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -4420,69 +3796,61 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-313-7f-acids-and-alkalis-what-colour-is-phenolphthalein-in-a-mor",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "One lamp breaks in a parallel circuit with two separate lamp branches. What usually happens to the other lamp?",
-    "back": "It can stay lit because its branch is still complete.",
-    "cue": "Separate branches can keep working.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Quiz style",
+    "front": "What colour is phenolphthalein in a more acidic solution?",
+    "back": "colourless",
+    "cue": "Phenolphthalein is colourless in more acidic solutions.",
     "choices": [
-      "It can stay lit because its branch is still complete.",
-      "It must go out because all current is used by the broken lamp.",
-      "It becomes part of a series circuit automatically.",
-      "It receives no voltage because parallel circuits share no energy."
+      "colourless",
+      "pink",
+      "blue",
+      "yellow"
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-314-7f-acids-and-alkalis-what-colour-is-phenolphthalein-in-a-mor",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Two identical lamps are added in series to the same cell. What is the most likely effect?",
-    "back": "The lamps are dimmer because total resistance increases and current decreases.",
-    "cue": "Series lamps share the supply and increase resistance.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Quiz style",
+    "front": "What colour is phenolphthalein in a more alkaline solution?",
+    "back": "pink",
+    "cue": "Phenolphthalein turns pink in more alkaline solutions.",
     "choices": [
-      "The lamps are dimmer because total resistance increases and current decreases.",
-      "The lamps are brighter because each lamp receives the full supply current twice.",
-      "The second lamp is always off because current is used up by the first.",
-      "The cell voltage changes into resistance."
+      "pink",
+      "colourless",
+      "red",
+      "green"
     ],
-    "difficulty": 5
+    "difficulty": 2
   },
   {
     "id": "card-315-7f-acids-and-alkalis-what-colour-is-methyl-orange-in-a-more-",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which combination would give the largest current?",
-    "back": "High voltage and low resistance.",
-    "cue": "Use I = V/R reasoning.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Quiz style",
+    "front": "What colour is methyl orange in a more acidic solution?",
+    "back": "red",
+    "cue": "Methyl orange is red in more acidic solutions.",
     "choices": [
-      "High voltage and low resistance.",
-      "High voltage and high resistance.",
-      "Low voltage and high resistance.",
-      "Low voltage and no complete circuit."
+      "red",
+      "yellow",
+      "blue",
+      "pink"
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-316-7f-acids-and-alkalis-what-colour-is-methyl-orange-in-a-more-",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which rearrangement correctly gives current from voltage and resistance?",
-    "back": "I = V ÷ R",
-    "cue": "From V = I × R, current = voltage divided by resistance.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Quiz style",
+    "front": "What colour is methyl orange in a more alkaline solution?",
+    "back": "yellow",
+    "cue": "Methyl orange is yellow in more alkaline solutions.",
     "choices": [
-      "I = V ÷ R",
-      "I = V × R",
-      "I = R ÷ V",
-      "I = V + R"
+      "yellow",
+      "red",
+      "colourless",
+      "purple"
     ],
-    "difficulty": 5
+    "difficulty": 2
   },
   {
     "id": "card-317-7f-acids-and-alkalis-how-can-you-make-a-natural-indicator-fr",
@@ -4491,8 +3859,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "How can you make a natural indicator from red cabbage?",
     "back": "Crush or chop red cabbage, mix it with a small amount of water, filter or decant the coloured liquid, then test it with known acids and alkalis.",
     "cue": "Use known solutions first so you can compare the colour changes.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Check practical method",
     "difficulty": 5
   },
   {
@@ -4502,43 +3868,37 @@ window.YEAR7_FLASHCARDS = [
     "front": "How should you use an indicator to test an unknown liquid?",
     "back": "Add a few drops of indicator to a small sample, observe the colour, and compare with known results or a pH colour chart.",
     "cue": "Use small samples and wear eye protection.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Check practical method",
     "difficulty": 5
   },
   {
     "id": "card-319-7f-acids-and-alkalis-which-tool-gives-a-numerical-ph-reading",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which switch arrangement acts like an AND circuit for a lamp?",
-    "back": "Two switches in series, so both must be closed.",
-    "cue": "AND means switch A and switch B must be closed.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Quiz style",
+    "front": "Which tool gives a numerical pH reading directly?",
+    "back": "pH meter",
+    "cue": "Universal indicator estimates pH from colour; a pH meter gives a reading.",
     "choices": [
-      "Two switches in series, so both must be closed.",
-      "Two switches in parallel, so either one can complete a branch.",
-      "One open switch placed across the lamp.",
-      "A voltmeter connected in series with the lamp."
+      "pH meter",
+      "litmus paper",
+      "evaporating dish",
+      "ammeter"
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-320-7f-acids-and-alkalis-what-does-universal-indicator-paper-nee",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "Which switch arrangement acts like an OR circuit for a lamp?",
-    "back": "Two switches in parallel branches, so either switch can complete a path.",
-    "cue": "OR means switch A or switch B can complete the circuit.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Quiz style",
+    "front": "What does universal indicator paper need to be compared with?",
+    "back": "a pH colour chart",
+    "cue": "The colour chart converts the indicator colour into an estimated pH.",
     "choices": [
-      "Two switches in parallel branches, so either switch can complete a path.",
-      "Two switches in series, so both must be closed.",
-      "A single switch removed from the circuit.",
-      "An ammeter connected across the lamp."
+      "a pH colour chart",
+      "a circuit symbol",
+      "a pulse rate",
+      "a tendon"
     ],
-    "difficulty": 4
+    "difficulty": 5
   },
   {
     "id": "card-321-7f-acids-and-alkalis-hydrochloric-acid-sodium-hydroxide",
@@ -4547,8 +3907,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "hydrochloric acid + sodium hydroxide → ?",
     "back": "sodium chloride + water",
     "cue": "Hydrochloric acid makes chloride salts.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Equation recall",
     "difficulty": 3
   },
   {
@@ -4558,8 +3916,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "sulfuric acid + magnesium oxide → ?",
     "back": "magnesium sulfate + water",
     "cue": "Sulfuric acid makes sulfate salts; magnesium oxide is a base.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Equation recall",
     "difficulty": 3
   },
   {
@@ -4569,8 +3925,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "nitric acid + zinc oxide → ?",
     "back": "zinc nitrate + water",
     "cue": "Nitric acid makes nitrate salts; zinc oxide is a base.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Equation recall",
     "difficulty": 3
   },
   {
@@ -4580,8 +3934,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "hydrochloric acid + potassium hydroxide → ?",
     "back": "potassium chloride + water",
     "cue": "The metal name comes from the alkali/base; chloride comes from hydrochloric acid.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Equation recall",
     "difficulty": 3
   },
   {
@@ -4591,8 +3943,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "sulfuric acid + calcium oxide → ?",
     "back": "calcium sulfate + water",
     "cue": "Acid + base makes salt + water.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Equation recall",
     "difficulty": 3
   },
   {
@@ -4602,43 +3952,37 @@ window.YEAR7_FLASHCARDS = [
     "front": "nitric acid + sodium hydroxide → ?",
     "back": "sodium nitrate + water",
     "cue": "Sodium comes from sodium hydroxide; nitrate comes from nitric acid.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Equation recall",
     "difficulty": 3
   },
   {
     "id": "card-327-7f-acids-and-alkalis-which-salt-is-made-from-sulfuric-acid-a",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "What is the safety role of a fuse?",
-    "back": "It melts and breaks the circuit if the current becomes too high.",
-    "cue": "Fuse wire melts when overheated by too much current.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Quick Quiz style",
+    "front": "Which salt is made from sulfuric acid and copper oxide?",
+    "back": "copper sulfate",
+    "cue": "Copper comes from copper oxide; sulfate comes from sulfuric acid.",
     "choices": [
-      "It melts and breaks the circuit if the current becomes too high.",
-      "It increases the current to make appliances work faster.",
-      "It measures voltage across the appliance.",
-      "It stores extra charge for later use."
+      "copper sulfate",
+      "copper chloride",
+      "sodium sulfate",
+      "magnesium nitrate"
     ],
-    "difficulty": 4
+    "difficulty": 2
   },
   {
     "id": "card-328-7f-acids-and-alkalis-which-salt-is-made-from-hydrochloric-ac",
     "unit": "7F Acids and alkalis",
     "type": "Multiple choice",
-    "front": "In a UK-style plug, which colour is the earth wire?",
-    "back": "green/yellow",
-    "cue": "Earth is green/yellow; live is brown; neutral is blue.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Quick Quiz style",
+    "front": "Which salt is made from hydrochloric acid and zinc oxide?",
+    "back": "zinc chloride",
+    "cue": "Zinc comes from zinc oxide; chloride comes from hydrochloric acid.",
     "choices": [
-      "green/yellow",
-      "brown",
-      "blue",
-      "red"
+      "zinc chloride",
+      "zinc nitrate",
+      "sodium chloride",
+      "magnesium sulfate"
     ],
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "card-329-7f-acids-and-alkalis-how-do-antacids-help-with-indigestion",
@@ -4647,74 +3991,60 @@ window.YEAR7_FLASHCARDS = [
     "front": "How do antacids help with indigestion?",
     "back": "They contain a base or alkali that neutralises extra stomach acid.",
     "cue": "Neutralisation makes salt and water.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Progression Check recall",
     "difficulty": 4
   },
   {
     "id": "card-330-7f-acids-and-alkalis-why-can-toothpaste-help-protect-teeth-f",
     "unit": "7F Acids and alkalis",
     "type": "Self-test",
-    "front": "Explain can toothpaste help protect teeth from acids?",
+    "front": "Why can toothpaste help protect teeth from acids?",
     "back": "Toothpaste is mildly alkaline and helps neutralise acids in the mouth.",
     "cue": "Acids in the mouth can attack teeth.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Progression Check recall",
     "difficulty": 3
   },
   {
     "id": "card-331-7f-acids-and-alkalis-why-might-farmers-add-a-base-to-soil",
     "unit": "7F Acids and alkalis",
     "type": "Self-test",
-    "front": "Explain might farmers add a base to soil?",
+    "front": "Why might farmers add a base to soil?",
     "back": "To neutralise soil that is too acidic for crops.",
     "cue": "This is an everyday neutralisation example.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Progression Check recall",
     "difficulty": 4
   },
   {
     "id": "card-332-7f-acids-and-alkalis-why-are-alkalis-used-with-acidic-gases-",
     "unit": "7F Acids and alkalis",
     "type": "Self-test",
-    "front": "Explain are alkalis used with acidic gases from power stations?",
+    "front": "Why are alkalis used with acidic gases from power stations?",
     "back": "The alkali neutralises the acidic gases before they are released.",
     "cue": "This reduces harm from acidic pollution.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Progression Check recall",
     "difficulty": 3
   },
   {
     "id": "card-333-7f-acids-and-alkalis-how-can-sulfuric-acid-help-remove-rust",
     "unit": "7F Acids and alkalis",
     "type": "Self-test",
-    "front": "Explain how sulfuric acid help remove rust?",
+    "front": "How can sulfuric acid help remove rust?",
     "back": "It reacts with iron oxide in rust to make iron sulfate, helping remove rust from the surface.",
     "cue": "This is an acid + metal oxide reaction example.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Progression Check recall",
     "difficulty": 2
   },
   {
     "id": "card-334-7f-acids-and-alkalis-a-student-says-diluting-an-acid-makes-i",
     "unit": "7F Acids and alkalis",
     "type": "Spot the mistake",
-    "front": "A student gives this answer: “Diluting an acid makes it an alkali.” What is wrong?",
+    "front": "A student says: “Diluting an acid makes it an alkali.” What is wrong?",
     "back": "Diluting an acid makes it less concentrated and usually less acidic, but it does not turn it into an alkali.",
     "cue": "The pH moves closer to 7 but stays below 7 unless a neutralisation reaction happens.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Quick Check mistake check",
     "difficulty": 5
   },
   {
     "id": "card-335-7f-acids-and-alkalis-a-student-says-a-concentrated-acid-is-a",
     "unit": "7F Acids and alkalis",
     "type": "Spot the mistake",
-    "front": "A student gives this answer: “A concentrated acid is always the same idea as a strong acid.” What is wrong?",
+    "front": "A student says: “A concentrated acid is always the same idea as a strong acid.” What is wrong?",
     "back": "Concentrated means a lot of acid particles in a certain volume; strong acid is a different chemistry idea. In Year 7, use more acidic/less acidic when reading pH.",
     "cue": "This app now avoids using strong when it only means low pH.",
-    "packSection": "7Fc",
-    "sourceFocus": "7Fc · The pH scale and measuring pH · Quick Check mistake check",
     "difficulty": 5
   },
   {
@@ -4724,8 +4054,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Physical model",
     "back": "A model that you can touch or build to represent something.",
     "cue": "Example: a water/central-heating model of a circuit.",
-    "packSection": "7Jb",
-    "sourceFocus": "7Jb · Models for electricity · Key terminology",
     "difficulty": 3
   },
   {
@@ -4735,8 +4063,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Abstract model",
     "back": "A model that exists as an idea, drawing, equation or diagram rather than a touchable object.",
     "cue": "Circuit diagrams and mental models can be abstract models.",
-    "packSection": "7Jb",
-    "sourceFocus": "7Jb · Models for electricity · Key terminology",
     "difficulty": 2
   },
   {
@@ -4746,24 +4072,20 @@ window.YEAR7_FLASHCARDS = [
     "front": "Scientific model",
     "back": "A simplified representation used to explain or predict how something works.",
     "cue": "Models are useful but they are not exactly the same as the real thing.",
-    "packSection": "7Jb",
-    "sourceFocus": "7Jb · Models for electricity · Key terminology",
     "difficulty": 3
   },
   {
-    "id": "card-339-7j-current-electricity-why-are-models-useful-when-learning-a",
+    "id": "card-339-7j-current-electricity-why-is-a-central-heating-system-a-use",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "Why do models help when learning about electric circuits?",
-    "back": "Charges and energy transfers are difficult to see directly, so models help us reason about them.",
-    "cue": "A model helps understanding but has limits.",
-    "packSection": "7Jb",
-    "sourceFocus": "7Jb · Models for electricity · Quick Quiz style",
+    "front": "Why is a central-heating system a useful model for an electric circuit?",
+    "back": "It helps picture flow around a loop, even though charges are too small to see directly.",
+    "cue": "Models help explain invisible processes, but they are never perfect copies.",
     "choices": [
-      "Charges and energy transfers are difficult to see directly, so models help us reason about them.",
-      "Models prove electricity is imaginary.",
-      "Models are always exactly the same as real circuits.",
-      "Models replace the need for observations."
+      "It helps picture flow around a loop, even though charges are too small to see directly.",
+      "It proves electricity is actually water in wires.",
+      "It removes the need to test real circuits.",
+      "It shows that charge disappears inside bulbs."
     ],
     "difficulty": 4
   },
@@ -4774,8 +4096,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "In the central-heating model of a circuit, what represents the cell or power supply?",
     "back": "The boiler and pump.",
     "cue": "They provide the push/energy, like the cell in a circuit.",
-    "packSection": "7Jb",
-    "sourceFocus": "7Jb · Models for electricity · Progression Check recall",
     "difficulty": 5
   },
   {
@@ -4785,8 +4105,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "In the central-heating model of a circuit, what represent the wires?",
     "back": "The pipes.",
     "cue": "Pipes carry water around the heating system; wires provide the path for charges.",
-    "packSection": "7Jb",
-    "sourceFocus": "7Jb · Models for electricity · Progression Check recall",
     "difficulty": 5
   },
   {
@@ -4796,8 +4114,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "In the central-heating model of a circuit, what represent the bulbs?",
     "back": "The radiators.",
     "cue": "Radiators transfer energy in the model, like bulbs transfer electrical energy to light and heat.",
-    "packSection": "7Jb",
-    "sourceFocus": "7Jb · Models for electricity · Progression Check recall",
     "difficulty": 5
   },
   {
@@ -4807,111 +4123,97 @@ window.YEAR7_FLASHCARDS = [
     "front": "Why is the central-heating model not exactly the same as an electric circuit?",
     "back": "Water is not the same as electric charge, and the parts of the heating system do not behave exactly like circuit components.",
     "cue": "A model is useful when it helps explain some features, but it always has limits.",
-    "packSection": "7Jb",
-    "sourceFocus": "7Jb · Models for electricity · Quick Check mistake check",
     "difficulty": 5
   },
   {
-    "id": "card-344-7j-current-electricity-which-is-a-physical-model",
+    "id": "card-344-7j-current-electricity-which-example-is-a-physical-model-rat",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "Which example is a physical model of an electric circuit?",
-    "back": "A pump-and-pipes model that can be touched and observed.",
-    "cue": "Physical models are material/touchable.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Quiz style",
+    "front": "Which example is a physical model rather than an abstract model?",
+    "back": "A touchable model circuit made with pipes and a pump.",
+    "cue": "Physical models can be touched or built; abstract models are ideas, diagrams or simulations.",
     "choices": [
-      "A pump-and-pipes model that can be touched and observed.",
-      "A circuit diagram drawn using symbols.",
+      "A touchable model circuit made with pipes and a pump.",
       "The idea that voltage is like a push.",
-      "A truth table for switch logic."
+      "A truth table for switches.",
+      "A circuit diagram only drawn on paper."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-345-7j-current-electricity-which-is-an-abstract-model",
+    "id": "card-345-7j-current-electricity-which-example-is-an-abstract-model-of",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
     "front": "Which example is an abstract model of a circuit?",
-    "back": "A circuit diagram using standard symbols.",
-    "cue": "Abstract models are representations or ideas rather than physical replicas.",
-    "packSection": "7Jb",
-    "sourceFocus": "7Jb · Models for electricity · Quick Quiz style",
+    "back": "A circuit diagram used to represent a real circuit.",
+    "cue": "A circuit diagram is not the real circuit; it represents the parts and connections.",
     "choices": [
-      "A circuit diagram using standard symbols.",
-      "A working circuit made from wires and lamps.",
-      "A plastic model of a skeleton.",
-      "A real battery connected to a motor."
+      "A circuit diagram used to represent a real circuit.",
+      "A working circuit made from cells, wires and bulbs.",
+      "A plastic model of a plug.",
+      "A metal wire used in an experiment."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-346-7j-current-electricity-and-truth-table-switch-a-open-and-swi",
+    "id": "card-346-7j-current-electricity-and-circuit-switch-a-is-open-and-swit",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
     "front": "AND circuit: switch A is open and switch B is closed. What happens to the lamp?",
-    "back": "It stays off because the series path is still broken.",
-    "cue": "For AND, both switches must be closed.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Quiz style",
+    "back": "The lamp stays off because both switches must be closed.",
+    "cue": "In an AND circuit, one open switch is enough to break the path.",
     "choices": [
-      "It stays off because the series path is still broken.",
-      "It lights because one switch is enough in an AND circuit.",
-      "It lights because switch B is nearest the lamp.",
-      "It flashes because the current splits into two paths."
+      "The lamp stays off because both switches must be closed.",
+      "The lamp lights because switch B is closed.",
+      "The lamp lights dimly because one switch is closed.",
+      "The lamp becomes brighter than normal."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-347-7j-current-electricity-and-truth-table-switch-a-closed-and-s",
+    "id": "card-347-7j-current-electricity-and-circuit-switch-a-is-closed-and-sw",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
     "front": "AND circuit: switch A is closed and switch B is closed. What happens to the lamp?",
-    "back": "It lights because the whole series path is complete.",
-    "cue": "Two closed series switches complete the path.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Quiz style",
+    "back": "The lamp lights because the complete path is closed.",
+    "cue": "Both switches closed satisfies the AND condition.",
     "choices": [
-      "It lights because the whole series path is complete.",
-      "It stays off because one switch must be open.",
-      "It stays off because current is used up by the first switch.",
-      "It lights only if a voltmeter is in series."
+      "The lamp lights because the complete path is closed.",
+      "The lamp stays off because an AND circuit never lights.",
+      "The current stops at the second switch.",
+      "Only one switch may be closed in an AND circuit."
     ],
-    "difficulty": 4
+    "difficulty": 3
   },
   {
-    "id": "card-348-7j-current-electricity-or-truth-table-switch-a-open-and-swit",
+    "id": "card-348-7j-current-electricity-or-circuit-switch-a-is-open-and-switc",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "OR circuit: switch A is open and switch B is closed on a separate branch. What happens to the lamp?",
-    "back": "It lights because one complete branch is enough.",
-    "cue": "For OR, either complete branch can work.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Quiz style",
+    "front": "OR circuit: switch A is open and switch B is closed. What happens to the lamp?",
+    "back": "The lamp lights because one complete branch is enough.",
+    "cue": "In an OR circuit, either switch can complete a path.",
     "choices": [
-      "It lights because one complete branch is enough.",
-      "It stays off because both switches must be closed.",
-      "It stays off because open switch A blocks every branch.",
-      "It lights only if branch currents are equal."
+      "The lamp lights because one complete branch is enough.",
+      "The lamp stays off because both switches must be closed.",
+      "The lamp lights only if switch A is closed instead.",
+      "The cell voltage becomes zero."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-349-7j-current-electricity-or-truth-table-switch-a-open-and-swit",
+    "id": "card-349-7j-current-electricity-or-circuit-switch-a-is-open-and-switc",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
     "front": "OR circuit: switch A is open and switch B is open. What happens to the lamp?",
-    "back": "It stays off because there is no complete branch.",
-    "cue": "No closed branch means no complete circuit.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Quiz style",
+    "back": "The lamp stays off because neither branch is complete.",
+    "cue": "OR needs at least one closed branch.",
     "choices": [
-      "It stays off because there is no complete branch.",
-      "It lights because parallel circuits always work.",
-      "It lights because current can jump across open switches.",
-      "It becomes a series circuit and glows dimly."
+      "The lamp stays off because neither branch is complete.",
+      "The lamp lights because there are two branches.",
+      "The lamp flashes because current swaps branches.",
+      "The lamp lights if the wires are metal."
     ],
-    "difficulty": 4
+    "difficulty": 3
   },
   {
     "id": "card-350-7j-current-electricity-voltage-division-in-series",
@@ -4920,8 +4222,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Voltage division in series",
     "back": "In a series circuit, the supply voltage is shared between components.",
     "cue": "More components in series share the energy transfer.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Key terminology",
     "difficulty": 2
   },
   {
@@ -4931,41 +4231,35 @@ window.YEAR7_FLASHCARDS = [
     "front": "Voltage in parallel",
     "back": "Components connected across the same cell in parallel get the same voltage as each other.",
     "cue": "Each branch has its own path across the supply.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Key terminology",
     "difficulty": 2
   },
   {
-    "id": "card-352-7j-current-electricity-in-a-series-circuit-with-two-identica",
+    "id": "card-352-7j-current-electricity-two-identical-lamps-are-connected-in-",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "Two identical lamps are connected in series to a 6 V supply. What happens to the supply voltage?",
-    "back": "It is shared between the lamps.",
-    "cue": "In series, components share the supply voltage.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Quiz style",
+    "front": "Two identical lamps are connected in series across one cell. Which statement about voltage is best?",
+    "back": "The supply voltage is shared between the two lamps.",
+    "cue": "In series, voltage is divided across components.",
     "choices": [
-      "It is shared between the lamps.",
-      "Each lamp gets the full 6 V plus extra from the wires.",
-      "The first lamp uses all voltage so the second gets none.",
-      "Voltage disappears after passing through the switch."
+      "The supply voltage is shared between the two lamps.",
+      "Each lamp gets the full supply voltage independently.",
+      "The first lamp uses all the voltage and the second gets none.",
+      "Voltage only exists in the wires, not across lamps."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-353-7j-current-electricity-in-a-parallel-circuit-what-voltage-do",
+    "id": "card-353-7j-current-electricity-two-identical-lamps-are-connected-in-",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "Two branches are connected in parallel across the same cell. What voltage is across each branch?",
-    "back": "The same supply voltage is across each branch.",
-    "cue": "Parallel branches are connected across the same supply.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Quiz style",
+    "front": "Two identical lamps are connected in parallel across the same cell. Which statement about voltage is best?",
+    "back": "Each branch gets the same supply voltage.",
+    "cue": "Parallel branches are connected across the same two points.",
     "choices": [
-      "The same supply voltage is across each branch.",
-      "The first branch gets all the voltage and the second gets none.",
-      "The voltage is always half in every branch, whatever the circuit.",
-      "There is no voltage in a parallel branch."
+      "Each branch gets the same supply voltage.",
+      "The top branch gets all the voltage.",
+      "The voltage is split equally between the branches.",
+      "The voltage becomes current in each branch."
     ],
     "difficulty": 4
   },
@@ -4976,8 +4270,6 @@ window.YEAR7_FLASHCARDS = [
     "front": "Electrical shock",
     "back": "Injury caused when electric current passes through the body.",
     "cue": "Severe shocks can stop the heart working.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Key terminology",
     "difficulty": 2
   },
   {
@@ -4987,228 +4279,198 @@ window.YEAR7_FLASHCARDS = [
     "front": "Electrical burn",
     "back": "A burn caused by electricity heating body tissue or materials.",
     "cue": "Electricity can cause burns and fires if used unsafely.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Key terminology",
     "difficulty": 1
   },
   {
-    "id": "card-356-7j-current-electricity-which-dangers-can-electricity-cause-i",
+    "id": "card-356-7j-current-electricity-which-set-lists-realistic-hazards-fro",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "Which set gives realistic dangers from unsafe electricity use?",
-    "back": "electric shock, burns and fire",
-    "cue": "Electricity can injure people and cause fires.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Quick Quiz style",
+    "front": "Which set lists realistic hazards from unsafe electricity use?",
+    "back": "Electric shock, burns and fire.",
+    "cue": "Hazards can cause harm; safe features reduce risk.",
     "choices": [
-      "electric shock, burns and fire",
-      "sour taste, neutralisation and corrosion only",
-      "stronger bones, faster reaction time and gas exchange",
-      "increased pH, salt formation and respiration"
-    ],
-    "difficulty": 3
-  },
-  {
-    "id": "card-357-7j-current-electricity-why-should-you-not-use-electrical-equ",
-    "unit": "7J Current electricity",
-    "type": "Multiple choice",
-    "front": "Why should electrical equipment not be used with wet hands?",
-    "back": "Water on skin can lower resistance and increase shock risk.",
-    "cue": "Wet skin conducts better than dry skin.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Quick Quiz style",
-    "choices": [
-      "Water on skin can lower resistance and increase shock risk.",
-      "Water always turns copper into an insulator.",
-      "Water makes the voltage of mains electricity zero.",
-      "Water changes a series circuit into a parallel circuit."
+      "Electric shock, burns and fire.",
+      "High current, overheating and electric shock.",
+      "Loose cable grip, damaged insulation and wet hands.",
+      "Correct fuse, insulated wire and switched-off supply."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-358-7j-current-electricity-why-should-sockets-not-be-overloaded",
+    "id": "card-357-7j-current-electricity-why-does-using-electrical-equipment-w",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "Why is plugging too many appliances into one socket unsafe?",
-    "back": "The current may be too large, overheating wires and causing a fire.",
-    "cue": "Too much current can overheat wires.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Quick Quiz style",
+    "front": "Why does using electrical equipment with wet hands increase risk?",
+    "back": "Water can lower the resistance of the path through your body, so current may pass more easily.",
+    "cue": "Current through the body can be dangerous.",
     "choices": [
-      "The current may be too large, overheating wires and causing a fire.",
-      "The voltage always becomes zero so appliances stop safely.",
-      "The wires become thicker and less resistant.",
-      "The fuse prevents any current from flowing at all times."
+      "Water can lower the resistance of the path through your body, so current may pass more easily.",
+      "Water always turns the circuit off before current flows.",
+      "Wet skin makes voltage disappear.",
+      "Water changes live wire into earth wire."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-359-7j-current-electricity-what-should-you-do-before-changing-co",
+    "id": "card-358-7j-current-electricity-several-high-current-appliances-are-c",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "Before changing components in a school circuit, what is the safest first action?",
+    "front": "Several high-current appliances are connected to one socket. What is the main danger?",
+    "back": "Too much current can overheat the wires and start a fire.",
+    "cue": "Overload means current is larger than the wiring or fuse rating should allow.",
+    "choices": [
+      "Too much current can overheat the wires and start a fire.",
+      "The voltage becomes shared equally between people.",
+      "The neutral wire turns into an insulator.",
+      "The appliance becomes a parallel model."
+    ],
+    "difficulty": 4
+  },
+  {
+    "id": "card-359-7j-current-electricity-before-changing-a-bulb-or-resistor-in",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Before changing a bulb or resistor in a school circuit, what should you do first?",
     "back": "Switch off the power supply.",
-    "cue": "Switch off before changing the circuit.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Quick Quiz style",
+    "cue": "Always make the circuit safe before touching or changing components.",
     "choices": [
       "Switch off the power supply.",
-      "Increase the voltage to check the fault faster.",
-      "Hold both terminals to test for current.",
-      "Short-circuit the cell with a wire."
+      "Increase the voltage to test it faster.",
+      "Hold both terminals to check current.",
+      "Remove the insulating cover from the leads."
     ],
     "difficulty": 3
   },
   {
-    "id": "card-360-7j-current-electricity-why-are-cells-safer-than-mains-electr",
+    "id": "card-360-7j-current-electricity-why-are-cells-usually-used-for-school",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "Why are cells usually safer than mains electricity for school circuits?",
-    "back": "Cells usually provide a much lower voltage.",
-    "cue": "Lower voltage usually means lower shock risk.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Quick Quiz style",
+    "front": "Why are cells usually used for school circuit experiments instead of mains electricity?",
+    "back": "Cells provide a much lower voltage, so the risk is lower.",
+    "cue": "Lower voltage does not mean zero risk, but it is safer for classroom circuits.",
     "choices": [
-      "Cells usually provide a much lower voltage.",
-      "Cells cannot supply any current.",
-      "Cells are always connected in parallel.",
-      "Cells contain no stored energy."
+      "Cells provide a much lower voltage, so the risk is lower.",
+      "Cells have no electrical energy.",
+      "Cells cannot produce current.",
+      "Mains electricity is only dangerous in series circuits."
     ],
     "difficulty": 3
   },
   {
-    "id": "card-361-7j-current-electricity-what-does-a-fuse-do-if-the-current-ge",
+    "id": "card-361-7j-current-electricity-a-fault-causes-a-very-large-current-w",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "A fuse has melted in a plug. What does this tell you?",
-    "back": "The current was too high, so the fuse broke the circuit.",
-    "cue": "A melted fuse is evidence of too much current.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Quick Quiz style",
+    "front": "A fault causes a very large current. What happens to the fuse?",
+    "back": "The fuse wire melts and opens the circuit.",
+    "cue": "Fuse rating is the largest current a fuse should carry before melting.",
     "choices": [
-      "The current was too high, so the fuse broke the circuit.",
-      "The voltage was too low, so the fuse supplied energy.",
-      "The plug became a parallel circuit automatically.",
-      "The fuse measured the current and reset itself."
+      "The fuse wire melts and opens the circuit.",
+      "The fuse wire gets thicker and carries more current.",
+      "The fuse measures voltage across the appliance.",
+      "The fuse changes live wire into neutral wire."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-362-7j-current-electricity-what-does-a-circuit-breaker-do-if-cur",
+    "id": "card-362-7j-current-electricity-how-is-a-circuit-breaker-similar-to-a",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "A circuit breaker trips while an appliance is running. What has it done?",
-    "back": "It has opened the circuit to stop the current.",
-    "cue": "Circuit breakers switch off current when unsafe.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Quick Quiz style",
+    "front": "How is a circuit breaker similar to a fuse?",
+    "back": "It cuts off the current when the current is too large.",
+    "cue": "Unlike a fuse, a circuit breaker can usually be reset.",
     "choices": [
-      "It has opened the circuit to stop the current.",
-      "It has increased the current so the appliance runs faster.",
-      "It has changed voltage into resistance.",
-      "It has connected the appliance to the earth wire only."
+      "It cuts off the current when the current is too large.",
+      "It increases current to protect the appliance.",
+      "It measures resistance in the earth wire.",
+      "It turns series circuits into parallel circuits."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-363-7j-current-electricity-which-wire-colours-are-used-for-live-",
+    "id": "card-363-7j-current-electricity-which-row-gives-the-correct-uk-style-",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "Which row correctly matches live, neutral and earth wire colours in a UK-style plug?",
-    "back": "live brown, neutral blue, earth green/yellow",
-    "cue": "Live = brown, neutral = blue, earth = green/yellow.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Quick Quiz style",
+    "front": "Which row gives the correct UK-style plug wire colours?",
+    "back": "Live brown, neutral blue, earth green/yellow.",
+    "cue": "Brown = live; blue = neutral; green/yellow = earth.",
     "choices": [
-      "live brown, neutral blue, earth green/yellow",
-      "live blue, neutral brown, earth green/yellow",
-      "live green/yellow, neutral blue, earth brown",
-      "live brown, neutral green/yellow, earth blue"
+      "Live brown, neutral blue, earth green/yellow.",
+      "Live blue, neutral brown, earth green/yellow.",
+      "Live green/yellow, neutral blue, earth brown.",
+      "Live red, neutral black, earth blue."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-364-7j-current-electricity-which-wire-has-higher-resistance-if-t",
+    "id": "card-364-7j-current-electricity-two-wires-are-made-from-the-same-mate",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "Two wires are the same material and length. Which wire has the higher resistance?",
-    "back": "the thinner wire",
-    "cue": "Thinner wires have higher resistance.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Quiz style",
+    "front": "Two wires are made from the same material and have the same length. Which wire has higher resistance?",
+    "back": "The thinner wire.",
+    "cue": "Thin wires have less space for charges to flow, so resistance is higher.",
     "choices": [
-      "the thinner wire",
-      "the thicker wire",
-      "both must have zero resistance",
-      "the wire connected to the negative terminal only"
+      "The thinner wire.",
+      "The thicker wire.",
+      "They must both have zero resistance.",
+      "The wire connected to the voltmeter only."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-365-7j-current-electricity-what-happens-to-resistance-when-wire-",
+    "id": "card-365-7j-current-electricity-a-wire-is-made-longer-but-the-materia",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
-    "front": "If a wire is made longer but material and thickness stay the same, what happens to resistance?",
-    "back": "It increases.",
-    "cue": "Longer wire gives charges more material to pass through.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Quiz style",
+    "front": "A wire is made longer, but the material and thickness stay the same. What happens to resistance?",
+    "back": "Resistance increases.",
+    "cue": "Longer wires usually have greater resistance.",
     "choices": [
-      "It increases.",
-      "It decreases to zero.",
-      "It becomes the same as voltage.",
-      "It is unaffected by length."
+      "Resistance increases.",
+      "Resistance decreases to zero.",
+      "Current becomes the unit volt.",
+      "The wire becomes a cell."
     ],
     "difficulty": 4
   },
   {
-    "id": "card-366-7j-current-electricity-what-can-affect-the-resistance-of-a-w",
+    "id": "card-366-7j-current-electricity-which-set-of-factors-can-affect-the-r",
     "unit": "7J Current electricity",
     "type": "Multiple choice",
     "front": "Which set of factors can affect the resistance of a wire?",
-    "back": "length, thickness and material",
-    "cue": "Wire resistance depends on dimensions and material.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Quick Quiz style",
+    "back": "Length, thickness and material.",
+    "cue": "At this level, these are the main wire factors to remember.",
     "choices": [
-      "length, thickness and material",
-      "colour, smell and brightness",
-      "pH, litmus colour and salt name",
-      "pulse rate, muscle pair and blood type"
+      "Length, thickness and material.",
+      "Colour, smell and shape of the plug.",
+      "Only the number of switches.",
+      "Only whether the wire is in series."
     ],
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "card-367-7j-current-electricity-why-are-house-lights-usually-wired-in",
     "unit": "7J Current electricity",
     "type": "Self-test",
-    "front": "Explain are house lights usually wired in parallel rather than series?",
+    "front": "Why are house lights usually wired in parallel rather than series?",
     "back": "Parallel wiring lets each light have its own branch, so lights can be switched independently and one broken lamp does not turn all the others off.",
     "cue": "This matches the revision pack idea that branches stay on when another branch breaks.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Progression Check recall",
     "difficulty": 3
   },
   {
     "id": "card-368-7j-current-electricity-how-can-a-variable-resistor-control-a",
     "unit": "7J Current electricity",
     "type": "Self-test",
-    "front": "Explain how a variable resistor control a lamp or motor?",
+    "front": "How can a variable resistor control a lamp or motor?",
     "back": "Changing resistance changes the current, which can change lamp brightness or motor speed.",
     "cue": "Higher resistance usually means lower current.",
-    "packSection": "7Jd",
-    "sourceFocus": "7Jd · Voltage, resistance and measurements · Progression Check recall",
     "difficulty": 4
   },
   {
     "id": "card-369-7c-muscles-and-bones-in-the-two-panel-breathing-diagram-whic",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the two-panel breathing diagram, which panel shows inhalation?",
+    "front": "In the two-panel breathing diagram, which panel shows inhalation?",
     "back": "A",
     "cue": "Panel A shows air moving in, ribs moving out, and the diaphragm moving down.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5222,11 +4484,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-370-7c-muscles-and-bones-in-the-two-panel-breathing-diagram-whic",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the two-panel breathing diagram, which panel shows exhalation?",
+    "front": "In the two-panel breathing diagram, which panel shows exhalation?",
     "back": "B",
     "cue": "Panel B shows air moving out, ribs moving in, and the diaphragm moving up.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5240,11 +4500,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-371-7c-muscles-and-bones-in-the-two-panel-breathing-diagram-whic",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the two-panel breathing diagram, which label shows the trachea (airway)?",
+    "front": "In the two-panel breathing diagram, which label shows the trachea (airway)?",
     "back": "C",
     "cue": "Label C points to the trachea, the tube that carries air to and from the lungs.",
-    "packSection": "7Ca",
-    "sourceFocus": "7Ca · Organs, breathing and gas exchange · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5258,11 +4516,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-372-7c-muscles-and-bones-in-the-two-panel-breathing-diagram-whic",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the two-panel breathing diagram, which label shows the diaphragm?",
+    "front": "In the two-panel breathing diagram, which label shows the diaphragm?",
     "back": "D",
     "cue": "Label D points to the diaphragm, the sheet of muscle under the lungs.",
-    "packSection": "7Cd",
-    "sourceFocus": "7Cd · Muscles, movement and nervous control · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5276,11 +4532,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-373-7c-muscles-and-bones-in-the-double-circulation-diagram-which",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the double-circulation diagram, which label shows the lungs?",
+    "front": "In the double-circulation diagram, which label shows the lungs?",
     "back": "A",
     "cue": "Label A marks the lungs. One loop of circulation goes from the heart to the lungs and back.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5295,11 +4549,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-374-7c-muscles-and-bones-in-the-double-circulation-diagram-which",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the double-circulation diagram, which label shows blood flowing from the lungs back to the heart?",
+    "front": "In the double-circulation diagram, which label shows blood flowing from the lungs back to the heart?",
     "back": "B",
     "cue": "Label B shows the route from the lungs back to the heart.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5314,11 +4566,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-375-7c-muscles-and-bones-in-the-double-circulation-diagram-which",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the double-circulation diagram, which label shows the heart?",
+    "front": "In the double-circulation diagram, which label shows the heart?",
     "back": "C",
     "cue": "Label C marks the heart, which pumps blood to the lungs and to the rest of the body.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5333,11 +4583,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-376-7c-muscles-and-bones-in-the-double-circulation-diagram-which",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the double-circulation diagram, which label shows blood flowing from the heart to the body?",
+    "front": "In the double-circulation diagram, which label shows blood flowing from the heart to the body?",
     "back": "D",
     "cue": "Label D shows blood being pumped from the heart to the body.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5352,11 +4600,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-377-7c-muscles-and-bones-in-the-double-circulation-diagram-which",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the double-circulation diagram, which label shows blood returning from the body to the heart?",
+    "front": "In the double-circulation diagram, which label shows blood returning from the body to the heart?",
     "back": "E",
     "cue": "Label E shows blood returning from the body back to the heart.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5371,11 +4617,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-378-7j-current-electricity-in-the-plug-safety-diagram-which-labe",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the plug-safety diagram, which label shows the earth wire connection?",
+    "front": "In the plug-safety diagram, which label shows the earth wire connection?",
     "back": "A",
     "cue": "Label A points to the earth connection at the top of the plug.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5390,11 +4634,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-379-7j-current-electricity-in-the-plug-safety-diagram-which-labe",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the plug-safety diagram, which label shows the live wire connection?",
+    "front": "In the plug-safety diagram, which label shows the live wire connection?",
     "back": "B",
     "cue": "Label B points to the live wire connection. In a UK plug, the live wire is brown.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5409,11 +4651,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-380-7j-current-electricity-in-the-plug-safety-diagram-which-labe",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the plug-safety diagram, which label shows the fuse?",
+    "front": "In the plug-safety diagram, which label shows the fuse?",
     "back": "C",
     "cue": "Label C points to the fuse, which melts if the current gets too high.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5428,11 +4668,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-381-7j-current-electricity-in-the-plug-safety-diagram-which-labe",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the plug-safety diagram, which label shows the neutral wire connection?",
+    "front": "In the plug-safety diagram, which label shows the neutral wire connection?",
     "back": "D",
     "cue": "Label D points to the neutral wire connection. In a UK plug, the neutral wire is blue.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5447,11 +4685,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-382-7j-current-electricity-in-the-plug-safety-diagram-which-labe",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the plug-safety diagram, which label shows the cable grip?",
+    "front": "In the plug-safety diagram, which label shows the cable grip?",
     "back": "E",
     "cue": "Label E points to the cable grip, which stops the wires being pulled loose.",
-    "packSection": "7Je",
-    "sourceFocus": "7Je · Electrical safety and plugs · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5466,11 +4702,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-383-7j-current-electricity-in-the-central-heating-comparison-dia",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the central-heating comparison diagram, which letter shows the boiler?",
+    "front": "In the central-heating comparison diagram, which letter shows the boiler?",
     "back": "A",
     "cue": "Label A points to the boiler, which is part of the model for the power source.",
-    "packSection": "7Jb",
-    "sourceFocus": "7Jb · Models for electricity · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5483,11 +4717,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-384-7j-current-electricity-in-the-central-heating-comparison-dia",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the central-heating comparison diagram, which letter shows a radiator?",
+    "front": "In the central-heating comparison diagram, which letter shows a radiator?",
     "back": "B",
     "cue": "Label B points to a radiator. In the model, radiators are like bulbs because they transfer energy.",
-    "packSection": "7Jb",
-    "sourceFocus": "7Jb · Models for electricity · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5500,11 +4732,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-385-7j-current-electricity-in-the-central-heating-comparison-dia",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the central-heating comparison diagram, which letter shows the pump?",
+    "front": "In the central-heating comparison diagram, which letter shows the pump?",
     "back": "C",
     "cue": "Label C points to the pump, which helps move the water around the system.",
-    "packSection": "7Jb",
-    "sourceFocus": "7Jb · Models for electricity · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5517,11 +4747,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-386-7j-current-electricity-in-the-electric-circuit-part-of-the-c",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the electric-circuit part of the comparison diagram, which number shows the cell?",
+    "front": "In the electric-circuit part of the comparison diagram, which number shows the cell?",
     "back": "1",
     "cue": "Number 1 points to the cell, which is the power source in the circuit.",
-    "packSection": "7Jb",
-    "sourceFocus": "7Jb · Models for electricity · Quick Check diagram style",
     "choices": [
       "1",
       "2",
@@ -5534,11 +4762,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-387-7j-current-electricity-in-the-electric-circuit-part-of-the-c",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the electric-circuit part of the comparison diagram, which number shows a bulb?",
+    "front": "In the electric-circuit part of the comparison diagram, which number shows a bulb?",
     "back": "2",
     "cue": "Number 2 is one bulb. Number 3 is the other bulb in the series circuit.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Check diagram style",
     "choices": [
       "1",
       "2",
@@ -5551,11 +4777,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-388-7c-muscles-and-bones-in-the-breathing-diagram-which-label-sh",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the breathing diagram, which label shows the rib cage?",
+    "front": "In the breathing diagram, which label shows the rib cage?",
     "back": "C",
     "cue": "Label C points to the rib cage around the lungs.",
-    "packSection": "7Cc",
-    "sourceFocus": "7Cc · Skeleton, joints and support · Quick Check diagram style",
     "choices": [
       "C",
       "A",
@@ -5569,11 +4793,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-389-7c-muscles-and-bones-in-the-gas-exchange-diagram-which-label",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the gas exchange diagram, which label shows the capillary blood vessel?",
+    "front": "In the gas exchange diagram, which label shows the capillary blood vessel?",
     "back": "C",
     "cue": "The capillary is the blood vessel next to the alveolus.",
-    "packSection": "7Cb",
-    "sourceFocus": "7Cb · Circulation, pulse and blood · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5586,11 +4808,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-390-7f-acids-and-alkalis-in-the-neutralisation-practical-diagram",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the neutralisation practical diagram, which label shows the burette?",
+    "front": "In the neutralisation practical diagram, which label shows the burette?",
     "back": "A",
     "cue": "Label A points to the burette held on the clamp stand.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5604,11 +4824,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-391-7f-acids-and-alkalis-in-the-neutralisation-practical-diagram",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the neutralisation practical diagram, which label shows the conical flask?",
+    "front": "In the neutralisation practical diagram, which label shows the conical flask?",
     "back": "B",
     "cue": "Label B points to the conical flask under the burette.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Quick Check diagram style",
     "choices": [
       "B",
       "A",
@@ -5622,11 +4840,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-392-7f-acids-and-alkalis-in-the-neutralisation-practical-diagram",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the neutralisation practical diagram, which label shows the indicator bottle?",
+    "front": "In the neutralisation practical diagram, which label shows the indicator bottle?",
     "back": "C",
     "cue": "Label C points to the indicator bottle or dropper.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Quick Check diagram style",
     "choices": [
       "C",
       "A",
@@ -5640,11 +4856,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-393-7f-acids-and-alkalis-in-the-neutralisation-practical-diagram",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the neutralisation practical diagram, which label shows the beaker?",
+    "front": "In the neutralisation practical diagram, which label shows the beaker?",
     "back": "D",
     "cue": "Label D points to the beaker of solution.",
-    "packSection": "7Fd",
-    "sourceFocus": "7Fd · Neutralisation reactions · Quick Check diagram style",
     "choices": [
       "D",
       "A",
@@ -5658,11 +4872,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-394-7f-acids-and-alkalis-in-the-evaporation-setup-diagram-which-",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the evaporation setup diagram, which label shows the evaporation dish?",
+    "front": "In the evaporation setup diagram, which label shows the evaporation dish?",
     "back": "A",
     "cue": "Label A points to the evaporation dish containing the solution.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5675,11 +4887,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-395-7f-acids-and-alkalis-in-the-evaporation-setup-diagram-which-",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the evaporation setup diagram, which label shows the support or tripod with gauze?",
+    "front": "In the evaporation setup diagram, which label shows the support or tripod with gauze?",
     "back": "B",
     "cue": "Label B points to the support holding the evaporation dish above the flame.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5692,11 +4902,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-396-7f-acids-and-alkalis-in-the-evaporation-setup-diagram-which-",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the evaporation setup diagram, which label shows the Bunsen burner?",
+    "front": "In the evaporation setup diagram, which label shows the Bunsen burner?",
     "back": "C",
     "cue": "Label C points to the Bunsen burner under the dish.",
-    "packSection": "7Fe",
-    "sourceFocus": "7Fe · Bases, salts and everyday reactions · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5709,11 +4917,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-397-7f-acids-and-alkalis-in-the-dilution-safety-diagram-which-la",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the dilution safety diagram, which label shows the water in the beaker?",
+    "front": "In the dilution safety diagram, which label shows the water in the beaker?",
     "back": "A",
     "cue": "Label A points to the water already in the beaker.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5726,11 +4932,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-398-7f-acids-and-alkalis-in-the-dilution-safety-diagram-which-la",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the dilution safety diagram, which label shows the acid container?",
+    "front": "In the dilution safety diagram, which label shows the acid container?",
     "back": "B",
     "cue": "Label B points to the acid container being tipped.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Quick Check diagram style",
     "choices": [
       "B",
       "A",
@@ -5743,11 +4947,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-399-7f-acids-and-alkalis-in-the-dilution-safety-diagram-which-la",
     "unit": "7F Acids and alkalis",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the dilution safety diagram, which label shows the safe pouring direction?",
+    "front": "In the dilution safety diagram, which label shows the safe pouring direction?",
     "back": "C",
     "cue": "Label C points to the direction showing acid being added to water safely.",
-    "packSection": "7Fa",
-    "sourceFocus": "7Fa · Hazards, acids and indicators · Quick Check diagram style",
     "choices": [
       "C",
       "A",
@@ -5760,11 +4962,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-400-7c-muscles-and-bones-in-the-ruler-drop-test-diagram-which-la",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the ruler-drop test diagram, which label shows the ruler?",
+    "front": "In the ruler-drop test diagram, which label shows the ruler?",
     "back": "A",
     "cue": "Label A points to the ruler that is dropped.",
-    "packSection": "7Ca",
-    "sourceFocus": "7Ca · Organs, breathing and gas exchange · Quick Check diagram style",
     "choices": [
       "A",
       "B",
@@ -5777,11 +4977,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-401-7c-muscles-and-bones-in-the-ruler-drop-test-diagram-which-la",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the ruler-drop test diagram, which label shows the catching hand?",
+    "front": "In the ruler-drop test diagram, which label shows the catching hand?",
     "back": "B",
     "cue": "Label B points to the hand that catches the ruler.",
-    "packSection": "7Ca",
-    "sourceFocus": "7Ca · Organs, breathing and gas exchange · Quick Check diagram style",
     "choices": [
       "B",
       "A",
@@ -5794,11 +4992,9 @@ window.YEAR7_FLASHCARDS = [
     "id": "card-402-7c-muscles-and-bones-in-the-ruler-drop-test-diagram-which-la",
     "unit": "7C Muscles and bones",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the ruler-drop test diagram, which label shows the measured falling distance?",
+    "front": "In the ruler-drop test diagram, which label shows the measured falling distance?",
     "back": "C",
     "cue": "Label C points to the distance the ruler falls before it is caught.",
-    "packSection": "7Ca",
-    "sourceFocus": "7Ca · Organs, breathing and gas exchange · Quick Check diagram style",
     "choices": [
       "C",
       "A",
@@ -5808,14 +5004,12 @@ window.YEAR7_FLASHCARDS = [
     "difficulty": 5
   },
   {
-    "id": "card-403-7j-current-electricity-in-the-circuit-comparison-diagram-whi",
+    "id": "card-403-7j-current-electricity-in-the-comparison-diagram-which-circu",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the circuit comparison diagram, which label shows the series circuit?",
+    "front": "In the comparison diagram, which circuit has only one loop for current?",
     "back": "A",
-    "cue": "Label A is the single-loop circuit with both bulbs in one path.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Check diagram style",
+    "cue": "One loop means series.",
     "choices": [
       "A",
       "B"
@@ -5824,14 +5018,12 @@ window.YEAR7_FLASHCARDS = [
     "difficulty": 4
   },
   {
-    "id": "card-404-7j-current-electricity-in-the-circuit-comparison-diagram-whi",
+    "id": "card-404-7j-current-electricity-in-the-comparison-diagram-which-circu",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the circuit comparison diagram, which label shows the parallel circuit?",
+    "front": "In the comparison diagram, which circuit has two branches for current?",
     "back": "B",
-    "cue": "Label B is the circuit with separate branches.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Check diagram style",
+    "cue": "Branches mean parallel.",
     "choices": [
       "B",
       "A"
@@ -5840,14 +5032,12 @@ window.YEAR7_FLASHCARDS = [
     "difficulty": 4
   },
   {
-    "id": "card-405-7j-current-electricity-in-the-circuit-comparison-diagram-whi",
+    "id": "card-405-7j-current-electricity-in-the-comparison-diagram-which-circu",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the circuit comparison diagram, which label shows the circuit where one bulb can stay on if the other breaks?",
+    "front": "In the comparison diagram, which circuit could keep one bulb on if the other bulb breaks?",
     "back": "B",
-    "cue": "Label B is the parallel circuit, so one branch can still work if another breaks.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Check diagram style",
+    "cue": "A different complete branch can still work in a parallel circuit.",
     "choices": [
       "B",
       "A"
@@ -5856,14 +5046,12 @@ window.YEAR7_FLASHCARDS = [
     "difficulty": 5
   },
   {
-    "id": "card-406-7j-current-electricity-in-the-circuit-comparison-diagram-whi",
+    "id": "card-406-7j-current-electricity-which-circuit-is-series-and-what-feat",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the circuit comparison diagram, which label shows the circuit with one loop?",
+    "front": "Which circuit is series, and what feature shows this?",
     "back": "A",
-    "cue": "Label A is the series circuit with one complete loop.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Check diagram style",
+    "cue": "Circuit A has one loop with no branches.",
     "choices": [
       "A",
       "B"
@@ -5872,14 +5060,12 @@ window.YEAR7_FLASHCARDS = [
     "difficulty": 4
   },
   {
-    "id": "card-407-7j-current-electricity-in-the-circuit-comparison-diagram-whi",
+    "id": "card-407-7j-current-electricity-which-circuit-is-parallel-and-what-fe",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the circuit comparison diagram, which label shows the circuit with two branches?",
+    "front": "Which circuit is parallel, and what feature shows this?",
     "back": "B",
-    "cue": "Label B is the parallel circuit with two branches.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Check diagram style",
+    "cue": "Circuit B splits into two paths and then joins again.",
     "choices": [
       "B",
       "A"
@@ -5888,93 +5074,201 @@ window.YEAR7_FLASHCARDS = [
     "difficulty": 4
   },
   {
-    "id": "card-408-7j-current-electricity-in-the-series-circuit-diagram-how-man",
+    "id": "card-408-7j-current-electricity-in-the-series-circuit-diagram-why-wou",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the series circuit diagram, how many paths does current have?",
-    "back": "One path only.",
-    "cue": "A series circuit has a single loop, so current has only one path.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Check diagram style",
+    "front": "In the series circuit diagram, why would both bulbs go out if the wire broke at one point?",
+    "back": "There is only one path, so one break stops current everywhere.",
+    "cue": "Series circuit = one path.",
     "choices": [
-      "One path only.",
-      "Two separate paths.",
-      "Three branches.",
-      "No complete path."
+      "There is only one path, so one break stops current everywhere.",
+      "There are two branches, so current can avoid the break.",
+      "The cell can push current through air gaps.",
+      "Only the bulb nearest the break is affected."
     ],
     "visual": "circuit-series",
     "difficulty": 4
   },
   {
-    "id": "card-409-7j-current-electricity-in-the-parallel-circuit-diagram-how-m",
+    "id": "card-409-7j-current-electricity-in-the-parallel-circuit-diagram-why-c",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the parallel circuit diagram, how many branches carry the two lamps?",
-    "back": "Two branches.",
-    "cue": "The two lamps are on separate branches in the parallel circuit.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Check diagram style",
+    "front": "In the parallel circuit diagram, why can the two lamps work independently?",
+    "back": "They are on separate branches connected across the cell.",
+    "cue": "Parallel branches each have their own path.",
     "choices": [
-      "Two branches.",
-      "One branch only.",
-      "No branches.",
-      "Four branches."
+      "They are on separate branches connected across the cell.",
+      "They are both on one loop with no branch.",
+      "The current is used up in the first branch.",
+      "The lamps are not part of complete circuits."
     ],
     "visual": "circuit-parallel",
     "difficulty": 4
   },
   {
-    "id": "card-410-7j-current-electricity-in-the-and-switch-diagram-if-switch-a",
+    "id": "card-410-7j-current-electricity-and-diagram-switch-a-is-closed-and-sw",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the AND switch diagram, if switch A is closed but switch B stays open, will the lamp light?",
-    "back": "No, the lamp stays off.",
-    "cue": "An AND circuit needs both switches closed to complete the circuit.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Check diagram style",
+    "front": "AND diagram: switch A is closed and switch B is open. Which explanation is correct?",
+    "back": "No, because the open switch still leaves a gap in the only path.",
+    "cue": "Both switches must be closed in an AND circuit.",
     "choices": [
-      "No, the lamp stays off.",
-      "Yes, because switch A is closed.",
-      "Yes, because one switch is enough.",
-      "Only if the battery is removed."
+      "No, because the open switch still leaves a gap in the only path.",
+      "Yes, because closing either switch is enough.",
+      "Yes, because current can choose the other branch.",
+      "No, because AND circuits cannot include lamps."
     ],
     "visual": "circuit-and-switches",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
-    "id": "card-411-7j-current-electricity-in-the-or-switch-diagram-if-switch-a-",
+    "id": "card-411-7j-current-electricity-or-diagram-switch-a-is-closed-and-swi",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the OR switch diagram, if switch A closes while switch B stays open, will the lamp light?",
-    "back": "Yes, the lamp lights.",
-    "cue": "An OR circuit works if either branch is complete.",
-    "packSection": "7Jc",
-    "sourceFocus": "7Jc · Series, parallel and switching · Quick Check diagram style",
+    "front": "OR diagram: switch A is closed and switch B is open. Which explanation is correct?",
+    "back": "Yes, because one closed branch completes the circuit.",
+    "cue": "Either branch can complete the circuit in an OR arrangement.",
     "choices": [
-      "Yes, the lamp lights.",
-      "No, both switches must be closed.",
-      "No, because switch B is open.",
-      "Only if both branches break."
+      "Yes, because one closed branch completes the circuit.",
+      "No, because both branches must be closed.",
+      "No, because the open branch blocks all current.",
+      "Yes, but only because the cell has two voltages."
     ],
     "visual": "circuit-or-switches",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "card-412-7j-current-electricity-in-the-short-circuit-mistake-diagram-",
     "unit": "7J Current electricity",
     "type": "Visual challenge",
-    "front": "Look at the diagram. in the short-circuit mistake diagram, what will most of the current do?",
-    "back": "Take the short path and bypass the lamp.",
-    "cue": "The extra wire provides an easier path, so current bypasses the lamp.",
-    "packSection": "7Ja",
-    "sourceFocus": "7Ja · Current, components and complete circuits · Quick Check diagram style",
+    "front": "In the short-circuit mistake diagram, why is the extra wire a problem?",
+    "back": "It gives current a low-resistance path that bypasses the lamp.",
+    "cue": "A short circuit can stop the intended component from working and may be dangerous.",
     "choices": [
-      "Take the short path and bypass the lamp.",
-      "Go through the lamp normally.",
-      "Stop completely at the battery.",
-      "Flow only through the switch."
+      "It gives current a low-resistance path that bypasses the lamp.",
+      "It puts the lamp correctly in series with the cell.",
+      "It turns the wire into a voltmeter.",
+      "It makes the switch open automatically."
     ],
     "visual": "circuit-short-mistake",
-    "difficulty": 3
+    "difficulty": 5
+  },
+  {
+    "id": "card-413-7j-current-electricity-look-at-the-series-circuit-one-ammete",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Look at the series circuit. One ammeter reads 3 A. What should the other ammeter read, and why?",
+    "back": "3 A",
+    "cue": "The current is the same everywhere in a series circuit.",
+    "choices": [
+      "3 A",
+      "1 A because three bulbs share the current",
+      "1.5 A because there are two ammeters",
+      "0 A because current is used up by the bulbs"
+    ],
+    "visual": "circuit-dual-ammeters",
+    "difficulty": 4
+  },
+  {
+    "id": "card-414-7j-current-electricity-look-at-circuits-x-y-and-z-which-circ",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Look at circuits X, Y and Z. Which circuits have more than one path for current?",
+    "back": "X and Y only",
+    "cue": "Parallel means branches. A circuit can be drawn in different shapes and still be parallel.",
+    "choices": [
+      "X and Y only",
+      "X and Z only",
+      "Y and Z only",
+      "all of them"
+    ],
+    "visual": "circuit-xyz-parallel",
+    "difficulty": 4
+  },
+  {
+    "id": "card-415-7j-current-electricity-look-at-circuits-a-d-which-circuits-c",
+    "unit": "7J Current electricity",
+    "type": "Multiple choice",
+    "front": "Look at circuits A–D. Which circuits contain branches rather than one single loop?",
+    "back": "A, C and D",
+    "cue": "Identify the separate paths, not just the shape of the outside wire.",
+    "choices": [
+      "A, C and D",
+      "A and B only",
+      "B and C only",
+      "B only"
+    ],
+    "visual": "circuit-pack-four",
+    "difficulty": 4
+  },
+  {
+    "id": "card-416-7j-current-electricity-look-at-circuits-a-d-which-two-circui",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "Look at circuits A–D. Which two circuits would behave in the same way when the switch is closed? Explain why.",
+    "back": "A and C are equivalent because both have two bulbs in parallel controlled together by one switch.",
+    "cue": "Equivalent circuits can be drawn differently but have the same connections.",
+    "visual": "circuit-pack-four",
+    "difficulty": 5
+  },
+  {
+    "id": "card-417-7j-current-electricity-drawing-a-has-a-circuit-symbol-mistak",
+    "unit": "7J Current electricity",
+    "type": "Spot the mistake",
+    "front": "Drawing A has a circuit-symbol mistake. Explain the mistake and give the corrected rule.",
+    "back": "The cell/battery symbol uses equal-sized lines. Cell symbols should use one long line and one short line.",
+    "cue": "Long and short lines show the two terminals of a cell.",
+    "visual": "circuit-pack-mistakes",
+    "difficulty": 4
+  },
+  {
+    "id": "card-418-7j-current-electricity-drawing-c-shows-two-different-ammeter",
+    "unit": "7J Current electricity",
+    "type": "Spot the mistake",
+    "front": "Drawing C shows two different ammeter readings in one series loop. Explain why this cannot be right.",
+    "back": "Current is the same everywhere in one series loop, so the two ammeters should read the same value.",
+    "cue": "Current is not used up as it goes around a series circuit.",
+    "visual": "circuit-pack-mistakes",
+    "difficulty": 5
+  },
+  {
+    "id": "card-419-7j-current-electricity-drawing-d-has-an-open-switch-but-the-",
+    "unit": "7J Current electricity",
+    "type": "Spot the mistake",
+    "front": "Drawing D has an open switch but the ammeter reads 0.5 A. Explain the mistake.",
+    "back": "The open switch makes the circuit incomplete, so no current should flow and the ammeter should read 0 A.",
+    "cue": "An open switch creates a gap.",
+    "visual": "circuit-pack-mistakes",
+    "difficulty": 4
+  },
+  {
+    "id": "card-420-7j-current-electricity-drawing-h-shows-a-battery-pack-with-o",
+    "unit": "7J Current electricity",
+    "type": "Spot the mistake",
+    "front": "Drawing H shows a battery pack with one cell reversed. Explain why that is a mistake.",
+    "back": "One cell is facing the wrong way, so it does not add its voltage in the same direction as the others.",
+    "cue": "Cells in a battery need to be connected the right way round.",
+    "visual": "circuit-pack-mistakes",
+    "difficulty": 5
+  },
+  {
+    "id": "card-421-7j-current-electricity-circuit-d-has-one-branch-with-a-switc",
+    "unit": "7J Current electricity",
+    "type": "Self-test",
+    "front": "Circuit D has one branch with a switch and another branch without it. Explain why one bulb can still light when that switch is open.",
+    "back": "The open switch breaks only the middle branch. The other branch still has a complete path across the cell, so its bulb can light.",
+    "cue": "Trace each branch separately.",
+    "visual": "circuit-pack-four",
+    "difficulty": 5
+  },
+  {
+    "id": "card-422-7j-current-electricity-use-the-concept-map-starter-to-make-a",
+    "unit": "7J Current electricity",
+    "type": "Visual challenge",
+    "front": "Use the concept map starter to make a linked explanation using electricity, charges, current and conductors.",
+    "back": "Electricity transfers energy. In a complete circuit made from conductors, charges flow around the circuit. The flow of charge is called current.",
+    "cue": "A good answer links the terms, not just lists definitions.",
+    "visual": "circuit-concept-map",
+    "difficulty": 4
   }
 ];
