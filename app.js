@@ -2394,21 +2394,10 @@
 
     let choices = explicitChoices(card);
     if (!choices.length) {
-      const possibleWrong = cards
-        .filter((candidate) => candidate.id !== card.id)
-        .filter((candidate) => state.mode === "boss" || candidate.unit === card.unit || candidate.type === card.type)
-        .map((candidate) => candidate.back);
-
-      const uniqueWrong = [...new Set(possibleWrong)].filter(Boolean);
-      shuffleArray(uniqueWrong);
-      choices = [card.back, ...uniqueWrong.slice(0, 3)];
+      choices = buildSmartGeneratedChoices(card, deck);
     }
 
-    while (choices.length < 4) {
-      const fallback = cards[Math.floor(Math.random() * cards.length)]?.back;
-      if (fallback && !choices.includes(fallback)) choices.push(fallback);
-    }
-    choices = [...new Set(choices)].slice(0, 4);
+    choices = dedupeAnswers(choices).slice(0, 4);
     if (!choices.includes(card.back)) choices[0] = card.back;
     shuffleArray(choices);
     state.currentChoices = choices;
@@ -2425,6 +2414,83 @@
     els.answerGrid.querySelectorAll(".answer-button").forEach((button) => {
       button.addEventListener("click", () => selectAnswer(button, card));
     });
+  }
+
+  function buildSmartGeneratedChoices(card, deck = []) {
+    const correct = String(card?.back || "").trim();
+    const wrongAnswers = [];
+    const pools = buildDistractorPools(card, deck);
+
+    pools.forEach((pool) => {
+      if (wrongAnswers.length >= 3) return;
+      const answers = pool
+        .map((candidate) => String(candidate?.back || "").trim())
+        .filter(Boolean)
+        .filter((answer) => normaliseAnswer(answer) !== normaliseAnswer(correct));
+      shuffleArray(answers);
+      answers.forEach((answer) => addUniqueAnswer(wrongAnswers, answer, correct));
+    });
+
+    return [correct, ...wrongAnswers.slice(0, 3)];
+  }
+
+  function buildDistractorPools(card, deck = []) {
+    const candidateCards = cards.filter((candidate) => isDistractorCandidate(candidate, card));
+    const deckCards = Array.isArray(deck) ? deck.filter((candidate) => isDistractorCandidate(candidate, card)) : [];
+    const family = questionFamily(card);
+
+    const sameUnitSameType = candidateCards.filter((candidate) => candidate.unit === card.unit && candidate.type === card.type);
+    const sameUnitSameFamily = candidateCards.filter((candidate) => candidate.unit === card.unit && questionFamily(candidate) === family);
+    const sameUnitDeck = deckCards.filter((candidate) => candidate.unit === card.unit);
+    const sameUnitAny = candidateCards.filter((candidate) => candidate.unit === card.unit);
+    const sameTypeAnyUnit = candidateCards.filter((candidate) => candidate.type === card.type);
+
+    // Priority matters. Even in Boss Mode, generated distractors should stay within the same unit first.
+    // Otherwise Year 7 vocabulary cards become trivial, e.g. "conductor" offered against heart/bone definitions.
+    return [sameUnitSameType, sameUnitSameFamily, sameUnitDeck, sameUnitAny, sameTypeAnyUnit, candidateCards];
+  }
+
+  function isDistractorCandidate(candidate, card) {
+    if (!candidate || !card) return false;
+    if (candidate.id === card.id) return false;
+    const answer = String(candidate.back || "").trim();
+    if (!answer) return false;
+    return normaliseAnswer(answer) !== normaliseAnswer(card.back || "");
+  }
+
+  function questionFamily(card) {
+    const type = String(card?.type || "").toLowerCase();
+    if (type.includes("vocabulary")) return "vocabulary";
+    if (type.includes("equation")) return "equation";
+    if (type.includes("visual") || type.includes("spot") || type.includes("practical")) return "visual-practical";
+    if (type.includes("self")) return "explain";
+    return type || "general";
+  }
+
+  function addUniqueAnswer(list, answer, correct = "") {
+    const key = normaliseAnswer(answer);
+    if (!key || key === normaliseAnswer(correct)) return;
+    if (list.some((item) => normaliseAnswer(item) === key)) return;
+    list.push(answer);
+  }
+
+  function dedupeAnswers(values) {
+    const seen = new Set();
+    return values.filter((value) => {
+      const key = normaliseAnswer(value);
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+
+  function normaliseAnswer(value) {
+    return String(value || "")
+      .toLowerCase()
+      .replace(/[“”]/g, '"')
+      .replace(/[‘’]/g, "'")
+      .replace(/[^a-z0-9]+/g, " ")
+      .trim();
   }
 
   function explicitChoices(card) {
