@@ -113,6 +113,43 @@
       ],
     },
     {
+      id: "lab-full-anatomy",
+      unit: "7C Muscles and bones",
+      title: "Full-body anatomy challenge",
+      brief: "Connect all 23 labels to the half-skeleton, half-muscle body diagram.",
+      diagram: "full-anatomy",
+      labels: [
+        "skull", "rib cage", "sternum", "spine", "pelvis", "humerus", "radius", "ulna", "femur", "patella", "tibia", "fibula",
+        "deltoid", "biceps", "triceps", "pectoral", "intercostal muscles", "abdominals", "diaphragm", "gluteus", "quadriceps", "hamstrings", "calf muscle"
+      ],
+      targets: [
+        { id: "skull", label: "skull", x: 37.8, y: 5.1, anchorSide: "left", anchorY: 6 },
+        { id: "rib-cage", label: "rib cage", x: 34.4, y: 25.2, anchorSide: "left", anchorY: 13.5 },
+        { id: "sternum", label: "sternum", x: 38.9, y: 25.8, anchorSide: "left", anchorY: 21 },
+        { id: "spine", label: "spine", x: 38.4, y: 37.3, anchorSide: "left", anchorY: 28.5 },
+        { id: "pelvis", label: "pelvis", x: 34.8, y: 45.9, anchorSide: "left", anchorY: 36 },
+        { id: "humerus", label: "humerus", x: 29.5, y: 29.7, anchorSide: "left", anchorY: 43.5 },
+        { id: "radius", label: "radius", x: 26.6, y: 44.0, anchorSide: "left", anchorY: 51 },
+        { id: "ulna", label: "ulna", x: 26.8, y: 47.3, anchorSide: "left", anchorY: 58.5 },
+        { id: "femur", label: "femur", x: 33.8, y: 61.3, anchorSide: "left", anchorY: 66 },
+        { id: "patella", label: "patella", x: 34.1, y: 69.6, anchorSide: "left", anchorY: 73.5 },
+        { id: "tibia", label: "tibia", x: 33.7, y: 77.9, anchorSide: "left", anchorY: 81 },
+        { id: "fibula", label: "fibula", x: 33.8, y: 82.8, anchorSide: "left", anchorY: 88.5 },
+        { id: "deltoid", label: "deltoid", x: 49.6, y: 21.6, anchorSide: "right", anchorY: 6 },
+        { id: "biceps", label: "biceps", x: 51.2, y: 30.1, anchorSide: "right", anchorY: 14.5 },
+        { id: "triceps", label: "triceps", x: 50.0, y: 33.0, anchorSide: "right", anchorY: 23 },
+        { id: "pectoral", label: "pectoral", x: 44.0, y: 25.0, anchorSide: "right", anchorY: 31.5 },
+        { id: "intercostal", label: "intercostal muscles", x: 45.2, y: 29.0, anchorSide: "right", anchorY: 40 },
+        { id: "abdominals", label: "abdominals", x: 43.7, y: 39.3, anchorSide: "right", anchorY: 48.5 },
+        { id: "diaphragm", label: "diaphragm", x: 47.6, y: 25.9, anchorSide: "right", anchorY: 57 },
+        { id: "gluteus", label: "gluteus", x: 84.8, y: 69.8, anchorSide: "right", anchorY: 65.5 },
+        { id: "quadriceps", label: "quadriceps", x: 46.4, y: 59.6, anchorSide: "right", anchorY: 74 },
+        { id: "hamstrings", label: "hamstrings", x: 81.7, y: 76.4, anchorSide: "right", anchorY: 82.5 },
+        { id: "calf", label: "calf muscle", x: 45.4, y: 78.8, anchorSide: "right", anchorY: 91 },
+      ],
+      success: "Excellent — that is the full anatomy challenge completed.",
+    },
+    {
       id: "lab-circuit-symbols",
       unit: "7J Current electricity",
       title: "Match components to circuit symbols",
@@ -3128,8 +3165,9 @@
   }
 
   function labWireAnchor(target, index) {
-    const side = target.x < 42 ? "left" : target.x > 58 ? "right" : index % 2 ? "right" : "left";
-    const y = Math.min(90, Math.max(10, 14 + index * 15));
+    const side = target.anchorSide || (target.x < 42 ? "left" : target.x > 58 ? "right" : index % 2 ? "right" : "left");
+    const rawY = Number.isFinite(target.anchorY) ? target.anchorY : 14 + index * 15;
+    const y = Math.min(94, Math.max(6, rawY));
     return { side, x: side === "left" ? 7 : 93, y };
   }
 
@@ -3297,6 +3335,7 @@
     const imageDiagrams = {
       skeleton: { src: "assets/visuals/lab-skeleton-basic.png", alt: "Full skeleton diagram for label practice." },
       arm: { src: "assets/visuals/lab-arm-muscles.png", alt: "Arm anatomy diagram for label practice." },
+      "full-anatomy": { src: "assets/visuals/lab-full-anatomy.png", alt: "Full-body half-skeleton, half-muscle anatomy diagram for label practice." },
     };
     if (imageDiagrams[kind]) return renderLabRaster(imageDiagrams[kind].src, imageDiagrams[kind].alt);
 

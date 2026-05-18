@@ -3311,3 +3311,82 @@ body.boss-session-active .boss-card {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* v29 full-body anatomy label lab */
+.lab-card[data-game-id="lab-full-anatomy"] .lab-layout {
+  grid-template-columns: minmax(0, 1fr) 260px;
+}
+
+.lab-card[data-game-id="lab-full-anatomy"] .lab-stage {
+  aspect-ratio: 4 / 3;
+  min-height: 0;
+  max-height: min(76vh, 760px);
+}
+
+.lab-card[data-game-id="lab-full-anatomy"] .lab-diagram,
+.lab-card[data-game-id="lab-full-anatomy"] .interactive-diagram-image {
+  min-height: 0;
+  height: 100%;
+}
+
+.lab-card[data-game-id="lab-full-anatomy"] .interactive-diagram-image {
+  object-fit: contain;
+}
+
+.lab-card[data-game-id="lab-full-anatomy"] .lab-bank {
+  max-height: min(76vh, 760px);
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
+.lab-card[data-game-id="lab-full-anatomy"] .lab-label {
+  min-height: 38px;
+  padding: 8px 10px;
+  font-size: 0.86rem;
+}
+
+.lab-card[data-game-id="lab-full-anatomy"] .lab-wire-tag {
+  font-size: 0.64rem;
+  max-width: 24%;
+  padding: 4px 7px;
+}
+
+.lab-card[data-game-id="lab-full-anatomy"] .lab-target {
+  width: 20px;
+  height: 20px;
+}
+
+.lab-card[data-game-id="lab-full-anatomy"] .lab-target::after {
+  width: 5px;
+  height: 5px;
+}
+
+@media (max-width: 860px) {
+  .lab-card[data-game-id="lab-full-anatomy"] .lab-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .lab-card[data-game-id="lab-full-anatomy"] .lab-stage {
+    max-height: none;
+  }
+
+  .lab-card[data-game-id="lab-full-anatomy"] .lab-bank {
+    max-height: 360px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .lab-card[data-game-id="lab-full-anatomy"] .lab-bank {
+    grid-template-columns: 1fr;
+  }
+
+  .lab-card[data-game-id="lab-full-anatomy"] .lab-wire-tag {
+    display: none;
+  }
+
+  .lab-card[data-game-id="lab-full-anatomy"] .lab-target {
+    width: 18px;
+    height: 18px;
+  }
+}
