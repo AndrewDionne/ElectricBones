@@ -900,6 +900,8 @@
     bossSeenIds: [],
     bossUnlockedLevel: 1,
     bossLevelCompletions: {},
+    cardStatus: {},
+    masterBlasterEarned: false,
   };
 
   const state = {
@@ -965,6 +967,8 @@
         bossSeenIds: Array.isArray(stored.bossSeenIds) ? stored.bossSeenIds : [],
         bossUnlockedLevel: Math.max(1, Math.min(5, Number(stored.bossUnlockedLevel || 1))),
         bossLevelCompletions: stored.bossLevelCompletions && typeof stored.bossLevelCompletions === "object" ? stored.bossLevelCompletions : {},
+        cardStatus: stored.cardStatus && typeof stored.cardStatus === "object" ? stored.cardStatus : {},
+        masterBlasterEarned: Boolean(stored.masterBlasterEarned),
       };
     } catch {
       return { ...defaultProgress };
@@ -1783,13 +1787,67 @@
     return ["", "Starter", "Core", "Thinker", "Challenge", "Boss"] [Number(level)] || `Level ${level}`;
   }
 
+  function normaliseBossDifficulty(value = state.bossDifficulty) {
+    if (String(value) === "mixed") return "mixed";
+    return Math.max(1, Math.min(bossUnlockedLevel(), Number(value) || 1));
+  }
+
+  function statusFromLegacy(cardId) {
+    if ((state.progress.weakIds || []).includes(cardId)) return "revision";
+    if ((state.progress.mastered || []).includes(cardId)) return "complete";
+    return "untried";
+  }
+
+  function cardStatus(cardOrId) {
+    const cardId = typeof cardOrId === "string" ? cardOrId : cardOrId?.id;
+    if (!cardId) return "untried";
+    const explicit = state.progress.cardStatus?.[cardId];
+    if (explicit === "complete" || explicit === "revision" || explicit === "untried") return explicit;
+    return statusFromLegacy(cardId);
+  }
+
+  function setCardStatus(cardId, status) {
+    if (!cardId) return;
+    const next = status === "complete" || status === "revision" ? status : "untried";
+    state.progress.cardStatus = { ...(state.progress.cardStatus || {}), [cardId]: next };
+  }
+
+  function eligibleCardsForStatusCounts(unit = "all", type = "all", difficulty = "mixed") {
+    const diff = String(difficulty) === "mixed" ? "mixed" : Math.max(1, Math.min(5, Number(difficulty) || 1));
+    const unlocked = bossUnlockedLevel();
+    return cards.filter((card) => {
+      const unitMatch = unit === "all" || card.unit === unit;
+      const typeMatch = !type || type === "all" || card.type === type;
+      const level = cardDifficulty(card);
+      const levelMatch = diff === "mixed" ? level <= unlocked : level === diff;
+      return unitMatch && typeMatch && levelMatch && card.front && card.back;
+    });
+  }
+
+  function cardStatusCounts(unit = "all", type = "all", difficulty = "mixed") {
+    const counts = { untried: 0, complete: 0, revision: 0, total: 0 };
+    eligibleCardsForStatusCounts(unit, type, difficulty).forEach((card) => {
+      const status = cardStatus(card);
+      counts[status] = (counts[status] || 0) + 1;
+      counts.total += 1;
+    });
+    return counts;
+  }
+
+  function allContentComplete() {
+    return cards.filter((card) => card.front && card.back).every((card) => cardStatus(card) === "complete");
+  }
+
   function bossDifficultyOptions() {
     const unlocked = bossUnlockedLevel();
-    return [1, 2, 3, 4, 5].map((level) => ({
-      level,
-      label: `Level ${level} · ${bossDifficultyName(level)}`,
-      locked: level > unlocked,
-    }));
+    return [
+      { level: "mixed", label: `Mixed unlocked levels · 1-${unlocked}`, locked: false },
+      ...[1, 2, 3, 4, 5].map((level) => ({
+        level,
+        label: `Level ${level} · ${bossDifficultyName(level)}`,
+        locked: level > unlocked,
+      })),
+    ];
   }
 
   function bossLevelCounts(unit = state.bossUnit, type = state.bossType) {
@@ -1797,7 +1855,7 @@
     cards.forEach((card) => {
       const unitMatch = unit === "all" || card.unit === unit;
       const typeMatch = !type || type === "all" || card.type === type;
-      if (unitMatch && typeMatch && card.front && card.back) counts[cardDifficulty(card)] += 1;
+      if (unitMatch && typeMatch && card.front && card.back && cardStatus(card) !== "complete") counts[cardDifficulty(card)] += 1;
     });
     return counts;
   }
@@ -1827,15 +1885,17 @@
   function renderBossSetup() {
     const units = ["all", ...uniqueValues("unit")];
     const unlocked = bossUnlockedLevel();
-    if (state.bossDifficulty > unlocked) state.bossDifficulty = unlocked;
+    state.bossDifficulty = normaliseBossDifficulty(state.bossDifficulty);
     const available = bossCandidateCards(state.bossUnit, state.bossMix, state.bossType, state.bossDifficulty).length;
     const history = state.progress.bossHistory || [];
     const recent = history.slice(-5).reverse();
     const levelCounts = bossLevelCounts(state.bossUnit, state.bossType);
+    const statusCounts = cardStatusCounts(state.bossUnit, state.bossType, state.bossDifficulty);
+    const completeAll = allContentComplete();
     const levelPills = [1, 2, 3, 4, 5].map((level) => {
       const locked = level > unlocked;
-      const active = level === state.bossDifficulty;
-      return `<span class="boss-level-pill ${active ? "active" : ""} ${locked ? "locked" : ""}">Level ${level}<small>${locked ? "locked" : `${levelCounts[level]} cards`}</small></span>`;
+      const active = Number(state.bossDifficulty) === level;
+      return `<span class="boss-level-pill ${active ? "active" : ""} ${locked ? "locked" : ""}">Level ${level}<small>${locked ? "locked" : `${levelCounts[level]} left`}</small></span>`;
     }).join("");
     els.progressFill.style.width = "0%";
     els.examPanel.innerHTML = `
@@ -1843,15 +1903,22 @@
         <div class="boss-topline">
           <div>
             <p class="panel-kicker">Boss Round</p>
-            <h3>Start at Level 1. Get 100% to level up.</h3>
+            <h3>${completeAll ? "The Master-Blaster challenge is complete." : "Clear every card, not just the easy ones."}</h3>
           </div>
-          <span class="boss-lock-badge">Level ${unlocked} unlocked</span>
+          <span class="boss-lock-badge">${completeAll ? "🏆 Master-Blaster!" : `Level ${unlocked} unlocked`}</span>
         </div>
         <div class="boss-level-strip" aria-label="Boss difficulty levels">${levelPills}</div>
+        <div class="card-status-panel" aria-label="Card status">
+          <div><strong>${statusCounts.untried}</strong><span>untried</span></div>
+          <div><strong>${statusCounts.complete}</strong><span>completed</span></div>
+          <div><strong>${statusCounts.revision}</strong><span>need revision</span></div>
+          <div><strong>${statusCounts.total}</strong><span>in this set</span></div>
+        </div>
+        ${completeAll ? `<div class="master-blaster-card">🏆 <strong>The Master-Blaster!</strong><span>Every card has been completed successfully.</span></div>` : ""}
         <div class="boss-setup-grid compact-boss-grid">
           <label>Level
             <select id="bossDifficultySelect">
-              ${bossDifficultyOptions().map((option) => `<option value="${option.level}" ${option.level === state.bossDifficulty ? "selected" : ""} ${option.locked ? "disabled" : ""}>${escapeHtml(option.label)}${option.locked ? " · locked" : ""}</option>`).join("")}
+              ${bossDifficultyOptions().map((option) => `<option value="${option.level}" ${String(option.level) === String(state.bossDifficulty) ? "selected" : ""} ${option.locked ? "disabled" : ""}>${escapeHtml(option.label)}${option.locked ? " · locked" : ""}</option>`).join("")}
             </select>
           </label>
           <label>Topic
@@ -1871,7 +1938,8 @@
           </label>
           <label>Question mix
             <select id="bossMixSelect">
-              <option value="balanced" ${state.bossMix === "balanced" ? "selected" : ""}>Balanced</option>
+              <option value="balanced" ${state.bossMix === "balanced" ? "selected" : ""}>Balanced incomplete cards</option>
+              <option value="revision" ${state.bossMix === "revision" ? "selected" : ""}>Revision only</option>
               <option value="weak" ${state.bossMix === "weak" ? "selected" : ""}>Weak review focus</option>
               <option value="visual" ${state.bossMix === "visual" ? "selected" : ""}>Visual heavy</option>
               <option value="exam" ${state.bossMix === "exam" ? "selected" : ""}>Exam-style heavy</option>
@@ -1884,7 +1952,7 @@
         </div>
         <div class="boss-actions">
           <button class="primary-button boss-start" type="button" ${available ? "" : "disabled"}>Let’s GO</button>
-          <span class="boss-available">Level ${state.bossDifficulty}: ${available} possible question${available === 1 ? "" : "s"}</span>
+          <span class="boss-available">${available} unfinished question${available === 1 ? "" : "s"} available</span>
         </div>
       </section>
     `;
@@ -1898,7 +1966,7 @@
     const typeSelect = els.examPanel.querySelector("#bossTypeSelect");
     const mixSelect = els.examPanel.querySelector("#bossMixSelect");
     difficultySelect?.addEventListener("change", (event) => {
-      state.bossDifficulty = Math.max(1, Math.min(bossUnlockedLevel(), Number(event.target.value) || 1));
+      state.bossDifficulty = normaliseBossDifficulty(event.target.value);
       renderBossSetup();
     });
     unitSelect?.addEventListener("change", (event) => {
@@ -1935,34 +2003,43 @@
   }
 
   function bossCandidateCards(unit = state.bossUnit, mix = state.bossMix, type = state.bossType, difficulty = state.bossDifficulty) {
-    const level = Math.max(1, Math.min(5, Number(difficulty || 1)));
+    const diff = normaliseBossDifficulty(difficulty);
+    const unlocked = bossUnlockedLevel();
     const pool = cards.filter((card) => {
       const unitMatch = unit === "all" || card.unit === unit;
       const typeMatch = !type || type === "all" || card.type === type;
-      const levelMatch = cardDifficulty(card) === level;
-      return unitMatch && typeMatch && levelMatch && card.front && card.back;
+      const level = cardDifficulty(card);
+      const levelMatch = diff === "mixed" ? level <= unlocked : level === diff;
+      const status = cardStatus(card);
+      const statusMatch = mix === "revision" ? status === "revision" : status !== "complete";
+      return unitMatch && typeMatch && levelMatch && statusMatch && card.front && card.back;
     });
-    const seenIds = new Set(state.progress.bossSeenIds || []);
-    const unseenFirst = (items) => [
-      ...items.filter((card) => !seenIds.has(card.id)),
-      ...items.filter((card) => seenIds.has(card.id)),
-    ];
+
+    const statusOrder = { untried: 0, revision: 1, complete: 2 };
+    const sortByStatus = (items) => [...items].sort((a, b) => {
+      const statusDiff = (statusOrder[cardStatus(a)] ?? 9) - (statusOrder[cardStatus(b)] ?? 9);
+      if (statusDiff) return statusDiff;
+      return cardDifficulty(a) - cardDifficulty(b);
+    });
+
+    if (mix === "revision") return sortByStatus(pool);
     if (mix === "weak") {
-      const weak = pool.filter((card) => (state.progress.weakIds || []).includes(card.id));
-      return weak.length ? unseenFirst([...weak, ...pool.filter((card) => !weak.includes(card))]) : unseenFirst(pool);
+      const weak = pool.filter((card) => (state.progress.weakIds || []).includes(card.id) || cardStatus(card) === "revision");
+      return weak.length ? sortByStatus([...weak, ...pool.filter((card) => !weak.includes(card))]) : sortByStatus(pool);
     }
     if (mix === "visual") {
       const visual = pool.filter((card) => Boolean(card.visual) || visualLabTypes.has(card.type));
-      return visual.length ? unseenFirst([...visual, ...pool.filter((card) => !visual.includes(card))]) : unseenFirst(pool);
+      return visual.length ? sortByStatus([...visual, ...pool.filter((card) => !visual.includes(card))]) : sortByStatus(pool);
     }
     if (mix === "exam") {
       const exam = pool.filter((card) => card.type === "Exam-style question" || card.type === "Practical method" || card.type === "Spot the mistake");
-      return exam.length ? unseenFirst([...exam, ...pool.filter((card) => !exam.includes(card))]) : unseenFirst(pool);
+      return exam.length ? sortByStatus([...exam, ...pool.filter((card) => !exam.includes(card))]) : sortByStatus(pool);
     }
-    return unseenFirst(pool);
+    return sortByStatus(pool);
   }
 
   function startBossRound() {
+    state.bossDifficulty = normaliseBossDifficulty(state.bossDifficulty);
     const pool = bossCandidateCards();
     if (!pool.length) return;
     const selected = selectBossCards(pool, state.bossLength, state.bossMix);
@@ -1980,13 +2057,9 @@
   }
 
   function selectBossCards(pool, length, mix) {
-    const seenIds = new Set(state.progress.bossSeenIds || []);
-    const unseen = pool.filter((card) => !seenIds.has(card.id));
-    const seen = pool.filter((card) => seenIds.has(card.id));
-    shuffleArray(unseen);
-    shuffleArray(seen);
-    const copy = [...unseen, ...seen];
-    if (mix !== "balanced") return copy.slice(0, Math.min(length, copy.length));
+    const copy = [...pool];
+    const take = (items) => items.slice(0, Math.min(length, items.length));
+    if (mix !== "balanced") return take(copy);
 
     const groups = [
       copy.filter((card) => card.type === "Multiple choice"),
@@ -2132,21 +2205,23 @@
     const review = Math.max(0, total - correct);
     const accuracy = total ? Math.round((correct / total) * 100) : 0;
     const perfect = total > 0 && correct === total;
-    const difficulty = Math.max(1, Math.min(5, Number(state.bossDifficulty || 1)));
-    const canUnlock = perfect && difficulty === bossUnlockedLevel() && difficulty < 5;
+    const difficulty = normaliseBossDifficulty(state.bossDifficulty);
+    const xpLevel = difficulty === "mixed" ? bossUnlockedLevel() : difficulty;
+    const canUnlock = perfect && difficulty !== "mixed" && difficulty === bossUnlockedLevel() && difficulty < 5;
     const nextLevel = canUnlock ? difficulty + 1 : bossUnlockedLevel();
-    const xp = correct * (8 + difficulty * 2) + (perfect ? 30 + difficulty * 10 : accuracy >= 80 ? 15 : 0);
+    const xp = correct * (8 + xpLevel * 2) + (perfect ? 30 + xpLevel * 10 : accuracy >= 80 ? 15 : 0);
     return { total, correct, review, accuracy, xp, perfect, difficulty, canUnlock, nextLevel };
   }
 
   function renderBossSummary() {
     const stats = bossRoundStats();
+    const remainingAfterRound = Math.max(0, cardStatusCounts(state.bossUnit, state.bossType, state.bossDifficulty).untried + cardStatusCounts(state.bossUnit, state.bossType, state.bossDifficulty).revision - stats.correct);
     const recommendation = stats.perfect
-      ? (stats.canUnlock ? `Level ${stats.nextLevel} unlocked after saving` : "Try the next unlocked level")
-      : "Replay this level until you get 100%";
+      ? (stats.canUnlock ? `Level ${stats.nextLevel} unlocked after saving` : (remainingAfterRound ? "Keep clearing unfinished cards" : "This set is cleared"))
+      : "Save the score to move missed cards into revision";
     els.examPanel.innerHTML = `
       <section class="boss-card boss-summary-card">
-        <p class="panel-kicker">Level ${stats.difficulty} Boss Round Complete</p>
+        <p class="panel-kicker">${stats.difficulty === "mixed" ? "Mixed levels" : `Level ${stats.difficulty}`} Boss Round Complete</p>
         <h3>${stats.perfect ? "Perfect round!" : `Score: ${stats.correct} / ${stats.total}`}</h3>
         <div class="boss-score-grid">
           <div><strong>${stats.accuracy}%</strong><span>accuracy</span></div>
@@ -2154,7 +2229,7 @@
           <div><strong>${stats.correct}</strong><span>mastered</span></div>
           <div><strong>${stats.review}</strong><span>review</span></div>
         </div>
-        <p class="boss-recommendation">${stats.perfect ? "You earned the level-up check." : "You need 100% to level up."} <strong>${escapeHtml(recommendation)}</strong></p>
+        <p class="boss-recommendation">${stats.perfect && stats.difficulty !== "mixed" ? "You earned the level-up check." : "Your card statuses will update when saved."} <strong>${escapeHtml(recommendation)}</strong></p>
         <div class="boss-actions">
           <button class="primary-button boss-save-score" type="button" ${state.bossSaved ? "disabled" : ""}>${state.bossSaved ? "Score saved" : "Save score"}</button>
           <button class="danger-soft boss-forget-score" type="button">Forget this ever happened</button>
@@ -2189,8 +2264,11 @@
       if (answer.correct) {
         weakIds.delete(answer.cardId);
         mastered.add(answer.cardId);
+        setCardStatus(answer.cardId, "complete");
       } else {
         weakIds.add(answer.cardId);
+        mastered.delete(answer.cardId);
+        setCardStatus(answer.cardId, "revision");
       }
     });
     const completions = { ...(state.progress.bossLevelCompletions || {}) };
@@ -2209,6 +2287,7 @@
     state.progress.weakIds = [...weakIds].slice(-220);
     state.progress.mastered = [...mastered];
     state.progress.bossSeenIds = [...seenIds].slice(-1000);
+    state.progress.masterBlasterEarned = allContentComplete();
     state.progress.bossHistory = [
       ...(state.progress.bossHistory || []),
       {
@@ -2356,7 +2435,7 @@
     els.xpValue.textContent = String(state.progress.xp);
     els.scoreValue.textContent = `${accuracy()}%`;
     els.streakValue.textContent = String(state.progress.currentStreak);
-    els.masteredValue.textContent = String(state.progress.mastered.length);
+    els.masteredValue.textContent = String(cardStatusCounts("all", "all", "mixed").complete);
 
     const level = Math.floor(state.progress.xp / 100) + 1;
     const levelProgress = state.progress.xp % 100;
@@ -2371,11 +2450,13 @@
 
   function renderBadges() {
     const unlocked = badgeRules.filter((rule) => rule.unlocked(state.progress));
-    if (!unlocked.length) {
+    const badges = unlocked.map((badge) => badge.label);
+    if (state.progress.masterBlasterEarned || allContentComplete()) badges.push("🏆 The Master-Blaster!");
+    if (!badges.length) {
       els.badges.innerHTML = `<span class="badge">🔒 Earn your first badge</span>`;
       return;
     }
-    els.badges.innerHTML = unlocked.map((badge) => `<span class="badge">${badge.label}</span>`).join("");
+    els.badges.innerHTML = badges.map((label) => `<span class="badge ${label.includes("Master-Blaster") ? "master-blaster-badge" : ""}">${label}</span>`).join("");
   }
 
   function updateToggleButtons() {
@@ -2547,6 +2628,7 @@
     state.sessionAnswered += 1;
 
     const weakIds = new Set(state.progress.weakIds || []);
+    const mastered = new Set(state.progress.mastered || []);
     if (correct) {
       if (weakIds.has(card.id)) {
         weakIds.delete(card.id);
@@ -2561,18 +2643,21 @@
         const streakBonus = Math.min(10, state.progress.currentStreak);
         state.progress.xp += bonus + streakBonus;
       }
-      if (!state.progress.mastered.includes(card.id)) {
-        state.progress.mastered.push(card.id);
-      }
+      mastered.add(card.id);
+      setCardStatus(card.id, "complete");
       if (options.source === "mastered-button") {
         state.sessionMastered += 1;
       }
     } else {
       weakIds.add(card.id);
+      mastered.delete(card.id);
+      setCardStatus(card.id, "revision");
       state.sessionNeedsReview += 1;
       state.progress.currentStreak = 0;
     }
     state.progress.weakIds = [...weakIds].slice(-220);
+    state.progress.mastered = [...mastered];
+    state.progress.masterBlasterEarned = allContentComplete();
     saveProgress();
   }
 
