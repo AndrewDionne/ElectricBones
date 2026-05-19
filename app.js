@@ -12,6 +12,7 @@
     studyScreen: $("#studyScreen"),
     launchStudyButton: $("#launchStudyButton"),
     homePracticeButton: $("#homePracticeButton"),
+    homeExamButton: $("#homeExamButton"),
     homeBossButton: $("#homeBossButton"),
     brandHomeLink: $("#brandHomeLink"),
     homeTopicButtons: $$("[data-home-topic]"),
@@ -65,6 +66,19 @@
   };
 
   const visualLabTypes = new Set(["Visual challenge", "Practical method", "Spot the mistake"]);
+  const writtenExamUnits = ["7C Muscles and bones", "7F Acids and alkalis", "7J Current electricity"];
+  const writtenExamQuestionsPerUnit = 5;
+  const answerRevealingExamVisuals = new Set([
+    "litmus-test",
+    "ph-scale",
+    "hazard-symbols",
+  ]);
+  const examSafeVisualOverrides = {
+    "alveolus-gas-exchange": "alveolus-gas-exchange-blank",
+    "circuit-comparison": "circuit-comparison-blank",
+    "circuit-short-mistake": "circuit-short-mistake-blank",
+    "indicator-palette": "indicator-palette-blank",
+  };
 
   const interactiveLabGames = [
     {
@@ -323,7 +337,9 @@
       prompt: "Explain the difference between breathing and respiration. Aim for 3 marks.",
       marks: 3,
       keywords: ["breathing", "lungs", "air", "respiration", "cells", "energy"],
-      answer: "Breathing is the movement of air into and out of the lungs. Respiration is a chemical process in cells that releases energy from glucose, using oxygen and making carbon dioxide and water.",
+      answer: "Breathing is the physical movement of air into and out of the lungs. Respiration is a chemical process in cells that releases energy from glucose, usually using oxygen and producing carbon dioxide and water.",
+      conciseAnswer: "Breathing moves air in and out of the lungs; respiration happens in cells and releases energy from glucose.",
+      explanation: "The common trap is to use respiration as another word for breathing. Breathing gets oxygen into the lungs and removes carbon dioxide from the lungs. Respiration is the cell process that uses oxygen and glucose to release useful energy, with carbon dioxide and water as products.",
       cue: "Do not write that respiration simply means breathing. That is the common trap.",
     },
     {
@@ -335,7 +351,9 @@
       visual: "lungs-diaphragm",
       marks: 5,
       keywords: ["diaphragm", "contracts", "down", "ribs", "up", "out", "volume", "increases", "pressure", "decreases", "air", "in"],
-      answer: "During inhalation, the diaphragm contracts and moves down. The ribs move up and out. Chest volume increases, pressure inside the chest decreases, and air moves into the lungs.",
+      answer: "During inhalation, the diaphragm contracts and moves down. The rib muscles move the ribs up and out. Chest volume increases, pressure inside the chest decreases, and air moves into the lungs.",
+      conciseAnswer: "Diaphragm down, ribs up and out, chest volume increases, pressure decreases, so air moves in.",
+      explanation: "Air moves because of a pressure difference. Increasing the volume inside the chest lowers the pressure compared with outside air, so air flows into the lungs until the pressure difference is reduced.",
       cue: "A high-mark answer links muscle movement to volume, pressure, and air movement.",
     },
     {
@@ -344,9 +362,12 @@
       kind: "written",
       title: "Exhalation sequence",
       prompt: "Describe what happens during exhalation using volume and pressure.",
+      visual: "breathing-two-panel",
       marks: 4,
       keywords: ["diaphragm", "relaxes", "up", "ribs", "down", "volume", "decreases", "pressure", "increases", "air", "out"],
-      answer: "During exhalation, the diaphragm relaxes and moves up. The ribs move down and in. Chest volume decreases, pressure increases, and air is pushed out of the lungs.",
+      answer: "During exhalation, the diaphragm relaxes and moves up. The rib muscles relax so the ribs move down and in. Chest volume decreases, pressure inside the chest increases, and air moves out of the lungs.",
+      conciseAnswer: "Diaphragm up, ribs down and in, chest volume decreases, pressure increases, so air moves out.",
+      explanation: "Exhalation is mostly the reverse of inhalation. A smaller chest volume increases the pressure inside the lungs, so air is forced out. A strong answer links muscle movement to volume, pressure, and air movement in that order.",
       cue: "Do not just say air leaves; explain why it leaves.",
     },
     {
@@ -355,10 +376,12 @@
       kind: "written",
       title: "Gas exchange adaptations",
       prompt: "Explain why alveoli are good places for gas exchange.",
-      visual: "alveolus-gas-exchange",
+      visual: "alveolus-gas-exchange-blank",
       marks: 4,
       keywords: ["large surface area", "thin", "moist", "capillaries", "diffusion", "oxygen", "carbon dioxide"],
-      answer: "Alveoli have a large surface area, thin walls, and a moist surface. They are surrounded by capillaries, so oxygen diffuses into the blood and carbon dioxide diffuses from the blood into the air spaces.",
+      answer: "Alveoli have a large surface area, very thin walls, and a moist surface. They are surrounded by many capillaries, giving a good blood supply, so oxygen diffuses into the blood and carbon dioxide diffuses out of the blood quickly.",
+      conciseAnswer: "Alveoli are numerous, thin, moist, and close to capillaries, giving a large surface area and short diffusion distance.",
+      explanation: "Gas exchange depends on diffusion. Alveoli speed diffusion by giving gases a large surface to cross, a very short distance through thin walls, moisture for gases to dissolve, and a blood supply that carries gases away to maintain the concentration difference.",
       cue: "Use the word diffusion if it has been taught.",
     },
     {
@@ -371,6 +394,8 @@
       marks: 4,
       keywords: ["pair", "opposite", "biceps", "contracts", "triceps", "relaxes", "bend", "straighten"],
       answer: "Antagonistic muscles work in pairs and do opposite jobs. To bend the elbow, the biceps contracts while the triceps relaxes. To straighten the elbow, the triceps contracts while the biceps relaxes.",
+      conciseAnswer: "The biceps and triceps work as an opposite pair: one contracts while the other relaxes.",
+      explanation: "Muscles can pull but they cannot push. This is why joints need muscle pairs. One muscle pulls the bone one way, then the opposite muscle pulls it back the other way.",
       cue: "Muscles can pull but cannot push, so pairs are needed.",
     },
     {
@@ -394,7 +419,9 @@
       visual: "skeleton-basic",
       marks: 4,
       keywords: ["support", "protect", "movement", "blood cells", "skull", "brain", "ribs", "heart", "lungs"],
-      answer: "The skeleton supports the body, protects organs, allows movement with muscles and joints, and helps make blood cells. For example, the skull protects the brain and the rib cage protects the heart and lungs.",
+      answer: "The skeleton supports the body, protects organs, allows movement with muscles and joints, and helps make blood cells in bone marrow. For example, the skull protects the brain and the rib cage protects the heart and lungs.",
+      conciseAnswer: "Support, protection, movement, and blood-cell production; for example, the skull protects the brain.",
+      explanation: "Do not only list bone names. The marks come from matching functions to examples: support gives the body shape, protection keeps organs safe, joints and muscles allow movement, and marrow inside some bones makes blood cells.",
       cue: "List functions first, then add an example to gain the final mark.",
     },
     {
@@ -406,7 +433,9 @@
       visual: "reaction-time-ruler",
       marks: 5,
       keywords: ["ruler", "drop", "catch", "distance", "same", "repeat", "average", "fair"],
-      answer: "One person holds a ruler at the zero mark near another person's fingers. The ruler is dropped without warning and the second person catches it. Record the distance fallen, repeat several times, keep the method the same, and calculate an average.",
+      answer: "One person holds a ruler vertically with the zero mark level with another person\u2019s open fingers. The ruler is dropped without warning and the second person catches it. Record the distance fallen, repeat several times, keep the same hand, starting position, and ruler, then calculate a mean average.",
+      conciseAnswer: "Drop a ruler without warning, record the catch distance, repeat using the same method, and calculate a mean.",
+      explanation: "This practical estimates reaction time because a longer distance means the ruler fell for longer before it was caught. Repeats reduce random error, and keeping the setup the same makes the comparison fair.",
       cue: "Fair-test marks often come from repeats and controlled variables.",
     },
     {
@@ -417,7 +446,9 @@
       prompt: "Explain why breathing rate and pulse rate increase during exercise.",
       marks: 4,
       keywords: ["muscles", "respiration", "energy", "oxygen", "glucose", "carbon dioxide", "blood", "faster"],
-      answer: "During exercise, muscle cells respire more to release more energy. They need more oxygen and glucose, and they make more carbon dioxide. Breathing and pulse rate increase to deliver oxygen and remove carbon dioxide faster.",
+      answer: "During exercise, muscle cells respire more to release more energy. They need more oxygen and glucose, and they make more carbon dioxide. Breathing rate and pulse rate increase to deliver oxygen and glucose faster and remove carbon dioxide faster.",
+      conciseAnswer: "Muscles respire more, so breathing and pulse increase to supply oxygen/glucose and remove carbon dioxide.",
+      explanation: "Exercise does not simply make the body \u201cneed more air\u201d. The reason is increased respiration in muscle cells. The lungs bring oxygen into the body and the blood moves oxygen, glucose, and carbon dioxide around faster.",
       cue: "Link exercise to respiration, not just to being tired.",
     },
     {
@@ -453,7 +484,9 @@
       prompt: "A student writes: ‘Respiration is when your lungs breathe in oxygen.’ Correct the sentence.",
       marks: 3,
       keywords: ["respiration", "cells", "release", "energy", "oxygen", "glucose"],
-      answer: "Respiration happens in cells, not just in the lungs. It is the process that releases energy from glucose using oxygen. Breathing is the movement of air into and out of the lungs.",
+      answer: "Respiration happens in cells, not just in the lungs. It is the chemical process that releases energy from glucose, usually using oxygen. Breathing is the movement of air into and out of the lungs.",
+      conciseAnswer: "Respiration happens in cells and releases energy; breathing moves air in and out of the lungs.",
+      explanation: "The student has mixed up breathing and respiration. The lungs are involved because they bring oxygen into the body, but the respiration process itself happens in cells throughout the body.",
       cue: "This tests whether the key misconception has been fixed.",
     },
 
@@ -464,10 +497,12 @@
       kind: "written",
       title: "Double circulation",
       prompt: "Explain what is meant by the human double circulatory system. Aim for 4 marks.",
-      visual: "blood-vessels",
+      visual: "double-circulation",
       marks: 4,
       keywords: ["heart", "lungs", "body", "two", "loops", "oxygen", "carbon dioxide"],
-      answer: "Humans have double circulation because blood travels in two loops. One loop goes from the heart to the lungs and back to the heart to pick up oxygen and remove carbon dioxide. The other loop goes from the heart to the body and back to the heart to deliver oxygen and nutrients to cells.",
+      answer: "Humans have double circulation because blood travels through the heart twice during one complete trip around the body. One loop goes from the heart to the lungs and back to pick up oxygen and remove carbon dioxide. The other loop goes from the heart to the body and back to deliver oxygen and nutrients to cells.",
+      conciseAnswer: "There are two loops: heart\u2013lungs\u2013heart and heart\u2013body\u2013heart.",
+      explanation: "Double circulation keeps oxygen pickup in the lungs separate from oxygen delivery to the body. Blood returns to the heart after the lungs so it can be pumped strongly around the body.",
       cue: "Use both loops: heart-lungs-heart and heart-body-heart.",
     },
     {
@@ -478,7 +513,9 @@
       prompt: "Explain the difference between a scientific question and an ethical question, giving one example of each.",
       marks: 4,
       keywords: ["scientific", "evidence", "measure", "experiment", "ethical", "fair", "right", "wrong"],
-      answer: "A scientific question can be answered using evidence from observations or experiments, for example: does caffeine affect reaction time? An ethical question is about what people think is fair, right or wrong, for example: is it right to test a medicine on animals?",
+      answer: "A scientific question can be answered using evidence from observations or experiments, for example: does caffeine affect reaction time? An ethical question is about what people think is fair, right, or wrong, for example: is it right to test a medicine on animals?",
+      conciseAnswer: "Scientific questions are answered with evidence; ethical questions are about what is right or fair.",
+      explanation: "Scientific evidence can help an ethical debate, but it does not settle it by itself. For example, experiments can show whether a medicine works, but people still have to judge whether a testing method is acceptable.",
       cue: "Scientific = evidence/testable. Ethical = fairness/right/wrong.",
     },
     {
@@ -501,7 +538,9 @@
       prompt: "Give one short-term drug effect, one long-term risk of abusing drugs, and one reason medicines are tested.",
       marks: 4,
       keywords: ["reaction", "nervous", "addiction", "organ", "liver", "safe", "dose", "side-effects"],
-      answer: "A short-term effect could be a change in reaction time, mood, alertness or coordination. A long-term risk of abusing drugs is addiction or organ damage, such as liver damage. Medicines are tested to check that they work, find a safe dose, and identify side-effects.",
+      answer: "A short-term effect could be a change in reaction time, mood, alertness, or coordination. A long-term risk of abusing drugs is addiction or organ damage, such as liver damage. Medicines are tested to check that they work, find a safe dose, and identify side effects.",
+      conciseAnswer: "Short-term effects can change behaviour or reaction time; long-term abuse can cause addiction or organ damage; medicines are tested for safety and effectiveness.",
+      explanation: "Separate the three parts of the question. Effects can happen soon after taking a drug, long-term risks can build up after repeated misuse, and medicine testing protects patients by checking benefit, dose, and side effects.",
       cue: "Name effects clearly and link testing to safety.",
     },
 
@@ -513,7 +552,9 @@
       prompt: "Describe how to make and use a natural indicator such as red cabbage juice.",
       marks: 5,
       keywords: ["red cabbage", "crush", "water", "filter", "known", "acid", "alkali", "colour"],
-      answer: "Crush or chop red cabbage and mix it with a small amount of water. Filter or pour off the coloured liquid. Test it with known acidic, neutral and alkaline solutions and record the colours. Then add it to an unknown liquid and compare the colour with the known results.",
+      answer: "Chop or crush red cabbage and mix it with a small amount of warm water to extract the coloured dye. Filter or pour off the coloured liquid. Test it with known acidic, neutral, and alkaline solutions and record the colours. Then add it to an unknown liquid and compare the colour with the known results.",
+      conciseAnswer: "Extract the coloured liquid, test it on known acids/neutral/alkalis, record the colour chart, then compare unknowns.",
+      explanation: "A natural indicator is only useful if you first calibrate it with known solutions. The known tests create a colour reference, which lets you interpret the colour change for an unknown liquid.",
       cue: "Known test liquids make the unknown result meaningful.",
     },
     {
@@ -536,7 +577,9 @@
       prompt: "Give two everyday uses of neutralisation and explain what is being neutralised.",
       marks: 4,
       keywords: ["antacid", "stomach", "acid", "soil", "toothpaste", "power stations", "base", "neutralise"],
-      answer: "Antacids contain a base that neutralises extra stomach acid. Farmers can add a base to soil that is too acidic for crops. Toothpaste can neutralise acids in the mouth, and alkalis can neutralise acidic gases from power stations.",
+      answer: "Antacids contain a base or alkali that neutralises extra stomach acid. Farmers can add lime, a base, to soil that is too acidic for crops. Toothpaste can help neutralise acids in the mouth, and alkalis can neutralise acidic gases from power stations.",
+      conciseAnswer: "Antacids neutralise stomach acid; lime neutralises acidic soil. Neutralisation is acid + base/alkali.",
+      explanation: "Neutralisation means an acid reacts with a base or alkali so the solution becomes closer to neutral. The strongest answers say what the acid is and what substance is used to neutralise it.",
       cue: "Use the word neutralise and name the acid/base example.",
     },
     {
@@ -560,7 +603,9 @@
       prompt: "Explain the difference between a physical model and an abstract model, using electricity examples.",
       marks: 4,
       keywords: ["physical", "touch", "abstract", "diagram", "idea", "circuit", "model"],
-      answer: "A physical model is one you can touch or build, such as a pump-and-pipes model of a circuit. An abstract model is an idea, diagram or representation, such as a circuit diagram or the idea that voltage is a push. Both can help explain circuits, but they are simplified.",
+      answer: "A physical model is one you can touch or build, such as a pump-and-pipes model of a circuit. An abstract model is an idea, diagram, or representation, such as a circuit diagram or the idea that voltage is a push. Both can help explain circuits, but they are simplified.",
+      conciseAnswer: "A physical model can be built or touched; an abstract model is a diagram, idea, or representation.",
+      explanation: "Models help us reason about something difficult to see, such as electric current. They are useful because they simplify the system, but every model has limits because it is not the real circuit.",
       cue: "Physical = touchable. Abstract = idea/diagram/representation.",
     },
     {
@@ -569,9 +614,12 @@
       kind: "written",
       title: "Model strengths and limits",
       prompt: "The central-heating model uses a pump, pipes and radiators to model a circuit. Give one strength and one limitation of this model.",
+      visual: "central-heating-model",
       marks: 4,
       keywords: ["pump", "cell", "pipes", "wires", "radiators", "bulbs", "not", "same", "charges"],
-      answer: "A strength is that the pump can represent the cell or power supply, the pipes can represent wires, and the radiators can represent bulbs transferring energy. A limitation is that water is not the same as electric charge, so the heating system does not behave exactly like a real electric circuit.",
+      answer: "A strength is that the pump can represent the cell or power supply, the pipes can represent wires, and the radiators can represent bulbs transferring energy. A limitation is that water is not the same as electric charge: water can leak or be used as a material, but charge is not used up as it goes around a circuit.",
+      conciseAnswer: "Strength: pump/pipes/radiators can model cell/wires/bulbs. Limitation: water is not electric charge and the model is not exact.",
+      explanation: "The central-heating model is good for showing circulation and energy transfer, but it can also mislead. In a real circuit, charge is not used up by a bulb; energy is transferred by the component while charge continues around the loop.",
       cue: "Good model answers say what the model helps with and where it breaks down.",
     },
     {
@@ -595,7 +643,9 @@
       prompt: "Give three dangers of electricity and two safety rules for using circuits or mains appliances.",
       marks: 5,
       keywords: ["fires", "burns", "shocks", "heart", "wet", "sockets", "overload", "switch off"],
-      answer: "Electricity can cause fires, burns, and shocks that can stop the heart. Safety rules include not using electrical equipment with wet hands, not poking objects into sockets, not overloading sockets, and switching off the power supply before changing components in a school circuit.",
+      answer: "Electricity can cause fires, burns, and electric shocks that may injure or stop the heart. Safety rules include not using electrical equipment with wet hands, not putting objects into sockets, not overloading sockets, and switching off the power supply before changing components in a school circuit.",
+      conciseAnswer: "Dangers include shock, burns, and fire; reduce risk by keeping water away, avoiding overloaded sockets, and switching off before changes.",
+      explanation: "Electrical safety answers should connect a hazard to a control. Water and damaged equipment increase the chance of current passing through the body, while overloaded sockets and faulty wires can overheat and cause fires.",
       cue: "Separate dangers from precautions.",
     },
     {
@@ -617,10 +667,11 @@
       kind: "written",
       title: "Litmus results",
       prompt: "Describe how red and blue litmus can be used to test for acids and alkalis.",
-      visual: "litmus-test",
       marks: 4,
       keywords: ["blue litmus", "red", "acid", "red litmus", "blue", "alkali"],
-      answer: "An acid turns blue litmus red. An alkali turns red litmus blue. If the litmus does not change, the substance may be neutral or already the same colour result.",
+      answer: "Use both red and blue litmus paper. An acid turns blue litmus red and leaves red litmus red. An alkali turns red litmus blue and leaves blue litmus blue. A neutral solution does not change either red or blue litmus.",
+      conciseAnswer: "Acid: blue litmus turns red. Alkali: red litmus turns blue. Neutral: neither changes.",
+      explanation: "Using both colours of litmus avoids confusion. A single strip that does not change is not enough evidence by itself, because it may already be the colour it would turn.",
       cue: "Be precise about which colour starts and which colour it turns.",
     },
     {
@@ -629,10 +680,12 @@
       kind: "written",
       title: "Universal indicator",
       prompt: "Explain why universal indicator gives more information than litmus.",
-      visual: "indicator-palette",
+      visual: "indicator-palette-blank",
       marks: 3,
       keywords: ["range", "colours", "pH", "acidic", "alkaline", "acid", "alkali"],
-      answer: "Universal indicator has a range of colours, so it can estimate pH and show how acidic or alkaline a substance is. Litmus mainly shows whether something is acidic or alkaline.",
+      answer: "Universal indicator gives a range of colours, so it can estimate pH and show how strongly acidic or alkaline a substance is. Litmus mainly shows whether something is acidic or alkaline, with much less detail.",
+      conciseAnswer: "Universal indicator estimates pH and strength; litmus mainly tells acid or alkali.",
+      explanation: "Universal indicator is a mixture of indicators, so it changes through several colours across the pH scale. That makes it more informative than litmus when you need to compare weak and strong acids or alkalis.",
       cue: "The key phrase is range of colours / pH estimate.",
     },
     {
@@ -656,7 +709,9 @@
       visual: "neutralisation-setup",
       marks: 5,
       keywords: ["acid", "indicator", "alkali", "slowly", "stir", "neutral", "colour", "goggles"],
-      answer: "Wear goggles. Measure the acid into a beaker or flask and add a few drops of indicator. Add alkali slowly while stirring until the indicator shows neutral. Stop at the neutral colour and record the volumes used.",
+      answer: "Wear goggles. Measure the acid into a beaker or flask and add a few drops of indicator. Add the alkali slowly while stirring until the indicator shows neutral, such as green with universal indicator. Stop at the neutral colour and record the volumes used.",
+      conciseAnswer: "Wear goggles, add indicator to acid, add alkali slowly while stirring, and stop at the neutral colour.",
+      explanation: "The key practical idea is control. Adding the alkali slowly prevents overshooting neutral. A few drops of indicator are enough, and the endpoint colour tells you when the acid has been neutralised.",
       cue: "Slow addition and stopping at neutral are the practical marks.",
     },
     {
@@ -668,7 +723,9 @@
       visual: "acid-safety-mistake",
       marks: 4,
       keywords: ["goggles", "acid", "pour", "splash", "careful", "small amount", "away"],
-      answer: "The student is pouring acid in a way that could splash and they are not clearly protected. They should wear goggles, pour small amounts carefully, keep the bottle controlled and pointed away, and clean spills safely with teacher help.",
+      answer: "The student is pouring acid in a way that could splash and is not wearing eye protection. They should wear goggles, pour small amounts carefully, keep the bottle controlled and pointed away from people, work over the bench or tray, and ask the teacher for help with spills.",
+      conciseAnswer: "The student risks acid splashing and needs goggles, careful pouring, and spill control.",
+      explanation: "Acids can irritate or damage skin and eyes. Practical-safety answers should identify the hazard and then give a specific safer action, not just say \u201cbe careful\u201d.",
       cue: "Name the risk and the safer action.",
     },
     {
@@ -680,7 +737,9 @@
       visual: "indicator-mistake",
       marks: 3,
       keywords: ["few drops", "indicator", "too much", "colour", "result", "affect"],
-      answer: "Only a few drops of indicator are needed. Adding too much can make the colour harder to judge and may affect the mixture, so the result is less reliable.",
+      answer: "Only a few drops of indicator are needed. Adding a large squirt can make the colour harder to judge and may affect the mixture, so the result is less reliable.",
+      conciseAnswer: "Use only a few drops; too much indicator can make the colour judgement unreliable.",
+      explanation: "An indicator is meant to show the result, not become a major part of the mixture. Too much indicator can mask the endpoint and make comparisons between tests unfair.",
       cue: "Practical questions often reward reliability language.",
     },
     {
@@ -716,7 +775,9 @@
       visual: "evaporation-dish",
       marks: 4,
       keywords: ["evaporate", "water", "solution", "warm", "crystals", "leave", "cool"],
-      answer: "Pour the neutral salt solution into an evaporating dish. Warm it gently to evaporate some water, then leave the concentrated solution to cool or stand so crystals form.",
+      answer: "Pour the neutral salt solution into an evaporating dish. Warm it gently to evaporate some water until the solution is more concentrated, then stop heating and leave it to cool or stand so crystals form. Do not heat it to dryness.",
+      conciseAnswer: "Gently evaporate some water, then leave the concentrated solution to cool/stand and crystallise.",
+      explanation: "Crystals form when there is not enough water left to keep all the salt dissolved. Heating too strongly or to dryness is unsafe and can spit hot solution, so the final crystallisation should happen by cooling or standing.",
       cue: "Do not boil it dry in a school practical answer unless your teacher specifically allows that method.",
     },
     {
@@ -740,7 +801,9 @@
       prompt: "Name two variables you should keep the same when comparing how different liquids affect universal indicator.",
       marks: 2,
       keywords: ["same volume", "same amount", "same indicator", "same time", "same temperature", "same drops"],
-      answer: "Keep the volume of each test liquid the same and use the same number of drops of universal indicator. You could also keep the time and temperature the same.",
+      answer: "Keep the volume of each test liquid the same and use the same number of drops of universal indicator. You could also keep the time before comparing colours, the temperature, and the type of container the same.",
+      conciseAnswer: "Keep liquid volume and indicator drops the same; also control time, temperature, and container if possible.",
+      explanation: "A fair test changes only the variable being tested. If one sample gets more indicator or a different volume, the colour comparison may not be due only to acidity or alkalinity.",
       cue: "Fair test means only the liquid type should change.",
     },
 
@@ -750,10 +813,12 @@
       kind: "written",
       title: "Complete circuit",
       prompt: "Explain why a lamp only lights in a complete circuit.",
-      visual: "circuit-open-switch",
+      visual: "circuit-series",
       marks: 3,
       keywords: ["complete", "closed", "loop", "current", "flow", "lamp"],
-      answer: "A lamp lights only when there is a complete closed loop. Current can then flow from the cell, through the components, and back to the cell. A gap stops the current.",
+      answer: "A lamp lights only when there is a complete closed loop. Current can flow from the cell, through the lamp and other components, and back to the cell. A gap or open switch breaks the loop and stops the current.",
+      conciseAnswer: "The circuit must be a closed loop so current can flow through the lamp and back to the cell.",
+      explanation: "Current does not jump across gaps in a normal school circuit. The lamp transfers energy only when charge can move all the way around the loop.",
       cue: "The key idea is closed path / loop.",
     },
     {
@@ -762,10 +827,12 @@
       kind: "written",
       title: "Series vs parallel",
       prompt: "Compare a series circuit and a parallel circuit.",
-      visual: "circuit-parallel",
+      visual: "circuit-comparison-blank",
       marks: 4,
       keywords: ["series", "one loop", "same current", "parallel", "branches", "separate paths"],
       answer: "A series circuit has one loop, so all components share the same current path. A parallel circuit has branches, so current has more than one path and components can be on separate branches.",
+      conciseAnswer: "Series has one path; parallel has branches and more than one path.",
+      explanation: "The difference in paths affects how the circuits behave. In series, a break anywhere stops the whole circuit. In parallel, one branch can still work even if another branch is open.",
       cue: "Use the words loop and branches.",
     },
     {
@@ -803,7 +870,9 @@
       visual: "circuit-voltmeter-mistake",
       marks: 3,
       keywords: ["voltmeter", "parallel", "across", "lamp", "series", "wrong"],
-      answer: "The voltmeter is in series, which is wrong for measuring voltage across a component. It should be connected in parallel across the lamp or component being measured.",
+      answer: "The voltmeter is connected in series, which is wrong for measuring voltage across a component. It should be connected in parallel across the lamp or component being measured.",
+      conciseAnswer: "A voltmeter should be connected in parallel across the component, not in series.",
+      explanation: "Voltage is measured between two points, so the voltmeter must be placed across the component. Ammeters are the meters that go in series to measure current through a component.",
       cue: "Say both what is wrong and what to do instead.",
     },
     {
@@ -828,7 +897,9 @@
       visual: "circuit-parallel",
       marks: 3,
       keywords: ["junction", "splits", "branches", "total", "sum", "rejoins"],
-      answer: "At a junction in a parallel circuit, current splits between the branches. The total current is the sum of the branch currents, and the currents rejoin after the branches.",
+      answer: "At a junction in a parallel circuit, current splits between the branches. The total current before the junction equals the sum of the branch currents, and the currents rejoin after the branches.",
+      conciseAnswer: "Current splits at a junction and rejoins; total current equals the sum of the branch currents.",
+      explanation: "Current is not lost at a junction. The charges take different branch paths, so the current in each branch can be smaller than the total current supplied by the cell.",
       cue: "The key relationship is total current = branch currents added together.",
     },
     {
@@ -841,6 +912,8 @@
       marks: 3,
       keywords: ["series", "both", "closed", "complete", "AND", "lamp"],
       answer: "Two switches in series act like AND because both switches must be closed for the circuit to be complete. If either switch is open, there is a gap and the lamp will not light.",
+      conciseAnswer: "Series switches are AND because switch A and switch B must both be closed.",
+      explanation: "A series circuit has only one path. With two switches in that path, either open switch breaks the only path, so both conditions must be true for the lamp to light.",
       cue: "AND means switch A and switch B are both needed.",
     },
     {
@@ -852,7 +925,9 @@
       visual: "circuit-or-switches",
       marks: 3,
       keywords: ["parallel", "branch", "either", "closed", "OR", "complete"],
-      answer: "Switches on parallel branches act like OR because either branch can complete a path for current. The lamp can light if switch A or switch B is closed.",
+      answer: "Switches on parallel branches act like OR because either branch can complete a path for current. The lamp can light if switch A is closed or switch B is closed.",
+      conciseAnswer: "Parallel switches are OR because either branch can provide a complete path.",
+      explanation: "Parallel branches give current more than one possible route. If one branch switch is open but the other branch switch is closed, there is still a complete path through the closed branch.",
       cue: "OR means either route can work.",
     },
     {
@@ -861,10 +936,12 @@
       kind: "written",
       title: "Spot the short circuit",
       prompt: "Look at the short-circuit diagram. Explain why this is a problem.",
-      visual: "circuit-short-mistake",
+      visual: "circuit-short-mistake-blank",
       marks: 3,
       keywords: ["short circuit", "low resistance", "bypass", "large current", "danger", "lamp"],
       answer: "The extra wire gives current a very low-resistance path that bypasses the lamp. This can cause a large current, so the circuit may be dangerous and the lamp may not work properly.",
+      conciseAnswer: "The extra wire bypasses the lamp with a low-resistance path, causing a large current risk.",
+      explanation: "Current tends to take the easier low-resistance path. A short circuit can make the current much larger than intended, which can overheat wires, damage cells, or stop the component from working properly.",
       cue: "A short circuit is not just a messy circuit; it gives current an easier path.",
     },
     {
@@ -934,6 +1011,7 @@
     sound: true,
     lastSavedAt: null,
     bossHistory: [],
+    writtenExamHistory: [],
     bossSeenIds: [],
     bossUnlockedLevel: 1,
     bossLevelCompletions: {},
@@ -965,6 +1043,12 @@
     examRevealed: false,
     examLocked: false,
     examResponse: "",
+    writtenExamActive: false,
+    writtenExamSubmitted: false,
+    writtenExamDeck: [],
+    writtenExamAnswers: {},
+    writtenExamStartedAt: null,
+    writtenExamSaved: false,
     bossActive: false,
     bossFinished: false,
     bossDeck: [],
@@ -1001,6 +1085,7 @@
         mastered: Array.isArray(stored.mastered) ? stored.mastered : [],
         weakIds: Array.isArray(stored.weakIds) ? stored.weakIds : [],
         bossHistory: Array.isArray(stored.bossHistory) ? stored.bossHistory : [],
+        writtenExamHistory: Array.isArray(stored.writtenExamHistory) ? stored.writtenExamHistory : [],
         bossSeenIds: Array.isArray(stored.bossSeenIds) ? stored.bossSeenIds : [],
         bossUnlockedLevel: Math.max(1, Math.min(5, Number(stored.bossUnlockedLevel || 1))),
         bossLevelCompletions: stored.bossLevelCompletions && typeof stored.bossLevelCompletions === "object" ? stored.bossLevelCompletions : {},
@@ -1018,11 +1103,20 @@
   }
 
 
+  function writtenExamNeedsQuitConfirmation() {
+    return state.writtenExamActive && !state.writtenExamSubmitted && state.writtenExamDeck.length;
+  }
+
   function showHomeScreen() {
     if (state.bossActive) {
       const confirmed = window.confirm("Are you sure you want to quit this Boss Round? This score will not be saved.");
       if (!confirmed) return;
       resetBossRound();
+    }
+    if (writtenExamNeedsQuitConfirmation()) {
+      const confirmed = window.confirm("Are you sure you want to quit this written exam? Your answers for this exam will be cleared.");
+      if (!confirmed) return;
+      resetWrittenExamRound();
     }
     els.homeScreen?.classList.remove("hidden");
     els.studyScreen?.classList.add("hidden");
@@ -1073,6 +1167,13 @@
   function startBossFromHome() {
     applyHomeTopicDefaults();
     setMode("boss");
+    showStudyScreen();
+  }
+
+  function startWrittenExamFromHome() {
+    state.unit = "all";
+    if (els.unitFilter) els.unitFilter.value = "all";
+    setMode("writtenExam");
     showStudyScreen();
   }
 
@@ -1235,6 +1336,12 @@
     els.flashcard.classList.toggle("has-visual", Boolean(html));
   }
 
+  function renderExamVisual(key) {
+    const safeKey = examSafeVisualOverrides[key] || key;
+    if (!safeKey || answerRevealingExamVisuals.has(safeKey)) return "";
+    return renderVisual(safeKey);
+  }
+
   function renderVisual(key) {
     const symbolKey = key.replace(/^symbol-/, "");
     if (key.startsWith("symbol-")) return renderCircuitSymbol(symbolKey);
@@ -1272,18 +1379,22 @@
       "circuit-open-switch": circuitOpenSwitchSvg,
       "circuit-current-arrows": circuitCurrentArrowsSvg,
       "circuit-short-mistake": circuitShortMistakeSvg,
+      "circuit-short-mistake-blank": circuitShortMistakeBlankSvg,
       "ph-scale": phScaleSvg,
       "litmus-test": litmusTestSvg,
       "indicator-palette": indicatorPaletteSvg,
+      "indicator-palette-blank": indicatorPaletteSvg,
       "neutralisation-setup": neutralisationSetupSvg,
       "indicator-mistake": indicatorMistakeSvg,
       "evaporation-dish": evaporationDishSvg,
       "dilution-method": dilutionMethodSvg,
       "lungs-diaphragm": lungsDiaphragmSvg,
       "alveolus-gas-exchange": alveolusGasExchangeSvg,
+      "alveolus-gas-exchange-blank": alveolusGasExchangeBlankSvg,
       "blood-vessels": bloodVesselsSvg,
       "reaction-time-ruler": reactionTimeRulerSvg,
       "circuit-comparison": circuitComparisonSvg,
+      "circuit-comparison-blank": circuitComparisonBlankSvg,
       "circuit-dual-ammeters": circuitDualAmmetersSvg,
       "circuit-xyz-parallel": circuitParallelXYZSvg,
       "circuit-pack-mistakes": circuitPackMistakesSvg,
@@ -1473,6 +1584,20 @@
     `);
   }
 
+  function circuitShortMistakeBlankSvg() {
+    return diagramFrame("Circuit with an extra wire", `
+      <g class="circuit-line revision-circuit">
+        <path d="M96 95 H424 V205 H96 Z"/>
+        <line x1="126" y1="120" x2="126" y2="180"/><line x1="148" y1="132" x2="148" y2="168"/>
+        <circle cx="326" cy="205" r="24"/><line x1="310" y1="189" x2="342" y2="221"/><line x1="342" y1="189" x2="310" y2="221"/>
+      </g>
+      <g class="mistake-line">
+        <path d="M178 95 V205"/>
+      </g>
+      ${labelBubble(178, 150, "A")}${labelBubble(326, 244, "B")}${labelBubble(138, 92, "C")}
+    `);
+  }
+
   function circuitComparisonSvg() {
     return diagramFrame("Series and parallel comparison", `
       <g class="circuit-line revision-circuit circuit-mini">
@@ -1493,6 +1618,27 @@
         <circle cx="396" cy="168" r="16"/><line x1="386" y1="158" x2="406" y2="178"/><line x1="406" y1="158" x2="386" y2="178"/>
       </g>
       <text x="394" y="220" class="diagram-note">two branches</text>
+    `);
+  }
+
+  function circuitComparisonBlankSvg() {
+    return diagramFrame("Circuit comparison", `
+      <g class="circuit-line revision-circuit circuit-mini">
+        <text x="150" y="68" class="diagram-note">A</text>
+        <path d="M54 88 H236 V198 H54 Z"/>
+        <line x1="78" y1="112" x2="78" y2="174"/><line x1="96" y1="124" x2="96" y2="162"/>
+        <circle cx="145" cy="88" r="18"/><line x1="133" y1="76" x2="157" y2="100"/><line x1="157" y1="76" x2="133" y2="100"/>
+        <circle cx="194" cy="198" r="18"/><line x1="182" y1="186" x2="206" y2="210"/><line x1="206" y1="186" x2="182" y2="210"/>
+      </g>
+      <g class="circuit-line revision-circuit circuit-mini">
+        <text x="392" y="68" class="diagram-note">B</text>
+        <path d="M286 88 H466 V198 H286 Z"/>
+        <line x1="308" y1="112" x2="308" y2="174"/><line x1="326" y1="124" x2="326" y2="162"/>
+        <line x1="360" y1="88" x2="360" y2="198"/><line x1="432" y1="88" x2="432" y2="198"/>
+        <line x1="360" y1="122" x2="432" y2="122"/><line x1="360" y1="168" x2="432" y2="168"/>
+        <circle cx="396" cy="122" r="16"/><line x1="386" y1="112" x2="406" y2="132"/><line x1="406" y1="112" x2="386" y2="132"/>
+        <circle cx="396" cy="168" r="16"/><line x1="386" y1="158" x2="406" y2="178"/><line x1="406" y1="158" x2="386" y2="178"/>
+      </g>
     `);
   }
 
@@ -1773,6 +1919,19 @@
       <path d="M224 116 C256 110, 286 106, 324 106" class="oxygen-arrow" marker-end="url(#arrow)"/>
       <path d="M330 180 C296 178, 270 172, 234 164" class="co2-arrow" marker-end="url(#arrow)"/>
       <text x="198" y="106" class="small-label">O₂</text><text x="252" y="194" class="small-label">CO₂</text>
+      ${labelBubble(226, 74, "A")}${labelBubble(382, 86, "B")}
+    `);
+  }
+
+  function alveolusGasExchangeBlankSvg() {
+    return diagramFrame("Gas exchange", `
+      <circle cx="228" cy="142" r="54" class="alveolus"/>
+      <circle cx="262" cy="118" r="28" class="alveolus secondary-alveolus"/>
+      <circle cx="270" cy="164" r="24" class="alveolus secondary-alveolus"/>
+      <path d="M334 80 C404 98, 412 184, 338 208 C314 216, 304 194, 316 176 C330 154, 330 132, 316 110 C304 92, 312 74, 334 80" class="capillary"/>
+      <circle cx="350" cy="108" r="8" class="capillary-cell"/><circle cx="362" cy="142" r="8" class="capillary-cell"/><circle cx="348" cy="176" r="8" class="capillary-cell"/>
+      <path d="M224 116 C256 110, 286 106, 324 106" class="oxygen-arrow" marker-end="url(#arrow)"/>
+      <path d="M330 180 C296 178, 270 172, 234 164" class="co2-arrow" marker-end="url(#arrow)"/>
       ${labelBubble(226, 74, "A")}${labelBubble(382, 86, "B")}
     `);
   }
@@ -2354,6 +2513,7 @@
     document.body.classList.toggle("fun", !state.progress.calm);
     document.body.classList.toggle("boss-session-active", state.mode === "boss" && state.bossActive);
     document.body.classList.toggle("boss-mode-screen", state.mode === "boss");
+    document.body.classList.toggle("written-exam-session-active", state.mode === "writtenExam" && state.writtenExamActive && !state.writtenExamSubmitted);
     const card = currentCard();
     const deck = deckCards();
     const labDeck = filteredLabGames();
@@ -2362,7 +2522,7 @@
 
     renderStats();
     renderBadges();
-    renderModeChrome(state.mode === "lab" ? labDeck.length : state.mode === "circuit" ? circuitDeck.length : state.mode === "exam" ? examDeck.length : state.mode === "boss" ? (state.bossActive ? state.bossDeck.length : bossCandidateCards().length) : deck.length);
+    renderModeChrome(state.mode === "lab" ? labDeck.length : state.mode === "circuit" ? circuitDeck.length : state.mode === "exam" ? examDeck.length : state.mode === "writtenExam" ? writtenExamTotalQuestions() : state.mode === "boss" ? (state.bossActive ? state.bossDeck.length : bossCandidateCards().length) : deck.length);
     updateToggleButtons();
 
     if (state.mode === "boss") {
@@ -2379,6 +2539,10 @@
     }
     if (state.mode === "exam") {
       renderExamMode(examDeck);
+      return;
+    }
+    if (state.mode === "writtenExam") {
+      renderWrittenExamMode();
       return;
     }
 
@@ -2446,6 +2610,7 @@
       lab: ["Label lab", "Drag or tap labels onto diagrams to prove you can recognise the science parts."],
       circuit: ["Circuit builder", "Tap or drag components into the circuit slots, then test whether your circuit works."],
       exam: ["Exam coach", "Practise mark-scheme answers, practical methods, and explanation questions."],
+      writtenExam: ["Written exam", "15 written questions: 5 from each unit, with answers locked until submission."],
       weak: ["Weak review", "Reviewing cards marked Further review or previously missed. Clear them by answering correctly."],
       boss: [state.bossActive ? `Boss Round · ${state.bossDeck.length} cards` : "Boss round", state.bossActive ? "" : "Build your test set."],
     };
@@ -2463,7 +2628,8 @@
     els.heroModeButtons.forEach((button) => {
       button.classList.toggle("active-launch", button.dataset.setMode === state.mode && state.mode !== "boss");
     });
-    els.homePracticeButton?.classList.toggle("active-launch", state.mode !== "boss");
+    els.homePracticeButton?.classList.toggle("active-launch", state.mode !== "boss" && state.mode !== "writtenExam");
+    els.homeExamButton?.classList.toggle("active-launch", state.mode === "writtenExam");
     els.homeBossButton?.classList.toggle("active-launch", state.mode === "boss");
     syncHomeTopicButtons();
   }
@@ -2724,10 +2890,16 @@
   }
 
   function setMode(mode) {
+    const previousMode = state.mode;
     if (state.bossActive && mode !== "boss") {
       const confirmed = window.confirm("Are you sure you want to quit this Boss Round? This score will not be saved.");
       if (!confirmed) return;
       resetBossRound();
+    }
+    if (mode !== "writtenExam" && writtenExamNeedsQuitConfirmation()) {
+      const confirmed = window.confirm("Are you sure you want to quit this written exam? Your answers for this exam will be cleared.");
+      if (!confirmed) return;
+      resetWrittenExamRound();
     }
     state.mode = mode;
     state.sessionAnswered = 0;
@@ -2749,7 +2921,7 @@
       state.type = "Equation/relationship";
       els.typeFilter.value = "Equation/relationship";
     }
-    if (mode === "visual" || mode === "lab" || mode === "circuit" || mode === "exam" || mode === "weak") {
+    if (mode === "visual" || mode === "lab" || mode === "circuit" || mode === "exam" || mode === "writtenExam" || mode === "weak") {
       state.type = "all";
       els.typeFilter.value = "all";
     }
@@ -2769,10 +2941,26 @@
       state.examIndex = 0;
       resetExamQuestionState();
     }
+    if (mode === "writtenExam") {
+      state.unit = "all";
+      if (els.unitFilter) els.unitFilter.value = "all";
+      if (previousMode !== "writtenExam" && state.writtenExamSubmitted) resetWrittenExamRound();
+      if (!state.writtenExamActive && !state.writtenExamSubmitted) resetWrittenExamRound();
+    }
     rebuildDeck({ shuffle: true });
   }
 
   function speakCurrentCard() {
+    if (state.mode === "writtenExam") {
+      const firstQuestion = state.writtenExamDeck[0] || selectWrittenExamQuestions()[0];
+      if (!firstQuestion || !("speechSynthesis" in window)) return;
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(`Written exam. ${firstQuestion.prompt}`);
+      utterance.rate = state.progress.calm ? 0.82 : 0.92;
+      utterance.pitch = state.progress.calm ? 0.95 : 1.05;
+      window.speechSynthesis.speak(utterance);
+      return;
+    }
     if (state.mode === "exam") {
       const question = currentExamQuestion();
       if (!question || !("speechSynthesis" in window)) return;
@@ -3921,7 +4109,7 @@
     els.progressFill.style.width = `${progressPercent}%`;
     const isChoice = Array.isArray(question.choices) && question.choices.length;
     const hits = keywordHits(question, state.examResponse);
-    const visualHtml = question.visual ? renderVisual(question.visual) : "";
+    const visualHtml = question.visual ? renderExamVisual(question.visual) : "";
 
     els.examPanel.innerHTML = `
       <div class="exam-card ${state.examLocked ? "locked" : ""}">
@@ -4091,6 +4279,332 @@
   }
 
 
+  function writtenExamTotalQuestions() {
+    return writtenExamUnits.length * writtenExamQuestionsPerUnit;
+  }
+
+  function writtenExamQuestionPool(unit) {
+    return examTrainerQuestions.filter((question) => question.unit === unit && question.kind === "written");
+  }
+
+  function writtenExamPoolCounts() {
+    return writtenExamUnits.reduce((counts, unit) => {
+      counts[unit] = writtenExamQuestionPool(unit).length;
+      return counts;
+    }, {});
+  }
+
+  function writtenExamMovedQuestionCount() {
+    const counts = writtenExamPoolCounts();
+    return writtenExamUnits.reduce((total, unit) => total + (counts[unit] || 0), 0);
+  }
+
+  function writtenExamCanStart() {
+    const counts = writtenExamPoolCounts();
+    return writtenExamUnits.every((unit) => (counts[unit] || 0) >= writtenExamQuestionsPerUnit);
+  }
+
+  function writtenExamChallengeScore(question) {
+    return (Number(question.marks) || 1) * 20 + (question.visual ? 4 : 0) + ((question.keywords || []).length * 0.5);
+  }
+
+  function selectWrittenExamQuestions() {
+    return writtenExamUnits.flatMap((unit) => {
+      const pool = writtenExamQuestionPool(unit).sort((a, b) => {
+        const scoreDiff = writtenExamChallengeScore(b) - writtenExamChallengeScore(a);
+        if (scoreDiff) return scoreDiff;
+        return String(a.title || "").localeCompare(String(b.title || ""));
+      });
+      const challengePoolSize = Math.min(pool.length, Math.max(writtenExamQuestionsPerUnit, Math.ceil(pool.length * 0.75)));
+      const challengePool = pool.slice(0, challengePoolSize);
+      shuffleArray(challengePool);
+      return challengePool
+        .slice(0, writtenExamQuestionsPerUnit)
+        .sort((a, b) => writtenExamChallengeScore(b) - writtenExamChallengeScore(a));
+    });
+  }
+
+  function resetWrittenExamRound() {
+    state.writtenExamActive = false;
+    state.writtenExamSubmitted = false;
+    state.writtenExamDeck = [];
+    state.writtenExamAnswers = {};
+    state.writtenExamStartedAt = null;
+    state.writtenExamSaved = false;
+  }
+
+  function startWrittenExamRound() {
+    if (!writtenExamCanStart()) return;
+    const deck = selectWrittenExamQuestions();
+    state.writtenExamDeck = deck;
+    state.writtenExamAnswers = deck.reduce((answers, question) => {
+      answers[question.id] = "";
+      return answers;
+    }, {});
+    state.writtenExamActive = true;
+    state.writtenExamSubmitted = false;
+    state.writtenExamStartedAt = new Date().toISOString();
+    state.writtenExamSaved = false;
+    render();
+  }
+
+  function writtenExamAnsweredCount() {
+    return state.writtenExamDeck.filter((question) => String(state.writtenExamAnswers[question.id] || "").trim()).length;
+  }
+
+  function renderWrittenExamMode() {
+    els.examPanel.classList.remove("hidden");
+    els.labPanel.classList.add("hidden");
+    els.circuitPanel.classList.add("hidden");
+    els.flashcard.classList.add("hidden");
+    els.quizPanel.classList.add("hidden");
+    els.buttonRow.classList.add("hidden");
+    els.reviewBox.classList.remove("hidden");
+    els.cardMetaBar.classList.add("hidden");
+    els.feedback.textContent = "";
+    setModeTip("Written exam mode locks all answers until you submit the full 15-question paper.");
+
+    if (state.writtenExamSubmitted && state.writtenExamDeck.length) {
+      renderWrittenExamResults();
+      return;
+    }
+    if (state.writtenExamActive && state.writtenExamDeck.length) {
+      renderWrittenExamPaper();
+      return;
+    }
+    renderWrittenExamSetup();
+  }
+
+  function renderWrittenExamSetup() {
+    const counts = writtenExamPoolCounts();
+    const movedCount = writtenExamMovedQuestionCount();
+    const recent = (state.progress.writtenExamHistory || []).slice(-3).reverse();
+    els.progressFill.style.width = "0%";
+    els.examPanel.innerHTML = `
+      <section class="exam-card written-exam-card written-exam-setup">
+        <div class="exam-topline">
+          <span class="unit-badge">Exam Mode</span>
+          <span class="marks-badge">${writtenExamTotalQuestions()} written questions</span>
+          <span class="type-badge">Answers locked until submit</span>
+        </div>
+        <div class="written-exam-hero">
+          <div>
+            <p class="panel-kicker">Full written paper</p>
+            <h3>15 challenging written-answer questions across all 3 units.</h3>
+            <p class="written-exam-lead">The app can currently move <strong>${movedCount}</strong> written-answer questions into this mode. Each exam builds <strong>5 questions from each unit</strong> and prioritises higher-mark explanation, method, comparison, and spot-the-mistake prompts.</p>
+          </div>
+          <button class="primary-button written-exam-start" type="button" ${writtenExamCanStart() ? "" : "disabled"}>Start 15-question exam</button>
+        </div>
+        <div class="written-exam-count-grid">
+          ${writtenExamUnits.map((unit) => `<div><strong>${counts[unit] || 0}</strong><span>${escapeHtml(unit)}</span><small>${writtenExamQuestionsPerUnit} used per exam</small></div>`).join("")}
+        </div>
+        <div class="boss-rules written-exam-rules">
+          <h4>Rules</h4>
+          <ul>
+            <li>No mark scheme, keyword list, or answer appears until the full exam is submitted.</li>
+            <li>After submission, each question shows your answer, a concise target answer, and a broader explanation.</li>
+            <li>Keyword coverage is a guide only; it is not an automatic mark.</li>
+          </ul>
+        </div>
+        ${recent.length ? `<div class="boss-history-panel"><h4>Recent written exams</h4><div class="boss-history-list">${recent.map((item) => `<span class="boss-history-pill">${escapeHtml(item.date || "Exam")} · ${item.answered}/${item.total} answered</span>`).join("")}</div></div>` : ""}
+      </section>
+    `;
+    els.examPanel.querySelector(".written-exam-start")?.addEventListener("click", startWrittenExamRound);
+  }
+
+  function renderWrittenExamPaper() {
+    const total = state.writtenExamDeck.length;
+    const answered = writtenExamAnsweredCount();
+    const progressPercent = total ? Math.round((answered / total) * 100) : 0;
+    els.progressFill.style.width = `${progressPercent}%`;
+    els.examPanel.innerHTML = `
+      <section class="exam-card written-exam-card written-exam-paper">
+        <div class="written-exam-sticky-head">
+          <div>
+            <p class="panel-kicker">Written exam in progress</p>
+            <h3>${answered}/${total} answered</h3>
+          </div>
+          <div class="written-exam-toolbar">
+            <button class="danger-soft written-exam-clear" type="button">Quit exam</button>
+            <button class="primary-button written-exam-submit" type="button">Submit exam</button>
+          </div>
+        </div>
+        <p class="written-exam-lock-note">Answer all 15 questions. Answers and explanations are hidden until you submit.</p>
+        <div class="written-exam-question-list">
+          ${state.writtenExamDeck.map((question, index) => renderWrittenExamQuestion(question, index)).join("")}
+        </div>
+        <div class="written-exam-bottom-actions">
+          <button class="primary-button written-exam-submit" type="button">Submit exam</button>
+        </div>
+      </section>
+    `;
+    wireWrittenExamPaper();
+  }
+
+  function renderWrittenExamQuestion(question, index) {
+    const answer = state.writtenExamAnswers[question.id] || "";
+    const visualHtml = question.visual ? renderExamVisual(question.visual) : "";
+    return `
+      <article class="written-exam-question" data-question-id="${escapeHtml(question.id)}">
+        <div class="exam-topline">
+          <span class="unit-badge">${escapeHtml(question.unit)}</span>
+          <span class="marks-badge">${question.marks} mark${question.marks === 1 ? "" : "s"}</span>
+          <span class="type-badge">Question ${index + 1}</span>
+        </div>
+        <h4>${escapeHtml(question.title)}</h4>
+        <p class="exam-prompt">${escapeHtml(question.prompt)}</p>
+        ${visualHtml ? `<div class="exam-visual">${visualHtml}</div>` : ""}
+        <label class="exam-answer-label" for="writtenExamAnswer-${escapeHtml(question.id)}">Your written answer</label>
+        <textarea id="writtenExamAnswer-${escapeHtml(question.id)}" class="exam-response written-exam-response" rows="5" data-question-id="${escapeHtml(question.id)}" placeholder="Write your answer here. The model answer stays hidden until you submit.">${escapeHtml(answer)}</textarea>
+      </article>
+    `;
+  }
+
+  function wireWrittenExamPaper() {
+    els.examPanel.querySelectorAll(".written-exam-response").forEach((textarea) => {
+      textarea.addEventListener("input", (event) => {
+        const questionId = event.target.dataset.questionId || "";
+        state.writtenExamAnswers[questionId] = event.target.value;
+        const total = state.writtenExamDeck.length;
+        const answered = writtenExamAnsweredCount();
+        els.progressFill.style.width = `${total ? Math.round((answered / total) * 100) : 0}%`;
+        const heading = els.examPanel.querySelector(".written-exam-sticky-head h3");
+        if (heading) heading.textContent = `${answered}/${total} answered`;
+      });
+    });
+    els.examPanel.querySelectorAll(".written-exam-submit").forEach((button) => {
+      button.addEventListener("click", submitWrittenExam);
+    });
+    els.examPanel.querySelector(".written-exam-clear")?.addEventListener("click", () => {
+      const confirmed = window.confirm("Quit this written exam and clear these answers?");
+      if (!confirmed) return;
+      resetWrittenExamRound();
+      render();
+    });
+  }
+
+  function submitWrittenExam() {
+    els.examPanel.querySelectorAll(".written-exam-response").forEach((textarea) => {
+      const questionId = textarea.dataset.questionId || "";
+      state.writtenExamAnswers[questionId] = textarea.value;
+    });
+    const answered = writtenExamAnsweredCount();
+    if (!answered) {
+      const confirmed = window.confirm("Submit a blank exam? You can still review the answers, but no responses have been entered.");
+      if (!confirmed) return;
+    }
+    state.writtenExamSubmitted = true;
+    state.writtenExamActive = false;
+    saveWrittenExamHistory();
+    render();
+  }
+
+  function saveWrittenExamHistory() {
+    if (state.writtenExamSaved) return;
+    const total = state.writtenExamDeck.length;
+    const answered = writtenExamAnsweredCount();
+    state.progress.writtenExamHistory = [
+      ...(state.progress.writtenExamHistory || []),
+      {
+        date: new Date().toLocaleDateString(undefined, { month: "short", day: "numeric" }),
+        total,
+        answered,
+        ids: state.writtenExamDeck.map((question) => question.id),
+      },
+    ].slice(-20);
+    state.writtenExamSaved = true;
+    saveProgress();
+  }
+
+  function renderWrittenExamResults() {
+    const total = state.writtenExamDeck.length;
+    const answered = writtenExamAnsweredCount();
+    const coverage = writtenExamDeckKeywordCoverage();
+    els.progressFill.style.width = "100%";
+    els.examPanel.innerHTML = `
+      <section class="exam-card written-exam-card written-exam-results">
+        <div class="written-exam-sticky-head results-head">
+          <div>
+            <p class="panel-kicker">Written exam submitted</p>
+            <h3>Review answers and fill knowledge gaps.</h3>
+          </div>
+          <div class="written-exam-toolbar">
+            <button class="secondary-button written-exam-new" type="button">Build another exam</button>
+          </div>
+        </div>
+        <div class="boss-score-grid written-exam-score-grid">
+          <div><strong>${answered}/${total}</strong><span>answered</span></div>
+          <div><strong>${coverage.hit}/${coverage.total}</strong><span>keyword guide</span></div>
+          <div><strong>${writtenExamQuestionsPerUnit}</strong><span>per unit</span></div>
+          <div><strong>${writtenExamMovedQuestionCount()}</strong><span>pool size</span></div>
+        </div>
+        <p class="written-exam-lock-note">Keyword coverage is a self-check only. Use the concise target answer first, then read the explanation for missing reasoning.</p>
+        <div class="written-exam-question-list review-list">
+          ${state.writtenExamDeck.map((question, index) => renderWrittenExamReview(question, index)).join("")}
+        </div>
+      </section>
+    `;
+    els.examPanel.querySelector(".written-exam-new")?.addEventListener("click", () => {
+      resetWrittenExamRound();
+      startWrittenExamRound();
+    });
+  }
+
+  function writtenExamDeckKeywordCoverage() {
+    return state.writtenExamDeck.reduce((totals, question) => {
+      const hits = keywordHits(question, state.writtenExamAnswers[question.id] || "");
+      totals.hit += hits.length;
+      totals.total += (question.keywords || []).length;
+      return totals;
+    }, { hit: 0, total: 0 });
+  }
+
+  function renderWrittenExamReview(question, index) {
+    const userAnswer = String(state.writtenExamAnswers[question.id] || "").trim();
+    const hits = keywordHits(question, userAnswer);
+    const visualHtml = question.visual ? renderExamVisual(question.visual) : "";
+    return `
+      <article class="written-exam-question written-exam-review-card">
+        <div class="exam-topline">
+          <span class="unit-badge">${escapeHtml(question.unit)}</span>
+          <span class="marks-badge">${question.marks} mark${question.marks === 1 ? "" : "s"}</span>
+          <span class="type-badge">Question ${index + 1}</span>
+        </div>
+        <h4>${escapeHtml(question.title)}</h4>
+        <p class="exam-prompt">${escapeHtml(question.prompt)}</p>
+        ${visualHtml ? `<div class="exam-visual">${visualHtml}</div>` : ""}
+        <div class="written-exam-answer-grid">
+          <div class="written-exam-answer-block user-answer-block">
+            <h5>Your answer</h5>
+            <p>${userAnswer ? escapeHtml(userAnswer) : "No answer entered."}</p>
+          </div>
+          <div class="written-exam-answer-block target-answer-block">
+            <h5>Concise target answer</h5>
+            <p>${escapeHtml(writtenExamConciseAnswer(question))}</p>
+          </div>
+        </div>
+        <div class="written-exam-explanation">
+          <h5>Broader explanation</h5>
+          <p>${escapeHtml(writtenExamExplanation(question))}</p>
+          <div class="keyword-list">
+            ${(question.keywords || []).map((keyword) => `<span class="keyword ${hits.includes(String(keyword).toLowerCase()) ? "hit" : ""}">${escapeHtml(keyword)}</span>`).join("")}
+          </div>
+        </div>
+      </article>
+    `;
+  }
+
+  function writtenExamConciseAnswer(question) {
+    return question.conciseAnswer || question.answer;
+  }
+
+  function writtenExamExplanation(question) {
+    if (question.explanation) return question.explanation;
+    const cue = question.cue || "A strong answer uses precise science words and links cause to effect.";
+    return `${cue} Check whether your answer names the key science idea, explains the cause or process, and states the result clearly. Use the highlighted keywords as a gap-check, not as a memorised script.`;
+  }
+
+
   function exportProgress() {
     const payload = {
       app: "Year 7 Science Flashcards",
@@ -4122,6 +4636,7 @@
           mastered: Array.isArray(imported.mastered) ? imported.mastered : [],
           weakIds: Array.isArray(imported.weakIds) ? imported.weakIds : [],
           bossHistory: Array.isArray(imported.bossHistory) ? imported.bossHistory : [],
+          writtenExamHistory: Array.isArray(imported.writtenExamHistory) ? imported.writtenExamHistory : [],
           bossSeenIds: Array.isArray(imported.bossSeenIds) ? imported.bossSeenIds : [],
           bossUnlockedLevel: Math.max(1, Math.min(5, Number(imported.bossUnlockedLevel || 1))),
           bossLevelCompletions: imported.bossLevelCompletions && typeof imported.bossLevelCompletions === "object" ? imported.bossLevelCompletions : {},
@@ -4202,6 +4717,8 @@
     els.homePracticeButton?.addEventListener("click", () => {
       startPracticeFromHome("study");
     });
+
+    els.homeExamButton?.addEventListener("click", startWrittenExamFromHome);
 
     els.homeBossButton?.addEventListener("click", startBossFromHome);
 
